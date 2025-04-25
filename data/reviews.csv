@@ -1,0 +1,2001 @@
+user_id,product_id,rating,review_text
+918,393,4,Not worth the price.
+110,404,3,Highly recommended!
+353,366,5,Poor quality.
+813,82,1,Great product!
+91,381,4,Great product!
+936,319,2,Highly recommended!
+882,470,1,Satisfied with the purchase.
+918,328,2,Satisfied with the purchase.
+414,98,1,Poor quality.
+702,73,1,Poor quality.
+73,327,2,Satisfied with the purchase.
+685,30,2,Poor quality.
+547,125,1,Satisfied with the purchase.
+722,210,4,Highly recommended!
+298,475,2,Poor quality.
+645,272,3,Satisfied with the purchase.
+283,213,3,Poor quality.
+505,133,1,Great product!
+198,157,5,Great product!
+958,47,1,Not worth the price.
+32,357,1,Satisfied with the purchase.
+648,363,4,Not worth the price.
+760,382,4,Satisfied with the purchase.
+871,22,5,Poor quality.
+341,462,5,Satisfied with the purchase.
+658,441,5,Great product!
+334,83,5,Poor quality.
+143,419,5,Great product!
+746,472,1,Poor quality.
+410,234,1,Satisfied with the purchase.
+949,60,3,Satisfied with the purchase.
+44,454,3,Great product!
+32,188,2,Highly recommended!
+743,58,1,Satisfied with the purchase.
+28,259,5,Highly recommended!
+423,162,2,Poor quality.
+491,301,4,Highly recommended!
+160,306,1,Great product!
+845,2,3,Not worth the price.
+207,271,1,Not worth the price.
+18,421,1,Great product!
+103,143,1,Not worth the price.
+582,188,1,Great product!
+631,352,4,Satisfied with the purchase.
+651,341,3,Highly recommended!
+672,448,1,Not worth the price.
+232,465,4,Satisfied with the purchase.
+660,482,2,Not worth the price.
+865,224,1,Poor quality.
+424,498,4,Great product!
+904,367,5,Great product!
+755,180,2,Satisfied with the purchase.
+547,23,3,Poor quality.
+837,355,1,Highly recommended!
+894,37,1,Poor quality.
+867,107,4,Poor quality.
+239,297,3,Highly recommended!
+334,229,5,Highly recommended!
+149,313,2,Poor quality.
+623,97,3,Not worth the price.
+408,281,1,Not worth the price.
+17,110,4,Poor quality.
+914,37,5,Not worth the price.
+226,40,4,Highly recommended!
+652,85,2,Highly recommended!
+656,302,3,Not worth the price.
+260,188,4,Highly recommended!
+729,240,4,Great product!
+674,358,1,Highly recommended!
+604,488,4,Poor quality.
+174,354,5,Satisfied with the purchase.
+843,19,3,Not worth the price.
+205,347,2,Not worth the price.
+415,393,4,Highly recommended!
+508,325,5,Highly recommended!
+153,261,2,Satisfied with the purchase.
+103,473,5,Satisfied with the purchase.
+714,410,4,Poor quality.
+792,403,4,Great product!
+65,158,3,Poor quality.
+117,484,1,Not worth the price.
+665,304,5,Highly recommended!
+156,112,1,Poor quality.
+676,144,1,Highly recommended!
+82,256,2,Highly recommended!
+518,455,2,Poor quality.
+834,18,5,Poor quality.
+67,184,1,Satisfied with the purchase.
+238,405,3,Great product!
+584,287,1,Satisfied with the purchase.
+607,385,2,Great product!
+816,131,1,Poor quality.
+979,479,4,Great product!
+326,281,4,Not worth the price.
+590,245,3,Satisfied with the purchase.
+67,8,5,Satisfied with the purchase.
+176,193,1,Satisfied with the purchase.
+833,318,4,Highly recommended!
+684,391,5,Highly recommended!
+478,7,4,Poor quality.
+255,136,5,Poor quality.
+63,19,5,Highly recommended!
+814,401,4,Satisfied with the purchase.
+403,139,2,Highly recommended!
+758,367,5,Great product!
+192,489,1,Satisfied with the purchase.
+979,177,4,Highly recommended!
+329,11,2,Poor quality.
+71,486,4,Highly recommended!
+878,41,3,Not worth the price.
+741,446,1,Highly recommended!
+946,114,3,Satisfied with the purchase.
+63,180,5,Highly recommended!
+297,194,5,Poor quality.
+245,196,3,Great product!
+519,498,3,Not worth the price.
+393,348,5,Satisfied with the purchase.
+772,225,2,Poor quality.
+601,331,1,Not worth the price.
+177,323,4,Highly recommended!
+204,424,3,Not worth the price.
+646,261,1,Great product!
+594,116,4,Not worth the price.
+1000,469,4,Not worth the price.
+533,150,3,Highly recommended!
+911,118,2,Highly recommended!
+128,165,2,Satisfied with the purchase.
+195,252,1,Highly recommended!
+194,267,1,Not worth the price.
+184,44,5,Great product!
+247,470,2,Highly recommended!
+873,489,1,Satisfied with the purchase.
+872,181,5,Satisfied with the purchase.
+324,77,4,Not worth the price.
+160,374,1,Highly recommended!
+706,116,5,Highly recommended!
+622,445,2,Satisfied with the purchase.
+925,67,4,Highly recommended!
+66,13,1,Not worth the price.
+930,92,2,Great product!
+254,246,4,Not worth the price.
+283,267,3,Highly recommended!
+60,139,2,Not worth the price.
+118,341,3,Poor quality.
+423,244,1,Poor quality.
+556,341,5,Highly recommended!
+998,391,1,Highly recommended!
+722,273,2,Great product!
+36,304,3,Not worth the price.
+531,398,3,Great product!
+91,191,4,Highly recommended!
+301,448,1,Highly recommended!
+724,97,1,Satisfied with the purchase.
+917,331,2,Great product!
+919,205,3,Highly recommended!
+734,449,2,Poor quality.
+217,418,2,Satisfied with the purchase.
+735,137,3,Not worth the price.
+923,77,2,Satisfied with the purchase.
+98,384,3,Not worth the price.
+456,37,2,Poor quality.
+531,286,5,Not worth the price.
+809,425,2,Great product!
+538,429,2,Not worth the price.
+28,485,5,Not worth the price.
+576,303,1,Satisfied with the purchase.
+324,135,3,Poor quality.
+223,142,4,Not worth the price.
+80,254,5,Great product!
+563,48,1,Satisfied with the purchase.
+458,255,2,Poor quality.
+614,134,1,Poor quality.
+176,290,5,Highly recommended!
+522,208,2,Great product!
+749,499,1,Satisfied with the purchase.
+457,101,4,Satisfied with the purchase.
+423,484,3,Great product!
+100,46,3,Poor quality.
+890,443,5,Not worth the price.
+740,70,2,Great product!
+403,136,2,Satisfied with the purchase.
+576,280,3,Great product!
+380,67,1,Poor quality.
+531,4,2,Highly recommended!
+332,224,4,Highly recommended!
+318,1,4,Not worth the price.
+653,290,2,Not worth the price.
+537,109,2,Poor quality.
+740,265,3,Not worth the price.
+89,63,5,Highly recommended!
+604,460,3,Poor quality.
+511,266,5,Poor quality.
+42,138,4,Poor quality.
+885,434,5,Great product!
+807,44,3,Not worth the price.
+926,374,2,Satisfied with the purchase.
+389,432,5,Highly recommended!
+81,471,3,Not worth the price.
+402,262,4,Highly recommended!
+107,216,5,Not worth the price.
+111,121,4,Satisfied with the purchase.
+277,152,4,Highly recommended!
+214,213,1,Satisfied with the purchase.
+743,234,5,Highly recommended!
+818,351,3,Great product!
+506,111,5,Great product!
+121,442,5,Highly recommended!
+134,361,4,Highly recommended!
+818,320,4,Satisfied with the purchase.
+720,222,4,Poor quality.
+962,440,4,Highly recommended!
+371,226,3,Not worth the price.
+257,210,2,Not worth the price.
+697,396,1,Not worth the price.
+798,419,4,Great product!
+954,71,4,Satisfied with the purchase.
+875,489,1,Great product!
+180,360,4,Not worth the price.
+933,89,2,Highly recommended!
+48,262,5,Not worth the price.
+599,449,1,Highly recommended!
+897,366,3,Satisfied with the purchase.
+19,464,1,Poor quality.
+46,188,2,Highly recommended!
+451,112,3,Great product!
+898,452,5,Not worth the price.
+56,413,4,Not worth the price.
+741,422,1,Not worth the price.
+657,239,3,Highly recommended!
+92,476,1,Satisfied with the purchase.
+82,256,5,Highly recommended!
+737,150,1,Great product!
+79,127,3,Not worth the price.
+662,392,2,Highly recommended!
+873,319,3,Not worth the price.
+283,480,1,Great product!
+311,481,5,Poor quality.
+997,397,4,Poor quality.
+160,411,4,Poor quality.
+316,402,5,Not worth the price.
+877,274,1,Highly recommended!
+979,333,5,Not worth the price.
+668,470,1,Satisfied with the purchase.
+156,446,3,Highly recommended!
+888,398,2,Great product!
+714,139,1,Poor quality.
+468,103,4,Highly recommended!
+921,242,4,Highly recommended!
+853,117,2,Poor quality.
+462,214,1,Great product!
+854,484,2,Not worth the price.
+117,17,3,Not worth the price.
+666,179,2,Highly recommended!
+364,224,3,Poor quality.
+843,270,4,Satisfied with the purchase.
+631,490,3,Great product!
+711,313,1,Not worth the price.
+913,349,1,Great product!
+466,134,1,Great product!
+775,114,1,Great product!
+184,441,5,Poor quality.
+960,132,3,Poor quality.
+660,139,1,Poor quality.
+166,365,2,Highly recommended!
+75,232,2,Poor quality.
+748,458,5,Highly recommended!
+826,375,3,Not worth the price.
+272,92,3,Not worth the price.
+691,267,3,Not worth the price.
+503,99,5,Not worth the price.
+795,207,3,Not worth the price.
+563,8,3,Poor quality.
+587,468,1,Satisfied with the purchase.
+656,370,3,Poor quality.
+343,443,1,Satisfied with the purchase.
+700,405,1,Poor quality.
+635,321,3,Not worth the price.
+844,93,2,Great product!
+251,408,4,Satisfied with the purchase.
+808,158,2,Great product!
+835,360,3,Not worth the price.
+130,99,3,Satisfied with the purchase.
+764,225,2,Great product!
+358,340,3,Poor quality.
+944,441,1,Not worth the price.
+692,208,5,Poor quality.
+408,73,3,Poor quality.
+861,479,3,Not worth the price.
+495,401,2,Satisfied with the purchase.
+622,59,1,Highly recommended!
+482,287,2,Highly recommended!
+980,64,2,Not worth the price.
+850,256,3,Highly recommended!
+78,48,1,Great product!
+978,279,3,Satisfied with the purchase.
+514,198,3,Poor quality.
+321,158,3,Poor quality.
+788,311,3,Not worth the price.
+290,7,5,Poor quality.
+297,248,4,Great product!
+681,368,1,Great product!
+752,232,5,Not worth the price.
+971,106,4,Poor quality.
+475,494,4,Highly recommended!
+23,459,4,Highly recommended!
+806,98,5,Satisfied with the purchase.
+172,268,1,Not worth the price.
+835,60,2,Satisfied with the purchase.
+318,500,4,Highly recommended!
+908,308,2,Highly recommended!
+798,493,2,Highly recommended!
+991,495,3,Satisfied with the purchase.
+855,411,2,Not worth the price.
+193,140,3,Great product!
+681,397,1,Great product!
+916,328,1,Highly recommended!
+118,464,3,Not worth the price.
+6,190,1,Not worth the price.
+843,125,4,Poor quality.
+483,413,1,Poor quality.
+132,163,3,Satisfied with the purchase.
+93,60,4,Poor quality.
+763,413,2,Satisfied with the purchase.
+522,31,2,Great product!
+563,333,2,Highly recommended!
+861,76,3,Not worth the price.
+294,243,2,Great product!
+641,317,1,Great product!
+1000,258,2,Satisfied with the purchase.
+392,417,5,Highly recommended!
+249,456,5,Satisfied with the purchase.
+614,190,2,Great product!
+849,489,2,Not worth the price.
+595,377,5,Poor quality.
+703,315,2,Satisfied with the purchase.
+417,296,4,Great product!
+143,177,5,Poor quality.
+237,489,3,Poor quality.
+287,288,5,Great product!
+277,294,1,Highly recommended!
+387,348,4,Great product!
+382,207,3,Not worth the price.
+450,215,2,Poor quality.
+291,344,1,Not worth the price.
+169,141,1,Satisfied with the purchase.
+443,85,4,Poor quality.
+656,182,3,Highly recommended!
+184,332,1,Great product!
+45,128,3,Satisfied with the purchase.
+755,269,3,Not worth the price.
+827,39,1,Satisfied with the purchase.
+946,23,3,Highly recommended!
+981,242,4,Great product!
+268,366,1,Satisfied with the purchase.
+476,107,4,Not worth the price.
+253,348,4,Satisfied with the purchase.
+396,142,3,Great product!
+289,145,3,Satisfied with the purchase.
+212,280,1,Not worth the price.
+1000,245,2,Great product!
+689,442,1,Highly recommended!
+21,191,4,Highly recommended!
+316,290,3,Poor quality.
+564,179,4,Satisfied with the purchase.
+438,112,5,Not worth the price.
+423,214,5,Satisfied with the purchase.
+233,138,4,Great product!
+945,374,2,Poor quality.
+123,200,2,Not worth the price.
+874,405,1,Satisfied with the purchase.
+960,421,1,Not worth the price.
+612,7,1,Great product!
+214,346,3,Poor quality.
+922,13,2,Not worth the price.
+839,80,4,Great product!
+647,286,5,Highly recommended!
+968,159,2,Not worth the price.
+830,389,2,Poor quality.
+730,416,2,Not worth the price.
+600,272,1,Not worth the price.
+792,495,3,Great product!
+40,201,4,Satisfied with the purchase.
+752,150,1,Satisfied with the purchase.
+332,448,3,Not worth the price.
+943,428,2,Poor quality.
+648,296,3,Poor quality.
+182,493,1,Great product!
+265,293,2,Not worth the price.
+771,334,1,Not worth the price.
+694,272,4,Satisfied with the purchase.
+533,43,2,Great product!
+863,468,3,Highly recommended!
+432,319,1,Poor quality.
+943,492,5,Poor quality.
+984,15,3,Not worth the price.
+196,248,3,Great product!
+724,172,2,Highly recommended!
+509,218,3,Poor quality.
+447,137,1,Great product!
+528,321,5,Highly recommended!
+202,227,4,Not worth the price.
+875,44,5,Satisfied with the purchase.
+730,20,1,Poor quality.
+605,493,2,Poor quality.
+133,119,1,Highly recommended!
+139,454,3,Satisfied with the purchase.
+669,234,2,Great product!
+493,458,4,Not worth the price.
+847,368,4,Great product!
+70,379,1,Highly recommended!
+816,417,3,Poor quality.
+15,336,4,Poor quality.
+747,356,5,Great product!
+212,262,2,Not worth the price.
+802,83,5,Highly recommended!
+60,31,4,Not worth the price.
+252,322,4,Highly recommended!
+446,274,1,Not worth the price.
+2,234,1,Great product!
+748,28,2,Satisfied with the purchase.
+336,252,1,Highly recommended!
+19,324,3,Great product!
+994,253,2,Poor quality.
+561,449,3,Poor quality.
+78,239,1,Not worth the price.
+472,490,2,Poor quality.
+28,370,4,Satisfied with the purchase.
+560,464,5,Highly recommended!
+608,429,4,Not worth the price.
+165,314,3,Highly recommended!
+458,175,4,Highly recommended!
+945,194,4,Great product!
+877,180,5,Poor quality.
+176,420,5,Highly recommended!
+585,385,4,Satisfied with the purchase.
+984,295,5,Satisfied with the purchase.
+868,215,4,Poor quality.
+29,474,2,Poor quality.
+956,203,4,Not worth the price.
+669,250,1,Not worth the price.
+826,362,5,Not worth the price.
+816,257,5,Poor quality.
+279,75,3,Highly recommended!
+283,344,3,Great product!
+479,202,1,Not worth the price.
+519,142,5,Great product!
+305,206,5,Satisfied with the purchase.
+694,199,3,Poor quality.
+109,407,3,Satisfied with the purchase.
+324,171,4,Not worth the price.
+206,406,5,Highly recommended!
+234,316,5,Not worth the price.
+938,228,4,Great product!
+458,411,5,Not worth the price.
+187,440,1,Highly recommended!
+940,386,3,Highly recommended!
+482,423,3,Poor quality.
+922,179,3,Poor quality.
+407,366,2,Highly recommended!
+841,275,1,Highly recommended!
+509,62,1,Great product!
+869,327,4,Not worth the price.
+520,204,2,Poor quality.
+53,451,5,Great product!
+398,447,1,Not worth the price.
+199,367,2,Poor quality.
+391,133,2,Great product!
+649,72,1,Satisfied with the purchase.
+771,78,4,Satisfied with the purchase.
+846,189,2,Poor quality.
+913,356,3,Great product!
+498,71,2,Not worth the price.
+172,263,5,Not worth the price.
+86,306,1,Great product!
+558,46,5,Satisfied with the purchase.
+858,224,4,Great product!
+186,328,3,Satisfied with the purchase.
+156,250,1,Satisfied with the purchase.
+493,76,2,Not worth the price.
+910,74,3,Poor quality.
+521,142,2,Highly recommended!
+627,73,4,Great product!
+666,102,1,Satisfied with the purchase.
+130,94,4,Great product!
+843,69,4,Poor quality.
+81,65,4,Poor quality.
+384,193,4,Highly recommended!
+802,441,2,Highly recommended!
+659,62,5,Satisfied with the purchase.
+295,20,2,Highly recommended!
+978,241,3,Satisfied with the purchase.
+269,203,4,Not worth the price.
+645,410,3,Satisfied with the purchase.
+562,300,2,Highly recommended!
+535,195,4,Great product!
+378,454,2,Highly recommended!
+376,62,4,Poor quality.
+88,107,2,Highly recommended!
+925,125,1,Not worth the price.
+624,301,5,Satisfied with the purchase.
+111,267,5,Poor quality.
+584,456,4,Satisfied with the purchase.
+154,477,1,Satisfied with the purchase.
+463,202,3,Highly recommended!
+569,162,1,Great product!
+769,344,4,Poor quality.
+156,302,1,Not worth the price.
+625,112,3,Not worth the price.
+318,337,4,Great product!
+559,32,5,Great product!
+238,459,1,Highly recommended!
+334,98,5,Not worth the price.
+106,472,5,Poor quality.
+482,247,2,Great product!
+699,261,3,Great product!
+671,191,1,Great product!
+710,29,5,Poor quality.
+382,48,5,Not worth the price.
+689,496,3,Poor quality.
+261,250,5,Poor quality.
+799,226,5,Highly recommended!
+293,272,5,Great product!
+335,153,5,Not worth the price.
+655,485,2,Highly recommended!
+820,328,2,Highly recommended!
+709,285,4,Satisfied with the purchase.
+476,180,1,Great product!
+225,302,3,Not worth the price.
+907,153,4,Not worth the price.
+555,234,2,Not worth the price.
+454,23,2,Great product!
+663,418,2,Not worth the price.
+296,451,4,Poor quality.
+575,94,2,Poor quality.
+642,370,4,Great product!
+767,245,2,Not worth the price.
+463,290,5,Satisfied with the purchase.
+855,160,5,Satisfied with the purchase.
+214,373,1,Satisfied with the purchase.
+585,285,2,Poor quality.
+943,9,1,Satisfied with the purchase.
+616,450,4,Not worth the price.
+158,185,1,Not worth the price.
+272,295,2,Satisfied with the purchase.
+827,135,4,Highly recommended!
+238,110,4,Satisfied with the purchase.
+303,69,5,Highly recommended!
+884,136,4,Great product!
+670,96,4,Great product!
+621,119,1,Not worth the price.
+521,374,4,Poor quality.
+321,274,3,Not worth the price.
+59,358,5,Not worth the price.
+358,366,5,Poor quality.
+704,338,4,Not worth the price.
+648,177,1,Poor quality.
+251,361,5,Not worth the price.
+891,237,5,Great product!
+436,272,3,Highly recommended!
+146,277,4,Not worth the price.
+859,138,5,Highly recommended!
+978,362,5,Satisfied with the purchase.
+352,132,5,Not worth the price.
+570,44,5,Great product!
+689,123,1,Poor quality.
+800,136,2,Great product!
+245,367,3,Highly recommended!
+560,373,1,Poor quality.
+301,126,3,Great product!
+438,439,5,Great product!
+868,275,3,Great product!
+100,495,4,Poor quality.
+725,64,4,Great product!
+814,296,2,Great product!
+480,232,2,Highly recommended!
+415,51,3,Great product!
+165,137,1,Great product!
+912,158,1,Satisfied with the purchase.
+942,56,5,Poor quality.
+638,81,1,Satisfied with the purchase.
+302,232,2,Highly recommended!
+974,428,1,Satisfied with the purchase.
+121,443,5,Not worth the price.
+88,399,4,Poor quality.
+217,452,1,Great product!
+573,326,1,Satisfied with the purchase.
+814,128,2,Satisfied with the purchase.
+179,126,3,Great product!
+702,317,4,Great product!
+163,80,3,Highly recommended!
+593,474,5,Satisfied with the purchase.
+170,377,5,Satisfied with the purchase.
+301,357,3,Not worth the price.
+374,407,2,Not worth the price.
+708,333,2,Satisfied with the purchase.
+203,175,2,Not worth the price.
+47,145,4,Satisfied with the purchase.
+463,441,5,Poor quality.
+670,126,5,Highly recommended!
+408,182,5,Not worth the price.
+194,219,4,Satisfied with the purchase.
+427,436,5,Not worth the price.
+930,278,3,Highly recommended!
+791,485,1,Poor quality.
+317,83,4,Great product!
+479,423,1,Great product!
+421,483,3,Not worth the price.
+269,141,2,Satisfied with the purchase.
+481,334,2,Highly recommended!
+711,496,2,Poor quality.
+736,95,4,Poor quality.
+263,365,2,Poor quality.
+426,194,4,Great product!
+166,110,4,Highly recommended!
+692,52,1,Great product!
+428,103,2,Not worth the price.
+704,101,5,Poor quality.
+397,142,2,Highly recommended!
+216,201,2,Poor quality.
+796,458,2,Great product!
+864,319,5,Great product!
+107,199,5,Great product!
+978,284,4,Poor quality.
+98,494,5,Highly recommended!
+880,217,4,Highly recommended!
+482,46,1,Not worth the price.
+499,28,4,Poor quality.
+230,2,2,Not worth the price.
+257,383,3,Not worth the price.
+43,17,3,Not worth the price.
+242,315,2,Not worth the price.
+554,436,4,Great product!
+95,388,2,Not worth the price.
+946,77,5,Highly recommended!
+766,466,4,Not worth the price.
+188,387,2,Great product!
+385,371,5,Satisfied with the purchase.
+819,165,5,Satisfied with the purchase.
+400,97,4,Satisfied with the purchase.
+506,105,1,Poor quality.
+167,24,1,Highly recommended!
+783,200,5,Great product!
+125,35,1,Satisfied with the purchase.
+673,2,5,Great product!
+87,289,1,Great product!
+821,332,5,Poor quality.
+489,342,5,Satisfied with the purchase.
+226,461,5,Not worth the price.
+657,138,5,Great product!
+345,337,3,Satisfied with the purchase.
+760,62,1,Great product!
+874,299,5,Poor quality.
+518,197,2,Poor quality.
+31,377,4,Not worth the price.
+709,59,2,Poor quality.
+744,265,2,Satisfied with the purchase.
+296,333,3,Poor quality.
+414,188,1,Not worth the price.
+837,63,3,Highly recommended!
+972,308,1,Great product!
+135,279,5,Great product!
+525,30,3,Satisfied with the purchase.
+4,171,4,Not worth the price.
+178,452,1,Not worth the price.
+746,21,3,Not worth the price.
+259,299,4,Great product!
+652,201,2,Poor quality.
+65,135,5,Great product!
+795,272,5,Great product!
+363,23,2,Great product!
+818,442,3,Poor quality.
+717,87,2,Highly recommended!
+17,31,4,Satisfied with the purchase.
+200,121,1,Highly recommended!
+544,69,3,Highly recommended!
+212,134,1,Great product!
+435,371,2,Highly recommended!
+273,449,5,Great product!
+290,315,1,Great product!
+803,496,1,Satisfied with the purchase.
+483,412,5,Not worth the price.
+998,146,1,Great product!
+234,472,1,Highly recommended!
+408,333,5,Satisfied with the purchase.
+694,481,5,Highly recommended!
+146,394,2,Not worth the price.
+562,263,2,Poor quality.
+430,293,1,Not worth the price.
+432,480,3,Satisfied with the purchase.
+615,429,2,Not worth the price.
+545,86,2,Not worth the price.
+497,16,3,Satisfied with the purchase.
+983,216,3,Satisfied with the purchase.
+89,116,5,Highly recommended!
+997,118,2,Great product!
+411,270,4,Poor quality.
+897,395,4,Poor quality.
+853,467,1,Poor quality.
+827,343,2,Not worth the price.
+241,162,4,Satisfied with the purchase.
+778,188,2,Satisfied with the purchase.
+223,104,2,Satisfied with the purchase.
+748,141,4,Great product!
+665,167,2,Satisfied with the purchase.
+468,300,3,Satisfied with the purchase.
+569,28,1,Not worth the price.
+322,424,5,Highly recommended!
+375,272,4,Poor quality.
+112,50,5,Not worth the price.
+527,371,1,Not worth the price.
+412,156,3,Not worth the price.
+269,324,3,Poor quality.
+626,348,3,Not worth the price.
+252,121,3,Highly recommended!
+374,444,4,Satisfied with the purchase.
+654,140,4,Highly recommended!
+626,16,2,Satisfied with the purchase.
+450,309,2,Satisfied with the purchase.
+802,438,1,Not worth the price.
+995,49,2,Not worth the price.
+869,164,1,Poor quality.
+537,62,1,Great product!
+368,340,1,Highly recommended!
+822,154,3,Poor quality.
+255,312,5,Poor quality.
+463,376,5,Highly recommended!
+268,346,4,Highly recommended!
+126,150,1,Satisfied with the purchase.
+393,376,3,Great product!
+762,73,2,Not worth the price.
+799,69,2,Great product!
+334,465,4,Great product!
+989,177,4,Not worth the price.
+565,354,1,Great product!
+368,2,1,Poor quality.
+555,309,2,Poor quality.
+678,119,2,Not worth the price.
+554,7,2,Not worth the price.
+892,255,2,Highly recommended!
+456,484,5,Highly recommended!
+688,461,1,Great product!
+67,404,1,Great product!
+66,478,2,Not worth the price.
+912,414,3,Great product!
+595,75,2,Satisfied with the purchase.
+862,351,4,Poor quality.
+617,195,3,Great product!
+400,187,4,Great product!
+287,450,3,Highly recommended!
+886,496,4,Satisfied with the purchase.
+186,3,2,Great product!
+284,184,2,Poor quality.
+516,335,3,Great product!
+650,273,4,Not worth the price.
+691,368,5,Satisfied with the purchase.
+237,52,3,Great product!
+18,263,3,Satisfied with the purchase.
+815,368,1,Great product!
+928,133,3,Poor quality.
+414,482,5,Poor quality.
+932,225,2,Satisfied with the purchase.
+9,310,4,Highly recommended!
+420,61,1,Highly recommended!
+29,365,4,Not worth the price.
+656,16,2,Highly recommended!
+348,229,3,Satisfied with the purchase.
+661,195,5,Highly recommended!
+576,251,1,Not worth the price.
+879,443,5,Great product!
+450,303,5,Highly recommended!
+380,48,5,Satisfied with the purchase.
+699,235,5,Satisfied with the purchase.
+366,121,2,Not worth the price.
+227,499,5,Not worth the price.
+118,320,5,Poor quality.
+412,50,2,Poor quality.
+951,469,4,Poor quality.
+356,41,2,Great product!
+254,456,3,Satisfied with the purchase.
+543,22,2,Poor quality.
+673,371,4,Satisfied with the purchase.
+727,182,3,Not worth the price.
+444,5,3,Great product!
+681,145,1,Not worth the price.
+81,357,5,Satisfied with the purchase.
+46,78,3,Poor quality.
+49,231,3,Not worth the price.
+449,297,4,Highly recommended!
+810,348,3,Great product!
+407,479,4,Satisfied with the purchase.
+880,209,5,Poor quality.
+283,163,1,Not worth the price.
+473,168,1,Great product!
+416,278,5,Poor quality.
+979,237,5,Not worth the price.
+600,176,2,Satisfied with the purchase.
+121,53,3,Highly recommended!
+3,349,3,Highly recommended!
+316,10,3,Satisfied with the purchase.
+460,146,4,Great product!
+227,227,2,Satisfied with the purchase.
+79,236,3,Not worth the price.
+657,464,4,Great product!
+754,242,4,Highly recommended!
+544,305,1,Not worth the price.
+775,71,4,Poor quality.
+723,158,5,Poor quality.
+71,19,4,Poor quality.
+896,55,5,Highly recommended!
+197,444,5,Satisfied with the purchase.
+58,215,1,Great product!
+424,456,1,Highly recommended!
+469,209,4,Not worth the price.
+624,21,1,Not worth the price.
+48,282,1,Poor quality.
+435,249,3,Great product!
+185,28,4,Poor quality.
+879,423,4,Not worth the price.
+839,417,4,Not worth the price.
+165,296,1,Satisfied with the purchase.
+727,211,1,Satisfied with the purchase.
+331,285,5,Satisfied with the purchase.
+330,20,2,Poor quality.
+121,20,2,Great product!
+213,330,2,Satisfied with the purchase.
+823,396,3,Highly recommended!
+507,120,1,Satisfied with the purchase.
+553,97,5,Poor quality.
+865,120,5,Great product!
+916,25,2,Satisfied with the purchase.
+801,153,3,Great product!
+168,245,3,Highly recommended!
+995,260,2,Not worth the price.
+546,4,2,Great product!
+830,393,1,Satisfied with the purchase.
+996,143,3,Poor quality.
+987,282,5,Poor quality.
+787,335,2,Poor quality.
+427,346,1,Poor quality.
+709,220,5,Great product!
+703,327,3,Poor quality.
+221,160,2,Not worth the price.
+10,76,2,Highly recommended!
+120,99,1,Great product!
+635,180,1,Great product!
+247,127,3,Poor quality.
+360,32,2,Poor quality.
+909,265,1,Great product!
+221,334,2,Poor quality.
+773,13,3,Poor quality.
+506,440,2,Poor quality.
+58,380,5,Poor quality.
+827,428,2,Poor quality.
+460,481,4,Satisfied with the purchase.
+128,352,4,Satisfied with the purchase.
+699,339,3,Satisfied with the purchase.
+717,414,3,Great product!
+86,400,3,Highly recommended!
+104,396,5,Great product!
+143,202,5,Satisfied with the purchase.
+205,450,2,Great product!
+641,18,1,Highly recommended!
+758,397,4,Poor quality.
+38,93,4,Not worth the price.
+363,280,4,Satisfied with the purchase.
+621,358,2,Satisfied with the purchase.
+309,396,2,Highly recommended!
+52,316,3,Poor quality.
+1,60,1,Poor quality.
+11,477,3,Not worth the price.
+826,214,2,Poor quality.
+747,100,5,Highly recommended!
+640,1,3,Poor quality.
+936,43,2,Highly recommended!
+214,311,2,Satisfied with the purchase.
+995,168,5,Satisfied with the purchase.
+956,192,5,Satisfied with the purchase.
+755,34,5,Great product!
+556,34,1,Satisfied with the purchase.
+518,176,2,Highly recommended!
+668,417,5,Not worth the price.
+415,196,1,Poor quality.
+8,486,4,Satisfied with the purchase.
+5,158,4,Great product!
+362,245,4,Great product!
+694,500,2,Highly recommended!
+112,366,1,Not worth the price.
+273,340,1,Satisfied with the purchase.
+422,346,4,Satisfied with the purchase.
+265,335,3,Great product!
+458,71,4,Highly recommended!
+212,327,2,Great product!
+78,114,4,Great product!
+782,285,4,Not worth the price.
+666,407,1,Highly recommended!
+221,418,4,Not worth the price.
+369,468,5,Highly recommended!
+958,143,5,Satisfied with the purchase.
+347,97,3,Poor quality.
+25,309,2,Poor quality.
+976,401,2,Highly recommended!
+420,320,1,Poor quality.
+354,212,2,Great product!
+720,317,3,Satisfied with the purchase.
+417,185,5,Satisfied with the purchase.
+515,205,1,Poor quality.
+215,364,5,Highly recommended!
+907,216,3,Great product!
+112,246,1,Highly recommended!
+954,239,4,Poor quality.
+704,293,2,Satisfied with the purchase.
+914,391,3,Satisfied with the purchase.
+559,8,1,Highly recommended!
+428,471,5,Not worth the price.
+733,78,1,Highly recommended!
+699,324,4,Not worth the price.
+562,277,3,Highly recommended!
+709,445,1,Not worth the price.
+216,494,3,Not worth the price.
+413,202,3,Not worth the price.
+733,214,5,Not worth the price.
+380,94,2,Great product!
+602,478,4,Not worth the price.
+232,464,1,Not worth the price.
+835,75,2,Satisfied with the purchase.
+258,470,5,Great product!
+665,157,2,Not worth the price.
+256,153,3,Poor quality.
+403,442,3,Great product!
+424,142,4,Satisfied with the purchase.
+770,78,1,Highly recommended!
+979,322,1,Satisfied with the purchase.
+65,182,5,Satisfied with the purchase.
+190,461,4,Great product!
+603,195,1,Great product!
+950,158,3,Poor quality.
+173,146,4,Poor quality.
+759,54,2,Great product!
+768,356,4,Great product!
+628,277,4,Great product!
+561,309,1,Highly recommended!
+227,83,5,Satisfied with the purchase.
+581,400,5,Poor quality.
+934,156,1,Poor quality.
+388,4,1,Not worth the price.
+401,499,1,Highly recommended!
+638,311,5,Great product!
+949,271,1,Great product!
+213,64,2,Highly recommended!
+53,449,2,Poor quality.
+624,112,3,Great product!
+671,239,2,Not worth the price.
+752,144,4,Poor quality.
+662,374,3,Satisfied with the purchase.
+139,20,2,Highly recommended!
+418,64,4,Poor quality.
+625,289,2,Satisfied with the purchase.
+143,81,4,Not worth the price.
+882,197,1,Highly recommended!
+509,382,4,Great product!
+650,69,1,Great product!
+486,186,4,Satisfied with the purchase.
+992,167,4,Poor quality.
+437,205,2,Not worth the price.
+816,492,4,Satisfied with the purchase.
+543,164,2,Not worth the price.
+293,94,4,Not worth the price.
+620,249,5,Not worth the price.
+284,68,3,Highly recommended!
+671,343,2,Satisfied with the purchase.
+838,21,2,Highly recommended!
+14,319,1,Poor quality.
+634,85,5,Poor quality.
+727,390,1,Great product!
+272,24,5,Great product!
+25,111,5,Great product!
+935,437,4,Poor quality.
+322,351,1,Not worth the price.
+806,83,3,Not worth the price.
+681,358,5,Satisfied with the purchase.
+103,460,5,Poor quality.
+866,78,2,Great product!
+883,434,4,Poor quality.
+40,380,3,Not worth the price.
+235,140,5,Not worth the price.
+832,440,2,Highly recommended!
+89,376,1,Highly recommended!
+100,271,5,Satisfied with the purchase.
+144,339,2,Poor quality.
+82,476,1,Highly recommended!
+589,424,4,Highly recommended!
+571,169,1,Poor quality.
+229,197,5,Not worth the price.
+603,453,3,Satisfied with the purchase.
+866,262,1,Satisfied with the purchase.
+395,215,3,Satisfied with the purchase.
+513,67,3,Highly recommended!
+781,229,1,Not worth the price.
+798,161,4,Satisfied with the purchase.
+197,427,1,Poor quality.
+274,122,2,Satisfied with the purchase.
+590,149,3,Great product!
+653,340,5,Not worth the price.
+800,193,3,Great product!
+583,231,5,Not worth the price.
+968,111,2,Poor quality.
+562,145,2,Highly recommended!
+967,221,2,Highly recommended!
+372,392,1,Not worth the price.
+881,64,3,Satisfied with the purchase.
+80,126,5,Great product!
+235,218,2,Poor quality.
+287,284,2,Satisfied with the purchase.
+819,354,5,Highly recommended!
+667,474,3,Satisfied with the purchase.
+572,397,3,Great product!
+545,236,5,Highly recommended!
+437,485,4,Not worth the price.
+127,13,3,Poor quality.
+733,422,5,Poor quality.
+712,153,5,Highly recommended!
+417,239,2,Not worth the price.
+638,190,5,Great product!
+41,151,1,Poor quality.
+787,86,2,Highly recommended!
+469,21,2,Poor quality.
+297,182,3,Not worth the price.
+597,319,4,Great product!
+601,158,3,Not worth the price.
+42,459,1,Satisfied with the purchase.
+632,452,2,Not worth the price.
+279,481,2,Not worth the price.
+459,367,5,Poor quality.
+33,76,4,Not worth the price.
+276,329,4,Highly recommended!
+665,416,5,Poor quality.
+90,203,1,Poor quality.
+616,229,4,Satisfied with the purchase.
+948,152,2,Highly recommended!
+524,263,1,Not worth the price.
+160,72,3,Satisfied with the purchase.
+929,225,3,Highly recommended!
+458,473,1,Satisfied with the purchase.
+708,385,2,Great product!
+399,131,3,Not worth the price.
+819,360,2,Satisfied with the purchase.
+774,28,5,Great product!
+91,299,4,Not worth the price.
+709,97,1,Satisfied with the purchase.
+581,46,4,Satisfied with the purchase.
+466,1,5,Satisfied with the purchase.
+220,166,3,Satisfied with the purchase.
+419,245,2,Poor quality.
+379,219,2,Satisfied with the purchase.
+726,102,5,Poor quality.
+930,291,1,Poor quality.
+447,458,4,Great product!
+964,204,3,Not worth the price.
+146,202,1,Poor quality.
+233,54,5,Highly recommended!
+371,482,5,Poor quality.
+922,280,2,Highly recommended!
+234,412,3,Great product!
+726,278,1,Highly recommended!
+367,493,2,Great product!
+481,16,3,Great product!
+573,13,4,Great product!
+363,356,4,Highly recommended!
+590,356,2,Highly recommended!
+511,318,1,Great product!
+95,427,3,Great product!
+842,87,4,Not worth the price.
+216,78,4,Great product!
+725,416,1,Satisfied with the purchase.
+816,67,2,Not worth the price.
+712,347,5,Not worth the price.
+864,211,3,Not worth the price.
+543,214,4,Satisfied with the purchase.
+802,185,5,Not worth the price.
+855,449,1,Not worth the price.
+985,453,2,Highly recommended!
+135,433,3,Highly recommended!
+83,33,1,Great product!
+391,115,2,Great product!
+47,275,1,Poor quality.
+392,420,4,Satisfied with the purchase.
+718,499,4,Highly recommended!
+385,198,5,Great product!
+381,380,1,Satisfied with the purchase.
+77,143,4,Not worth the price.
+259,228,2,Satisfied with the purchase.
+949,120,5,Highly recommended!
+604,353,3,Poor quality.
+934,24,1,Highly recommended!
+947,27,4,Great product!
+399,433,2,Great product!
+100,75,1,Satisfied with the purchase.
+501,241,2,Highly recommended!
+383,23,5,Great product!
+707,161,4,Not worth the price.
+192,41,4,Not worth the price.
+580,238,5,Poor quality.
+901,239,2,Satisfied with the purchase.
+754,56,1,Great product!
+602,413,2,Poor quality.
+345,415,1,Not worth the price.
+10,449,5,Poor quality.
+264,98,3,Poor quality.
+268,146,1,Great product!
+832,466,4,Great product!
+630,262,4,Great product!
+762,436,4,Satisfied with the purchase.
+571,40,2,Poor quality.
+195,193,2,Poor quality.
+987,239,2,Satisfied with the purchase.
+562,42,4,Not worth the price.
+407,222,1,Highly recommended!
+296,196,4,Not worth the price.
+890,288,1,Satisfied with the purchase.
+97,10,2,Poor quality.
+462,235,3,Poor quality.
+639,325,2,Great product!
+758,265,5,Great product!
+87,69,1,Poor quality.
+991,445,3,Poor quality.
+77,139,2,Great product!
+889,355,3,Great product!
+716,219,4,Not worth the price.
+483,196,1,Poor quality.
+146,74,5,Poor quality.
+661,103,4,Satisfied with the purchase.
+111,225,3,Not worth the price.
+641,123,2,Highly recommended!
+765,102,1,Highly recommended!
+678,264,5,Highly recommended!
+297,433,2,Great product!
+426,408,5,Highly recommended!
+649,487,1,Satisfied with the purchase.
+791,161,3,Great product!
+334,233,5,Great product!
+523,491,1,Highly recommended!
+583,275,5,Great product!
+671,258,2,Not worth the price.
+728,311,5,Not worth the price.
+538,139,2,Highly recommended!
+798,227,2,Satisfied with the purchase.
+162,273,1,Great product!
+430,426,4,Poor quality.
+614,317,5,Highly recommended!
+69,387,3,Great product!
+133,86,2,Highly recommended!
+189,291,4,Highly recommended!
+723,469,2,Satisfied with the purchase.
+755,217,4,Poor quality.
+678,359,4,Great product!
+924,66,3,Highly recommended!
+922,257,4,Highly recommended!
+573,135,3,Great product!
+874,404,1,Highly recommended!
+279,427,2,Highly recommended!
+430,375,3,Highly recommended!
+625,390,2,Not worth the price.
+542,55,5,Not worth the price.
+835,356,1,Poor quality.
+988,243,5,Satisfied with the purchase.
+161,252,5,Great product!
+746,21,4,Satisfied with the purchase.
+899,307,4,Satisfied with the purchase.
+453,430,5,Not worth the price.
+889,163,4,Poor quality.
+851,356,2,Satisfied with the purchase.
+170,264,4,Satisfied with the purchase.
+830,498,5,Highly recommended!
+698,68,4,Great product!
+57,107,4,Poor quality.
+240,400,3,Great product!
+769,67,3,Not worth the price.
+358,199,5,Satisfied with the purchase.
+201,192,2,Satisfied with the purchase.
+444,2,1,Great product!
+837,257,1,Not worth the price.
+827,442,5,Highly recommended!
+302,1,2,Highly recommended!
+106,358,2,Satisfied with the purchase.
+802,115,2,Satisfied with the purchase.
+101,391,3,Poor quality.
+97,88,5,Great product!
+665,197,1,Satisfied with the purchase.
+938,469,2,Not worth the price.
+29,92,5,Great product!
+506,274,1,Poor quality.
+665,344,3,Highly recommended!
+438,160,4,Poor quality.
+379,173,1,Great product!
+73,33,1,Highly recommended!
+254,458,1,Not worth the price.
+963,73,4,Highly recommended!
+911,433,2,Highly recommended!
+516,417,4,Not worth the price.
+749,481,1,Satisfied with the purchase.
+550,455,3,Satisfied with the purchase.
+20,196,1,Highly recommended!
+625,284,3,Highly recommended!
+535,87,5,Poor quality.
+421,309,3,Satisfied with the purchase.
+446,224,1,Not worth the price.
+879,44,4,Highly recommended!
+136,336,1,Highly recommended!
+505,494,1,Poor quality.
+933,439,5,Poor quality.
+760,138,2,Poor quality.
+301,270,1,Great product!
+609,359,5,Not worth the price.
+33,36,4,Great product!
+647,34,5,Highly recommended!
+767,88,5,Poor quality.
+278,146,3,Poor quality.
+133,16,2,Poor quality.
+750,233,2,Satisfied with the purchase.
+527,421,4,Not worth the price.
+789,41,5,Great product!
+126,255,4,Not worth the price.
+345,281,4,Poor quality.
+17,126,2,Highly recommended!
+824,8,2,Satisfied with the purchase.
+562,472,2,Not worth the price.
+647,468,1,Highly recommended!
+630,368,5,Poor quality.
+378,350,4,Poor quality.
+818,340,5,Poor quality.
+60,402,4,Poor quality.
+637,324,4,Satisfied with the purchase.
+467,176,4,Satisfied with the purchase.
+628,228,4,Not worth the price.
+391,454,3,Poor quality.
+936,323,3,Satisfied with the purchase.
+685,402,1,Highly recommended!
+187,367,2,Satisfied with the purchase.
+498,488,4,Satisfied with the purchase.
+600,18,5,Not worth the price.
+715,56,3,Satisfied with the purchase.
+361,407,2,Highly recommended!
+823,35,1,Poor quality.
+832,390,2,Great product!
+449,118,4,Not worth the price.
+694,282,2,Highly recommended!
+864,254,4,Not worth the price.
+680,213,3,Poor quality.
+181,61,3,Satisfied with the purchase.
+812,88,4,Satisfied with the purchase.
+959,271,5,Highly recommended!
+130,347,3,Poor quality.
+975,32,5,Great product!
+149,396,4,Great product!
+472,133,4,Satisfied with the purchase.
+818,64,3,Poor quality.
+721,199,5,Poor quality.
+623,256,4,Highly recommended!
+948,342,3,Great product!
+500,155,4,Highly recommended!
+649,463,2,Not worth the price.
+355,231,2,Poor quality.
+916,301,3,Great product!
+211,35,4,Highly recommended!
+658,26,3,Satisfied with the purchase.
+596,23,1,Not worth the price.
+30,141,3,Highly recommended!
+1000,474,3,Satisfied with the purchase.
+577,387,2,Great product!
+24,285,2,Great product!
+984,450,4,Not worth the price.
+943,320,3,Satisfied with the purchase.
+723,156,3,Poor quality.
+222,471,4,Great product!
+602,420,5,Poor quality.
+618,113,4,Poor quality.
+684,390,2,Highly recommended!
+742,139,2,Highly recommended!
+925,422,3,Great product!
+589,374,2,Poor quality.
+580,418,4,Highly recommended!
+877,209,3,Satisfied with the purchase.
+401,323,4,Satisfied with the purchase.
+865,364,4,Satisfied with the purchase.
+901,430,3,Satisfied with the purchase.
+604,482,5,Poor quality.
+512,86,2,Satisfied with the purchase.
+88,285,1,Poor quality.
+465,60,1,Great product!
+50,54,1,Great product!
+103,93,2,Satisfied with the purchase.
+368,325,5,Satisfied with the purchase.
+936,458,4,Satisfied with the purchase.
+492,458,3,Great product!
+558,373,5,Highly recommended!
+691,265,1,Great product!
+779,382,2,Satisfied with the purchase.
+268,213,2,Highly recommended!
+397,333,3,Highly recommended!
+320,10,4,Not worth the price.
+520,358,5,Poor quality.
+449,203,5,Satisfied with the purchase.
+777,196,5,Poor quality.
+476,58,4,Not worth the price.
+898,494,4,Poor quality.
+590,256,4,Satisfied with the purchase.
+909,223,3,Not worth the price.
+240,369,2,Poor quality.
+258,180,1,Great product!
+708,418,4,Highly recommended!
+972,362,2,Not worth the price.
+944,35,4,Great product!
+842,359,1,Satisfied with the purchase.
+643,103,4,Highly recommended!
+964,161,2,Not worth the price.
+390,200,3,Highly recommended!
+343,160,1,Not worth the price.
+773,183,2,Not worth the price.
+754,353,5,Poor quality.
+387,136,5,Highly recommended!
+394,430,5,Highly recommended!
+683,398,3,Great product!
+659,226,4,Satisfied with the purchase.
+270,392,4,Great product!
+149,243,4,Poor quality.
+380,106,3,Not worth the price.
+811,71,5,Poor quality.
+28,77,4,Poor quality.
+149,54,3,Great product!
+420,277,3,Not worth the price.
+280,111,2,Satisfied with the purchase.
+182,224,4,Poor quality.
+166,75,5,Satisfied with the purchase.
+17,14,1,Not worth the price.
+150,459,3,Not worth the price.
+339,258,2,Great product!
+45,482,1,Highly recommended!
+502,189,3,Great product!
+842,364,2,Satisfied with the purchase.
+189,239,4,Great product!
+651,401,2,Not worth the price.
+61,334,3,Poor quality.
+294,473,4,Highly recommended!
+834,304,5,Not worth the price.
+33,91,2,Poor quality.
+299,392,1,Satisfied with the purchase.
+415,184,4,Satisfied with the purchase.
+624,17,4,Satisfied with the purchase.
+803,453,5,Great product!
+549,12,2,Satisfied with the purchase.
+431,166,1,Satisfied with the purchase.
+495,146,5,Great product!
+100,282,2,Poor quality.
+23,479,1,Not worth the price.
+420,37,1,Highly recommended!
+424,70,3,Satisfied with the purchase.
+487,169,1,Satisfied with the purchase.
+730,335,2,Satisfied with the purchase.
+89,170,5,Great product!
+209,497,5,Great product!
+271,253,3,Great product!
+933,346,2,Highly recommended!
+749,499,1,Not worth the price.
+900,460,3,Satisfied with the purchase.
+406,297,4,Poor quality.
+721,431,2,Satisfied with the purchase.
+278,142,3,Satisfied with the purchase.
+977,385,5,Satisfied with the purchase.
+206,273,3,Satisfied with the purchase.
+590,225,4,Not worth the price.
+913,183,2,Poor quality.
+328,221,3,Great product!
+610,53,1,Poor quality.
+858,118,2,Satisfied with the purchase.
+877,365,3,Poor quality.
+862,159,3,Satisfied with the purchase.
+982,446,2,Poor quality.
+336,136,5,Highly recommended!
+606,414,1,Poor quality.
+592,77,2,Great product!
+38,336,1,Great product!
+920,450,1,Poor quality.
+228,45,2,Poor quality.
+483,18,3,Not worth the price.
+134,355,5,Poor quality.
+708,429,1,Great product!
+978,403,1,Highly recommended!
+390,205,3,Great product!
+794,499,2,Not worth the price.
+613,324,5,Poor quality.
+987,83,1,Highly recommended!
+425,50,1,Great product!
+587,281,2,Highly recommended!
+806,166,3,Satisfied with the purchase.
+510,243,4,Great product!
+720,377,3,Satisfied with the purchase.
+595,479,1,Highly recommended!
+427,164,1,Poor quality.
+949,324,5,Poor quality.
+655,56,3,Poor quality.
+474,39,4,Satisfied with the purchase.
+568,319,5,Poor quality.
+361,128,4,Not worth the price.
+952,391,5,Great product!
+799,122,3,Great product!
+211,247,1,Highly recommended!
+953,186,4,Satisfied with the purchase.
+179,208,3,Great product!
+920,315,4,Satisfied with the purchase.
+58,304,3,Highly recommended!
+73,389,5,Poor quality.
+215,239,3,Highly recommended!
+900,215,5,Not worth the price.
+778,292,1,Poor quality.
+959,224,5,Poor quality.
+73,88,2,Poor quality.
+467,25,1,Highly recommended!
+271,429,3,Not worth the price.
+499,220,3,Satisfied with the purchase.
+354,275,2,Highly recommended!
+234,135,3,Great product!
+319,492,1,Great product!
+19,442,1,Highly recommended!
+625,233,5,Satisfied with the purchase.
+575,465,4,Great product!
+372,66,3,Satisfied with the purchase.
+184,80,2,Poor quality.
+277,423,1,Highly recommended!
+674,255,1,Poor quality.
+755,125,1,Great product!
+145,146,4,Satisfied with the purchase.
+658,103,4,Poor quality.
+81,385,3,Great product!
+322,447,2,Not worth the price.
+435,387,4,Poor quality.
+833,383,5,Not worth the price.
+43,277,4,Not worth the price.
+313,382,1,Great product!
+906,124,2,Highly recommended!
+293,414,3,Satisfied with the purchase.
+688,267,4,Great product!
+888,278,1,Poor quality.
+69,111,5,Satisfied with the purchase.
+56,381,5,Highly recommended!
+631,313,3,Great product!
+204,89,3,Highly recommended!
+420,387,4,Poor quality.
+927,158,3,Great product!
+567,216,1,Poor quality.
+550,384,1,Satisfied with the purchase.
+243,301,1,Satisfied with the purchase.
+201,36,4,Highly recommended!
+748,87,4,Highly recommended!
+474,118,3,Satisfied with the purchase.
+527,328,4,Not worth the price.
+656,448,1,Satisfied with the purchase.
+77,182,2,Great product!
+985,68,1,Poor quality.
+478,434,2,Satisfied with the purchase.
+821,359,3,Satisfied with the purchase.
+440,491,5,Poor quality.
+263,159,4,Poor quality.
+185,285,4,Great product!
+55,443,1,Poor quality.
+308,164,1,Highly recommended!
+516,461,2,Satisfied with the purchase.
+299,361,4,Poor quality.
+552,73,3,Great product!
+230,119,1,Poor quality.
+377,341,4,Satisfied with the purchase.
+286,499,5,Not worth the price.
+138,195,2,Poor quality.
+478,89,1,Highly recommended!
+615,345,1,Satisfied with the purchase.
+7,76,3,Great product!
+676,221,1,Satisfied with the purchase.
+419,139,4,Not worth the price.
+472,372,4,Great product!
+935,395,4,Not worth the price.
+420,241,5,Not worth the price.
+877,154,5,Highly recommended!
+276,53,1,Poor quality.
+561,142,5,Highly recommended!
+608,320,5,Highly recommended!
+571,464,3,Highly recommended!
+743,394,5,Great product!
+689,31,2,Poor quality.
+90,223,2,Poor quality.
+282,292,2,Great product!
+548,266,1,Highly recommended!
+171,282,4,Highly recommended!
+638,276,3,Not worth the price.
+995,381,1,Not worth the price.
+811,44,4,Satisfied with the purchase.
+355,62,3,Not worth the price.
+204,201,3,Poor quality.
+289,335,3,Great product!
+868,9,2,Highly recommended!
+462,71,2,Satisfied with the purchase.
+609,90,2,Not worth the price.
+750,24,3,Satisfied with the purchase.
+173,140,3,Great product!
+301,316,2,Great product!
+600,340,3,Satisfied with the purchase.
+911,376,2,Satisfied with the purchase.
+863,78,2,Satisfied with the purchase.
+529,214,2,Highly recommended!
+140,16,4,Poor quality.
+766,29,3,Not worth the price.
+278,416,1,Not worth the price.
+663,467,2,Not worth the price.
+511,375,1,Satisfied with the purchase.
+346,291,4,Satisfied with the purchase.
+846,43,3,Satisfied with the purchase.
+140,352,2,Highly recommended!
+114,375,2,Highly recommended!
+580,53,2,Highly recommended!
+507,276,1,Highly recommended!
+366,371,4,Great product!
+691,232,3,Highly recommended!
+637,212,4,Highly recommended!
+397,8,2,Highly recommended!
+825,122,4,Not worth the price.
+823,483,1,Not worth the price.
+850,42,5,Not worth the price.
+875,333,5,Poor quality.
+924,233,3,Great product!
+870,70,3,Satisfied with the purchase.
+745,367,4,Highly recommended!
+940,16,3,Not worth the price.
+659,69,1,Great product!
+942,53,2,Highly recommended!
+111,173,2,Poor quality.
+875,435,4,Satisfied with the purchase.
+358,482,2,Highly recommended!
+238,262,4,Satisfied with the purchase.
+3,379,3,Highly recommended!
+723,289,3,Poor quality.
+404,463,1,Great product!
+25,15,2,Satisfied with the purchase.
+843,270,1,Satisfied with the purchase.
+509,167,5,Great product!
+696,63,1,Satisfied with the purchase.
+465,261,4,Not worth the price.
+61,500,4,Great product!
+508,121,1,Poor quality.
+123,346,3,Highly recommended!
+497,240,5,Highly recommended!
+55,465,1,Great product!
+163,107,3,Not worth the price.
+974,495,1,Poor quality.
+699,180,2,Highly recommended!
+39,16,4,Highly recommended!
+697,355,2,Not worth the price.
+83,422,2,Satisfied with the purchase.
+707,309,5,Great product!
+546,215,3,Not worth the price.
+113,77,4,Not worth the price.
+425,225,2,Not worth the price.
+918,93,4,Not worth the price.
+230,181,3,Satisfied with the purchase.
+283,174,1,Poor quality.
+917,354,2,Not worth the price.
+937,354,3,Not worth the price.
+287,219,4,Great product!
+155,143,3,Highly recommended!
+165,315,1,Satisfied with the purchase.
+962,434,3,Not worth the price.
+182,393,4,Poor quality.
+239,282,2,Poor quality.
+649,259,2,Poor quality.
+339,356,5,Great product!
+938,47,4,Poor quality.
+512,5,5,Great product!
+932,62,5,Satisfied with the purchase.
+266,468,1,Poor quality.
+187,84,4,Highly recommended!
+40,133,2,Not worth the price.
+822,394,4,Satisfied with the purchase.
+493,336,1,Highly recommended!
+679,63,4,Satisfied with the purchase.
+391,281,4,Poor quality.
+260,44,5,Satisfied with the purchase.
+655,153,4,Satisfied with the purchase.
+716,414,5,Satisfied with the purchase.
+176,270,5,Great product!
+774,342,3,Highly recommended!
+764,171,1,Poor quality.
+329,156,5,Not worth the price.
+931,478,4,Poor quality.
+200,275,5,Poor quality.
+711,358,5,Great product!
+196,426,5,Great product!
+826,20,2,Satisfied with the purchase.
+589,483,2,Poor quality.
+531,214,2,Highly recommended!
+62,79,2,Great product!
+327,139,3,Great product!
+906,438,5,Highly recommended!
+281,98,3,Great product!
+940,377,4,Highly recommended!
+762,152,1,Not worth the price.
+227,198,3,Highly recommended!
+639,273,2,Not worth the price.
+58,156,2,Satisfied with the purchase.
+921,50,4,Satisfied with the purchase.
+477,479,5,Great product!
+376,228,1,Highly recommended!
+716,439,3,Great product!
+243,457,5,Highly recommended!
+367,10,5,Great product!
+936,149,3,Satisfied with the purchase.
+844,58,3,Satisfied with the purchase.
+500,162,3,Great product!
+838,351,3,Highly recommended!
+252,477,2,Poor quality.
+906,107,5,Highly recommended!
+322,427,5,Great product!
+376,395,2,Highly recommended!
+409,289,5,Not worth the price.
+711,186,3,Highly recommended!
+488,46,1,Satisfied with the purchase.
+343,445,5,Satisfied with the purchase.
+240,446,1,Not worth the price.
+139,129,1,Highly recommended!
+122,405,2,Poor quality.
+420,318,4,Highly recommended!
+561,448,5,Satisfied with the purchase.
+304,87,2,Satisfied with the purchase.
+115,249,2,Great product!
+343,329,1,Satisfied with the purchase.
+251,440,5,Great product!
+7,257,2,Satisfied with the purchase.
+731,277,3,Satisfied with the purchase.
+589,278,2,Poor quality.
+179,438,3,Great product!
+145,4,4,Great product!
+416,65,3,Satisfied with the purchase.
+666,435,3,Great product!
+121,202,1,Satisfied with the purchase.
+124,63,2,Satisfied with the purchase.
+150,143,4,Highly recommended!
+397,244,2,Great product!
+381,292,3,Not worth the price.
+780,285,3,Great product!
+839,180,2,Great product!
+1,174,4,Poor quality.
+673,325,4,Not worth the price.
+244,413,1,Not worth the price.
+887,111,3,Poor quality.
+398,175,3,Poor quality.
+251,475,1,Great product!
+879,153,2,Highly recommended!
+576,464,3,Poor quality.
+299,400,2,Not worth the price.
+760,356,4,Not worth the price.
+954,217,5,Great product!
+297,297,1,Highly recommended!
+977,449,3,Satisfied with the purchase.
+964,453,1,Poor quality.
+500,489,4,Poor quality.
+115,404,4,Great product!
+807,453,4,Highly recommended!
+1,420,4,Not worth the price.
+553,477,5,Not worth the price.
+685,240,2,Satisfied with the purchase.
+600,226,2,Not worth the price.
+482,186,5,Poor quality.
+610,48,2,Satisfied with the purchase.
+600,466,4,Highly recommended!
+763,386,2,Satisfied with the purchase.
+510,208,1,Highly recommended!
+335,157,2,Not worth the price.
+465,225,1,Great product!
+141,144,3,Satisfied with the purchase.
+583,419,1,Satisfied with the purchase.
+137,111,1,Poor quality.
+959,318,4,Poor quality.
+611,363,4,Highly recommended!
+663,362,4,Great product!
+950,465,1,Poor quality.
+687,132,5,Poor quality.
+167,113,4,Not worth the price.
+343,324,4,Not worth the price.
+410,435,1,Poor quality.
+769,89,3,Highly recommended!
+910,161,3,Great product!
+736,334,2,Poor quality.
+880,408,3,Highly recommended!
+842,75,4,Highly recommended!
+65,281,5,Poor quality.
+581,412,2,Highly recommended!
+67,7,5,Satisfied with the purchase.
+433,113,5,Highly recommended!
+50,36,4,Poor quality.
+314,266,1,Highly recommended!
+309,113,1,Poor quality.
+603,292,1,Not worth the price.
+115,223,3,Poor quality.
+886,211,1,Highly recommended!
+569,18,4,Poor quality.
+342,241,3,Great product!
+530,134,1,Poor quality.
+784,220,5,Poor quality.
+642,391,4,Great product!
+495,102,4,Great product!
+269,140,2,Great product!
+941,169,4,Satisfied with the purchase.
+80,498,5,Poor quality.
+456,191,4,Great product!
+299,482,2,Great product!
+968,25,4,Not worth the price.
+822,465,4,Satisfied with the purchase.
+202,437,2,Poor quality.
+503,33,4,Highly recommended!
+737,343,3,Satisfied with the purchase.
+671,329,4,Satisfied with the purchase.
+716,6,1,Not worth the price.
+649,446,1,Poor quality.
+485,194,3,Poor quality.
+585,230,4,Great product!
+560,137,5,Great product!
+18,323,4,Satisfied with the purchase.
+478,400,1,Not worth the price.
+992,473,2,Poor quality.
+488,216,3,Not worth the price.
+983,495,2,Highly recommended!
+779,349,5,Poor quality.
+446,364,4,Great product!
+340,183,5,Satisfied with the purchase.
+531,168,2,Not worth the price.
+612,282,4,Great product!
+116,38,5,Satisfied with the purchase.
+858,163,1,Great product!
+74,471,1,Poor quality.
+792,452,3,Not worth the price.
+269,443,1,Highly recommended!
+637,490,1,Great product!
+116,142,2,Not worth the price.
+686,248,1,Poor quality.
+693,431,1,Great product!
+738,103,2,Poor quality.
+669,199,1,Highly recommended!
+164,200,1,Highly recommended!
+583,42,3,Satisfied with the purchase.
+222,435,1,Satisfied with the purchase.
+126,147,1,Satisfied with the purchase.
+657,66,3,Poor quality.
+176,431,2,Satisfied with the purchase.
+973,193,1,Not worth the price.
+664,298,5,Poor quality.
+694,38,2,Poor quality.
+375,141,2,Satisfied with the purchase.
+991,106,1,Satisfied with the purchase.
+859,428,3,Poor quality.
+498,152,2,Highly recommended!
+85,352,3,Highly recommended!
+876,414,5,Satisfied with the purchase.
+383,326,3,Highly recommended!
+633,38,4,Not worth the price.
+641,97,3,Not worth the price.
+463,108,2,Not worth the price.
+451,119,3,Poor quality.
+518,151,3,Poor quality.
+846,74,4,Poor quality.
+695,57,4,Poor quality.
+550,366,1,Poor quality.
+929,335,2,Satisfied with the purchase.
+116,252,1,Highly recommended!
+614,407,4,Satisfied with the purchase.
+8,292,3,Highly recommended!
+218,313,4,Satisfied with the purchase.
+719,255,5,Not worth the price.
+590,254,3,Great product!
+880,385,1,Poor quality.
+404,456,3,Great product!
+567,259,5,Great product!
+304,270,4,Not worth the price.
+467,465,2,Great product!
+952,34,2,Great product!
+993,495,2,Not worth the price.
+740,326,4,Highly recommended!
+88,325,2,Satisfied with the purchase.
+10,238,5,Great product!
+308,179,4,Poor quality.
+434,489,2,Not worth the price.
+802,104,1,Great product!
+164,29,4,Highly recommended!
+239,227,4,Highly recommended!
+317,466,3,Poor quality.
+996,232,2,Great product!
+656,304,1,Poor quality.
+335,350,5,Highly recommended!
+18,335,4,Highly recommended!
+71,117,5,Satisfied with the purchase.
+175,207,5,Highly recommended!
+854,400,5,Not worth the price.
+800,185,3,Satisfied with the purchase.
+811,481,5,Poor quality.
+339,138,2,Highly recommended!
+936,403,2,Not worth the price.
+248,485,1,Satisfied with the purchase.
+193,498,1,Not worth the price.
+419,323,5,Satisfied with the purchase.
+325,164,5,Satisfied with the purchase.
+306,388,3,Satisfied with the purchase.
+780,75,5,Poor quality.
+204,233,5,Satisfied with the purchase.
+853,417,5,Satisfied with the purchase.
+123,284,4,Not worth the price.
+570,480,4,Satisfied with the purchase.
+851,377,3,Poor quality.
+447,255,3,Not worth the price.
+713,464,2,Satisfied with the purchase.
+491,9,3,Not worth the price.
+433,203,2,Poor quality.
+624,390,5,Not worth the price.
+128,379,3,Poor quality.
+548,305,3,Highly recommended!
+746,91,3,Satisfied with the purchase.
+822,381,2,Poor quality.
+47,332,2,Satisfied with the purchase.
+505,150,1,Poor quality.
+115,360,2,Great product!
+416,176,2,Great product!
+767,485,4,Great product!
+995,405,3,Poor quality.
+223,33,2,Satisfied with the purchase.
+636,465,3,Great product!
+949,184,3,Satisfied with the purchase.
+503,157,4,Poor quality.
+672,53,3,Satisfied with the purchase.
+958,296,2,Satisfied with the purchase.
+933,202,3,Great product!
+96,274,1,Not worth the price.
+107,175,1,Highly recommended!
+632,244,4,Poor quality.
+613,269,2,Poor quality.
+615,411,4,Poor quality.
+678,446,1,Highly recommended!
+926,74,2,Not worth the price.
+698,96,3,Satisfied with the purchase.
+32,361,2,Poor quality.
+493,173,5,Satisfied with the purchase.
+66,387,2,Great product!
+179,406,3,Great product!
+779,155,5,Great product!
+443,183,4,Poor quality.
+916,323,2,Highly recommended!
+549,289,4,Poor quality.
+201,258,2,Great product!
+870,75,1,Great product!
+49,174,1,Poor quality.
+787,330,3,Highly recommended!
+951,231,1,Highly recommended!
+680,247,5,Satisfied with the purchase.
+263,161,5,Not worth the price.
+133,186,2,Great product!
+810,391,4,Highly recommended!
+344,143,5,Great product!
+176,282,2,Not worth the price.
+391,395,4,Great product!
+11,128,1,Highly recommended!
+201,166,2,Satisfied with the purchase.
+945,27,4,Poor quality.
+926,246,3,Poor quality.
+809,487,3,Highly recommended!
+3,135,5,Highly recommended!
+214,385,4,Not worth the price.
+808,202,3,Great product!
+307,21,5,Not worth the price.
+980,79,2,Poor quality.
+544,158,2,Great product!
+560,94,4,Not worth the price.
+327,8,4,Poor quality.
+764,472,4,Great product!
+199,339,4,Satisfied with the purchase.
+916,259,3,Satisfied with the purchase.
+601,55,3,Not worth the price.
+109,399,5,Highly recommended!
+291,36,3,Great product!
+108,6,2,Not worth the price.
+408,377,5,Highly recommended!
+552,42,3,Highly recommended!
+973,50,4,Great product!
+52,112,3,Great product!
+112,146,1,Highly recommended!
+295,230,5,Poor quality.
+580,211,3,Not worth the price.
+189,497,3,Great product!
+844,306,2,Highly recommended!
+721,30,4,Poor quality.
+65,461,4,Satisfied with the purchase.
+574,295,2,Highly recommended!
+465,116,2,Poor quality.
+258,396,1,Satisfied with the purchase.
+646,226,5,Poor quality.
+634,59,4,Great product!
+331,76,2,Highly recommended!
+501,428,2,Satisfied with the purchase.
+683,216,5,Poor quality.
+210,132,2,Satisfied with the purchase.
+808,420,1,Not worth the price.
+89,498,5,Highly recommended!
+679,304,1,Great product!
+28,398,3,Satisfied with the purchase.
+238,81,4,Poor quality.
+336,305,2,Satisfied with the purchase.
+63,67,5,Poor quality.
+960,230,1,Satisfied with the purchase.
+767,471,4,Great product!
+908,333,4,Great product!
+553,393,2,Highly recommended!
+500,277,4,Great product!
+541,361,2,Satisfied with the purchase.
+791,72,3,Satisfied with the purchase.
+469,209,2,Great product!
+592,272,1,Not worth the price.
+51,144,4,Satisfied with the purchase.
+112,251,4,Highly recommended!
+873,284,4,Not worth the price.
+301,179,2,Great product!
+90,440,5,Poor quality.
+229,80,2,Satisfied with the purchase.
+150,57,1,Poor quality.
+755,366,2,Highly recommended!
+138,308,4,Not worth the price.
+135,174,3,Poor quality.
+457,462,1,Highly recommended!
+601,238,3,Poor quality.
+494,492,1,Poor quality.
+527,166,1,Highly recommended!
+333,84,4,Satisfied with the purchase.
+362,493,2,Poor quality.
+174,48,4,Highly recommended!
+602,127,4,Poor quality.
+213,169,4,Satisfied with the purchase.
+343,354,3,Highly recommended!
+61,374,1,Poor quality.
+876,443,5,Great product!
+732,349,2,Satisfied with the purchase.
+61,67,4,Poor quality.
+819,330,1,Not worth the price.
+678,340,2,Highly recommended!
+524,194,5,Poor quality.
+216,155,5,Satisfied with the purchase.
+589,160,4,Satisfied with the purchase.
+744,184,5,Not worth the price.
+624,266,5,Not worth the price.
+578,168,2,Poor quality.
+694,145,2,Great product!
+423,186,4,Satisfied with the purchase.
+716,374,1,Great product!
+423,353,4,Great product!
+371,262,3,Poor quality.
+206,423,5,Highly recommended!
+286,495,1,Highly recommended!
+105,274,2,Highly recommended!
+754,457,3,Not worth the price.
+747,328,3,Satisfied with the purchase.
+688,345,5,Not worth the price.
+723,223,2,Satisfied with the purchase.
+543,42,1,Satisfied with the purchase.
+747,4,2,Satisfied with the purchase.
+242,276,5,Poor quality.
+491,284,3,Highly recommended!
+665,424,5,Not worth the price.
+708,193,4,Not worth the price.
+498,104,3,Poor quality.
+435,247,5,Satisfied with the purchase.
+781,300,1,Highly recommended!
+484,23,1,Great product!
+447,441,1,Great product!
+384,303,4,Poor quality.
+510,13,2,Highly recommended!
+170,144,1,Great product!
+950,218,4,Great product!
+869,183,1,Not worth the price.
+323,351,4,Highly recommended!
+848,242,1,Great product!
+474,193,2,Not worth the price.
+232,465,5,Highly recommended!
+696,272,1,Satisfied with the purchase.
+359,375,5,Highly recommended!
+275,165,1,Poor quality.
+942,180,2,Not worth the price.
+911,117,5,Satisfied with the purchase.
+32,266,4,Not worth the price.
+177,378,1,Not worth the price.
+917,38,1,Great product!
+65,44,4,Highly recommended!
+710,351,2,Not worth the price.
+27,74,3,Not worth the price.
+663,438,1,Poor quality.
+815,369,4,Poor quality.
+479,226,3,Poor quality.
+268,307,1,Not worth the price.
+597,308,5,Satisfied with the purchase.
+66,454,4,Highly recommended!
+133,348,5,Not worth the price.

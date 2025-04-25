@@ -1,0 +1,1001 @@
+user_id,age,gender,location
+1,56,Male,San Francisco
+2,46,Female,Houston
+3,32,Male,Chicago
+4,60,Other,San Francisco
+5,25,Male,Los Angeles
+6,38,Male,San Francisco
+7,56,Male,New York
+8,36,Male,Chicago
+9,40,Other,Los Angeles
+10,28,Other,Houston
+11,28,Female,Los Angeles
+12,41,Other,Houston
+13,53,Other,Los Angeles
+14,57,Female,San Francisco
+15,41,Other,San Francisco
+16,20,Male,San Francisco
+17,39,Male,New York
+18,19,Female,Houston
+19,41,Female,San Francisco
+20,61,Female,New York
+21,47,Male,Houston
+22,55,Other,Los Angeles
+23,19,Male,New York
+24,38,Female,Chicago
+25,50,Other,New York
+26,29,Other,New York
+27,39,Male,Houston
+28,61,Female,Los Angeles
+29,42,Male,Chicago
+30,44,Other,San Francisco
+31,59,Male,San Francisco
+32,45,Male,New York
+33,33,Female,Houston
+34,32,Female,Houston
+35,64,Other,San Francisco
+36,61,Male,Chicago
+37,20,Male,Los Angeles
+38,54,Male,Chicago
+39,24,Other,Los Angeles
+40,38,Other,San Francisco
+41,26,Female,Los Angeles
+42,56,Female,Houston
+43,35,Female,New York
+44,21,Male,New York
+45,42,Male,San Francisco
+46,31,Female,Houston
+47,26,Male,Chicago
+48,43,Female,Houston
+49,19,Other,New York
+50,37,Female,New York
+51,45,Other,Houston
+52,64,Male,Houston
+53,24,Female,New York
+54,61,Male,Chicago
+55,25,Other,San Francisco
+56,64,Other,San Francisco
+57,52,Other,Houston
+58,31,Male,San Francisco
+59,34,Male,New York
+60,53,Male,New York
+61,57,Male,Houston
+62,21,Other,Houston
+63,19,Other,Houston
+64,23,Female,Chicago
+65,59,Female,San Francisco
+66,21,Male,Houston
+67,46,Other,Los Angeles
+68,35,Other,Los Angeles
+69,43,Other,New York
+70,61,Female,San Francisco
+71,51,Female,Houston
+72,27,Other,Los Angeles
+73,53,Other,San Francisco
+74,31,Other,New York
+75,48,Female,Chicago
+76,32,Other,San Francisco
+77,25,Other,San Francisco
+78,31,Male,Chicago
+79,40,Male,San Francisco
+80,57,Female,New York
+81,38,Other,New York
+82,33,Other,Chicago
+83,62,Male,Houston
+84,35,Female,Los Angeles
+85,64,Male,Houston
+86,41,Male,San Francisco
+87,43,Male,Los Angeles
+88,42,Male,Chicago
+89,62,Other,Chicago
+90,58,Other,Los Angeles
+91,46,Male,New York
+92,32,Female,Los Angeles
+93,62,Female,San Francisco
+94,18,Female,New York
+95,42,Female,Chicago
+96,24,Male,Los Angeles
+97,26,Other,Houston
+98,41,Female,Houston
+99,18,Male,San Francisco
+100,61,Female,Houston
+101,25,Female,Los Angeles
+102,41,Male,Los Angeles
+103,28,Other,Houston
+104,34,Other,Los Angeles
+105,25,Male,San Francisco
+106,52,Other,New York
+107,52,Male,San Francisco
+108,50,Male,San Francisco
+109,22,Male,Los Angeles
+110,59,Other,New York
+111,56,Male,Los Angeles
+112,58,Female,Chicago
+113,45,Other,Los Angeles
+114,24,Other,Los Angeles
+115,26,Other,Los Angeles
+116,25,Other,New York
+117,29,Female,Los Angeles
+118,51,Other,New York
+119,50,Other,Houston
+120,40,Male,Chicago
+121,41,Other,New York
+122,54,Female,Houston
+123,52,Female,New York
+124,61,Female,New York
+125,57,Female,Chicago
+126,39,Other,San Francisco
+127,44,Other,San Francisco
+128,52,Female,New York
+129,18,Female,Los Angeles
+130,52,Other,Houston
+131,54,Female,Los Angeles
+132,64,Male,Los Angeles
+133,31,Female,New York
+134,20,Female,New York
+135,18,Male,New York
+136,22,Male,New York
+137,43,Other,San Francisco
+138,31,Other,New York
+139,56,Male,San Francisco
+140,44,Male,San Francisco
+141,26,Other,New York
+142,32,Female,Chicago
+143,32,Male,Houston
+144,43,Other,Los Angeles
+145,59,Female,San Francisco
+146,30,Male,Houston
+147,49,Female,Chicago
+148,56,Other,Los Angeles
+149,49,Male,Los Angeles
+150,21,Female,San Francisco
+151,47,Male,New York
+152,54,Female,Chicago
+153,40,Other,San Francisco
+154,56,Other,Chicago
+155,62,Male,New York
+156,32,Female,New York
+157,60,Male,San Francisco
+158,46,Male,New York
+159,53,Female,Houston
+160,30,Female,Los Angeles
+161,49,Female,San Francisco
+162,24,Other,Chicago
+163,39,Male,Houston
+164,45,Male,San Francisco
+165,19,Other,New York
+166,59,Female,New York
+167,62,Other,New York
+168,23,Other,New York
+169,45,Other,Chicago
+170,45,Male,Houston
+171,61,Other,Los Angeles
+172,61,Male,Chicago
+173,37,Male,Chicago
+174,47,Male,Los Angeles
+175,28,Female,Los Angeles
+176,45,Male,New York
+177,42,Male,Chicago
+178,56,Female,San Francisco
+179,50,Male,Los Angeles
+180,18,Other,Los Angeles
+181,44,Other,Houston
+182,30,Male,San Francisco
+183,58,Female,San Francisco
+184,20,Other,Los Angeles
+185,56,Female,New York
+186,23,Female,Houston
+187,25,Other,San Francisco
+188,44,Female,Los Angeles
+189,26,Other,San Francisco
+190,54,Female,Houston
+191,50,Other,Houston
+192,59,Male,Chicago
+193,61,Other,Los Angeles
+194,41,Other,Houston
+195,32,Other,Chicago
+196,49,Other,Chicago
+197,49,Female,San Francisco
+198,41,Male,San Francisco
+199,58,Other,Chicago
+200,29,Female,San Francisco
+201,56,Male,Houston
+202,19,Male,New York
+203,20,Male,Houston
+204,54,Male,Chicago
+205,34,Other,Chicago
+206,19,Other,Houston
+207,19,Female,San Francisco
+208,45,Female,San Francisco
+209,40,Female,Chicago
+210,54,Male,Los Angeles
+211,49,Male,San Francisco
+212,50,Other,Houston
+213,18,Male,San Francisco
+214,36,Male,Houston
+215,19,Male,Chicago
+216,61,Female,San Francisco
+217,43,Female,Houston
+218,49,Other,Chicago
+219,23,Male,Los Angeles
+220,49,Male,Houston
+221,21,Other,Los Angeles
+222,28,Male,Los Angeles
+223,34,Male,New York
+224,55,Female,San Francisco
+225,41,Other,Houston
+226,22,Other,Los Angeles
+227,51,Other,New York
+228,23,Other,Chicago
+229,39,Female,Houston
+230,28,Female,Los Angeles
+231,33,Male,San Francisco
+232,50,Male,New York
+233,26,Male,Los Angeles
+234,23,Male,San Francisco
+235,33,Female,Los Angeles
+236,46,Other,Houston
+237,20,Female,Houston
+238,37,Male,Houston
+239,53,Female,New York
+240,36,Other,Houston
+241,43,Other,San Francisco
+242,20,Female,Los Angeles
+243,36,Female,Chicago
+244,37,Female,San Francisco
+245,49,Male,San Francisco
+246,24,Female,Houston
+247,58,Female,New York
+248,50,Female,Los Angeles
+249,57,Other,New York
+250,56,Other,Los Angeles
+251,35,Male,Los Angeles
+252,57,Male,New York
+253,18,Other,San Francisco
+254,28,Other,Los Angeles
+255,45,Other,New York
+256,42,Female,Los Angeles
+257,40,Female,Chicago
+258,48,Other,San Francisco
+259,47,Female,Houston
+260,59,Female,Los Angeles
+261,52,Male,Chicago
+262,24,Other,Houston
+263,33,Other,Houston
+264,43,Female,Los Angeles
+265,19,Other,New York
+266,18,Male,Los Angeles
+267,29,Male,Chicago
+268,22,Male,Houston
+269,54,Other,Los Angeles
+270,49,Other,New York
+271,26,Other,Los Angeles
+272,58,Other,San Francisco
+273,52,Other,New York
+274,36,Male,Chicago
+275,33,Female,Houston
+276,20,Male,Los Angeles
+277,37,Other,New York
+278,41,Male,San Francisco
+279,50,Other,New York
+280,41,Other,San Francisco
+281,28,Male,Chicago
+282,25,Other,Houston
+283,53,Female,Chicago
+284,55,Other,Los Angeles
+285,57,Female,New York
+286,37,Female,San Francisco
+287,52,Other,San Francisco
+288,42,Male,New York
+289,52,Female,New York
+290,42,Male,Los Angeles
+291,46,Female,Chicago
+292,35,Other,San Francisco
+293,63,Other,Los Angeles
+294,35,Female,Chicago
+295,19,Other,Los Angeles
+296,52,Female,San Francisco
+297,33,Other,New York
+298,58,Male,New York
+299,53,Other,Chicago
+300,50,Male,Houston
+301,21,Other,Chicago
+302,50,Male,Houston
+303,31,Other,Los Angeles
+304,38,Male,Los Angeles
+305,37,Female,San Francisco
+306,25,Female,Houston
+307,24,Male,San Francisco
+308,20,Other,New York
+309,34,Male,Houston
+310,50,Other,Chicago
+311,29,Female,New York
+312,39,Other,New York
+313,39,Female,Chicago
+314,63,Other,New York
+315,47,Other,Houston
+316,55,Other,San Francisco
+317,55,Male,New York
+318,62,Male,Houston
+319,25,Female,Los Angeles
+320,44,Female,Houston
+321,44,Male,San Francisco
+322,51,Female,Houston
+323,38,Male,Chicago
+324,47,Other,San Francisco
+325,50,Female,Los Angeles
+326,45,Female,Chicago
+327,64,Male,Houston
+328,50,Female,San Francisco
+329,22,Female,Los Angeles
+330,36,Other,Chicago
+331,21,Female,Los Angeles
+332,52,Other,Houston
+333,34,Male,Los Angeles
+334,61,Female,New York
+335,45,Other,Chicago
+336,47,Male,Los Angeles
+337,46,Female,Houston
+338,63,Male,Houston
+339,23,Female,Los Angeles
+340,52,Male,Houston
+341,58,Male,San Francisco
+342,54,Other,San Francisco
+343,41,Male,San Francisco
+344,46,Female,New York
+345,63,Female,Los Angeles
+346,48,Other,New York
+347,52,Female,Houston
+348,50,Female,New York
+349,38,Female,Houston
+350,49,Male,Houston
+351,40,Male,Chicago
+352,50,Female,San Francisco
+353,20,Other,Houston
+354,35,Male,Chicago
+355,42,Other,San Francisco
+356,59,Female,Houston
+357,48,Female,Houston
+358,20,Male,New York
+359,57,Female,New York
+360,63,Male,San Francisco
+361,41,Female,Houston
+362,49,Female,Los Angeles
+363,64,Male,New York
+364,39,Male,San Francisco
+365,40,Male,Houston
+366,19,Female,Houston
+367,44,Female,Los Angeles
+368,59,Other,San Francisco
+369,19,Male,Houston
+370,43,Female,New York
+371,34,Female,Los Angeles
+372,57,Male,San Francisco
+373,50,Other,Los Angeles
+374,26,Male,New York
+375,60,Other,San Francisco
+376,56,Female,Los Angeles
+377,46,Other,Chicago
+378,59,Female,New York
+379,43,Male,New York
+380,52,Male,New York
+381,42,Male,Chicago
+382,41,Other,Chicago
+383,30,Female,Houston
+384,24,Male,Los Angeles
+385,53,Male,Houston
+386,62,Female,Los Angeles
+387,37,Male,Chicago
+388,18,Female,Chicago
+389,25,Female,Houston
+390,63,Female,San Francisco
+391,33,Female,Houston
+392,31,Female,Los Angeles
+393,29,Other,Houston
+394,40,Male,New York
+395,32,Other,Los Angeles
+396,45,Male,Los Angeles
+397,51,Other,San Francisco
+398,19,Female,Chicago
+399,49,Male,Los Angeles
+400,40,Male,Chicago
+401,39,Other,Houston
+402,42,Other,New York
+403,39,Male,San Francisco
+404,39,Other,Chicago
+405,59,Other,Los Angeles
+406,23,Other,Chicago
+407,32,Female,Los Angeles
+408,60,Female,Chicago
+409,54,Other,Los Angeles
+410,50,Other,Houston
+411,25,Female,Los Angeles
+412,61,Female,Los Angeles
+413,61,Male,New York
+414,22,Male,Los Angeles
+415,56,Female,New York
+416,21,Other,San Francisco
+417,23,Other,New York
+418,62,Other,Houston
+419,49,Other,New York
+420,47,Male,San Francisco
+421,64,Female,Houston
+422,52,Other,Chicago
+423,57,Male,Chicago
+424,33,Other,New York
+425,30,Female,New York
+426,59,Male,San Francisco
+427,47,Female,San Francisco
+428,36,Female,Los Angeles
+429,34,Male,San Francisco
+430,36,Male,Los Angeles
+431,45,Male,Houston
+432,43,Male,New York
+433,54,Male,Houston
+434,43,Male,San Francisco
+435,40,Male,Houston
+436,26,Other,Houston
+437,29,Female,Houston
+438,18,Male,San Francisco
+439,18,Other,Houston
+440,64,Other,Los Angeles
+441,51,Other,San Francisco
+442,49,Female,Houston
+443,42,Male,San Francisco
+444,57,Other,Chicago
+445,62,Female,Los Angeles
+446,18,Female,Houston
+447,33,Female,Chicago
+448,56,Other,Chicago
+449,22,Male,San Francisco
+450,39,Other,Chicago
+451,46,Other,Los Angeles
+452,20,Male,Los Angeles
+453,29,Male,New York
+454,43,Male,Los Angeles
+455,33,Female,Chicago
+456,54,Male,Los Angeles
+457,39,Other,San Francisco
+458,46,Male,New York
+459,31,Other,Chicago
+460,45,Female,New York
+461,22,Other,Chicago
+462,64,Other,San Francisco
+463,47,Male,New York
+464,63,Male,Houston
+465,22,Other,Chicago
+466,29,Male,Houston
+467,33,Female,New York
+468,43,Female,Houston
+469,43,Male,Houston
+470,38,Female,New York
+471,56,Male,San Francisco
+472,53,Other,Houston
+473,50,Other,Houston
+474,47,Female,San Francisco
+475,54,Male,Houston
+476,40,Male,Houston
+477,27,Female,Houston
+478,22,Other,Los Angeles
+479,53,Female,San Francisco
+480,51,Other,Houston
+481,48,Male,San Francisco
+482,27,Other,Chicago
+483,36,Female,Chicago
+484,49,Male,Houston
+485,18,Female,San Francisco
+486,22,Female,San Francisco
+487,62,Other,San Francisco
+488,21,Female,Los Angeles
+489,33,Other,Chicago
+490,41,Male,San Francisco
+491,33,Other,San Francisco
+492,19,Male,Los Angeles
+493,45,Other,Los Angeles
+494,49,Female,San Francisco
+495,44,Other,New York
+496,37,Other,San Francisco
+497,41,Male,San Francisco
+498,29,Female,Los Angeles
+499,52,Other,Los Angeles
+500,50,Female,San Francisco
+501,50,Other,San Francisco
+502,60,Other,San Francisco
+503,54,Female,Los Angeles
+504,29,Other,San Francisco
+505,20,Female,San Francisco
+506,18,Other,Houston
+507,50,Male,New York
+508,57,Female,Chicago
+509,27,Other,New York
+510,60,Other,Houston
+511,61,Male,Chicago
+512,46,Female,San Francisco
+513,30,Other,Houston
+514,29,Male,San Francisco
+515,48,Other,Los Angeles
+516,63,Female,Houston
+517,19,Other,Los Angeles
+518,52,Other,Houston
+519,40,Other,Houston
+520,34,Other,Los Angeles
+521,43,Male,Chicago
+522,25,Male,New York
+523,46,Female,San Francisco
+524,43,Male,Houston
+525,27,Male,San Francisco
+526,43,Female,Los Angeles
+527,51,Male,San Francisco
+528,58,Male,Los Angeles
+529,24,Female,San Francisco
+530,21,Female,New York
+531,62,Female,New York
+532,28,Other,New York
+533,46,Other,New York
+534,53,Female,New York
+535,42,Female,New York
+536,38,Female,Los Angeles
+537,53,Other,Houston
+538,27,Other,San Francisco
+539,54,Male,New York
+540,26,Male,Los Angeles
+541,41,Female,Los Angeles
+542,52,Other,Los Angeles
+543,52,Other,Houston
+544,53,Other,San Francisco
+545,35,Female,Houston
+546,56,Male,Chicago
+547,49,Female,Los Angeles
+548,41,Male,Chicago
+549,40,Male,New York
+550,49,Female,New York
+551,54,Male,Houston
+552,29,Male,San Francisco
+553,30,Other,Chicago
+554,40,Male,San Francisco
+555,42,Female,Houston
+556,52,Female,New York
+557,58,Male,San Francisco
+558,47,Other,San Francisco
+559,34,Other,New York
+560,37,Male,Chicago
+561,42,Male,New York
+562,39,Female,San Francisco
+563,30,Male,Chicago
+564,36,Other,Chicago
+565,53,Male,New York
+566,29,Female,San Francisco
+567,58,Female,Houston
+568,36,Female,San Francisco
+569,29,Female,Los Angeles
+570,26,Female,Houston
+571,24,Male,Chicago
+572,45,Male,Houston
+573,31,Male,Chicago
+574,48,Male,Chicago
+575,36,Female,Houston
+576,64,Other,Chicago
+577,33,Male,Chicago
+578,22,Other,Los Angeles
+579,52,Male,San Francisco
+580,29,Male,San Francisco
+581,42,Other,Los Angeles
+582,38,Female,Houston
+583,53,Male,New York
+584,40,Male,New York
+585,33,Male,New York
+586,56,Other,Los Angeles
+587,62,Female,Los Angeles
+588,59,Other,Chicago
+589,56,Other,New York
+590,31,Female,Houston
+591,48,Other,Houston
+592,22,Female,New York
+593,52,Male,New York
+594,40,Female,New York
+595,46,Male,Los Angeles
+596,60,Other,Los Angeles
+597,28,Other,Los Angeles
+598,35,Male,San Francisco
+599,64,Other,Houston
+600,29,Female,Houston
+601,26,Male,Chicago
+602,27,Other,Los Angeles
+603,61,Male,San Francisco
+604,34,Female,San Francisco
+605,55,Female,Houston
+606,24,Other,Los Angeles
+607,63,Female,Chicago
+608,30,Male,Los Angeles
+609,57,Female,New York
+610,59,Male,Los Angeles
+611,26,Male,New York
+612,44,Female,New York
+613,19,Other,Chicago
+614,22,Female,Houston
+615,46,Male,Los Angeles
+616,54,Male,New York
+617,55,Female,Los Angeles
+618,36,Other,Houston
+619,25,Other,Houston
+620,62,Male,San Francisco
+621,18,Male,Houston
+622,39,Other,Chicago
+623,34,Female,New York
+624,24,Male,San Francisco
+625,42,Male,Chicago
+626,62,Other,Los Angeles
+627,21,Female,New York
+628,53,Other,Houston
+629,23,Female,New York
+630,48,Female,Los Angeles
+631,36,Female,San Francisco
+632,61,Male,San Francisco
+633,56,Other,San Francisco
+634,44,Other,Houston
+635,27,Female,Chicago
+636,43,Male,Chicago
+637,36,Male,New York
+638,56,Other,Houston
+639,20,Male,San Francisco
+640,62,Male,San Francisco
+641,30,Female,Los Angeles
+642,45,Male,Los Angeles
+643,37,Female,San Francisco
+644,45,Other,San Francisco
+645,25,Male,Houston
+646,58,Other,Chicago
+647,56,Other,Los Angeles
+648,18,Male,Chicago
+649,20,Male,Houston
+650,30,Other,San Francisco
+651,45,Male,Chicago
+652,42,Female,San Francisco
+653,50,Female,San Francisco
+654,55,Male,New York
+655,23,Other,Chicago
+656,61,Male,Chicago
+657,62,Male,San Francisco
+658,49,Other,Houston
+659,62,Other,New York
+660,64,Female,San Francisco
+661,38,Other,Los Angeles
+662,33,Female,Los Angeles
+663,38,Other,New York
+664,28,Male,Houston
+665,54,Female,San Francisco
+666,53,Female,Chicago
+667,52,Female,New York
+668,36,Male,Houston
+669,37,Male,Chicago
+670,35,Male,Los Angeles
+671,64,Male,Los Angeles
+672,58,Male,Chicago
+673,31,Female,New York
+674,32,Male,Los Angeles
+675,48,Female,San Francisco
+676,18,Male,Chicago
+677,20,Other,Chicago
+678,33,Female,Los Angeles
+679,40,Other,New York
+680,28,Female,San Francisco
+681,29,Other,New York
+682,27,Male,Houston
+683,49,Male,Houston
+684,33,Male,Los Angeles
+685,25,Female,Los Angeles
+686,55,Other,Los Angeles
+687,29,Male,Houston
+688,41,Other,New York
+689,45,Other,New York
+690,25,Male,Los Angeles
+691,45,Male,San Francisco
+692,53,Other,New York
+693,43,Male,Houston
+694,25,Male,Chicago
+695,45,Male,Chicago
+696,45,Female,Chicago
+697,54,Other,San Francisco
+698,58,Other,Los Angeles
+699,53,Female,Houston
+700,44,Other,San Francisco
+701,34,Male,Houston
+702,26,Other,Houston
+703,50,Male,Los Angeles
+704,37,Female,Chicago
+705,30,Male,Los Angeles
+706,45,Other,San Francisco
+707,46,Other,San Francisco
+708,30,Other,San Francisco
+709,63,Female,Los Angeles
+710,52,Female,Houston
+711,23,Other,Houston
+712,35,Male,New York
+713,22,Female,San Francisco
+714,64,Other,Houston
+715,42,Other,New York
+716,19,Female,Houston
+717,27,Female,San Francisco
+718,47,Female,Chicago
+719,62,Male,San Francisco
+720,22,Male,Los Angeles
+721,50,Other,Houston
+722,18,Female,Houston
+723,35,Male,Los Angeles
+724,49,Female,Los Angeles
+725,64,Other,Chicago
+726,28,Male,Houston
+727,38,Male,Houston
+728,43,Male,Chicago
+729,42,Other,New York
+730,39,Female,Chicago
+731,44,Male,San Francisco
+732,30,Other,Houston
+733,50,Female,Los Angeles
+734,51,Other,San Francisco
+735,58,Female,Houston
+736,52,Other,Chicago
+737,18,Female,San Francisco
+738,38,Male,Houston
+739,23,Female,New York
+740,45,Other,New York
+741,34,Other,Los Angeles
+742,22,Female,Houston
+743,48,Male,New York
+744,22,Male,Chicago
+745,55,Female,Houston
+746,20,Female,Chicago
+747,40,Other,Chicago
+748,54,Male,New York
+749,54,Female,Houston
+750,27,Male,San Francisco
+751,27,Female,New York
+752,36,Female,New York
+753,34,Male,Houston
+754,38,Female,Houston
+755,31,Female,Chicago
+756,26,Other,Houston
+757,63,Female,Chicago
+758,18,Female,New York
+759,62,Female,Los Angeles
+760,30,Other,San Francisco
+761,21,Male,New York
+762,18,Other,Houston
+763,57,Other,San Francisco
+764,49,Male,Los Angeles
+765,51,Other,Los Angeles
+766,45,Male,Chicago
+767,48,Other,San Francisco
+768,25,Male,Chicago
+769,56,Female,New York
+770,43,Other,San Francisco
+771,51,Other,New York
+772,20,Other,Chicago
+773,29,Other,San Francisco
+774,18,Female,Chicago
+775,61,Other,San Francisco
+776,22,Female,Chicago
+777,47,Female,Los Angeles
+778,47,Female,Chicago
+779,34,Female,Los Angeles
+780,64,Male,Chicago
+781,40,Male,San Francisco
+782,32,Other,San Francisco
+783,54,Male,San Francisco
+784,38,Male,Houston
+785,31,Other,New York
+786,19,Other,San Francisco
+787,28,Other,Los Angeles
+788,56,Male,San Francisco
+789,55,Male,Houston
+790,51,Other,Los Angeles
+791,55,Female,Houston
+792,51,Other,Los Angeles
+793,35,Female,Chicago
+794,47,Female,New York
+795,32,Other,New York
+796,44,Other,Houston
+797,51,Other,New York
+798,55,Male,Houston
+799,50,Female,Houston
+800,41,Male,Houston
+801,32,Male,New York
+802,47,Other,Houston
+803,59,Male,New York
+804,34,Other,Houston
+805,22,Female,San Francisco
+806,46,Other,Houston
+807,21,Male,Los Angeles
+808,27,Male,Houston
+809,34,Other,Chicago
+810,27,Other,Houston
+811,34,Male,Los Angeles
+812,37,Female,Los Angeles
+813,41,Female,New York
+814,22,Other,San Francisco
+815,51,Female,Houston
+816,23,Male,New York
+817,19,Other,San Francisco
+818,30,Male,Houston
+819,60,Male,Chicago
+820,60,Female,Houston
+821,28,Other,Los Angeles
+822,64,Other,Los Angeles
+823,40,Female,Chicago
+824,33,Male,New York
+825,48,Male,San Francisco
+826,28,Male,Houston
+827,33,Male,Los Angeles
+828,25,Other,New York
+829,21,Other,Chicago
+830,57,Female,Los Angeles
+831,21,Female,Chicago
+832,42,Other,Houston
+833,20,Other,San Francisco
+834,49,Male,Los Angeles
+835,20,Male,Los Angeles
+836,44,Female,Houston
+837,46,Other,New York
+838,49,Female,San Francisco
+839,36,Other,Los Angeles
+840,38,Male,San Francisco
+841,22,Female,Los Angeles
+842,35,Female,San Francisco
+843,45,Other,Chicago
+844,59,Male,Los Angeles
+845,39,Female,San Francisco
+846,38,Male,New York
+847,23,Female,Chicago
+848,18,Male,Chicago
+849,22,Other,New York
+850,58,Female,San Francisco
+851,29,Female,Houston
+852,43,Male,New York
+853,63,Male,San Francisco
+854,51,Female,New York
+855,31,Other,New York
+856,43,Male,Los Angeles
+857,62,Male,San Francisco
+858,44,Male,Houston
+859,26,Female,Los Angeles
+860,43,Female,New York
+861,64,Female,New York
+862,39,Female,New York
+863,64,Other,San Francisco
+864,47,Other,San Francisco
+865,60,Female,Los Angeles
+866,34,Other,Houston
+867,43,Male,Los Angeles
+868,53,Male,Chicago
+869,18,Male,New York
+870,25,Female,New York
+871,52,Male,New York
+872,32,Other,Los Angeles
+873,64,Female,Los Angeles
+874,39,Other,New York
+875,31,Male,Los Angeles
+876,43,Male,San Francisco
+877,45,Male,San Francisco
+878,40,Female,Los Angeles
+879,31,Other,New York
+880,41,Female,Los Angeles
+881,19,Female,Los Angeles
+882,62,Male,Los Angeles
+883,43,Female,Chicago
+884,31,Female,San Francisco
+885,24,Male,Houston
+886,20,Female,Houston
+887,64,Male,Chicago
+888,40,Male,Los Angeles
+889,63,Male,Chicago
+890,60,Male,Chicago
+891,64,Female,New York
+892,62,Male,San Francisco
+893,35,Male,Houston
+894,55,Female,Los Angeles
+895,52,Female,Houston
+896,32,Other,Houston
+897,42,Female,San Francisco
+898,54,Female,Houston
+899,45,Other,Houston
+900,27,Female,Chicago
+901,56,Female,San Francisco
+902,34,Female,New York
+903,56,Female,Los Angeles
+904,39,Other,Houston
+905,43,Female,Los Angeles
+906,61,Female,New York
+907,42,Other,Los Angeles
+908,34,Male,New York
+909,30,Other,Chicago
+910,37,Male,Houston
+911,42,Other,New York
+912,21,Other,Los Angeles
+913,27,Female,Houston
+914,20,Male,Chicago
+915,58,Female,Houston
+916,62,Male,New York
+917,35,Other,Chicago
+918,64,Other,Los Angeles
+919,53,Male,Chicago
+920,64,Female,Chicago
+921,39,Female,San Francisco
+922,51,Female,Chicago
+923,64,Female,Chicago
+924,25,Other,Houston
+925,57,Other,Los Angeles
+926,61,Other,Houston
+927,36,Other,Houston
+928,59,Other,New York
+929,58,Female,Houston
+930,54,Female,San Francisco
+931,23,Female,San Francisco
+932,43,Female,New York
+933,51,Other,Los Angeles
+934,62,Other,Los Angeles
+935,23,Other,Houston
+936,54,Male,Houston
+937,50,Female,Houston
+938,39,Female,Los Angeles
+939,38,Other,Chicago
+940,23,Female,San Francisco
+941,23,Female,Chicago
+942,21,Other,Chicago
+943,47,Male,Los Angeles
+944,28,Male,Chicago
+945,47,Male,New York
+946,48,Other,Houston
+947,41,Female,New York
+948,26,Other,San Francisco
+949,20,Other,Houston
+950,48,Female,Chicago
+951,57,Male,San Francisco
+952,54,Male,Houston
+953,53,Other,Chicago
+954,41,Male,New York
+955,48,Other,Houston
+956,23,Other,Chicago
+957,19,Female,New York
+958,37,Female,San Francisco
+959,45,Female,San Francisco
+960,28,Other,San Francisco
+961,21,Female,San Francisco
+962,32,Male,Los Angeles
+963,23,Male,Houston
+964,47,Other,Houston
+965,55,Other,Los Angeles
+966,19,Female,Chicago
+967,32,Other,Chicago
+968,28,Other,San Francisco
+969,25,Male,New York
+970,43,Male,Chicago
+971,62,Female,New York
+972,61,Other,Houston
+973,22,Other,New York
+974,23,Male,Houston
+975,43,Other,Los Angeles
+976,21,Male,Los Angeles
+977,36,Female,San Francisco
+978,37,Male,Chicago
+979,50,Other,San Francisco
+980,37,Female,Houston
+981,29,Male,San Francisco
+982,64,Male,New York
+983,18,Female,Houston
+984,43,Female,Los Angeles
+985,31,Male,Chicago
+986,55,Other,Houston
+987,54,Male,Houston
+988,28,Female,New York
+989,53,Male,Chicago
+990,30,Female,Los Angeles
+991,60,Female,Houston
+992,20,Other,Houston
+993,50,Female,New York
+994,23,Female,San Francisco
+995,27,Other,Los Angeles
+996,22,Female,Chicago
+997,40,Other,Houston
+998,27,Other,Houston
+999,61,Female,Los Angeles
+1000,19,Female,San Francisco

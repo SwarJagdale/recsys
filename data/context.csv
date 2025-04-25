@@ -1,0 +1,5001 @@
+interaction_id,time_of_day,device,location
+1,Evening,Tablet,New York
+2,Evening,Mobile,San Francisco
+3,Morning,Desktop,New York
+4,Evening,Tablet,New York
+5,Night,Desktop,Chicago
+6,Night,Desktop,Chicago
+7,Afternoon,Mobile,Los Angeles
+8,Morning,Mobile,San Francisco
+9,Morning,Mobile,Chicago
+10,Evening,Desktop,New York
+11,Morning,Tablet,Chicago
+12,Evening,Mobile,Los Angeles
+13,Evening,Mobile,Los Angeles
+14,Morning,Mobile,Los Angeles
+15,Afternoon,Desktop,San Francisco
+16,Evening,Mobile,Chicago
+17,Night,Desktop,San Francisco
+18,Night,Mobile,San Francisco
+19,Morning,Mobile,Chicago
+20,Morning,Mobile,Los Angeles
+21,Evening,Desktop,San Francisco
+22,Evening,Mobile,Los Angeles
+23,Night,Tablet,New York
+24,Evening,Mobile,San Francisco
+25,Night,Mobile,New York
+26,Evening,Mobile,Los Angeles
+27,Afternoon,Tablet,Houston
+28,Afternoon,Desktop,Los Angeles
+29,Night,Mobile,New York
+30,Afternoon,Desktop,San Francisco
+31,Afternoon,Mobile,Chicago
+32,Morning,Mobile,Los Angeles
+33,Evening,Mobile,Houston
+34,Morning,Desktop,New York
+35,Night,Mobile,Chicago
+36,Morning,Mobile,Houston
+37,Night,Mobile,New York
+38,Afternoon,Mobile,Chicago
+39,Morning,Mobile,San Francisco
+40,Afternoon,Mobile,New York
+41,Evening,Mobile,Los Angeles
+42,Afternoon,Tablet,Chicago
+43,Evening,Mobile,San Francisco
+44,Afternoon,Mobile,San Francisco
+45,Morning,Mobile,Los Angeles
+46,Morning,Mobile,New York
+47,Afternoon,Desktop,Chicago
+48,Night,Mobile,Chicago
+49,Night,Desktop,Chicago
+50,Evening,Desktop,Houston
+51,Evening,Desktop,Chicago
+52,Afternoon,Mobile,Houston
+53,Morning,Mobile,Houston
+54,Evening,Mobile,Chicago
+55,Afternoon,Desktop,Chicago
+56,Evening,Mobile,San Francisco
+57,Morning,Mobile,New York
+58,Evening,Mobile,San Francisco
+59,Afternoon,Desktop,New York
+60,Evening,Desktop,New York
+61,Night,Mobile,New York
+62,Evening,Mobile,Chicago
+63,Morning,Mobile,San Francisco
+64,Morning,Mobile,Los Angeles
+65,Morning,Desktop,San Francisco
+66,Morning,Desktop,Los Angeles
+67,Afternoon,Desktop,San Francisco
+68,Evening,Mobile,Los Angeles
+69,Evening,Desktop,New York
+70,Evening,Tablet,New York
+71,Evening,Tablet,Houston
+72,Afternoon,Desktop,Houston
+73,Morning,Mobile,New York
+74,Evening,Desktop,San Francisco
+75,Evening,Desktop,San Francisco
+76,Morning,Desktop,Chicago
+77,Night,Mobile,Chicago
+78,Night,Tablet,San Francisco
+79,Morning,Mobile,Chicago
+80,Evening,Mobile,New York
+81,Morning,Mobile,Los Angeles
+82,Evening,Desktop,Chicago
+83,Evening,Mobile,Houston
+84,Night,Mobile,Los Angeles
+85,Night,Desktop,San Francisco
+86,Evening,Desktop,New York
+87,Evening,Desktop,Houston
+88,Evening,Mobile,Houston
+89,Night,Desktop,Chicago
+90,Evening,Mobile,Los Angeles
+91,Morning,Mobile,New York
+92,Afternoon,Mobile,Chicago
+93,Afternoon,Desktop,New York
+94,Evening,Mobile,New York
+95,Morning,Mobile,Houston
+96,Evening,Mobile,New York
+97,Morning,Mobile,Chicago
+98,Night,Tablet,Los Angeles
+99,Night,Tablet,Houston
+100,Evening,Mobile,Los Angeles
+101,Night,Mobile,Houston
+102,Evening,Mobile,Houston
+103,Afternoon,Desktop,Los Angeles
+104,Morning,Mobile,Houston
+105,Morning,Mobile,Los Angeles
+106,Afternoon,Mobile,Chicago
+107,Afternoon,Mobile,Houston
+108,Afternoon,Mobile,New York
+109,Afternoon,Mobile,San Francisco
+110,Night,Mobile,Chicago
+111,Morning,Mobile,Los Angeles
+112,Morning,Tablet,Houston
+113,Afternoon,Mobile,Los Angeles
+114,Evening,Mobile,San Francisco
+115,Evening,Tablet,Houston
+116,Evening,Desktop,Chicago
+117,Evening,Mobile,Chicago
+118,Night,Desktop,Los Angeles
+119,Morning,Mobile,Chicago
+120,Morning,Desktop,Los Angeles
+121,Morning,Tablet,Houston
+122,Evening,Mobile,San Francisco
+123,Afternoon,Mobile,New York
+124,Evening,Mobile,Houston
+125,Morning,Desktop,Los Angeles
+126,Evening,Mobile,San Francisco
+127,Afternoon,Desktop,Los Angeles
+128,Afternoon,Mobile,New York
+129,Evening,Mobile,New York
+130,Morning,Mobile,Houston
+131,Night,Mobile,New York
+132,Morning,Mobile,San Francisco
+133,Night,Mobile,Houston
+134,Morning,Desktop,Chicago
+135,Evening,Desktop,San Francisco
+136,Night,Desktop,New York
+137,Morning,Mobile,Los Angeles
+138,Evening,Tablet,New York
+139,Morning,Desktop,New York
+140,Afternoon,Mobile,New York
+141,Afternoon,Mobile,Chicago
+142,Morning,Mobile,Houston
+143,Evening,Tablet,Houston
+144,Morning,Mobile,San Francisco
+145,Evening,Mobile,Houston
+146,Night,Mobile,New York
+147,Afternoon,Desktop,New York
+148,Night,Mobile,Chicago
+149,Evening,Mobile,Chicago
+150,Morning,Mobile,Chicago
+151,Afternoon,Mobile,San Francisco
+152,Evening,Mobile,Los Angeles
+153,Evening,Mobile,Chicago
+154,Afternoon,Desktop,San Francisco
+155,Morning,Desktop,New York
+156,Afternoon,Desktop,Los Angeles
+157,Morning,Mobile,New York
+158,Morning,Desktop,New York
+159,Evening,Mobile,Houston
+160,Morning,Mobile,New York
+161,Morning,Tablet,Houston
+162,Afternoon,Desktop,Houston
+163,Afternoon,Mobile,Houston
+164,Morning,Desktop,New York
+165,Evening,Tablet,New York
+166,Afternoon,Desktop,San Francisco
+167,Night,Desktop,Los Angeles
+168,Evening,Desktop,Los Angeles
+169,Afternoon,Mobile,Los Angeles
+170,Afternoon,Mobile,New York
+171,Night,Desktop,Houston
+172,Morning,Mobile,Houston
+173,Afternoon,Mobile,San Francisco
+174,Night,Mobile,Houston
+175,Night,Mobile,Los Angeles
+176,Afternoon,Tablet,San Francisco
+177,Evening,Desktop,Chicago
+178,Afternoon,Mobile,San Francisco
+179,Night,Tablet,Houston
+180,Afternoon,Tablet,Houston
+181,Evening,Mobile,Chicago
+182,Morning,Tablet,Los Angeles
+183,Morning,Mobile,San Francisco
+184,Afternoon,Mobile,San Francisco
+185,Afternoon,Mobile,Los Angeles
+186,Night,Desktop,Los Angeles
+187,Evening,Mobile,Houston
+188,Night,Desktop,Houston
+189,Night,Desktop,Houston
+190,Morning,Mobile,Houston
+191,Night,Mobile,New York
+192,Night,Mobile,San Francisco
+193,Morning,Mobile,San Francisco
+194,Morning,Desktop,Chicago
+195,Evening,Mobile,Chicago
+196,Evening,Mobile,New York
+197,Evening,Mobile,San Francisco
+198,Afternoon,Desktop,New York
+199,Morning,Desktop,Chicago
+200,Afternoon,Tablet,Chicago
+201,Afternoon,Desktop,Los Angeles
+202,Evening,Mobile,Chicago
+203,Morning,Mobile,Los Angeles
+204,Afternoon,Desktop,Houston
+205,Night,Tablet,Los Angeles
+206,Night,Mobile,Houston
+207,Morning,Mobile,San Francisco
+208,Afternoon,Mobile,Los Angeles
+209,Evening,Desktop,New York
+210,Afternoon,Mobile,Houston
+211,Night,Mobile,San Francisco
+212,Night,Desktop,San Francisco
+213,Evening,Mobile,Houston
+214,Morning,Mobile,San Francisco
+215,Afternoon,Mobile,Los Angeles
+216,Night,Mobile,Los Angeles
+217,Afternoon,Mobile,San Francisco
+218,Evening,Mobile,New York
+219,Evening,Mobile,New York
+220,Morning,Desktop,Houston
+221,Evening,Desktop,New York
+222,Morning,Mobile,Los Angeles
+223,Afternoon,Mobile,New York
+224,Night,Desktop,New York
+225,Night,Mobile,Houston
+226,Morning,Mobile,New York
+227,Night,Mobile,Los Angeles
+228,Morning,Desktop,Houston
+229,Morning,Mobile,San Francisco
+230,Afternoon,Desktop,San Francisco
+231,Afternoon,Desktop,Houston
+232,Evening,Tablet,Los Angeles
+233,Morning,Mobile,New York
+234,Afternoon,Desktop,Los Angeles
+235,Morning,Mobile,Los Angeles
+236,Morning,Mobile,Houston
+237,Morning,Mobile,New York
+238,Afternoon,Mobile,Houston
+239,Morning,Desktop,New York
+240,Morning,Mobile,Houston
+241,Evening,Mobile,New York
+242,Morning,Mobile,New York
+243,Evening,Desktop,Houston
+244,Morning,Mobile,Chicago
+245,Evening,Desktop,Los Angeles
+246,Afternoon,Desktop,Chicago
+247,Afternoon,Desktop,Houston
+248,Night,Mobile,Los Angeles
+249,Morning,Desktop,Houston
+250,Night,Mobile,Chicago
+251,Night,Desktop,Los Angeles
+252,Evening,Desktop,Los Angeles
+253,Afternoon,Mobile,New York
+254,Morning,Desktop,San Francisco
+255,Morning,Mobile,Houston
+256,Evening,Mobile,San Francisco
+257,Night,Mobile,Houston
+258,Evening,Tablet,Los Angeles
+259,Night,Desktop,Los Angeles
+260,Morning,Desktop,Chicago
+261,Evening,Tablet,Chicago
+262,Night,Mobile,San Francisco
+263,Evening,Tablet,San Francisco
+264,Afternoon,Mobile,Los Angeles
+265,Evening,Desktop,New York
+266,Morning,Desktop,Los Angeles
+267,Evening,Mobile,Los Angeles
+268,Morning,Mobile,Los Angeles
+269,Morning,Mobile,San Francisco
+270,Evening,Tablet,New York
+271,Evening,Mobile,Los Angeles
+272,Evening,Mobile,New York
+273,Afternoon,Desktop,Los Angeles
+274,Afternoon,Mobile,San Francisco
+275,Night,Mobile,New York
+276,Evening,Desktop,San Francisco
+277,Night,Mobile,Houston
+278,Night,Desktop,Houston
+279,Morning,Mobile,New York
+280,Night,Mobile,Chicago
+281,Evening,Mobile,New York
+282,Afternoon,Mobile,Los Angeles
+283,Night,Tablet,Houston
+284,Night,Desktop,New York
+285,Afternoon,Mobile,New York
+286,Night,Mobile,Los Angeles
+287,Evening,Mobile,San Francisco
+288,Night,Mobile,Houston
+289,Morning,Mobile,San Francisco
+290,Night,Desktop,New York
+291,Morning,Mobile,Houston
+292,Afternoon,Mobile,San Francisco
+293,Afternoon,Mobile,San Francisco
+294,Night,Mobile,Los Angeles
+295,Night,Desktop,Houston
+296,Afternoon,Mobile,San Francisco
+297,Morning,Mobile,San Francisco
+298,Afternoon,Mobile,Houston
+299,Afternoon,Tablet,New York
+300,Morning,Mobile,New York
+301,Afternoon,Desktop,New York
+302,Night,Mobile,Los Angeles
+303,Night,Desktop,Los Angeles
+304,Afternoon,Desktop,Los Angeles
+305,Night,Mobile,Los Angeles
+306,Evening,Desktop,New York
+307,Afternoon,Desktop,Los Angeles
+308,Evening,Mobile,Los Angeles
+309,Afternoon,Mobile,Los Angeles
+310,Afternoon,Desktop,Houston
+311,Evening,Desktop,New York
+312,Afternoon,Desktop,Houston
+313,Night,Desktop,Chicago
+314,Evening,Desktop,New York
+315,Afternoon,Desktop,Chicago
+316,Night,Mobile,New York
+317,Evening,Mobile,Houston
+318,Evening,Tablet,New York
+319,Night,Mobile,San Francisco
+320,Afternoon,Mobile,New York
+321,Afternoon,Desktop,New York
+322,Evening,Mobile,San Francisco
+323,Morning,Mobile,San Francisco
+324,Afternoon,Mobile,San Francisco
+325,Afternoon,Desktop,Los Angeles
+326,Night,Tablet,Houston
+327,Morning,Mobile,San Francisco
+328,Morning,Mobile,Houston
+329,Evening,Mobile,San Francisco
+330,Night,Mobile,New York
+331,Night,Mobile,San Francisco
+332,Afternoon,Mobile,San Francisco
+333,Evening,Mobile,Houston
+334,Afternoon,Mobile,Chicago
+335,Morning,Mobile,Houston
+336,Night,Desktop,Houston
+337,Evening,Desktop,New York
+338,Afternoon,Tablet,San Francisco
+339,Afternoon,Desktop,New York
+340,Morning,Mobile,Los Angeles
+341,Night,Desktop,Los Angeles
+342,Morning,Mobile,New York
+343,Afternoon,Desktop,Houston
+344,Night,Desktop,Houston
+345,Night,Desktop,New York
+346,Morning,Tablet,San Francisco
+347,Night,Desktop,San Francisco
+348,Morning,Desktop,New York
+349,Night,Mobile,Los Angeles
+350,Night,Tablet,Houston
+351,Evening,Mobile,Houston
+352,Night,Tablet,Chicago
+353,Afternoon,Mobile,San Francisco
+354,Evening,Mobile,Los Angeles
+355,Morning,Desktop,New York
+356,Afternoon,Mobile,San Francisco
+357,Morning,Desktop,Chicago
+358,Morning,Mobile,San Francisco
+359,Afternoon,Desktop,Houston
+360,Morning,Desktop,San Francisco
+361,Evening,Desktop,San Francisco
+362,Afternoon,Mobile,New York
+363,Morning,Mobile,San Francisco
+364,Morning,Desktop,New York
+365,Night,Mobile,San Francisco
+366,Night,Mobile,San Francisco
+367,Morning,Desktop,Chicago
+368,Afternoon,Mobile,Chicago
+369,Evening,Mobile,San Francisco
+370,Morning,Mobile,Los Angeles
+371,Morning,Mobile,Houston
+372,Morning,Desktop,Chicago
+373,Night,Mobile,Los Angeles
+374,Afternoon,Tablet,New York
+375,Morning,Mobile,Houston
+376,Night,Mobile,New York
+377,Morning,Mobile,New York
+378,Morning,Mobile,Los Angeles
+379,Afternoon,Desktop,Los Angeles
+380,Night,Desktop,New York
+381,Evening,Mobile,Houston
+382,Afternoon,Desktop,Chicago
+383,Evening,Mobile,San Francisco
+384,Night,Mobile,Houston
+385,Night,Mobile,San Francisco
+386,Evening,Tablet,New York
+387,Night,Mobile,Houston
+388,Afternoon,Desktop,Houston
+389,Morning,Mobile,San Francisco
+390,Evening,Mobile,San Francisco
+391,Morning,Mobile,Los Angeles
+392,Evening,Desktop,Houston
+393,Morning,Desktop,Chicago
+394,Morning,Mobile,Los Angeles
+395,Afternoon,Desktop,Houston
+396,Morning,Mobile,New York
+397,Evening,Tablet,Houston
+398,Morning,Desktop,Houston
+399,Night,Desktop,Houston
+400,Morning,Desktop,New York
+401,Morning,Mobile,Houston
+402,Night,Desktop,New York
+403,Night,Mobile,San Francisco
+404,Evening,Mobile,New York
+405,Night,Mobile,San Francisco
+406,Night,Mobile,Houston
+407,Evening,Mobile,New York
+408,Evening,Mobile,Los Angeles
+409,Morning,Mobile,Houston
+410,Afternoon,Mobile,San Francisco
+411,Evening,Desktop,San Francisco
+412,Night,Mobile,Houston
+413,Morning,Desktop,Los Angeles
+414,Night,Mobile,Los Angeles
+415,Evening,Mobile,San Francisco
+416,Afternoon,Mobile,New York
+417,Morning,Mobile,Houston
+418,Evening,Desktop,Los Angeles
+419,Evening,Desktop,Los Angeles
+420,Night,Mobile,Houston
+421,Afternoon,Mobile,San Francisco
+422,Evening,Desktop,San Francisco
+423,Night,Mobile,San Francisco
+424,Morning,Mobile,Chicago
+425,Night,Desktop,Chicago
+426,Morning,Mobile,Chicago
+427,Night,Tablet,Los Angeles
+428,Afternoon,Desktop,Chicago
+429,Night,Mobile,Chicago
+430,Afternoon,Mobile,New York
+431,Afternoon,Mobile,San Francisco
+432,Morning,Mobile,Chicago
+433,Night,Tablet,New York
+434,Night,Desktop,Houston
+435,Night,Mobile,Los Angeles
+436,Afternoon,Mobile,Houston
+437,Evening,Mobile,Los Angeles
+438,Night,Mobile,San Francisco
+439,Night,Desktop,Los Angeles
+440,Evening,Desktop,Chicago
+441,Morning,Mobile,Houston
+442,Night,Mobile,Houston
+443,Evening,Desktop,San Francisco
+444,Night,Mobile,Houston
+445,Afternoon,Desktop,San Francisco
+446,Evening,Mobile,Los Angeles
+447,Afternoon,Desktop,Los Angeles
+448,Evening,Desktop,Los Angeles
+449,Morning,Desktop,New York
+450,Afternoon,Tablet,Houston
+451,Night,Tablet,San Francisco
+452,Evening,Desktop,Los Angeles
+453,Night,Tablet,New York
+454,Morning,Desktop,Los Angeles
+455,Evening,Desktop,Los Angeles
+456,Morning,Mobile,Houston
+457,Evening,Mobile,Chicago
+458,Afternoon,Desktop,New York
+459,Night,Mobile,Houston
+460,Afternoon,Desktop,Chicago
+461,Afternoon,Mobile,Los Angeles
+462,Afternoon,Mobile,Houston
+463,Afternoon,Desktop,Houston
+464,Evening,Tablet,San Francisco
+465,Night,Mobile,Los Angeles
+466,Evening,Desktop,Chicago
+467,Evening,Desktop,Houston
+468,Evening,Mobile,Los Angeles
+469,Afternoon,Mobile,Chicago
+470,Morning,Mobile,Los Angeles
+471,Afternoon,Mobile,Houston
+472,Evening,Mobile,Los Angeles
+473,Afternoon,Mobile,San Francisco
+474,Night,Mobile,San Francisco
+475,Night,Desktop,Houston
+476,Afternoon,Mobile,San Francisco
+477,Afternoon,Desktop,Chicago
+478,Morning,Mobile,Houston
+479,Afternoon,Desktop,Houston
+480,Afternoon,Desktop,New York
+481,Morning,Mobile,Los Angeles
+482,Afternoon,Tablet,San Francisco
+483,Afternoon,Desktop,San Francisco
+484,Afternoon,Desktop,Houston
+485,Afternoon,Desktop,San Francisco
+486,Afternoon,Mobile,Los Angeles
+487,Evening,Mobile,Chicago
+488,Afternoon,Mobile,Houston
+489,Morning,Mobile,Los Angeles
+490,Afternoon,Mobile,New York
+491,Evening,Desktop,Los Angeles
+492,Morning,Mobile,San Francisco
+493,Morning,Tablet,Chicago
+494,Afternoon,Mobile,New York
+495,Night,Mobile,Houston
+496,Evening,Mobile,Los Angeles
+497,Night,Mobile,New York
+498,Afternoon,Tablet,Houston
+499,Evening,Desktop,New York
+500,Night,Mobile,Los Angeles
+501,Evening,Tablet,Houston
+502,Afternoon,Desktop,Houston
+503,Evening,Mobile,Los Angeles
+504,Afternoon,Desktop,San Francisco
+505,Night,Desktop,Chicago
+506,Evening,Mobile,Houston
+507,Morning,Desktop,Los Angeles
+508,Afternoon,Mobile,San Francisco
+509,Evening,Mobile,New York
+510,Morning,Mobile,Los Angeles
+511,Morning,Tablet,Chicago
+512,Morning,Desktop,San Francisco
+513,Morning,Mobile,Chicago
+514,Afternoon,Mobile,Chicago
+515,Evening,Mobile,Chicago
+516,Morning,Desktop,New York
+517,Evening,Mobile,Houston
+518,Evening,Desktop,San Francisco
+519,Night,Tablet,New York
+520,Evening,Desktop,Houston
+521,Afternoon,Mobile,Los Angeles
+522,Afternoon,Mobile,San Francisco
+523,Morning,Mobile,Chicago
+524,Evening,Desktop,Los Angeles
+525,Afternoon,Desktop,New York
+526,Afternoon,Mobile,Los Angeles
+527,Afternoon,Mobile,New York
+528,Morning,Desktop,New York
+529,Afternoon,Mobile,Los Angeles
+530,Evening,Mobile,Houston
+531,Afternoon,Desktop,San Francisco
+532,Afternoon,Mobile,New York
+533,Morning,Desktop,San Francisco
+534,Evening,Desktop,Chicago
+535,Afternoon,Desktop,New York
+536,Evening,Mobile,San Francisco
+537,Evening,Mobile,Houston
+538,Afternoon,Mobile,Los Angeles
+539,Morning,Mobile,Houston
+540,Evening,Tablet,Los Angeles
+541,Night,Desktop,San Francisco
+542,Afternoon,Mobile,San Francisco
+543,Evening,Tablet,Los Angeles
+544,Evening,Desktop,Los Angeles
+545,Evening,Mobile,Houston
+546,Afternoon,Mobile,New York
+547,Night,Mobile,New York
+548,Evening,Tablet,Los Angeles
+549,Evening,Mobile,Houston
+550,Morning,Desktop,Los Angeles
+551,Afternoon,Mobile,New York
+552,Afternoon,Desktop,San Francisco
+553,Evening,Mobile,Chicago
+554,Morning,Tablet,San Francisco
+555,Evening,Tablet,Chicago
+556,Evening,Mobile,Los Angeles
+557,Afternoon,Desktop,Chicago
+558,Morning,Desktop,Los Angeles
+559,Evening,Tablet,Los Angeles
+560,Afternoon,Mobile,Chicago
+561,Evening,Mobile,New York
+562,Evening,Desktop,Houston
+563,Morning,Desktop,Houston
+564,Morning,Mobile,San Francisco
+565,Morning,Desktop,Houston
+566,Evening,Mobile,Houston
+567,Night,Desktop,Los Angeles
+568,Morning,Mobile,Los Angeles
+569,Night,Mobile,Houston
+570,Night,Mobile,New York
+571,Night,Mobile,Los Angeles
+572,Afternoon,Mobile,Chicago
+573,Evening,Mobile,Houston
+574,Morning,Mobile,New York
+575,Evening,Mobile,New York
+576,Evening,Desktop,New York
+577,Afternoon,Mobile,San Francisco
+578,Afternoon,Mobile,Los Angeles
+579,Afternoon,Desktop,Houston
+580,Evening,Tablet,Los Angeles
+581,Night,Desktop,Chicago
+582,Evening,Mobile,New York
+583,Afternoon,Desktop,San Francisco
+584,Evening,Tablet,New York
+585,Afternoon,Mobile,Los Angeles
+586,Afternoon,Tablet,Houston
+587,Morning,Mobile,Chicago
+588,Night,Mobile,New York
+589,Afternoon,Mobile,San Francisco
+590,Morning,Desktop,San Francisco
+591,Night,Mobile,New York
+592,Afternoon,Mobile,Los Angeles
+593,Night,Mobile,New York
+594,Night,Mobile,Houston
+595,Evening,Mobile,San Francisco
+596,Morning,Mobile,Houston
+597,Night,Mobile,Chicago
+598,Evening,Tablet,Los Angeles
+599,Night,Mobile,San Francisco
+600,Evening,Mobile,San Francisco
+601,Afternoon,Mobile,San Francisco
+602,Afternoon,Mobile,Los Angeles
+603,Evening,Mobile,Los Angeles
+604,Afternoon,Mobile,San Francisco
+605,Afternoon,Desktop,San Francisco
+606,Afternoon,Mobile,Los Angeles
+607,Night,Mobile,New York
+608,Evening,Mobile,Los Angeles
+609,Morning,Desktop,New York
+610,Morning,Desktop,New York
+611,Evening,Mobile,Los Angeles
+612,Night,Mobile,Houston
+613,Afternoon,Tablet,Los Angeles
+614,Afternoon,Mobile,Chicago
+615,Night,Mobile,Los Angeles
+616,Morning,Mobile,Houston
+617,Evening,Mobile,San Francisco
+618,Evening,Tablet,New York
+619,Night,Tablet,San Francisco
+620,Afternoon,Desktop,San Francisco
+621,Afternoon,Mobile,Chicago
+622,Afternoon,Mobile,San Francisco
+623,Evening,Mobile,Chicago
+624,Morning,Tablet,Houston
+625,Evening,Desktop,Chicago
+626,Night,Mobile,New York
+627,Evening,Mobile,Los Angeles
+628,Night,Mobile,Los Angeles
+629,Evening,Tablet,Los Angeles
+630,Morning,Mobile,Chicago
+631,Night,Mobile,Los Angeles
+632,Afternoon,Mobile,Chicago
+633,Afternoon,Mobile,Houston
+634,Evening,Tablet,Houston
+635,Evening,Tablet,New York
+636,Morning,Tablet,San Francisco
+637,Morning,Desktop,Chicago
+638,Afternoon,Mobile,Houston
+639,Evening,Mobile,Los Angeles
+640,Night,Mobile,San Francisco
+641,Morning,Desktop,San Francisco
+642,Night,Mobile,New York
+643,Night,Desktop,San Francisco
+644,Morning,Mobile,New York
+645,Evening,Mobile,Houston
+646,Night,Desktop,New York
+647,Evening,Tablet,Los Angeles
+648,Night,Mobile,Houston
+649,Evening,Mobile,Chicago
+650,Evening,Tablet,Houston
+651,Evening,Desktop,Houston
+652,Evening,Mobile,New York
+653,Morning,Mobile,Houston
+654,Night,Mobile,New York
+655,Evening,Mobile,Houston
+656,Afternoon,Desktop,San Francisco
+657,Night,Mobile,Los Angeles
+658,Night,Mobile,Los Angeles
+659,Evening,Mobile,New York
+660,Night,Mobile,San Francisco
+661,Afternoon,Mobile,Chicago
+662,Afternoon,Mobile,San Francisco
+663,Afternoon,Mobile,San Francisco
+664,Night,Mobile,Houston
+665,Night,Mobile,San Francisco
+666,Evening,Mobile,Los Angeles
+667,Night,Desktop,Houston
+668,Night,Mobile,Los Angeles
+669,Evening,Mobile,San Francisco
+670,Afternoon,Mobile,Los Angeles
+671,Evening,Tablet,San Francisco
+672,Morning,Tablet,Houston
+673,Night,Mobile,Houston
+674,Night,Desktop,Houston
+675,Morning,Mobile,Chicago
+676,Morning,Mobile,Chicago
+677,Morning,Mobile,New York
+678,Evening,Mobile,Chicago
+679,Afternoon,Mobile,Houston
+680,Evening,Desktop,Los Angeles
+681,Morning,Desktop,Los Angeles
+682,Evening,Mobile,San Francisco
+683,Night,Mobile,New York
+684,Evening,Mobile,Los Angeles
+685,Morning,Mobile,Los Angeles
+686,Night,Tablet,New York
+687,Afternoon,Desktop,Chicago
+688,Evening,Tablet,Houston
+689,Evening,Desktop,Los Angeles
+690,Morning,Mobile,Los Angeles
+691,Afternoon,Mobile,New York
+692,Night,Mobile,Chicago
+693,Morning,Mobile,Los Angeles
+694,Morning,Desktop,New York
+695,Evening,Mobile,San Francisco
+696,Afternoon,Mobile,Los Angeles
+697,Morning,Desktop,San Francisco
+698,Evening,Desktop,Los Angeles
+699,Night,Mobile,Los Angeles
+700,Morning,Desktop,San Francisco
+701,Night,Mobile,San Francisco
+702,Night,Mobile,Chicago
+703,Evening,Mobile,Houston
+704,Afternoon,Mobile,New York
+705,Night,Desktop,Houston
+706,Morning,Mobile,Houston
+707,Afternoon,Desktop,Chicago
+708,Afternoon,Desktop,Chicago
+709,Evening,Mobile,San Francisco
+710,Morning,Desktop,Los Angeles
+711,Morning,Mobile,Houston
+712,Evening,Mobile,Chicago
+713,Evening,Desktop,Chicago
+714,Afternoon,Desktop,Houston
+715,Night,Mobile,Chicago
+716,Night,Tablet,Houston
+717,Night,Mobile,New York
+718,Night,Tablet,Chicago
+719,Morning,Mobile,Houston
+720,Morning,Mobile,San Francisco
+721,Evening,Mobile,San Francisco
+722,Evening,Mobile,San Francisco
+723,Night,Mobile,San Francisco
+724,Evening,Desktop,Los Angeles
+725,Morning,Mobile,San Francisco
+726,Night,Mobile,Chicago
+727,Night,Mobile,Los Angeles
+728,Morning,Mobile,New York
+729,Afternoon,Desktop,Houston
+730,Night,Desktop,San Francisco
+731,Evening,Tablet,San Francisco
+732,Afternoon,Mobile,Houston
+733,Morning,Mobile,New York
+734,Afternoon,Mobile,Los Angeles
+735,Afternoon,Tablet,New York
+736,Night,Desktop,Houston
+737,Afternoon,Mobile,New York
+738,Evening,Mobile,New York
+739,Night,Desktop,Chicago
+740,Morning,Desktop,Chicago
+741,Evening,Desktop,Houston
+742,Night,Mobile,Houston
+743,Afternoon,Tablet,New York
+744,Evening,Mobile,San Francisco
+745,Night,Tablet,Los Angeles
+746,Night,Desktop,San Francisco
+747,Morning,Desktop,Los Angeles
+748,Night,Desktop,Houston
+749,Morning,Mobile,Houston
+750,Afternoon,Mobile,Houston
+751,Night,Mobile,Chicago
+752,Night,Mobile,Houston
+753,Afternoon,Mobile,New York
+754,Night,Mobile,New York
+755,Night,Desktop,Chicago
+756,Evening,Mobile,Chicago
+757,Morning,Desktop,Houston
+758,Night,Desktop,Chicago
+759,Night,Mobile,Houston
+760,Morning,Mobile,Los Angeles
+761,Evening,Mobile,Los Angeles
+762,Morning,Desktop,Los Angeles
+763,Night,Mobile,Chicago
+764,Afternoon,Mobile,Chicago
+765,Afternoon,Desktop,San Francisco
+766,Evening,Mobile,San Francisco
+767,Evening,Desktop,San Francisco
+768,Night,Mobile,Houston
+769,Evening,Desktop,Houston
+770,Night,Tablet,Houston
+771,Afternoon,Desktop,New York
+772,Evening,Mobile,Houston
+773,Night,Mobile,San Francisco
+774,Morning,Desktop,Houston
+775,Evening,Mobile,New York
+776,Night,Mobile,Houston
+777,Night,Desktop,San Francisco
+778,Morning,Mobile,New York
+779,Afternoon,Mobile,Houston
+780,Morning,Tablet,Los Angeles
+781,Night,Mobile,Chicago
+782,Morning,Mobile,Los Angeles
+783,Morning,Desktop,Los Angeles
+784,Night,Desktop,San Francisco
+785,Afternoon,Mobile,Los Angeles
+786,Morning,Desktop,Houston
+787,Morning,Desktop,Houston
+788,Evening,Mobile,New York
+789,Evening,Mobile,Houston
+790,Night,Mobile,Los Angeles
+791,Night,Desktop,San Francisco
+792,Night,Desktop,New York
+793,Evening,Mobile,San Francisco
+794,Night,Desktop,Los Angeles
+795,Morning,Desktop,Los Angeles
+796,Morning,Mobile,San Francisco
+797,Afternoon,Desktop,Chicago
+798,Night,Mobile,Chicago
+799,Morning,Tablet,Los Angeles
+800,Morning,Mobile,Los Angeles
+801,Afternoon,Desktop,Houston
+802,Morning,Desktop,New York
+803,Afternoon,Mobile,Chicago
+804,Afternoon,Desktop,San Francisco
+805,Evening,Desktop,Los Angeles
+806,Morning,Tablet,Los Angeles
+807,Evening,Mobile,Houston
+808,Morning,Mobile,San Francisco
+809,Evening,Tablet,San Francisco
+810,Afternoon,Desktop,Houston
+811,Afternoon,Desktop,New York
+812,Afternoon,Tablet,Chicago
+813,Afternoon,Mobile,New York
+814,Morning,Mobile,San Francisco
+815,Night,Mobile,San Francisco
+816,Morning,Desktop,New York
+817,Evening,Desktop,Los Angeles
+818,Morning,Tablet,Los Angeles
+819,Morning,Mobile,Houston
+820,Evening,Desktop,San Francisco
+821,Afternoon,Tablet,Houston
+822,Evening,Desktop,New York
+823,Evening,Mobile,Houston
+824,Night,Desktop,Los Angeles
+825,Night,Tablet,Los Angeles
+826,Afternoon,Tablet,Los Angeles
+827,Evening,Desktop,Houston
+828,Evening,Desktop,San Francisco
+829,Evening,Mobile,Chicago
+830,Morning,Mobile,New York
+831,Night,Tablet,San Francisco
+832,Night,Mobile,Houston
+833,Afternoon,Mobile,New York
+834,Night,Mobile,Los Angeles
+835,Night,Mobile,Los Angeles
+836,Afternoon,Desktop,New York
+837,Evening,Mobile,Chicago
+838,Morning,Tablet,Houston
+839,Afternoon,Tablet,Houston
+840,Night,Mobile,Houston
+841,Afternoon,Mobile,New York
+842,Night,Desktop,New York
+843,Evening,Desktop,Los Angeles
+844,Evening,Mobile,Los Angeles
+845,Evening,Mobile,Houston
+846,Night,Mobile,San Francisco
+847,Afternoon,Mobile,New York
+848,Night,Mobile,New York
+849,Evening,Desktop,San Francisco
+850,Evening,Desktop,Los Angeles
+851,Evening,Desktop,San Francisco
+852,Night,Mobile,Houston
+853,Morning,Desktop,Los Angeles
+854,Evening,Mobile,Houston
+855,Afternoon,Mobile,Houston
+856,Evening,Desktop,New York
+857,Night,Desktop,Chicago
+858,Afternoon,Mobile,San Francisco
+859,Night,Desktop,Los Angeles
+860,Morning,Tablet,Los Angeles
+861,Morning,Mobile,New York
+862,Night,Desktop,San Francisco
+863,Evening,Tablet,Houston
+864,Afternoon,Desktop,San Francisco
+865,Evening,Mobile,New York
+866,Night,Mobile,Chicago
+867,Night,Mobile,Houston
+868,Evening,Mobile,Houston
+869,Afternoon,Desktop,New York
+870,Afternoon,Mobile,Los Angeles
+871,Afternoon,Tablet,Los Angeles
+872,Afternoon,Mobile,Chicago
+873,Afternoon,Desktop,San Francisco
+874,Morning,Mobile,Los Angeles
+875,Morning,Mobile,Houston
+876,Night,Desktop,Los Angeles
+877,Morning,Mobile,San Francisco
+878,Afternoon,Mobile,Los Angeles
+879,Afternoon,Mobile,San Francisco
+880,Afternoon,Mobile,New York
+881,Night,Desktop,Chicago
+882,Night,Tablet,Houston
+883,Evening,Mobile,Houston
+884,Morning,Mobile,Chicago
+885,Morning,Desktop,Los Angeles
+886,Evening,Tablet,Chicago
+887,Evening,Tablet,New York
+888,Morning,Desktop,Chicago
+889,Afternoon,Mobile,New York
+890,Morning,Mobile,New York
+891,Afternoon,Mobile,Los Angeles
+892,Night,Mobile,Los Angeles
+893,Morning,Desktop,Houston
+894,Morning,Desktop,Houston
+895,Night,Desktop,Los Angeles
+896,Night,Mobile,Chicago
+897,Night,Desktop,New York
+898,Night,Mobile,New York
+899,Night,Mobile,San Francisco
+900,Evening,Mobile,San Francisco
+901,Evening,Desktop,New York
+902,Night,Mobile,Houston
+903,Night,Desktop,New York
+904,Night,Mobile,New York
+905,Night,Mobile,San Francisco
+906,Afternoon,Tablet,Los Angeles
+907,Afternoon,Mobile,New York
+908,Night,Mobile,Los Angeles
+909,Night,Mobile,Chicago
+910,Morning,Tablet,New York
+911,Night,Mobile,Chicago
+912,Night,Mobile,San Francisco
+913,Evening,Mobile,San Francisco
+914,Afternoon,Mobile,New York
+915,Night,Mobile,Los Angeles
+916,Afternoon,Desktop,San Francisco
+917,Afternoon,Desktop,Houston
+918,Morning,Mobile,Los Angeles
+919,Afternoon,Desktop,Houston
+920,Afternoon,Desktop,Los Angeles
+921,Night,Tablet,Chicago
+922,Evening,Mobile,Los Angeles
+923,Night,Mobile,Los Angeles
+924,Night,Desktop,New York
+925,Evening,Mobile,New York
+926,Evening,Mobile,Los Angeles
+927,Morning,Desktop,San Francisco
+928,Evening,Mobile,New York
+929,Night,Mobile,Los Angeles
+930,Evening,Mobile,Houston
+931,Evening,Desktop,Los Angeles
+932,Evening,Mobile,New York
+933,Afternoon,Desktop,Chicago
+934,Morning,Desktop,Los Angeles
+935,Afternoon,Mobile,San Francisco
+936,Afternoon,Mobile,Los Angeles
+937,Morning,Mobile,Chicago
+938,Afternoon,Desktop,Chicago
+939,Evening,Mobile,New York
+940,Morning,Tablet,New York
+941,Afternoon,Mobile,San Francisco
+942,Night,Mobile,Los Angeles
+943,Afternoon,Mobile,New York
+944,Night,Desktop,Chicago
+945,Evening,Mobile,Los Angeles
+946,Night,Mobile,San Francisco
+947,Afternoon,Desktop,Chicago
+948,Afternoon,Mobile,Los Angeles
+949,Afternoon,Mobile,Los Angeles
+950,Morning,Desktop,Los Angeles
+951,Morning,Desktop,Houston
+952,Afternoon,Mobile,San Francisco
+953,Afternoon,Mobile,San Francisco
+954,Evening,Desktop,Chicago
+955,Morning,Mobile,Los Angeles
+956,Morning,Desktop,Chicago
+957,Morning,Mobile,San Francisco
+958,Night,Mobile,Los Angeles
+959,Afternoon,Mobile,New York
+960,Evening,Mobile,Los Angeles
+961,Evening,Desktop,Los Angeles
+962,Afternoon,Mobile,Chicago
+963,Afternoon,Mobile,San Francisco
+964,Evening,Tablet,Los Angeles
+965,Night,Mobile,Houston
+966,Evening,Desktop,Chicago
+967,Night,Tablet,Chicago
+968,Night,Tablet,Houston
+969,Morning,Desktop,New York
+970,Afternoon,Mobile,New York
+971,Morning,Tablet,New York
+972,Night,Desktop,San Francisco
+973,Evening,Desktop,Los Angeles
+974,Morning,Mobile,Chicago
+975,Evening,Tablet,Chicago
+976,Night,Desktop,San Francisco
+977,Evening,Desktop,New York
+978,Morning,Mobile,Chicago
+979,Night,Mobile,New York
+980,Afternoon,Tablet,New York
+981,Morning,Mobile,San Francisco
+982,Morning,Mobile,Chicago
+983,Afternoon,Desktop,Los Angeles
+984,Night,Mobile,Los Angeles
+985,Afternoon,Mobile,San Francisco
+986,Morning,Mobile,New York
+987,Night,Mobile,San Francisco
+988,Evening,Mobile,Los Angeles
+989,Morning,Mobile,San Francisco
+990,Evening,Mobile,New York
+991,Afternoon,Desktop,San Francisco
+992,Night,Tablet,Houston
+993,Afternoon,Mobile,New York
+994,Evening,Mobile,Los Angeles
+995,Morning,Mobile,San Francisco
+996,Night,Desktop,Los Angeles
+997,Afternoon,Tablet,San Francisco
+998,Evening,Mobile,San Francisco
+999,Evening,Mobile,Chicago
+1000,Morning,Desktop,Houston
+1001,Evening,Desktop,New York
+1002,Night,Mobile,San Francisco
+1003,Evening,Desktop,New York
+1004,Morning,Desktop,Houston
+1005,Afternoon,Tablet,San Francisco
+1006,Night,Mobile,Houston
+1007,Afternoon,Tablet,Houston
+1008,Afternoon,Mobile,San Francisco
+1009,Evening,Desktop,Chicago
+1010,Evening,Mobile,San Francisco
+1011,Morning,Mobile,Los Angeles
+1012,Evening,Desktop,Houston
+1013,Evening,Mobile,Chicago
+1014,Afternoon,Mobile,Los Angeles
+1015,Night,Mobile,Los Angeles
+1016,Evening,Mobile,New York
+1017,Night,Mobile,New York
+1018,Evening,Tablet,Los Angeles
+1019,Evening,Mobile,San Francisco
+1020,Morning,Mobile,Los Angeles
+1021,Evening,Mobile,San Francisco
+1022,Morning,Mobile,Chicago
+1023,Afternoon,Mobile,Los Angeles
+1024,Night,Mobile,San Francisco
+1025,Evening,Mobile,Los Angeles
+1026,Morning,Mobile,Chicago
+1027,Afternoon,Desktop,Houston
+1028,Evening,Desktop,Los Angeles
+1029,Morning,Mobile,San Francisco
+1030,Morning,Mobile,Los Angeles
+1031,Afternoon,Desktop,New York
+1032,Evening,Mobile,San Francisco
+1033,Evening,Tablet,San Francisco
+1034,Night,Mobile,Chicago
+1035,Evening,Mobile,New York
+1036,Morning,Desktop,New York
+1037,Night,Desktop,San Francisco
+1038,Night,Mobile,Los Angeles
+1039,Evening,Mobile,Los Angeles
+1040,Night,Mobile,New York
+1041,Morning,Tablet,Houston
+1042,Morning,Desktop,San Francisco
+1043,Afternoon,Mobile,New York
+1044,Morning,Mobile,Houston
+1045,Afternoon,Mobile,Houston
+1046,Night,Mobile,San Francisco
+1047,Afternoon,Mobile,San Francisco
+1048,Evening,Desktop,San Francisco
+1049,Afternoon,Mobile,New York
+1050,Evening,Mobile,San Francisco
+1051,Night,Desktop,New York
+1052,Afternoon,Mobile,Chicago
+1053,Morning,Mobile,Chicago
+1054,Evening,Mobile,San Francisco
+1055,Night,Mobile,New York
+1056,Morning,Desktop,Los Angeles
+1057,Evening,Desktop,Los Angeles
+1058,Night,Mobile,San Francisco
+1059,Night,Mobile,San Francisco
+1060,Morning,Mobile,Los Angeles
+1061,Night,Mobile,San Francisco
+1062,Afternoon,Mobile,Chicago
+1063,Night,Mobile,Los Angeles
+1064,Evening,Mobile,Houston
+1065,Evening,Mobile,Houston
+1066,Evening,Desktop,Chicago
+1067,Afternoon,Desktop,New York
+1068,Morning,Tablet,San Francisco
+1069,Afternoon,Mobile,New York
+1070,Afternoon,Desktop,Chicago
+1071,Afternoon,Desktop,Los Angeles
+1072,Night,Tablet,Los Angeles
+1073,Morning,Mobile,San Francisco
+1074,Night,Desktop,New York
+1075,Afternoon,Mobile,New York
+1076,Evening,Desktop,Los Angeles
+1077,Afternoon,Mobile,San Francisco
+1078,Morning,Desktop,Houston
+1079,Evening,Desktop,Houston
+1080,Morning,Mobile,San Francisco
+1081,Afternoon,Mobile,Houston
+1082,Morning,Mobile,San Francisco
+1083,Night,Mobile,Houston
+1084,Evening,Mobile,San Francisco
+1085,Morning,Mobile,Los Angeles
+1086,Evening,Desktop,San Francisco
+1087,Evening,Mobile,Los Angeles
+1088,Afternoon,Desktop,New York
+1089,Afternoon,Desktop,Los Angeles
+1090,Evening,Tablet,Houston
+1091,Morning,Desktop,Los Angeles
+1092,Evening,Mobile,San Francisco
+1093,Afternoon,Desktop,New York
+1094,Morning,Mobile,Chicago
+1095,Evening,Tablet,Houston
+1096,Afternoon,Desktop,New York
+1097,Evening,Desktop,San Francisco
+1098,Evening,Mobile,San Francisco
+1099,Evening,Mobile,Chicago
+1100,Morning,Desktop,Chicago
+1101,Afternoon,Desktop,Chicago
+1102,Afternoon,Mobile,New York
+1103,Night,Tablet,San Francisco
+1104,Evening,Mobile,Houston
+1105,Evening,Desktop,Houston
+1106,Night,Desktop,Los Angeles
+1107,Evening,Mobile,Houston
+1108,Morning,Mobile,Los Angeles
+1109,Night,Desktop,Los Angeles
+1110,Afternoon,Mobile,Los Angeles
+1111,Evening,Mobile,Chicago
+1112,Afternoon,Desktop,Los Angeles
+1113,Evening,Desktop,Houston
+1114,Night,Mobile,San Francisco
+1115,Afternoon,Mobile,New York
+1116,Evening,Mobile,New York
+1117,Morning,Desktop,Los Angeles
+1118,Night,Mobile,San Francisco
+1119,Evening,Desktop,Chicago
+1120,Evening,Desktop,Los Angeles
+1121,Evening,Mobile,Houston
+1122,Night,Mobile,Los Angeles
+1123,Evening,Tablet,Los Angeles
+1124,Evening,Mobile,New York
+1125,Afternoon,Desktop,San Francisco
+1126,Afternoon,Tablet,Los Angeles
+1127,Night,Tablet,Chicago
+1128,Night,Mobile,San Francisco
+1129,Morning,Mobile,New York
+1130,Evening,Tablet,New York
+1131,Afternoon,Desktop,Chicago
+1132,Afternoon,Mobile,Los Angeles
+1133,Evening,Mobile,Houston
+1134,Evening,Mobile,Los Angeles
+1135,Night,Desktop,Houston
+1136,Morning,Mobile,Houston
+1137,Morning,Desktop,Houston
+1138,Night,Desktop,Houston
+1139,Night,Desktop,Chicago
+1140,Afternoon,Desktop,Houston
+1141,Night,Desktop,Houston
+1142,Morning,Mobile,Houston
+1143,Afternoon,Mobile,Los Angeles
+1144,Morning,Desktop,New York
+1145,Evening,Mobile,Chicago
+1146,Morning,Mobile,San Francisco
+1147,Afternoon,Mobile,Los Angeles
+1148,Morning,Mobile,Houston
+1149,Afternoon,Desktop,Houston
+1150,Afternoon,Desktop,Los Angeles
+1151,Night,Mobile,New York
+1152,Morning,Desktop,San Francisco
+1153,Night,Mobile,Chicago
+1154,Night,Desktop,Houston
+1155,Morning,Mobile,San Francisco
+1156,Afternoon,Desktop,Chicago
+1157,Evening,Mobile,Houston
+1158,Morning,Mobile,Los Angeles
+1159,Night,Desktop,Chicago
+1160,Night,Mobile,New York
+1161,Afternoon,Tablet,New York
+1162,Night,Desktop,Houston
+1163,Evening,Mobile,New York
+1164,Night,Desktop,San Francisco
+1165,Afternoon,Mobile,New York
+1166,Morning,Mobile,Chicago
+1167,Afternoon,Tablet,Houston
+1168,Night,Mobile,Houston
+1169,Afternoon,Desktop,San Francisco
+1170,Night,Mobile,Los Angeles
+1171,Afternoon,Desktop,New York
+1172,Morning,Mobile,New York
+1173,Night,Mobile,Houston
+1174,Evening,Tablet,Houston
+1175,Evening,Mobile,Los Angeles
+1176,Evening,Desktop,San Francisco
+1177,Evening,Mobile,Houston
+1178,Night,Mobile,Chicago
+1179,Night,Desktop,Los Angeles
+1180,Morning,Mobile,Chicago
+1181,Afternoon,Mobile,New York
+1182,Night,Tablet,Los Angeles
+1183,Evening,Desktop,Houston
+1184,Night,Mobile,San Francisco
+1185,Evening,Mobile,San Francisco
+1186,Morning,Desktop,Chicago
+1187,Afternoon,Tablet,Chicago
+1188,Night,Tablet,New York
+1189,Afternoon,Desktop,San Francisco
+1190,Evening,Mobile,Houston
+1191,Evening,Tablet,Los Angeles
+1192,Afternoon,Desktop,Los Angeles
+1193,Morning,Mobile,Chicago
+1194,Afternoon,Mobile,Chicago
+1195,Afternoon,Mobile,Houston
+1196,Night,Desktop,Houston
+1197,Night,Mobile,New York
+1198,Evening,Mobile,Houston
+1199,Night,Mobile,Houston
+1200,Morning,Mobile,Chicago
+1201,Morning,Mobile,New York
+1202,Morning,Desktop,Chicago
+1203,Evening,Mobile,New York
+1204,Morning,Tablet,Los Angeles
+1205,Morning,Desktop,Chicago
+1206,Night,Tablet,Chicago
+1207,Evening,Desktop,Houston
+1208,Afternoon,Mobile,Los Angeles
+1209,Morning,Mobile,New York
+1210,Night,Mobile,Los Angeles
+1211,Afternoon,Tablet,Chicago
+1212,Morning,Mobile,Los Angeles
+1213,Afternoon,Mobile,Chicago
+1214,Afternoon,Desktop,Houston
+1215,Evening,Tablet,Los Angeles
+1216,Evening,Desktop,San Francisco
+1217,Morning,Desktop,Los Angeles
+1218,Morning,Mobile,San Francisco
+1219,Evening,Desktop,Los Angeles
+1220,Morning,Mobile,Chicago
+1221,Morning,Desktop,Houston
+1222,Evening,Mobile,New York
+1223,Afternoon,Mobile,New York
+1224,Morning,Tablet,San Francisco
+1225,Night,Mobile,San Francisco
+1226,Evening,Desktop,San Francisco
+1227,Morning,Desktop,New York
+1228,Morning,Desktop,Chicago
+1229,Evening,Mobile,New York
+1230,Night,Mobile,Los Angeles
+1231,Night,Desktop,Houston
+1232,Evening,Desktop,Houston
+1233,Night,Mobile,New York
+1234,Morning,Mobile,Chicago
+1235,Night,Mobile,Houston
+1236,Morning,Tablet,San Francisco
+1237,Afternoon,Mobile,Houston
+1238,Night,Mobile,San Francisco
+1239,Afternoon,Desktop,San Francisco
+1240,Evening,Mobile,San Francisco
+1241,Night,Tablet,San Francisco
+1242,Morning,Mobile,Los Angeles
+1243,Night,Mobile,Los Angeles
+1244,Evening,Mobile,Chicago
+1245,Evening,Mobile,Houston
+1246,Morning,Mobile,New York
+1247,Night,Mobile,Chicago
+1248,Afternoon,Mobile,San Francisco
+1249,Evening,Desktop,New York
+1250,Evening,Mobile,San Francisco
+1251,Morning,Tablet,Los Angeles
+1252,Night,Desktop,Houston
+1253,Afternoon,Mobile,Los Angeles
+1254,Night,Mobile,San Francisco
+1255,Night,Mobile,Chicago
+1256,Afternoon,Mobile,Houston
+1257,Morning,Mobile,Chicago
+1258,Evening,Mobile,San Francisco
+1259,Morning,Desktop,Los Angeles
+1260,Morning,Mobile,New York
+1261,Night,Mobile,Los Angeles
+1262,Afternoon,Mobile,San Francisco
+1263,Evening,Desktop,San Francisco
+1264,Night,Mobile,Houston
+1265,Evening,Desktop,Houston
+1266,Night,Mobile,New York
+1267,Afternoon,Tablet,San Francisco
+1268,Evening,Mobile,Los Angeles
+1269,Evening,Tablet,New York
+1270,Morning,Desktop,Los Angeles
+1271,Night,Mobile,Los Angeles
+1272,Night,Mobile,Chicago
+1273,Night,Mobile,Los Angeles
+1274,Morning,Tablet,San Francisco
+1275,Morning,Desktop,San Francisco
+1276,Evening,Mobile,New York
+1277,Night,Mobile,New York
+1278,Night,Mobile,Houston
+1279,Evening,Desktop,Chicago
+1280,Evening,Desktop,Chicago
+1281,Evening,Mobile,Houston
+1282,Afternoon,Mobile,Houston
+1283,Afternoon,Mobile,Houston
+1284,Evening,Mobile,Houston
+1285,Morning,Mobile,San Francisco
+1286,Morning,Mobile,Houston
+1287,Night,Mobile,San Francisco
+1288,Afternoon,Tablet,New York
+1289,Afternoon,Desktop,Chicago
+1290,Evening,Tablet,San Francisco
+1291,Evening,Mobile,San Francisco
+1292,Evening,Desktop,Houston
+1293,Evening,Desktop,San Francisco
+1294,Evening,Mobile,San Francisco
+1295,Morning,Mobile,Houston
+1296,Morning,Desktop,Los Angeles
+1297,Evening,Tablet,San Francisco
+1298,Morning,Mobile,Los Angeles
+1299,Evening,Mobile,Houston
+1300,Evening,Desktop,Chicago
+1301,Afternoon,Tablet,San Francisco
+1302,Morning,Desktop,New York
+1303,Morning,Mobile,Chicago
+1304,Afternoon,Mobile,Houston
+1305,Morning,Mobile,Chicago
+1306,Afternoon,Desktop,Los Angeles
+1307,Night,Desktop,Chicago
+1308,Morning,Mobile,Los Angeles
+1309,Evening,Mobile,New York
+1310,Afternoon,Tablet,Houston
+1311,Evening,Desktop,Los Angeles
+1312,Evening,Tablet,San Francisco
+1313,Morning,Mobile,Chicago
+1314,Afternoon,Desktop,San Francisco
+1315,Night,Desktop,Los Angeles
+1316,Evening,Mobile,Houston
+1317,Evening,Tablet,Houston
+1318,Night,Mobile,New York
+1319,Afternoon,Desktop,San Francisco
+1320,Morning,Tablet,Los Angeles
+1321,Evening,Mobile,San Francisco
+1322,Morning,Desktop,San Francisco
+1323,Afternoon,Mobile,Houston
+1324,Night,Desktop,New York
+1325,Morning,Desktop,Los Angeles
+1326,Afternoon,Desktop,San Francisco
+1327,Morning,Desktop,Houston
+1328,Morning,Mobile,Los Angeles
+1329,Evening,Mobile,Houston
+1330,Morning,Mobile,Houston
+1331,Evening,Desktop,New York
+1332,Afternoon,Mobile,San Francisco
+1333,Afternoon,Desktop,San Francisco
+1334,Evening,Mobile,San Francisco
+1335,Night,Desktop,Houston
+1336,Morning,Mobile,Chicago
+1337,Afternoon,Desktop,New York
+1338,Afternoon,Desktop,Houston
+1339,Night,Tablet,San Francisco
+1340,Afternoon,Desktop,Chicago
+1341,Evening,Desktop,Chicago
+1342,Night,Tablet,Houston
+1343,Afternoon,Desktop,Chicago
+1344,Night,Mobile,Houston
+1345,Night,Desktop,Los Angeles
+1346,Afternoon,Desktop,Houston
+1347,Afternoon,Mobile,Los Angeles
+1348,Afternoon,Desktop,Los Angeles
+1349,Night,Desktop,Los Angeles
+1350,Evening,Tablet,Houston
+1351,Evening,Tablet,Houston
+1352,Morning,Mobile,Los Angeles
+1353,Afternoon,Mobile,New York
+1354,Evening,Mobile,San Francisco
+1355,Morning,Mobile,San Francisco
+1356,Morning,Desktop,San Francisco
+1357,Afternoon,Mobile,Chicago
+1358,Morning,Desktop,Chicago
+1359,Evening,Desktop,San Francisco
+1360,Morning,Desktop,Los Angeles
+1361,Morning,Mobile,New York
+1362,Evening,Mobile,New York
+1363,Morning,Mobile,Houston
+1364,Morning,Mobile,Chicago
+1365,Night,Tablet,San Francisco
+1366,Morning,Desktop,Chicago
+1367,Morning,Mobile,Chicago
+1368,Night,Desktop,San Francisco
+1369,Night,Mobile,New York
+1370,Night,Desktop,Houston
+1371,Afternoon,Mobile,Los Angeles
+1372,Afternoon,Desktop,Chicago
+1373,Evening,Mobile,Houston
+1374,Morning,Mobile,Houston
+1375,Evening,Mobile,Los Angeles
+1376,Afternoon,Mobile,New York
+1377,Morning,Desktop,Chicago
+1378,Morning,Mobile,Chicago
+1379,Night,Desktop,Los Angeles
+1380,Afternoon,Desktop,Houston
+1381,Morning,Desktop,New York
+1382,Night,Desktop,Los Angeles
+1383,Morning,Mobile,Chicago
+1384,Afternoon,Mobile,San Francisco
+1385,Evening,Tablet,San Francisco
+1386,Evening,Desktop,Houston
+1387,Morning,Desktop,Los Angeles
+1388,Night,Desktop,Houston
+1389,Night,Mobile,Los Angeles
+1390,Night,Desktop,Houston
+1391,Afternoon,Tablet,Chicago
+1392,Evening,Mobile,Chicago
+1393,Evening,Desktop,Los Angeles
+1394,Morning,Mobile,Chicago
+1395,Evening,Mobile,Houston
+1396,Night,Desktop,Los Angeles
+1397,Afternoon,Desktop,Houston
+1398,Night,Desktop,Los Angeles
+1399,Night,Tablet,Houston
+1400,Evening,Mobile,Chicago
+1401,Afternoon,Desktop,San Francisco
+1402,Afternoon,Mobile,Los Angeles
+1403,Night,Mobile,New York
+1404,Morning,Mobile,Los Angeles
+1405,Evening,Desktop,Houston
+1406,Morning,Mobile,Houston
+1407,Night,Desktop,New York
+1408,Evening,Desktop,San Francisco
+1409,Morning,Mobile,San Francisco
+1410,Morning,Desktop,Houston
+1411,Morning,Mobile,Houston
+1412,Evening,Mobile,Los Angeles
+1413,Morning,Desktop,New York
+1414,Afternoon,Mobile,Houston
+1415,Night,Desktop,Houston
+1416,Evening,Desktop,Chicago
+1417,Afternoon,Mobile,Chicago
+1418,Morning,Desktop,San Francisco
+1419,Night,Mobile,San Francisco
+1420,Morning,Mobile,New York
+1421,Afternoon,Mobile,New York
+1422,Morning,Mobile,Los Angeles
+1423,Evening,Mobile,Houston
+1424,Afternoon,Tablet,San Francisco
+1425,Evening,Mobile,Houston
+1426,Night,Desktop,Los Angeles
+1427,Evening,Mobile,New York
+1428,Evening,Mobile,Chicago
+1429,Morning,Mobile,San Francisco
+1430,Morning,Desktop,San Francisco
+1431,Afternoon,Mobile,Los Angeles
+1432,Night,Mobile,Los Angeles
+1433,Afternoon,Mobile,Los Angeles
+1434,Night,Desktop,Los Angeles
+1435,Night,Mobile,Houston
+1436,Evening,Desktop,Houston
+1437,Morning,Mobile,San Francisco
+1438,Night,Desktop,San Francisco
+1439,Morning,Mobile,San Francisco
+1440,Night,Mobile,Houston
+1441,Morning,Mobile,Chicago
+1442,Afternoon,Tablet,Houston
+1443,Morning,Mobile,Chicago
+1444,Evening,Tablet,New York
+1445,Night,Mobile,Houston
+1446,Evening,Mobile,San Francisco
+1447,Night,Mobile,Houston
+1448,Evening,Mobile,Los Angeles
+1449,Night,Tablet,San Francisco
+1450,Morning,Desktop,Chicago
+1451,Night,Desktop,Los Angeles
+1452,Evening,Desktop,Chicago
+1453,Evening,Mobile,New York
+1454,Night,Tablet,San Francisco
+1455,Night,Mobile,San Francisco
+1456,Afternoon,Desktop,New York
+1457,Afternoon,Mobile,Chicago
+1458,Morning,Tablet,Houston
+1459,Morning,Desktop,Chicago
+1460,Morning,Tablet,New York
+1461,Morning,Mobile,Houston
+1462,Morning,Mobile,San Francisco
+1463,Night,Mobile,Chicago
+1464,Afternoon,Desktop,San Francisco
+1465,Night,Desktop,Houston
+1466,Afternoon,Mobile,Los Angeles
+1467,Afternoon,Mobile,Los Angeles
+1468,Evening,Mobile,Los Angeles
+1469,Evening,Desktop,Los Angeles
+1470,Afternoon,Mobile,Los Angeles
+1471,Night,Desktop,Houston
+1472,Afternoon,Mobile,San Francisco
+1473,Morning,Mobile,New York
+1474,Night,Tablet,New York
+1475,Night,Mobile,Houston
+1476,Afternoon,Mobile,San Francisco
+1477,Morning,Mobile,San Francisco
+1478,Afternoon,Mobile,Houston
+1479,Morning,Desktop,Chicago
+1480,Night,Mobile,New York
+1481,Afternoon,Desktop,San Francisco
+1482,Morning,Mobile,Houston
+1483,Evening,Desktop,San Francisco
+1484,Night,Desktop,Los Angeles
+1485,Night,Tablet,San Francisco
+1486,Evening,Tablet,Houston
+1487,Morning,Mobile,San Francisco
+1488,Night,Mobile,San Francisco
+1489,Morning,Desktop,New York
+1490,Evening,Mobile,New York
+1491,Afternoon,Mobile,Los Angeles
+1492,Night,Mobile,San Francisco
+1493,Night,Mobile,Chicago
+1494,Morning,Mobile,Los Angeles
+1495,Night,Mobile,Los Angeles
+1496,Afternoon,Mobile,Chicago
+1497,Evening,Desktop,Houston
+1498,Night,Mobile,Chicago
+1499,Evening,Tablet,New York
+1500,Morning,Mobile,Chicago
+1501,Afternoon,Desktop,San Francisco
+1502,Night,Mobile,San Francisco
+1503,Evening,Mobile,San Francisco
+1504,Afternoon,Mobile,Chicago
+1505,Evening,Mobile,New York
+1506,Morning,Desktop,Houston
+1507,Afternoon,Desktop,New York
+1508,Afternoon,Mobile,San Francisco
+1509,Morning,Mobile,Chicago
+1510,Morning,Mobile,Houston
+1511,Night,Mobile,San Francisco
+1512,Morning,Mobile,San Francisco
+1513,Morning,Tablet,New York
+1514,Evening,Mobile,San Francisco
+1515,Afternoon,Desktop,New York
+1516,Evening,Desktop,Los Angeles
+1517,Morning,Desktop,San Francisco
+1518,Night,Mobile,San Francisco
+1519,Evening,Desktop,Los Angeles
+1520,Evening,Desktop,Los Angeles
+1521,Afternoon,Mobile,Los Angeles
+1522,Afternoon,Mobile,San Francisco
+1523,Afternoon,Tablet,San Francisco
+1524,Night,Desktop,Los Angeles
+1525,Night,Mobile,Houston
+1526,Morning,Mobile,San Francisco
+1527,Morning,Mobile,Chicago
+1528,Afternoon,Mobile,Houston
+1529,Evening,Mobile,Los Angeles
+1530,Afternoon,Mobile,New York
+1531,Morning,Desktop,Houston
+1532,Evening,Desktop,San Francisco
+1533,Morning,Desktop,Chicago
+1534,Night,Mobile,Chicago
+1535,Afternoon,Desktop,San Francisco
+1536,Afternoon,Mobile,Los Angeles
+1537,Evening,Mobile,Los Angeles
+1538,Afternoon,Tablet,Los Angeles
+1539,Morning,Mobile,San Francisco
+1540,Morning,Mobile,San Francisco
+1541,Night,Mobile,Houston
+1542,Morning,Mobile,Chicago
+1543,Evening,Desktop,New York
+1544,Morning,Tablet,Los Angeles
+1545,Night,Desktop,Los Angeles
+1546,Night,Desktop,San Francisco
+1547,Afternoon,Desktop,San Francisco
+1548,Evening,Desktop,Chicago
+1549,Morning,Mobile,Houston
+1550,Night,Tablet,San Francisco
+1551,Morning,Mobile,San Francisco
+1552,Night,Tablet,Houston
+1553,Afternoon,Mobile,San Francisco
+1554,Night,Desktop,Chicago
+1555,Afternoon,Desktop,San Francisco
+1556,Evening,Tablet,San Francisco
+1557,Morning,Desktop,San Francisco
+1558,Morning,Mobile,New York
+1559,Afternoon,Mobile,Houston
+1560,Evening,Mobile,New York
+1561,Afternoon,Mobile,San Francisco
+1562,Night,Mobile,Los Angeles
+1563,Afternoon,Mobile,Houston
+1564,Evening,Mobile,Los Angeles
+1565,Night,Tablet,Los Angeles
+1566,Morning,Tablet,San Francisco
+1567,Morning,Mobile,San Francisco
+1568,Morning,Mobile,San Francisco
+1569,Evening,Mobile,San Francisco
+1570,Evening,Mobile,San Francisco
+1571,Evening,Mobile,Chicago
+1572,Evening,Mobile,New York
+1573,Evening,Mobile,San Francisco
+1574,Night,Mobile,New York
+1575,Afternoon,Mobile,Chicago
+1576,Morning,Mobile,Houston
+1577,Evening,Desktop,Houston
+1578,Morning,Desktop,San Francisco
+1579,Evening,Mobile,Chicago
+1580,Morning,Mobile,Houston
+1581,Afternoon,Mobile,New York
+1582,Morning,Mobile,Houston
+1583,Morning,Mobile,New York
+1584,Evening,Mobile,Los Angeles
+1585,Night,Mobile,Chicago
+1586,Night,Mobile,San Francisco
+1587,Morning,Desktop,Houston
+1588,Night,Mobile,Los Angeles
+1589,Afternoon,Mobile,Los Angeles
+1590,Afternoon,Mobile,Houston
+1591,Night,Mobile,New York
+1592,Night,Desktop,San Francisco
+1593,Afternoon,Desktop,Los Angeles
+1594,Night,Mobile,New York
+1595,Night,Desktop,Los Angeles
+1596,Evening,Desktop,Los Angeles
+1597,Evening,Mobile,New York
+1598,Night,Mobile,San Francisco
+1599,Night,Desktop,Los Angeles
+1600,Evening,Mobile,Houston
+1601,Evening,Mobile,New York
+1602,Night,Mobile,New York
+1603,Evening,Desktop,Los Angeles
+1604,Afternoon,Tablet,San Francisco
+1605,Morning,Desktop,San Francisco
+1606,Afternoon,Desktop,Houston
+1607,Evening,Tablet,Chicago
+1608,Afternoon,Desktop,Los Angeles
+1609,Morning,Desktop,Houston
+1610,Evening,Tablet,Los Angeles
+1611,Afternoon,Mobile,Houston
+1612,Afternoon,Desktop,New York
+1613,Morning,Desktop,Los Angeles
+1614,Evening,Tablet,San Francisco
+1615,Night,Desktop,Houston
+1616,Evening,Desktop,Los Angeles
+1617,Morning,Tablet,Chicago
+1618,Morning,Mobile,New York
+1619,Morning,Mobile,Chicago
+1620,Morning,Mobile,San Francisco
+1621,Night,Mobile,Los Angeles
+1622,Evening,Mobile,Houston
+1623,Evening,Mobile,San Francisco
+1624,Afternoon,Mobile,Chicago
+1625,Night,Tablet,New York
+1626,Night,Mobile,Chicago
+1627,Afternoon,Desktop,Los Angeles
+1628,Afternoon,Tablet,Los Angeles
+1629,Evening,Mobile,Los Angeles
+1630,Evening,Mobile,San Francisco
+1631,Evening,Desktop,New York
+1632,Night,Desktop,Los Angeles
+1633,Night,Mobile,Houston
+1634,Afternoon,Mobile,Chicago
+1635,Morning,Mobile,Chicago
+1636,Morning,Mobile,New York
+1637,Morning,Mobile,New York
+1638,Morning,Mobile,Houston
+1639,Morning,Desktop,New York
+1640,Evening,Tablet,San Francisco
+1641,Afternoon,Desktop,Chicago
+1642,Morning,Tablet,San Francisco
+1643,Morning,Desktop,Houston
+1644,Morning,Desktop,Houston
+1645,Evening,Mobile,Chicago
+1646,Morning,Mobile,New York
+1647,Afternoon,Desktop,San Francisco
+1648,Evening,Tablet,Houston
+1649,Evening,Mobile,Houston
+1650,Night,Mobile,Los Angeles
+1651,Night,Desktop,Los Angeles
+1652,Evening,Mobile,San Francisco
+1653,Morning,Mobile,Los Angeles
+1654,Morning,Desktop,Los Angeles
+1655,Morning,Mobile,Houston
+1656,Morning,Desktop,Los Angeles
+1657,Night,Tablet,Chicago
+1658,Afternoon,Mobile,Los Angeles
+1659,Evening,Mobile,Houston
+1660,Morning,Mobile,Los Angeles
+1661,Night,Mobile,New York
+1662,Afternoon,Desktop,Chicago
+1663,Evening,Mobile,Los Angeles
+1664,Evening,Mobile,San Francisco
+1665,Evening,Mobile,Los Angeles
+1666,Morning,Mobile,New York
+1667,Evening,Mobile,New York
+1668,Morning,Desktop,Chicago
+1669,Afternoon,Mobile,Los Angeles
+1670,Night,Mobile,Houston
+1671,Night,Mobile,New York
+1672,Night,Tablet,Houston
+1673,Evening,Mobile,San Francisco
+1674,Night,Desktop,Chicago
+1675,Afternoon,Mobile,Houston
+1676,Morning,Desktop,Los Angeles
+1677,Night,Mobile,New York
+1678,Morning,Tablet,San Francisco
+1679,Morning,Desktop,Houston
+1680,Night,Desktop,New York
+1681,Night,Mobile,Los Angeles
+1682,Night,Desktop,New York
+1683,Evening,Desktop,Los Angeles
+1684,Night,Mobile,Houston
+1685,Evening,Mobile,Los Angeles
+1686,Afternoon,Desktop,Chicago
+1687,Morning,Mobile,New York
+1688,Afternoon,Desktop,Los Angeles
+1689,Night,Mobile,San Francisco
+1690,Morning,Mobile,San Francisco
+1691,Night,Desktop,San Francisco
+1692,Night,Mobile,Los Angeles
+1693,Morning,Tablet,Houston
+1694,Afternoon,Desktop,New York
+1695,Night,Desktop,Chicago
+1696,Morning,Desktop,Chicago
+1697,Afternoon,Desktop,Los Angeles
+1698,Evening,Mobile,New York
+1699,Afternoon,Desktop,San Francisco
+1700,Afternoon,Mobile,Houston
+1701,Morning,Mobile,Chicago
+1702,Afternoon,Mobile,San Francisco
+1703,Evening,Desktop,New York
+1704,Evening,Mobile,Los Angeles
+1705,Night,Mobile,Los Angeles
+1706,Evening,Desktop,Houston
+1707,Night,Mobile,San Francisco
+1708,Evening,Desktop,Houston
+1709,Afternoon,Desktop,Chicago
+1710,Night,Mobile,San Francisco
+1711,Evening,Mobile,Houston
+1712,Afternoon,Desktop,San Francisco
+1713,Afternoon,Mobile,Houston
+1714,Night,Mobile,San Francisco
+1715,Morning,Mobile,Los Angeles
+1716,Afternoon,Mobile,San Francisco
+1717,Afternoon,Mobile,Chicago
+1718,Morning,Mobile,Chicago
+1719,Night,Desktop,New York
+1720,Evening,Mobile,Houston
+1721,Evening,Desktop,Los Angeles
+1722,Afternoon,Mobile,Los Angeles
+1723,Morning,Mobile,Los Angeles
+1724,Afternoon,Desktop,Chicago
+1725,Night,Desktop,San Francisco
+1726,Afternoon,Desktop,San Francisco
+1727,Evening,Desktop,Los Angeles
+1728,Morning,Desktop,Chicago
+1729,Night,Mobile,New York
+1730,Afternoon,Desktop,Houston
+1731,Evening,Desktop,New York
+1732,Afternoon,Tablet,San Francisco
+1733,Evening,Desktop,Houston
+1734,Morning,Desktop,Chicago
+1735,Night,Mobile,Houston
+1736,Afternoon,Desktop,San Francisco
+1737,Night,Tablet,New York
+1738,Morning,Desktop,New York
+1739,Evening,Desktop,Chicago
+1740,Morning,Mobile,San Francisco
+1741,Morning,Desktop,Los Angeles
+1742,Night,Desktop,San Francisco
+1743,Morning,Desktop,Chicago
+1744,Afternoon,Mobile,Chicago
+1745,Evening,Desktop,Los Angeles
+1746,Morning,Mobile,Los Angeles
+1747,Afternoon,Desktop,New York
+1748,Evening,Mobile,San Francisco
+1749,Night,Desktop,San Francisco
+1750,Evening,Mobile,Houston
+1751,Night,Mobile,Los Angeles
+1752,Evening,Desktop,New York
+1753,Morning,Mobile,San Francisco
+1754,Night,Desktop,Chicago
+1755,Night,Tablet,San Francisco
+1756,Night,Tablet,Houston
+1757,Morning,Mobile,Houston
+1758,Morning,Desktop,San Francisco
+1759,Evening,Mobile,San Francisco
+1760,Evening,Tablet,San Francisco
+1761,Morning,Desktop,Chicago
+1762,Morning,Mobile,Houston
+1763,Night,Mobile,Houston
+1764,Evening,Mobile,Chicago
+1765,Evening,Desktop,Los Angeles
+1766,Night,Mobile,Los Angeles
+1767,Night,Desktop,Houston
+1768,Night,Desktop,San Francisco
+1769,Afternoon,Tablet,San Francisco
+1770,Afternoon,Tablet,Chicago
+1771,Morning,Mobile,San Francisco
+1772,Evening,Desktop,Houston
+1773,Night,Desktop,San Francisco
+1774,Night,Desktop,Los Angeles
+1775,Evening,Mobile,New York
+1776,Afternoon,Mobile,San Francisco
+1777,Evening,Mobile,San Francisco
+1778,Morning,Mobile,New York
+1779,Afternoon,Mobile,San Francisco
+1780,Evening,Mobile,New York
+1781,Evening,Desktop,San Francisco
+1782,Morning,Mobile,Los Angeles
+1783,Evening,Desktop,San Francisco
+1784,Afternoon,Mobile,Los Angeles
+1785,Night,Desktop,New York
+1786,Night,Tablet,San Francisco
+1787,Night,Desktop,Houston
+1788,Afternoon,Desktop,New York
+1789,Evening,Mobile,Los Angeles
+1790,Evening,Desktop,San Francisco
+1791,Evening,Mobile,San Francisco
+1792,Evening,Mobile,Chicago
+1793,Night,Mobile,Houston
+1794,Afternoon,Mobile,Los Angeles
+1795,Morning,Mobile,San Francisco
+1796,Afternoon,Desktop,Houston
+1797,Evening,Mobile,Los Angeles
+1798,Evening,Desktop,San Francisco
+1799,Afternoon,Desktop,Houston
+1800,Afternoon,Mobile,Los Angeles
+1801,Night,Mobile,Houston
+1802,Evening,Desktop,Houston
+1803,Afternoon,Mobile,New York
+1804,Evening,Mobile,San Francisco
+1805,Afternoon,Desktop,San Francisco
+1806,Evening,Mobile,San Francisco
+1807,Afternoon,Mobile,Los Angeles
+1808,Evening,Mobile,Chicago
+1809,Morning,Mobile,San Francisco
+1810,Night,Mobile,New York
+1811,Morning,Mobile,Houston
+1812,Night,Mobile,Los Angeles
+1813,Night,Mobile,New York
+1814,Afternoon,Tablet,Chicago
+1815,Morning,Mobile,Houston
+1816,Night,Desktop,Chicago
+1817,Evening,Mobile,Houston
+1818,Afternoon,Mobile,New York
+1819,Afternoon,Desktop,Chicago
+1820,Evening,Desktop,San Francisco
+1821,Evening,Mobile,Los Angeles
+1822,Night,Mobile,Chicago
+1823,Evening,Mobile,New York
+1824,Afternoon,Desktop,San Francisco
+1825,Evening,Mobile,San Francisco
+1826,Morning,Mobile,Houston
+1827,Afternoon,Desktop,San Francisco
+1828,Evening,Tablet,Chicago
+1829,Afternoon,Desktop,Los Angeles
+1830,Night,Mobile,Los Angeles
+1831,Morning,Desktop,Los Angeles
+1832,Night,Desktop,New York
+1833,Morning,Desktop,New York
+1834,Evening,Desktop,San Francisco
+1835,Afternoon,Tablet,Houston
+1836,Evening,Mobile,San Francisco
+1837,Night,Mobile,Houston
+1838,Afternoon,Desktop,Chicago
+1839,Evening,Mobile,Los Angeles
+1840,Evening,Mobile,Los Angeles
+1841,Afternoon,Mobile,New York
+1842,Afternoon,Desktop,New York
+1843,Night,Mobile,New York
+1844,Morning,Desktop,New York
+1845,Morning,Mobile,Los Angeles
+1846,Afternoon,Mobile,Houston
+1847,Morning,Mobile,Houston
+1848,Night,Mobile,Chicago
+1849,Morning,Desktop,New York
+1850,Afternoon,Desktop,Houston
+1851,Night,Desktop,New York
+1852,Afternoon,Mobile,Houston
+1853,Night,Mobile,Houston
+1854,Night,Mobile,New York
+1855,Afternoon,Mobile,Los Angeles
+1856,Evening,Mobile,Houston
+1857,Afternoon,Desktop,New York
+1858,Night,Mobile,New York
+1859,Afternoon,Mobile,Chicago
+1860,Afternoon,Tablet,Los Angeles
+1861,Night,Mobile,Chicago
+1862,Morning,Tablet,Chicago
+1863,Night,Tablet,Los Angeles
+1864,Afternoon,Mobile,San Francisco
+1865,Night,Mobile,New York
+1866,Night,Desktop,Los Angeles
+1867,Morning,Mobile,Houston
+1868,Evening,Mobile,San Francisco
+1869,Afternoon,Desktop,San Francisco
+1870,Afternoon,Mobile,San Francisco
+1871,Morning,Mobile,Los Angeles
+1872,Night,Desktop,Los Angeles
+1873,Evening,Desktop,San Francisco
+1874,Afternoon,Mobile,San Francisco
+1875,Evening,Mobile,Los Angeles
+1876,Evening,Mobile,Chicago
+1877,Night,Mobile,Los Angeles
+1878,Night,Desktop,Los Angeles
+1879,Night,Desktop,New York
+1880,Afternoon,Desktop,San Francisco
+1881,Evening,Mobile,Houston
+1882,Evening,Mobile,Los Angeles
+1883,Afternoon,Mobile,Chicago
+1884,Morning,Mobile,San Francisco
+1885,Night,Mobile,New York
+1886,Afternoon,Mobile,New York
+1887,Night,Mobile,Los Angeles
+1888,Evening,Desktop,Los Angeles
+1889,Afternoon,Desktop,New York
+1890,Morning,Mobile,Los Angeles
+1891,Night,Mobile,Chicago
+1892,Evening,Desktop,Los Angeles
+1893,Evening,Tablet,San Francisco
+1894,Morning,Mobile,Houston
+1895,Morning,Desktop,Chicago
+1896,Night,Desktop,Chicago
+1897,Evening,Mobile,San Francisco
+1898,Morning,Mobile,San Francisco
+1899,Afternoon,Mobile,New York
+1900,Morning,Mobile,New York
+1901,Afternoon,Mobile,San Francisco
+1902,Evening,Tablet,New York
+1903,Night,Desktop,Houston
+1904,Evening,Mobile,Chicago
+1905,Evening,Mobile,San Francisco
+1906,Evening,Desktop,Chicago
+1907,Evening,Mobile,San Francisco
+1908,Night,Mobile,Los Angeles
+1909,Morning,Tablet,San Francisco
+1910,Night,Mobile,San Francisco
+1911,Night,Mobile,New York
+1912,Night,Mobile,Chicago
+1913,Night,Mobile,Houston
+1914,Morning,Mobile,Chicago
+1915,Evening,Mobile,Chicago
+1916,Morning,Desktop,Los Angeles
+1917,Morning,Mobile,San Francisco
+1918,Evening,Mobile,Los Angeles
+1919,Morning,Mobile,Chicago
+1920,Night,Mobile,New York
+1921,Night,Desktop,San Francisco
+1922,Evening,Mobile,Chicago
+1923,Evening,Desktop,San Francisco
+1924,Evening,Mobile,San Francisco
+1925,Night,Mobile,Los Angeles
+1926,Evening,Desktop,New York
+1927,Morning,Mobile,Houston
+1928,Morning,Desktop,San Francisco
+1929,Afternoon,Mobile,New York
+1930,Afternoon,Mobile,Houston
+1931,Evening,Desktop,Chicago
+1932,Afternoon,Desktop,Houston
+1933,Night,Desktop,San Francisco
+1934,Night,Desktop,New York
+1935,Morning,Tablet,San Francisco
+1936,Morning,Mobile,Houston
+1937,Afternoon,Mobile,Los Angeles
+1938,Afternoon,Mobile,San Francisco
+1939,Night,Mobile,San Francisco
+1940,Morning,Mobile,Houston
+1941,Afternoon,Desktop,Houston
+1942,Night,Mobile,Houston
+1943,Morning,Desktop,Houston
+1944,Night,Mobile,San Francisco
+1945,Night,Mobile,Los Angeles
+1946,Morning,Tablet,New York
+1947,Night,Mobile,San Francisco
+1948,Afternoon,Mobile,Los Angeles
+1949,Night,Mobile,Houston
+1950,Afternoon,Desktop,Houston
+1951,Evening,Mobile,New York
+1952,Evening,Mobile,Chicago
+1953,Evening,Desktop,New York
+1954,Night,Mobile,Houston
+1955,Evening,Desktop,Chicago
+1956,Evening,Mobile,Los Angeles
+1957,Night,Mobile,Los Angeles
+1958,Morning,Desktop,Houston
+1959,Night,Desktop,New York
+1960,Afternoon,Desktop,San Francisco
+1961,Night,Desktop,New York
+1962,Morning,Mobile,New York
+1963,Evening,Mobile,New York
+1964,Night,Mobile,San Francisco
+1965,Evening,Desktop,New York
+1966,Afternoon,Desktop,Chicago
+1967,Morning,Tablet,New York
+1968,Evening,Mobile,Los Angeles
+1969,Evening,Mobile,San Francisco
+1970,Evening,Desktop,Los Angeles
+1971,Evening,Desktop,Chicago
+1972,Night,Desktop,San Francisco
+1973,Morning,Desktop,Chicago
+1974,Morning,Mobile,New York
+1975,Evening,Mobile,San Francisco
+1976,Morning,Mobile,San Francisco
+1977,Evening,Mobile,San Francisco
+1978,Afternoon,Mobile,San Francisco
+1979,Afternoon,Mobile,San Francisco
+1980,Afternoon,Mobile,Houston
+1981,Morning,Desktop,Chicago
+1982,Evening,Desktop,Los Angeles
+1983,Night,Desktop,Los Angeles
+1984,Night,Mobile,San Francisco
+1985,Afternoon,Mobile,Los Angeles
+1986,Afternoon,Mobile,Los Angeles
+1987,Morning,Tablet,Houston
+1988,Night,Mobile,Los Angeles
+1989,Morning,Mobile,New York
+1990,Afternoon,Desktop,New York
+1991,Evening,Mobile,Chicago
+1992,Evening,Desktop,Los Angeles
+1993,Evening,Mobile,Houston
+1994,Afternoon,Mobile,Los Angeles
+1995,Morning,Mobile,New York
+1996,Evening,Desktop,San Francisco
+1997,Night,Desktop,Los Angeles
+1998,Night,Mobile,Chicago
+1999,Afternoon,Mobile,New York
+2000,Night,Mobile,Los Angeles
+2001,Night,Tablet,Los Angeles
+2002,Afternoon,Desktop,New York
+2003,Morning,Desktop,San Francisco
+2004,Evening,Mobile,Houston
+2005,Afternoon,Mobile,San Francisco
+2006,Night,Mobile,Houston
+2007,Evening,Desktop,Los Angeles
+2008,Evening,Desktop,New York
+2009,Evening,Mobile,Chicago
+2010,Afternoon,Mobile,San Francisco
+2011,Evening,Mobile,New York
+2012,Morning,Mobile,San Francisco
+2013,Night,Tablet,Los Angeles
+2014,Afternoon,Mobile,Houston
+2015,Afternoon,Desktop,Los Angeles
+2016,Evening,Desktop,New York
+2017,Night,Desktop,San Francisco
+2018,Evening,Tablet,Chicago
+2019,Evening,Desktop,Los Angeles
+2020,Afternoon,Desktop,New York
+2021,Morning,Mobile,New York
+2022,Night,Desktop,Houston
+2023,Night,Desktop,New York
+2024,Night,Mobile,Los Angeles
+2025,Night,Desktop,Los Angeles
+2026,Morning,Desktop,Houston
+2027,Afternoon,Desktop,Chicago
+2028,Morning,Mobile,Los Angeles
+2029,Evening,Desktop,Los Angeles
+2030,Afternoon,Mobile,San Francisco
+2031,Morning,Desktop,Los Angeles
+2032,Night,Mobile,Chicago
+2033,Night,Mobile,Los Angeles
+2034,Afternoon,Mobile,Chicago
+2035,Morning,Mobile,Houston
+2036,Afternoon,Mobile,Los Angeles
+2037,Night,Mobile,Houston
+2038,Morning,Desktop,New York
+2039,Night,Desktop,Houston
+2040,Afternoon,Mobile,New York
+2041,Afternoon,Mobile,San Francisco
+2042,Afternoon,Mobile,Los Angeles
+2043,Afternoon,Desktop,Chicago
+2044,Afternoon,Mobile,San Francisco
+2045,Evening,Mobile,San Francisco
+2046,Afternoon,Mobile,Chicago
+2047,Afternoon,Mobile,Chicago
+2048,Night,Mobile,San Francisco
+2049,Afternoon,Mobile,Chicago
+2050,Morning,Desktop,San Francisco
+2051,Afternoon,Desktop,San Francisco
+2052,Evening,Mobile,Houston
+2053,Afternoon,Desktop,New York
+2054,Night,Mobile,New York
+2055,Morning,Tablet,New York
+2056,Morning,Mobile,San Francisco
+2057,Afternoon,Desktop,Los Angeles
+2058,Afternoon,Desktop,San Francisco
+2059,Afternoon,Mobile,Houston
+2060,Afternoon,Tablet,Chicago
+2061,Night,Mobile,New York
+2062,Night,Desktop,New York
+2063,Morning,Mobile,Chicago
+2064,Afternoon,Mobile,Houston
+2065,Night,Mobile,Houston
+2066,Night,Mobile,San Francisco
+2067,Morning,Mobile,Los Angeles
+2068,Morning,Mobile,Houston
+2069,Evening,Desktop,New York
+2070,Night,Mobile,Houston
+2071,Morning,Mobile,Houston
+2072,Night,Desktop,New York
+2073,Night,Mobile,Los Angeles
+2074,Afternoon,Mobile,Houston
+2075,Afternoon,Mobile,Los Angeles
+2076,Afternoon,Mobile,Chicago
+2077,Afternoon,Mobile,Los Angeles
+2078,Night,Tablet,Houston
+2079,Evening,Mobile,Houston
+2080,Evening,Mobile,Los Angeles
+2081,Evening,Mobile,San Francisco
+2082,Night,Mobile,Chicago
+2083,Evening,Mobile,San Francisco
+2084,Night,Mobile,Los Angeles
+2085,Morning,Mobile,Chicago
+2086,Evening,Mobile,Los Angeles
+2087,Night,Desktop,Houston
+2088,Morning,Mobile,San Francisco
+2089,Afternoon,Mobile,Houston
+2090,Morning,Desktop,San Francisco
+2091,Morning,Mobile,Chicago
+2092,Evening,Desktop,Chicago
+2093,Afternoon,Desktop,New York
+2094,Afternoon,Mobile,San Francisco
+2095,Evening,Mobile,Houston
+2096,Morning,Tablet,New York
+2097,Night,Desktop,Houston
+2098,Evening,Tablet,Houston
+2099,Morning,Mobile,Houston
+2100,Night,Mobile,Chicago
+2101,Evening,Tablet,New York
+2102,Evening,Mobile,Los Angeles
+2103,Afternoon,Tablet,Los Angeles
+2104,Afternoon,Mobile,New York
+2105,Afternoon,Tablet,San Francisco
+2106,Night,Mobile,Houston
+2107,Evening,Mobile,Chicago
+2108,Afternoon,Desktop,Houston
+2109,Afternoon,Mobile,Los Angeles
+2110,Evening,Mobile,Houston
+2111,Night,Mobile,New York
+2112,Afternoon,Desktop,Houston
+2113,Morning,Tablet,New York
+2114,Night,Mobile,Los Angeles
+2115,Afternoon,Mobile,Chicago
+2116,Morning,Mobile,New York
+2117,Afternoon,Desktop,San Francisco
+2118,Night,Mobile,Houston
+2119,Evening,Mobile,Los Angeles
+2120,Evening,Mobile,San Francisco
+2121,Night,Mobile,Chicago
+2122,Afternoon,Desktop,San Francisco
+2123,Night,Mobile,Houston
+2124,Morning,Mobile,Chicago
+2125,Afternoon,Mobile,New York
+2126,Night,Desktop,San Francisco
+2127,Evening,Mobile,San Francisco
+2128,Night,Mobile,Los Angeles
+2129,Afternoon,Mobile,Los Angeles
+2130,Night,Desktop,Los Angeles
+2131,Evening,Mobile,San Francisco
+2132,Morning,Mobile,Chicago
+2133,Night,Mobile,Houston
+2134,Night,Mobile,Houston
+2135,Morning,Tablet,Los Angeles
+2136,Night,Mobile,Los Angeles
+2137,Evening,Tablet,Chicago
+2138,Morning,Mobile,San Francisco
+2139,Evening,Mobile,San Francisco
+2140,Evening,Mobile,Chicago
+2141,Evening,Tablet,Chicago
+2142,Afternoon,Mobile,Chicago
+2143,Morning,Desktop,Chicago
+2144,Afternoon,Mobile,San Francisco
+2145,Afternoon,Mobile,New York
+2146,Night,Desktop,Los Angeles
+2147,Morning,Tablet,San Francisco
+2148,Night,Mobile,Los Angeles
+2149,Afternoon,Desktop,Chicago
+2150,Night,Mobile,San Francisco
+2151,Evening,Mobile,Houston
+2152,Afternoon,Mobile,Los Angeles
+2153,Evening,Mobile,Chicago
+2154,Morning,Mobile,Houston
+2155,Night,Mobile,San Francisco
+2156,Afternoon,Tablet,Chicago
+2157,Morning,Desktop,Chicago
+2158,Evening,Mobile,Chicago
+2159,Night,Tablet,Houston
+2160,Night,Mobile,Los Angeles
+2161,Afternoon,Mobile,San Francisco
+2162,Night,Desktop,Houston
+2163,Night,Mobile,Chicago
+2164,Evening,Desktop,New York
+2165,Evening,Mobile,Los Angeles
+2166,Evening,Mobile,New York
+2167,Morning,Mobile,Los Angeles
+2168,Morning,Tablet,Los Angeles
+2169,Night,Desktop,New York
+2170,Morning,Desktop,New York
+2171,Afternoon,Mobile,San Francisco
+2172,Evening,Mobile,San Francisco
+2173,Morning,Desktop,Chicago
+2174,Night,Mobile,San Francisco
+2175,Evening,Mobile,Houston
+2176,Morning,Desktop,Houston
+2177,Evening,Mobile,San Francisco
+2178,Morning,Mobile,Los Angeles
+2179,Night,Desktop,Los Angeles
+2180,Morning,Desktop,Houston
+2181,Morning,Desktop,San Francisco
+2182,Morning,Mobile,Chicago
+2183,Evening,Mobile,San Francisco
+2184,Morning,Desktop,Chicago
+2185,Morning,Desktop,New York
+2186,Morning,Mobile,New York
+2187,Evening,Tablet,San Francisco
+2188,Night,Tablet,Los Angeles
+2189,Night,Mobile,Los Angeles
+2190,Night,Desktop,San Francisco
+2191,Morning,Mobile,Los Angeles
+2192,Evening,Mobile,Houston
+2193,Night,Mobile,New York
+2194,Night,Mobile,Houston
+2195,Night,Tablet,Chicago
+2196,Afternoon,Desktop,San Francisco
+2197,Evening,Desktop,Chicago
+2198,Afternoon,Mobile,Houston
+2199,Morning,Mobile,Houston
+2200,Night,Mobile,Houston
+2201,Morning,Mobile,Los Angeles
+2202,Evening,Mobile,Houston
+2203,Morning,Mobile,Chicago
+2204,Morning,Mobile,New York
+2205,Night,Mobile,Los Angeles
+2206,Evening,Mobile,Los Angeles
+2207,Morning,Mobile,Chicago
+2208,Afternoon,Desktop,Chicago
+2209,Night,Mobile,San Francisco
+2210,Afternoon,Mobile,Chicago
+2211,Night,Desktop,Chicago
+2212,Morning,Tablet,San Francisco
+2213,Night,Desktop,Houston
+2214,Morning,Mobile,San Francisco
+2215,Afternoon,Mobile,San Francisco
+2216,Morning,Tablet,San Francisco
+2217,Night,Desktop,Los Angeles
+2218,Night,Mobile,Los Angeles
+2219,Night,Mobile,Los Angeles
+2220,Afternoon,Mobile,New York
+2221,Evening,Mobile,Los Angeles
+2222,Afternoon,Desktop,San Francisco
+2223,Morning,Mobile,Los Angeles
+2224,Morning,Tablet,New York
+2225,Afternoon,Mobile,San Francisco
+2226,Afternoon,Desktop,Houston
+2227,Morning,Mobile,San Francisco
+2228,Morning,Mobile,New York
+2229,Morning,Mobile,New York
+2230,Evening,Desktop,Chicago
+2231,Evening,Mobile,Los Angeles
+2232,Afternoon,Mobile,San Francisco
+2233,Afternoon,Desktop,Los Angeles
+2234,Evening,Mobile,Los Angeles
+2235,Night,Tablet,Chicago
+2236,Evening,Tablet,Houston
+2237,Afternoon,Tablet,Houston
+2238,Evening,Mobile,Los Angeles
+2239,Night,Mobile,New York
+2240,Afternoon,Tablet,Los Angeles
+2241,Morning,Mobile,San Francisco
+2242,Afternoon,Mobile,Chicago
+2243,Evening,Desktop,Chicago
+2244,Evening,Mobile,Chicago
+2245,Night,Desktop,Houston
+2246,Evening,Desktop,New York
+2247,Night,Desktop,San Francisco
+2248,Afternoon,Mobile,San Francisco
+2249,Evening,Mobile,San Francisco
+2250,Afternoon,Mobile,New York
+2251,Morning,Mobile,Chicago
+2252,Morning,Mobile,Chicago
+2253,Night,Mobile,Los Angeles
+2254,Evening,Mobile,New York
+2255,Afternoon,Mobile,New York
+2256,Afternoon,Desktop,Los Angeles
+2257,Evening,Mobile,San Francisco
+2258,Afternoon,Mobile,Houston
+2259,Evening,Desktop,Chicago
+2260,Evening,Desktop,Houston
+2261,Morning,Mobile,Houston
+2262,Evening,Desktop,San Francisco
+2263,Afternoon,Mobile,San Francisco
+2264,Evening,Mobile,New York
+2265,Morning,Tablet,Chicago
+2266,Morning,Tablet,Los Angeles
+2267,Night,Mobile,Los Angeles
+2268,Afternoon,Desktop,Los Angeles
+2269,Evening,Desktop,Houston
+2270,Afternoon,Tablet,Chicago
+2271,Afternoon,Mobile,San Francisco
+2272,Evening,Mobile,Houston
+2273,Morning,Mobile,Houston
+2274,Afternoon,Mobile,New York
+2275,Night,Mobile,Houston
+2276,Afternoon,Desktop,Houston
+2277,Morning,Desktop,New York
+2278,Night,Desktop,Chicago
+2279,Night,Mobile,Los Angeles
+2280,Night,Mobile,Chicago
+2281,Night,Mobile,Los Angeles
+2282,Evening,Mobile,Los Angeles
+2283,Evening,Tablet,Los Angeles
+2284,Evening,Mobile,Houston
+2285,Night,Desktop,San Francisco
+2286,Morning,Mobile,New York
+2287,Afternoon,Mobile,Chicago
+2288,Night,Desktop,Los Angeles
+2289,Morning,Mobile,Houston
+2290,Afternoon,Mobile,Houston
+2291,Night,Mobile,Chicago
+2292,Afternoon,Desktop,New York
+2293,Evening,Tablet,Houston
+2294,Evening,Desktop,Houston
+2295,Evening,Tablet,New York
+2296,Morning,Desktop,San Francisco
+2297,Evening,Desktop,Los Angeles
+2298,Morning,Mobile,New York
+2299,Evening,Mobile,New York
+2300,Evening,Mobile,Los Angeles
+2301,Evening,Desktop,San Francisco
+2302,Morning,Mobile,New York
+2303,Afternoon,Mobile,San Francisco
+2304,Morning,Tablet,Los Angeles
+2305,Night,Mobile,Chicago
+2306,Night,Tablet,San Francisco
+2307,Morning,Desktop,San Francisco
+2308,Morning,Mobile,Chicago
+2309,Afternoon,Desktop,New York
+2310,Morning,Desktop,Houston
+2311,Evening,Mobile,Chicago
+2312,Afternoon,Desktop,Chicago
+2313,Morning,Desktop,Los Angeles
+2314,Morning,Mobile,Los Angeles
+2315,Night,Mobile,New York
+2316,Afternoon,Mobile,Chicago
+2317,Night,Mobile,Houston
+2318,Morning,Mobile,Chicago
+2319,Afternoon,Desktop,Houston
+2320,Evening,Mobile,San Francisco
+2321,Morning,Desktop,Chicago
+2322,Morning,Mobile,San Francisco
+2323,Night,Mobile,Chicago
+2324,Evening,Desktop,Chicago
+2325,Morning,Desktop,Chicago
+2326,Night,Mobile,Chicago
+2327,Night,Mobile,Chicago
+2328,Morning,Desktop,Chicago
+2329,Afternoon,Mobile,San Francisco
+2330,Morning,Mobile,Los Angeles
+2331,Evening,Mobile,San Francisco
+2332,Morning,Desktop,San Francisco
+2333,Afternoon,Mobile,Chicago
+2334,Night,Mobile,San Francisco
+2335,Evening,Mobile,Los Angeles
+2336,Evening,Tablet,Los Angeles
+2337,Evening,Mobile,Chicago
+2338,Evening,Mobile,Chicago
+2339,Afternoon,Mobile,San Francisco
+2340,Afternoon,Mobile,Los Angeles
+2341,Afternoon,Desktop,San Francisco
+2342,Afternoon,Desktop,New York
+2343,Night,Desktop,Los Angeles
+2344,Morning,Desktop,Houston
+2345,Afternoon,Tablet,Chicago
+2346,Morning,Mobile,Houston
+2347,Evening,Tablet,San Francisco
+2348,Night,Mobile,San Francisco
+2349,Night,Desktop,Los Angeles
+2350,Morning,Mobile,Chicago
+2351,Morning,Desktop,Chicago
+2352,Morning,Mobile,New York
+2353,Night,Desktop,San Francisco
+2354,Afternoon,Tablet,San Francisco
+2355,Night,Desktop,Los Angeles
+2356,Afternoon,Desktop,Chicago
+2357,Evening,Mobile,Chicago
+2358,Afternoon,Mobile,New York
+2359,Morning,Tablet,Chicago
+2360,Afternoon,Desktop,New York
+2361,Afternoon,Mobile,San Francisco
+2362,Night,Mobile,San Francisco
+2363,Morning,Mobile,San Francisco
+2364,Evening,Mobile,Chicago
+2365,Afternoon,Mobile,Houston
+2366,Evening,Mobile,New York
+2367,Morning,Mobile,Los Angeles
+2368,Afternoon,Mobile,New York
+2369,Night,Mobile,Houston
+2370,Evening,Mobile,San Francisco
+2371,Night,Mobile,Los Angeles
+2372,Evening,Tablet,New York
+2373,Morning,Mobile,New York
+2374,Afternoon,Desktop,San Francisco
+2375,Evening,Tablet,San Francisco
+2376,Night,Mobile,Los Angeles
+2377,Evening,Mobile,Chicago
+2378,Evening,Mobile,Houston
+2379,Evening,Mobile,New York
+2380,Evening,Mobile,New York
+2381,Evening,Mobile,Chicago
+2382,Evening,Desktop,Houston
+2383,Night,Mobile,Los Angeles
+2384,Evening,Tablet,Los Angeles
+2385,Evening,Mobile,San Francisco
+2386,Evening,Tablet,Los Angeles
+2387,Afternoon,Mobile,Los Angeles
+2388,Morning,Mobile,New York
+2389,Morning,Mobile,San Francisco
+2390,Morning,Tablet,Chicago
+2391,Night,Mobile,Chicago
+2392,Night,Desktop,Houston
+2393,Night,Desktop,Houston
+2394,Evening,Desktop,Houston
+2395,Morning,Mobile,New York
+2396,Evening,Tablet,San Francisco
+2397,Afternoon,Desktop,New York
+2398,Morning,Mobile,Houston
+2399,Afternoon,Mobile,New York
+2400,Afternoon,Tablet,New York
+2401,Evening,Tablet,Houston
+2402,Morning,Mobile,Chicago
+2403,Afternoon,Desktop,Houston
+2404,Morning,Mobile,Houston
+2405,Afternoon,Mobile,San Francisco
+2406,Afternoon,Mobile,Houston
+2407,Evening,Mobile,San Francisco
+2408,Morning,Desktop,San Francisco
+2409,Evening,Mobile,New York
+2410,Evening,Mobile,Houston
+2411,Evening,Mobile,Chicago
+2412,Evening,Mobile,Houston
+2413,Evening,Tablet,New York
+2414,Afternoon,Desktop,New York
+2415,Morning,Mobile,Houston
+2416,Morning,Tablet,Los Angeles
+2417,Evening,Mobile,San Francisco
+2418,Morning,Desktop,Houston
+2419,Afternoon,Tablet,San Francisco
+2420,Evening,Mobile,Houston
+2421,Night,Desktop,Los Angeles
+2422,Night,Mobile,Houston
+2423,Afternoon,Mobile,Los Angeles
+2424,Afternoon,Mobile,Chicago
+2425,Night,Tablet,San Francisco
+2426,Evening,Mobile,San Francisco
+2427,Afternoon,Tablet,San Francisco
+2428,Night,Tablet,Houston
+2429,Evening,Mobile,Chicago
+2430,Afternoon,Mobile,Houston
+2431,Morning,Desktop,Los Angeles
+2432,Morning,Mobile,San Francisco
+2433,Morning,Mobile,New York
+2434,Evening,Tablet,Chicago
+2435,Afternoon,Desktop,New York
+2436,Night,Mobile,Houston
+2437,Afternoon,Desktop,Houston
+2438,Morning,Mobile,New York
+2439,Morning,Mobile,Chicago
+2440,Evening,Tablet,Los Angeles
+2441,Night,Desktop,Houston
+2442,Evening,Mobile,New York
+2443,Night,Mobile,Chicago
+2444,Afternoon,Desktop,Chicago
+2445,Evening,Mobile,New York
+2446,Evening,Mobile,Los Angeles
+2447,Evening,Mobile,San Francisco
+2448,Morning,Desktop,Chicago
+2449,Morning,Mobile,San Francisco
+2450,Night,Mobile,Los Angeles
+2451,Afternoon,Mobile,Houston
+2452,Evening,Mobile,Houston
+2453,Morning,Mobile,New York
+2454,Evening,Mobile,San Francisco
+2455,Night,Mobile,Houston
+2456,Night,Desktop,Houston
+2457,Afternoon,Mobile,San Francisco
+2458,Night,Mobile,Chicago
+2459,Evening,Tablet,Chicago
+2460,Afternoon,Desktop,Houston
+2461,Afternoon,Desktop,Chicago
+2462,Morning,Mobile,Chicago
+2463,Evening,Mobile,Los Angeles
+2464,Night,Desktop,Chicago
+2465,Morning,Desktop,Los Angeles
+2466,Evening,Mobile,New York
+2467,Evening,Mobile,Los Angeles
+2468,Afternoon,Tablet,New York
+2469,Afternoon,Mobile,Los Angeles
+2470,Evening,Mobile,San Francisco
+2471,Morning,Mobile,Chicago
+2472,Afternoon,Desktop,Chicago
+2473,Afternoon,Desktop,Los Angeles
+2474,Evening,Desktop,San Francisco
+2475,Evening,Mobile,San Francisco
+2476,Afternoon,Mobile,Houston
+2477,Morning,Mobile,Los Angeles
+2478,Afternoon,Desktop,Chicago
+2479,Evening,Desktop,Houston
+2480,Afternoon,Tablet,New York
+2481,Evening,Mobile,Houston
+2482,Afternoon,Desktop,San Francisco
+2483,Evening,Mobile,San Francisco
+2484,Evening,Mobile,Chicago
+2485,Morning,Mobile,Los Angeles
+2486,Evening,Mobile,Los Angeles
+2487,Afternoon,Tablet,New York
+2488,Evening,Mobile,Los Angeles
+2489,Night,Tablet,Chicago
+2490,Afternoon,Mobile,Chicago
+2491,Morning,Mobile,New York
+2492,Afternoon,Mobile,Los Angeles
+2493,Morning,Mobile,Houston
+2494,Night,Mobile,New York
+2495,Morning,Mobile,Houston
+2496,Evening,Mobile,San Francisco
+2497,Night,Tablet,New York
+2498,Night,Desktop,Houston
+2499,Morning,Desktop,San Francisco
+2500,Afternoon,Mobile,Chicago
+2501,Morning,Mobile,Los Angeles
+2502,Morning,Mobile,San Francisco
+2503,Night,Desktop,Houston
+2504,Evening,Mobile,San Francisco
+2505,Afternoon,Mobile,New York
+2506,Morning,Mobile,Houston
+2507,Evening,Mobile,Chicago
+2508,Evening,Desktop,San Francisco
+2509,Afternoon,Mobile,New York
+2510,Evening,Mobile,San Francisco
+2511,Morning,Desktop,Houston
+2512,Night,Mobile,Chicago
+2513,Evening,Mobile,Los Angeles
+2514,Night,Mobile,San Francisco
+2515,Afternoon,Desktop,Houston
+2516,Afternoon,Tablet,Chicago
+2517,Evening,Desktop,Houston
+2518,Night,Desktop,Houston
+2519,Morning,Mobile,New York
+2520,Night,Mobile,New York
+2521,Evening,Mobile,San Francisco
+2522,Night,Desktop,Houston
+2523,Night,Mobile,New York
+2524,Afternoon,Desktop,Houston
+2525,Evening,Desktop,Houston
+2526,Night,Tablet,San Francisco
+2527,Evening,Mobile,San Francisco
+2528,Morning,Mobile,San Francisco
+2529,Evening,Mobile,Los Angeles
+2530,Morning,Mobile,Los Angeles
+2531,Evening,Desktop,New York
+2532,Evening,Mobile,New York
+2533,Night,Tablet,San Francisco
+2534,Night,Tablet,Chicago
+2535,Morning,Mobile,New York
+2536,Morning,Mobile,Los Angeles
+2537,Afternoon,Mobile,Los Angeles
+2538,Night,Mobile,New York
+2539,Morning,Mobile,Los Angeles
+2540,Night,Mobile,New York
+2541,Evening,Mobile,San Francisco
+2542,Afternoon,Desktop,Chicago
+2543,Night,Mobile,Houston
+2544,Night,Mobile,San Francisco
+2545,Night,Mobile,New York
+2546,Night,Tablet,Los Angeles
+2547,Morning,Desktop,New York
+2548,Morning,Mobile,Los Angeles
+2549,Afternoon,Desktop,Los Angeles
+2550,Evening,Desktop,Houston
+2551,Evening,Desktop,San Francisco
+2552,Afternoon,Mobile,Los Angeles
+2553,Evening,Desktop,Houston
+2554,Morning,Mobile,San Francisco
+2555,Night,Tablet,Chicago
+2556,Evening,Mobile,San Francisco
+2557,Night,Tablet,San Francisco
+2558,Night,Tablet,Chicago
+2559,Morning,Mobile,Houston
+2560,Night,Tablet,Chicago
+2561,Evening,Mobile,Chicago
+2562,Morning,Mobile,San Francisco
+2563,Afternoon,Mobile,Los Angeles
+2564,Morning,Tablet,Chicago
+2565,Evening,Mobile,Los Angeles
+2566,Morning,Mobile,Houston
+2567,Evening,Desktop,Chicago
+2568,Evening,Tablet,San Francisco
+2569,Morning,Desktop,San Francisco
+2570,Evening,Mobile,Los Angeles
+2571,Afternoon,Mobile,New York
+2572,Evening,Mobile,Los Angeles
+2573,Afternoon,Desktop,Houston
+2574,Afternoon,Mobile,Los Angeles
+2575,Evening,Mobile,Houston
+2576,Night,Desktop,New York
+2577,Afternoon,Mobile,San Francisco
+2578,Afternoon,Mobile,Chicago
+2579,Morning,Mobile,New York
+2580,Afternoon,Mobile,Los Angeles
+2581,Afternoon,Mobile,Los Angeles
+2582,Afternoon,Mobile,Chicago
+2583,Afternoon,Desktop,Houston
+2584,Night,Mobile,San Francisco
+2585,Afternoon,Mobile,Chicago
+2586,Evening,Desktop,Houston
+2587,Night,Desktop,Los Angeles
+2588,Afternoon,Desktop,Chicago
+2589,Evening,Tablet,New York
+2590,Evening,Desktop,Los Angeles
+2591,Night,Mobile,New York
+2592,Night,Desktop,Chicago
+2593,Evening,Mobile,Chicago
+2594,Night,Mobile,New York
+2595,Night,Mobile,Los Angeles
+2596,Morning,Mobile,San Francisco
+2597,Night,Mobile,San Francisco
+2598,Morning,Mobile,New York
+2599,Night,Mobile,San Francisco
+2600,Night,Desktop,New York
+2601,Evening,Tablet,Los Angeles
+2602,Morning,Mobile,Chicago
+2603,Night,Desktop,San Francisco
+2604,Afternoon,Mobile,New York
+2605,Night,Tablet,San Francisco
+2606,Evening,Mobile,Los Angeles
+2607,Evening,Mobile,Los Angeles
+2608,Evening,Mobile,Houston
+2609,Morning,Mobile,San Francisco
+2610,Morning,Mobile,Chicago
+2611,Morning,Mobile,New York
+2612,Afternoon,Mobile,Los Angeles
+2613,Morning,Mobile,Houston
+2614,Evening,Mobile,Los Angeles
+2615,Morning,Tablet,Houston
+2616,Morning,Mobile,New York
+2617,Night,Mobile,Houston
+2618,Morning,Desktop,Chicago
+2619,Night,Desktop,Los Angeles
+2620,Morning,Mobile,New York
+2621,Night,Desktop,Houston
+2622,Evening,Mobile,Houston
+2623,Morning,Mobile,San Francisco
+2624,Evening,Mobile,Los Angeles
+2625,Morning,Desktop,Los Angeles
+2626,Afternoon,Mobile,Los Angeles
+2627,Afternoon,Desktop,Chicago
+2628,Evening,Mobile,Los Angeles
+2629,Evening,Desktop,Chicago
+2630,Afternoon,Mobile,Los Angeles
+2631,Afternoon,Mobile,Los Angeles
+2632,Night,Mobile,San Francisco
+2633,Morning,Desktop,New York
+2634,Afternoon,Mobile,Los Angeles
+2635,Evening,Desktop,San Francisco
+2636,Evening,Desktop,Houston
+2637,Afternoon,Mobile,Chicago
+2638,Evening,Tablet,Chicago
+2639,Morning,Desktop,Los Angeles
+2640,Night,Mobile,Chicago
+2641,Morning,Mobile,Houston
+2642,Night,Mobile,San Francisco
+2643,Night,Mobile,Chicago
+2644,Afternoon,Mobile,New York
+2645,Evening,Mobile,Chicago
+2646,Night,Desktop,Houston
+2647,Afternoon,Mobile,Chicago
+2648,Evening,Desktop,San Francisco
+2649,Evening,Mobile,Chicago
+2650,Night,Mobile,Houston
+2651,Evening,Desktop,San Francisco
+2652,Morning,Desktop,Los Angeles
+2653,Evening,Mobile,Los Angeles
+2654,Morning,Mobile,Chicago
+2655,Evening,Mobile,Los Angeles
+2656,Night,Mobile,Houston
+2657,Night,Mobile,New York
+2658,Afternoon,Desktop,Chicago
+2659,Morning,Mobile,Los Angeles
+2660,Morning,Mobile,Chicago
+2661,Night,Mobile,San Francisco
+2662,Night,Mobile,Los Angeles
+2663,Night,Mobile,Chicago
+2664,Morning,Mobile,Chicago
+2665,Afternoon,Mobile,New York
+2666,Morning,Desktop,Houston
+2667,Night,Mobile,Houston
+2668,Afternoon,Tablet,New York
+2669,Evening,Mobile,San Francisco
+2670,Evening,Mobile,Chicago
+2671,Night,Desktop,San Francisco
+2672,Afternoon,Desktop,Houston
+2673,Night,Mobile,New York
+2674,Morning,Desktop,Los Angeles
+2675,Morning,Desktop,Houston
+2676,Afternoon,Desktop,New York
+2677,Night,Mobile,New York
+2678,Night,Desktop,New York
+2679,Evening,Desktop,Chicago
+2680,Afternoon,Desktop,San Francisco
+2681,Night,Desktop,Houston
+2682,Morning,Tablet,San Francisco
+2683,Night,Mobile,Houston
+2684,Night,Mobile,Los Angeles
+2685,Morning,Mobile,New York
+2686,Morning,Mobile,Los Angeles
+2687,Night,Mobile,Los Angeles
+2688,Morning,Mobile,Los Angeles
+2689,Evening,Mobile,Los Angeles
+2690,Evening,Desktop,Chicago
+2691,Evening,Desktop,San Francisco
+2692,Morning,Mobile,Houston
+2693,Morning,Tablet,San Francisco
+2694,Morning,Mobile,Los Angeles
+2695,Afternoon,Desktop,New York
+2696,Morning,Desktop,New York
+2697,Evening,Mobile,New York
+2698,Evening,Mobile,San Francisco
+2699,Evening,Mobile,Chicago
+2700,Afternoon,Desktop,Los Angeles
+2701,Night,Desktop,Los Angeles
+2702,Evening,Mobile,San Francisco
+2703,Afternoon,Mobile,Los Angeles
+2704,Night,Mobile,Los Angeles
+2705,Afternoon,Mobile,Chicago
+2706,Afternoon,Tablet,Los Angeles
+2707,Night,Mobile,San Francisco
+2708,Morning,Tablet,Los Angeles
+2709,Morning,Desktop,Los Angeles
+2710,Evening,Tablet,Houston
+2711,Night,Mobile,Houston
+2712,Evening,Mobile,New York
+2713,Afternoon,Mobile,San Francisco
+2714,Morning,Desktop,Chicago
+2715,Evening,Desktop,New York
+2716,Evening,Mobile,San Francisco
+2717,Morning,Desktop,San Francisco
+2718,Afternoon,Mobile,San Francisco
+2719,Evening,Mobile,Chicago
+2720,Evening,Mobile,Houston
+2721,Night,Mobile,San Francisco
+2722,Night,Mobile,San Francisco
+2723,Morning,Mobile,Los Angeles
+2724,Morning,Desktop,Houston
+2725,Afternoon,Desktop,Chicago
+2726,Afternoon,Mobile,Houston
+2727,Evening,Desktop,New York
+2728,Night,Mobile,Los Angeles
+2729,Afternoon,Mobile,Los Angeles
+2730,Evening,Desktop,Los Angeles
+2731,Evening,Desktop,San Francisco
+2732,Morning,Desktop,New York
+2733,Night,Desktop,Los Angeles
+2734,Evening,Desktop,New York
+2735,Morning,Mobile,Chicago
+2736,Evening,Desktop,Los Angeles
+2737,Night,Mobile,New York
+2738,Evening,Desktop,San Francisco
+2739,Evening,Mobile,Houston
+2740,Afternoon,Mobile,New York
+2741,Afternoon,Desktop,Houston
+2742,Morning,Mobile,Houston
+2743,Evening,Desktop,Houston
+2744,Morning,Mobile,Chicago
+2745,Night,Desktop,New York
+2746,Morning,Mobile,San Francisco
+2747,Evening,Mobile,New York
+2748,Afternoon,Mobile,San Francisco
+2749,Afternoon,Desktop,New York
+2750,Morning,Desktop,Houston
+2751,Afternoon,Mobile,Houston
+2752,Evening,Tablet,Houston
+2753,Evening,Desktop,San Francisco
+2754,Night,Tablet,Los Angeles
+2755,Afternoon,Mobile,Los Angeles
+2756,Afternoon,Mobile,Los Angeles
+2757,Night,Mobile,Houston
+2758,Morning,Mobile,Chicago
+2759,Night,Mobile,Houston
+2760,Afternoon,Mobile,Houston
+2761,Morning,Mobile,Los Angeles
+2762,Evening,Desktop,New York
+2763,Evening,Tablet,Chicago
+2764,Night,Desktop,San Francisco
+2765,Evening,Mobile,Houston
+2766,Afternoon,Mobile,Houston
+2767,Night,Mobile,Houston
+2768,Afternoon,Mobile,New York
+2769,Afternoon,Mobile,San Francisco
+2770,Morning,Mobile,New York
+2771,Morning,Mobile,San Francisco
+2772,Morning,Desktop,New York
+2773,Evening,Desktop,Houston
+2774,Morning,Mobile,Los Angeles
+2775,Afternoon,Mobile,Chicago
+2776,Night,Desktop,Chicago
+2777,Night,Mobile,Los Angeles
+2778,Afternoon,Mobile,New York
+2779,Evening,Mobile,Houston
+2780,Night,Mobile,Los Angeles
+2781,Afternoon,Mobile,New York
+2782,Afternoon,Desktop,San Francisco
+2783,Afternoon,Mobile,San Francisco
+2784,Night,Mobile,Los Angeles
+2785,Night,Mobile,Houston
+2786,Morning,Desktop,Chicago
+2787,Morning,Mobile,Houston
+2788,Afternoon,Mobile,Houston
+2789,Afternoon,Mobile,San Francisco
+2790,Afternoon,Mobile,Chicago
+2791,Afternoon,Mobile,New York
+2792,Night,Mobile,New York
+2793,Morning,Desktop,Los Angeles
+2794,Evening,Tablet,Los Angeles
+2795,Afternoon,Mobile,Houston
+2796,Morning,Mobile,Houston
+2797,Afternoon,Mobile,San Francisco
+2798,Night,Desktop,Chicago
+2799,Evening,Mobile,Houston
+2800,Morning,Desktop,San Francisco
+2801,Morning,Desktop,Houston
+2802,Evening,Tablet,Houston
+2803,Night,Desktop,Los Angeles
+2804,Evening,Desktop,New York
+2805,Morning,Mobile,New York
+2806,Evening,Mobile,Los Angeles
+2807,Night,Mobile,Houston
+2808,Night,Mobile,Chicago
+2809,Afternoon,Desktop,New York
+2810,Evening,Mobile,San Francisco
+2811,Evening,Desktop,San Francisco
+2812,Morning,Mobile,Chicago
+2813,Night,Desktop,Chicago
+2814,Evening,Mobile,Los Angeles
+2815,Morning,Mobile,Los Angeles
+2816,Afternoon,Mobile,Los Angeles
+2817,Evening,Desktop,San Francisco
+2818,Evening,Mobile,Houston
+2819,Morning,Mobile,Chicago
+2820,Morning,Mobile,Chicago
+2821,Night,Desktop,Houston
+2822,Night,Mobile,San Francisco
+2823,Night,Tablet,Chicago
+2824,Evening,Mobile,Chicago
+2825,Morning,Mobile,New York
+2826,Night,Desktop,Houston
+2827,Evening,Mobile,Houston
+2828,Night,Desktop,New York
+2829,Afternoon,Mobile,New York
+2830,Evening,Tablet,New York
+2831,Night,Desktop,Houston
+2832,Night,Desktop,San Francisco
+2833,Afternoon,Mobile,San Francisco
+2834,Afternoon,Mobile,Houston
+2835,Night,Desktop,Los Angeles
+2836,Night,Desktop,Chicago
+2837,Morning,Mobile,Los Angeles
+2838,Night,Mobile,San Francisco
+2839,Night,Mobile,San Francisco
+2840,Morning,Desktop,New York
+2841,Morning,Mobile,Los Angeles
+2842,Night,Mobile,San Francisco
+2843,Morning,Mobile,Los Angeles
+2844,Evening,Mobile,Los Angeles
+2845,Afternoon,Mobile,Chicago
+2846,Evening,Tablet,Los Angeles
+2847,Afternoon,Mobile,Chicago
+2848,Afternoon,Tablet,San Francisco
+2849,Night,Mobile,San Francisco
+2850,Afternoon,Mobile,Chicago
+2851,Evening,Mobile,New York
+2852,Night,Desktop,New York
+2853,Morning,Desktop,New York
+2854,Evening,Mobile,Chicago
+2855,Night,Mobile,New York
+2856,Afternoon,Tablet,Houston
+2857,Evening,Tablet,New York
+2858,Afternoon,Mobile,Los Angeles
+2859,Night,Desktop,San Francisco
+2860,Night,Mobile,Los Angeles
+2861,Morning,Mobile,San Francisco
+2862,Morning,Mobile,Houston
+2863,Evening,Mobile,Chicago
+2864,Morning,Desktop,San Francisco
+2865,Afternoon,Mobile,Houston
+2866,Afternoon,Mobile,Los Angeles
+2867,Morning,Desktop,Houston
+2868,Morning,Mobile,Los Angeles
+2869,Morning,Mobile,Houston
+2870,Evening,Desktop,Los Angeles
+2871,Evening,Mobile,Los Angeles
+2872,Afternoon,Mobile,Houston
+2873,Evening,Mobile,Los Angeles
+2874,Evening,Mobile,Los Angeles
+2875,Night,Desktop,Los Angeles
+2876,Afternoon,Desktop,Houston
+2877,Afternoon,Mobile,Chicago
+2878,Morning,Mobile,New York
+2879,Night,Tablet,Houston
+2880,Morning,Mobile,San Francisco
+2881,Evening,Mobile,Los Angeles
+2882,Afternoon,Tablet,San Francisco
+2883,Evening,Tablet,Los Angeles
+2884,Evening,Mobile,Los Angeles
+2885,Night,Mobile,Los Angeles
+2886,Night,Mobile,San Francisco
+2887,Afternoon,Mobile,Chicago
+2888,Afternoon,Desktop,Los Angeles
+2889,Night,Mobile,New York
+2890,Night,Mobile,Los Angeles
+2891,Night,Mobile,New York
+2892,Night,Tablet,San Francisco
+2893,Afternoon,Mobile,San Francisco
+2894,Afternoon,Mobile,Los Angeles
+2895,Evening,Tablet,San Francisco
+2896,Evening,Mobile,Chicago
+2897,Evening,Mobile,San Francisco
+2898,Afternoon,Mobile,Houston
+2899,Morning,Mobile,Houston
+2900,Evening,Mobile,New York
+2901,Morning,Mobile,Chicago
+2902,Morning,Mobile,Los Angeles
+2903,Morning,Mobile,Chicago
+2904,Night,Mobile,San Francisco
+2905,Afternoon,Mobile,New York
+2906,Afternoon,Mobile,New York
+2907,Evening,Mobile,San Francisco
+2908,Evening,Tablet,Chicago
+2909,Afternoon,Mobile,Los Angeles
+2910,Night,Mobile,Chicago
+2911,Afternoon,Desktop,San Francisco
+2912,Morning,Mobile,Houston
+2913,Afternoon,Desktop,San Francisco
+2914,Night,Desktop,Houston
+2915,Afternoon,Desktop,Chicago
+2916,Afternoon,Desktop,New York
+2917,Afternoon,Mobile,New York
+2918,Morning,Desktop,San Francisco
+2919,Evening,Mobile,Houston
+2920,Night,Mobile,Houston
+2921,Morning,Tablet,Los Angeles
+2922,Afternoon,Mobile,New York
+2923,Afternoon,Tablet,Houston
+2924,Evening,Mobile,San Francisco
+2925,Evening,Mobile,Los Angeles
+2926,Evening,Mobile,Houston
+2927,Morning,Desktop,New York
+2928,Night,Mobile,Houston
+2929,Evening,Mobile,Los Angeles
+2930,Afternoon,Mobile,Los Angeles
+2931,Night,Desktop,New York
+2932,Afternoon,Mobile,Houston
+2933,Afternoon,Desktop,Chicago
+2934,Night,Mobile,Houston
+2935,Morning,Mobile,New York
+2936,Night,Mobile,New York
+2937,Evening,Tablet,Chicago
+2938,Night,Mobile,Houston
+2939,Evening,Mobile,Houston
+2940,Evening,Desktop,Chicago
+2941,Night,Mobile,New York
+2942,Night,Desktop,New York
+2943,Evening,Mobile,Houston
+2944,Afternoon,Mobile,New York
+2945,Night,Mobile,New York
+2946,Morning,Mobile,San Francisco
+2947,Evening,Desktop,New York
+2948,Afternoon,Desktop,Houston
+2949,Night,Mobile,Los Angeles
+2950,Night,Tablet,Los Angeles
+2951,Afternoon,Mobile,Los Angeles
+2952,Morning,Mobile,Chicago
+2953,Evening,Desktop,New York
+2954,Night,Desktop,New York
+2955,Morning,Mobile,New York
+2956,Evening,Desktop,Los Angeles
+2957,Morning,Mobile,San Francisco
+2958,Evening,Desktop,Los Angeles
+2959,Evening,Desktop,Los Angeles
+2960,Morning,Mobile,San Francisco
+2961,Evening,Mobile,Los Angeles
+2962,Night,Desktop,New York
+2963,Night,Desktop,New York
+2964,Morning,Mobile,New York
+2965,Morning,Mobile,Los Angeles
+2966,Evening,Tablet,Houston
+2967,Evening,Mobile,Houston
+2968,Morning,Mobile,San Francisco
+2969,Afternoon,Mobile,Houston
+2970,Morning,Mobile,Los Angeles
+2971,Afternoon,Tablet,New York
+2972,Afternoon,Desktop,New York
+2973,Morning,Mobile,Houston
+2974,Morning,Desktop,New York
+2975,Morning,Desktop,San Francisco
+2976,Afternoon,Mobile,Chicago
+2977,Night,Mobile,San Francisco
+2978,Night,Desktop,Los Angeles
+2979,Morning,Mobile,Chicago
+2980,Morning,Mobile,Chicago
+2981,Evening,Mobile,Los Angeles
+2982,Evening,Tablet,Los Angeles
+2983,Evening,Mobile,Los Angeles
+2984,Morning,Tablet,Chicago
+2985,Night,Mobile,San Francisco
+2986,Night,Desktop,Los Angeles
+2987,Morning,Mobile,New York
+2988,Morning,Mobile,Los Angeles
+2989,Afternoon,Mobile,New York
+2990,Afternoon,Mobile,Los Angeles
+2991,Night,Desktop,San Francisco
+2992,Evening,Desktop,Houston
+2993,Night,Mobile,Chicago
+2994,Afternoon,Tablet,Los Angeles
+2995,Night,Mobile,New York
+2996,Afternoon,Mobile,Los Angeles
+2997,Afternoon,Mobile,San Francisco
+2998,Evening,Mobile,San Francisco
+2999,Evening,Desktop,Houston
+3000,Afternoon,Mobile,Chicago
+3001,Morning,Mobile,San Francisco
+3002,Evening,Mobile,Houston
+3003,Afternoon,Mobile,Houston
+3004,Morning,Mobile,Houston
+3005,Morning,Mobile,San Francisco
+3006,Night,Mobile,Los Angeles
+3007,Night,Desktop,Chicago
+3008,Evening,Mobile,New York
+3009,Morning,Mobile,San Francisco
+3010,Evening,Mobile,Houston
+3011,Afternoon,Tablet,San Francisco
+3012,Evening,Mobile,New York
+3013,Morning,Tablet,Chicago
+3014,Night,Tablet,New York
+3015,Evening,Desktop,Houston
+3016,Night,Mobile,New York
+3017,Evening,Mobile,San Francisco
+3018,Afternoon,Mobile,San Francisco
+3019,Morning,Desktop,San Francisco
+3020,Evening,Desktop,New York
+3021,Afternoon,Tablet,New York
+3022,Afternoon,Desktop,San Francisco
+3023,Afternoon,Mobile,Houston
+3024,Night,Mobile,Chicago
+3025,Night,Mobile,Los Angeles
+3026,Afternoon,Mobile,New York
+3027,Afternoon,Desktop,Los Angeles
+3028,Evening,Tablet,New York
+3029,Evening,Mobile,Chicago
+3030,Morning,Desktop,New York
+3031,Evening,Desktop,Chicago
+3032,Morning,Mobile,Houston
+3033,Morning,Mobile,New York
+3034,Morning,Desktop,San Francisco
+3035,Night,Mobile,New York
+3036,Evening,Mobile,Houston
+3037,Afternoon,Mobile,Houston
+3038,Morning,Tablet,Chicago
+3039,Afternoon,Mobile,San Francisco
+3040,Morning,Desktop,Chicago
+3041,Evening,Desktop,Houston
+3042,Morning,Desktop,Los Angeles
+3043,Evening,Mobile,Houston
+3044,Afternoon,Desktop,San Francisco
+3045,Evening,Mobile,San Francisco
+3046,Afternoon,Mobile,New York
+3047,Evening,Tablet,Los Angeles
+3048,Morning,Mobile,Los Angeles
+3049,Morning,Desktop,Houston
+3050,Evening,Mobile,San Francisco
+3051,Afternoon,Mobile,Houston
+3052,Afternoon,Tablet,San Francisco
+3053,Afternoon,Desktop,Chicago
+3054,Evening,Mobile,New York
+3055,Evening,Tablet,Chicago
+3056,Evening,Desktop,New York
+3057,Evening,Mobile,Los Angeles
+3058,Afternoon,Desktop,Chicago
+3059,Afternoon,Mobile,Houston
+3060,Night,Mobile,San Francisco
+3061,Evening,Mobile,San Francisco
+3062,Night,Mobile,Chicago
+3063,Evening,Mobile,Los Angeles
+3064,Night,Desktop,Los Angeles
+3065,Afternoon,Desktop,San Francisco
+3066,Afternoon,Mobile,San Francisco
+3067,Night,Desktop,Los Angeles
+3068,Morning,Mobile,Houston
+3069,Evening,Desktop,San Francisco
+3070,Night,Mobile,Chicago
+3071,Night,Desktop,New York
+3072,Morning,Tablet,San Francisco
+3073,Afternoon,Desktop,New York
+3074,Night,Tablet,Houston
+3075,Afternoon,Mobile,Los Angeles
+3076,Evening,Desktop,Houston
+3077,Morning,Mobile,San Francisco
+3078,Afternoon,Mobile,San Francisco
+3079,Night,Desktop,Chicago
+3080,Morning,Desktop,San Francisco
+3081,Morning,Mobile,New York
+3082,Morning,Mobile,Chicago
+3083,Morning,Mobile,Houston
+3084,Morning,Mobile,Los Angeles
+3085,Evening,Mobile,Chicago
+3086,Evening,Mobile,San Francisco
+3087,Morning,Mobile,Los Angeles
+3088,Night,Tablet,San Francisco
+3089,Night,Desktop,New York
+3090,Evening,Mobile,Los Angeles
+3091,Afternoon,Tablet,New York
+3092,Morning,Desktop,Chicago
+3093,Night,Mobile,New York
+3094,Evening,Mobile,Los Angeles
+3095,Evening,Mobile,Los Angeles
+3096,Afternoon,Mobile,Houston
+3097,Afternoon,Mobile,Houston
+3098,Night,Mobile,San Francisco
+3099,Afternoon,Mobile,Chicago
+3100,Afternoon,Desktop,Los Angeles
+3101,Morning,Mobile,San Francisco
+3102,Evening,Desktop,Los Angeles
+3103,Evening,Mobile,San Francisco
+3104,Afternoon,Tablet,San Francisco
+3105,Evening,Mobile,Houston
+3106,Evening,Tablet,San Francisco
+3107,Night,Desktop,New York
+3108,Evening,Desktop,New York
+3109,Afternoon,Desktop,Houston
+3110,Night,Mobile,San Francisco
+3111,Evening,Tablet,San Francisco
+3112,Evening,Mobile,Los Angeles
+3113,Night,Mobile,Houston
+3114,Night,Mobile,Houston
+3115,Evening,Mobile,San Francisco
+3116,Morning,Desktop,Houston
+3117,Morning,Tablet,Los Angeles
+3118,Evening,Mobile,San Francisco
+3119,Evening,Tablet,Chicago
+3120,Night,Mobile,Los Angeles
+3121,Night,Mobile,Los Angeles
+3122,Evening,Mobile,San Francisco
+3123,Evening,Desktop,San Francisco
+3124,Evening,Mobile,Houston
+3125,Evening,Mobile,Los Angeles
+3126,Morning,Mobile,New York
+3127,Night,Mobile,New York
+3128,Afternoon,Desktop,Los Angeles
+3129,Evening,Mobile,Los Angeles
+3130,Evening,Mobile,San Francisco
+3131,Evening,Mobile,New York
+3132,Afternoon,Mobile,Houston
+3133,Night,Mobile,Los Angeles
+3134,Night,Mobile,Houston
+3135,Evening,Desktop,Los Angeles
+3136,Evening,Mobile,Chicago
+3137,Night,Mobile,Houston
+3138,Afternoon,Mobile,Los Angeles
+3139,Evening,Mobile,New York
+3140,Afternoon,Mobile,San Francisco
+3141,Afternoon,Mobile,San Francisco
+3142,Night,Mobile,Chicago
+3143,Evening,Desktop,San Francisco
+3144,Morning,Mobile,Los Angeles
+3145,Night,Desktop,Houston
+3146,Night,Mobile,San Francisco
+3147,Morning,Mobile,Chicago
+3148,Evening,Desktop,New York
+3149,Afternoon,Mobile,San Francisco
+3150,Afternoon,Mobile,San Francisco
+3151,Afternoon,Desktop,Los Angeles
+3152,Evening,Desktop,New York
+3153,Night,Tablet,Houston
+3154,Night,Desktop,San Francisco
+3155,Night,Desktop,Houston
+3156,Night,Mobile,Los Angeles
+3157,Night,Mobile,Houston
+3158,Morning,Mobile,New York
+3159,Afternoon,Mobile,New York
+3160,Afternoon,Mobile,Houston
+3161,Evening,Desktop,San Francisco
+3162,Morning,Mobile,Chicago
+3163,Night,Desktop,New York
+3164,Night,Mobile,New York
+3165,Night,Mobile,Houston
+3166,Morning,Mobile,Houston
+3167,Evening,Mobile,New York
+3168,Morning,Mobile,San Francisco
+3169,Evening,Desktop,Los Angeles
+3170,Afternoon,Mobile,San Francisco
+3171,Evening,Mobile,Los Angeles
+3172,Afternoon,Desktop,New York
+3173,Evening,Mobile,Houston
+3174,Afternoon,Mobile,San Francisco
+3175,Afternoon,Mobile,Chicago
+3176,Night,Mobile,Houston
+3177,Evening,Desktop,Los Angeles
+3178,Night,Desktop,Houston
+3179,Afternoon,Desktop,San Francisco
+3180,Night,Mobile,Los Angeles
+3181,Morning,Desktop,Los Angeles
+3182,Night,Mobile,Houston
+3183,Evening,Mobile,New York
+3184,Night,Mobile,San Francisco
+3185,Morning,Desktop,Houston
+3186,Night,Desktop,New York
+3187,Afternoon,Desktop,Los Angeles
+3188,Afternoon,Desktop,Los Angeles
+3189,Afternoon,Mobile,New York
+3190,Evening,Mobile,New York
+3191,Night,Desktop,Los Angeles
+3192,Afternoon,Desktop,San Francisco
+3193,Night,Desktop,Houston
+3194,Morning,Mobile,San Francisco
+3195,Morning,Desktop,Houston
+3196,Evening,Mobile,Chicago
+3197,Night,Desktop,San Francisco
+3198,Morning,Mobile,Los Angeles
+3199,Evening,Tablet,Chicago
+3200,Evening,Mobile,Houston
+3201,Afternoon,Desktop,San Francisco
+3202,Morning,Mobile,New York
+3203,Night,Mobile,Chicago
+3204,Morning,Mobile,San Francisco
+3205,Morning,Desktop,New York
+3206,Night,Mobile,San Francisco
+3207,Night,Mobile,San Francisco
+3208,Afternoon,Tablet,Los Angeles
+3209,Evening,Desktop,San Francisco
+3210,Night,Mobile,Los Angeles
+3211,Night,Mobile,Houston
+3212,Morning,Mobile,Los Angeles
+3213,Night,Desktop,Los Angeles
+3214,Night,Desktop,Houston
+3215,Morning,Desktop,Chicago
+3216,Morning,Mobile,New York
+3217,Morning,Desktop,New York
+3218,Afternoon,Mobile,Houston
+3219,Evening,Mobile,Los Angeles
+3220,Night,Desktop,New York
+3221,Morning,Mobile,New York
+3222,Morning,Mobile,Houston
+3223,Evening,Desktop,Los Angeles
+3224,Afternoon,Mobile,San Francisco
+3225,Night,Mobile,New York
+3226,Afternoon,Desktop,New York
+3227,Afternoon,Tablet,Chicago
+3228,Afternoon,Desktop,New York
+3229,Morning,Mobile,New York
+3230,Evening,Mobile,San Francisco
+3231,Evening,Mobile,San Francisco
+3232,Evening,Desktop,Los Angeles
+3233,Afternoon,Mobile,Houston
+3234,Night,Desktop,New York
+3235,Afternoon,Mobile,Houston
+3236,Evening,Mobile,Los Angeles
+3237,Morning,Desktop,Chicago
+3238,Afternoon,Desktop,Chicago
+3239,Morning,Desktop,Houston
+3240,Evening,Tablet,Los Angeles
+3241,Afternoon,Tablet,San Francisco
+3242,Morning,Tablet,Chicago
+3243,Afternoon,Desktop,Houston
+3244,Evening,Desktop,Chicago
+3245,Night,Desktop,New York
+3246,Evening,Mobile,New York
+3247,Night,Mobile,Los Angeles
+3248,Night,Mobile,Los Angeles
+3249,Evening,Mobile,Los Angeles
+3250,Morning,Mobile,San Francisco
+3251,Afternoon,Mobile,Los Angeles
+3252,Afternoon,Tablet,Los Angeles
+3253,Afternoon,Desktop,Houston
+3254,Night,Mobile,Los Angeles
+3255,Night,Mobile,San Francisco
+3256,Evening,Desktop,Houston
+3257,Morning,Desktop,New York
+3258,Evening,Tablet,Los Angeles
+3259,Evening,Tablet,New York
+3260,Morning,Tablet,Houston
+3261,Night,Mobile,New York
+3262,Evening,Mobile,New York
+3263,Evening,Desktop,Los Angeles
+3264,Night,Mobile,Los Angeles
+3265,Afternoon,Desktop,New York
+3266,Morning,Mobile,San Francisco
+3267,Morning,Desktop,Los Angeles
+3268,Afternoon,Mobile,Los Angeles
+3269,Morning,Mobile,New York
+3270,Afternoon,Mobile,San Francisco
+3271,Evening,Tablet,New York
+3272,Morning,Mobile,New York
+3273,Morning,Tablet,New York
+3274,Evening,Desktop,Los Angeles
+3275,Night,Desktop,Chicago
+3276,Night,Desktop,New York
+3277,Evening,Desktop,Houston
+3278,Morning,Mobile,San Francisco
+3279,Morning,Mobile,Chicago
+3280,Morning,Desktop,Chicago
+3281,Afternoon,Desktop,Los Angeles
+3282,Night,Mobile,Chicago
+3283,Morning,Desktop,Houston
+3284,Night,Mobile,Houston
+3285,Night,Mobile,San Francisco
+3286,Morning,Mobile,San Francisco
+3287,Evening,Mobile,Houston
+3288,Evening,Mobile,Houston
+3289,Night,Mobile,New York
+3290,Afternoon,Mobile,New York
+3291,Night,Mobile,New York
+3292,Night,Mobile,New York
+3293,Evening,Mobile,New York
+3294,Morning,Mobile,Los Angeles
+3295,Morning,Mobile,San Francisco
+3296,Afternoon,Mobile,San Francisco
+3297,Evening,Mobile,Houston
+3298,Evening,Desktop,Houston
+3299,Night,Mobile,Los Angeles
+3300,Evening,Mobile,San Francisco
+3301,Night,Mobile,Chicago
+3302,Afternoon,Mobile,New York
+3303,Evening,Desktop,New York
+3304,Evening,Mobile,Houston
+3305,Night,Mobile,New York
+3306,Evening,Mobile,Chicago
+3307,Morning,Mobile,Los Angeles
+3308,Afternoon,Mobile,San Francisco
+3309,Morning,Desktop,Chicago
+3310,Night,Mobile,Houston
+3311,Night,Mobile,San Francisco
+3312,Night,Desktop,Houston
+3313,Afternoon,Desktop,Los Angeles
+3314,Evening,Desktop,Chicago
+3315,Morning,Mobile,New York
+3316,Evening,Mobile,San Francisco
+3317,Night,Mobile,Houston
+3318,Evening,Desktop,Los Angeles
+3319,Afternoon,Mobile,San Francisco
+3320,Night,Mobile,Houston
+3321,Evening,Desktop,Los Angeles
+3322,Morning,Desktop,San Francisco
+3323,Night,Mobile,San Francisco
+3324,Night,Desktop,San Francisco
+3325,Afternoon,Desktop,Chicago
+3326,Afternoon,Mobile,San Francisco
+3327,Morning,Tablet,New York
+3328,Evening,Mobile,San Francisco
+3329,Evening,Desktop,New York
+3330,Night,Desktop,Los Angeles
+3331,Night,Mobile,Los Angeles
+3332,Evening,Mobile,Los Angeles
+3333,Evening,Tablet,Houston
+3334,Evening,Mobile,Los Angeles
+3335,Night,Mobile,San Francisco
+3336,Afternoon,Mobile,San Francisco
+3337,Afternoon,Desktop,San Francisco
+3338,Morning,Tablet,New York
+3339,Evening,Mobile,San Francisco
+3340,Evening,Desktop,Houston
+3341,Evening,Mobile,New York
+3342,Morning,Tablet,Los Angeles
+3343,Evening,Mobile,New York
+3344,Afternoon,Mobile,Chicago
+3345,Evening,Mobile,Chicago
+3346,Morning,Mobile,Los Angeles
+3347,Night,Mobile,New York
+3348,Night,Desktop,Los Angeles
+3349,Afternoon,Mobile,San Francisco
+3350,Afternoon,Tablet,New York
+3351,Afternoon,Desktop,Chicago
+3352,Night,Desktop,Houston
+3353,Evening,Mobile,San Francisco
+3354,Morning,Desktop,San Francisco
+3355,Morning,Desktop,New York
+3356,Evening,Desktop,Chicago
+3357,Night,Tablet,Chicago
+3358,Night,Mobile,New York
+3359,Morning,Mobile,Houston
+3360,Afternoon,Desktop,Los Angeles
+3361,Afternoon,Desktop,New York
+3362,Morning,Mobile,Los Angeles
+3363,Morning,Mobile,Chicago
+3364,Evening,Desktop,Houston
+3365,Evening,Mobile,New York
+3366,Evening,Mobile,Chicago
+3367,Evening,Mobile,Chicago
+3368,Evening,Mobile,Houston
+3369,Evening,Mobile,San Francisco
+3370,Afternoon,Tablet,New York
+3371,Morning,Desktop,Los Angeles
+3372,Night,Tablet,Houston
+3373,Evening,Desktop,Chicago
+3374,Afternoon,Mobile,San Francisco
+3375,Morning,Desktop,San Francisco
+3376,Morning,Tablet,Chicago
+3377,Morning,Tablet,Houston
+3378,Evening,Desktop,Houston
+3379,Evening,Mobile,Chicago
+3380,Night,Mobile,Chicago
+3381,Evening,Mobile,Chicago
+3382,Morning,Tablet,San Francisco
+3383,Morning,Mobile,Houston
+3384,Afternoon,Desktop,Houston
+3385,Afternoon,Mobile,Los Angeles
+3386,Night,Desktop,New York
+3387,Afternoon,Mobile,Houston
+3388,Night,Mobile,Houston
+3389,Afternoon,Mobile,Houston
+3390,Morning,Desktop,Chicago
+3391,Evening,Mobile,New York
+3392,Evening,Desktop,Los Angeles
+3393,Night,Mobile,Chicago
+3394,Evening,Desktop,New York
+3395,Evening,Mobile,Houston
+3396,Afternoon,Desktop,San Francisco
+3397,Morning,Mobile,Houston
+3398,Evening,Desktop,Houston
+3399,Morning,Mobile,San Francisco
+3400,Afternoon,Desktop,Houston
+3401,Afternoon,Tablet,New York
+3402,Evening,Mobile,Chicago
+3403,Evening,Mobile,New York
+3404,Afternoon,Desktop,Houston
+3405,Afternoon,Desktop,Los Angeles
+3406,Night,Mobile,New York
+3407,Night,Mobile,New York
+3408,Morning,Mobile,Los Angeles
+3409,Afternoon,Mobile,Houston
+3410,Morning,Mobile,San Francisco
+3411,Afternoon,Desktop,New York
+3412,Morning,Mobile,San Francisco
+3413,Night,Mobile,San Francisco
+3414,Afternoon,Desktop,Houston
+3415,Afternoon,Mobile,Houston
+3416,Morning,Desktop,San Francisco
+3417,Morning,Desktop,Los Angeles
+3418,Evening,Mobile,Los Angeles
+3419,Evening,Mobile,Chicago
+3420,Night,Tablet,San Francisco
+3421,Afternoon,Tablet,Houston
+3422,Afternoon,Mobile,Chicago
+3423,Morning,Mobile,Chicago
+3424,Night,Mobile,New York
+3425,Afternoon,Mobile,Houston
+3426,Night,Mobile,Houston
+3427,Evening,Desktop,Houston
+3428,Morning,Desktop,Los Angeles
+3429,Afternoon,Mobile,Chicago
+3430,Morning,Desktop,Los Angeles
+3431,Evening,Mobile,New York
+3432,Night,Mobile,Houston
+3433,Night,Mobile,New York
+3434,Evening,Mobile,Los Angeles
+3435,Evening,Mobile,Chicago
+3436,Afternoon,Desktop,Chicago
+3437,Afternoon,Mobile,Houston
+3438,Afternoon,Desktop,Chicago
+3439,Afternoon,Mobile,New York
+3440,Afternoon,Mobile,Houston
+3441,Night,Mobile,Los Angeles
+3442,Afternoon,Desktop,Houston
+3443,Evening,Mobile,Chicago
+3444,Evening,Desktop,San Francisco
+3445,Afternoon,Tablet,Chicago
+3446,Evening,Desktop,Los Angeles
+3447,Morning,Mobile,New York
+3448,Night,Desktop,Los Angeles
+3449,Night,Mobile,Houston
+3450,Afternoon,Desktop,Chicago
+3451,Morning,Mobile,Chicago
+3452,Afternoon,Mobile,Houston
+3453,Afternoon,Mobile,Houston
+3454,Evening,Mobile,Los Angeles
+3455,Night,Mobile,Houston
+3456,Morning,Desktop,Chicago
+3457,Evening,Desktop,Houston
+3458,Night,Mobile,New York
+3459,Night,Mobile,New York
+3460,Afternoon,Mobile,Houston
+3461,Morning,Mobile,New York
+3462,Afternoon,Tablet,Houston
+3463,Evening,Desktop,New York
+3464,Afternoon,Mobile,Houston
+3465,Afternoon,Mobile,New York
+3466,Night,Desktop,Chicago
+3467,Night,Desktop,New York
+3468,Evening,Mobile,San Francisco
+3469,Night,Mobile,New York
+3470,Night,Mobile,Los Angeles
+3471,Night,Mobile,San Francisco
+3472,Afternoon,Mobile,Chicago
+3473,Morning,Mobile,Houston
+3474,Evening,Desktop,Los Angeles
+3475,Afternoon,Mobile,San Francisco
+3476,Evening,Tablet,New York
+3477,Afternoon,Mobile,Los Angeles
+3478,Evening,Mobile,Chicago
+3479,Night,Mobile,Los Angeles
+3480,Evening,Mobile,Houston
+3481,Morning,Tablet,San Francisco
+3482,Evening,Mobile,Chicago
+3483,Morning,Mobile,New York
+3484,Evening,Tablet,Los Angeles
+3485,Night,Mobile,San Francisco
+3486,Evening,Mobile,New York
+3487,Afternoon,Mobile,Houston
+3488,Night,Mobile,Houston
+3489,Night,Mobile,Houston
+3490,Afternoon,Mobile,Los Angeles
+3491,Night,Desktop,New York
+3492,Night,Desktop,New York
+3493,Afternoon,Mobile,Houston
+3494,Night,Mobile,San Francisco
+3495,Night,Mobile,Houston
+3496,Night,Mobile,New York
+3497,Night,Mobile,New York
+3498,Evening,Desktop,New York
+3499,Night,Desktop,Chicago
+3500,Night,Mobile,Chicago
+3501,Night,Desktop,New York
+3502,Evening,Mobile,San Francisco
+3503,Morning,Mobile,San Francisco
+3504,Night,Mobile,New York
+3505,Morning,Mobile,San Francisco
+3506,Morning,Desktop,New York
+3507,Afternoon,Mobile,San Francisco
+3508,Afternoon,Mobile,Chicago
+3509,Morning,Tablet,Los Angeles
+3510,Evening,Mobile,Houston
+3511,Night,Mobile,Houston
+3512,Night,Mobile,Chicago
+3513,Night,Mobile,San Francisco
+3514,Afternoon,Tablet,Los Angeles
+3515,Afternoon,Mobile,Chicago
+3516,Night,Tablet,New York
+3517,Morning,Mobile,San Francisco
+3518,Afternoon,Mobile,New York
+3519,Night,Mobile,Los Angeles
+3520,Morning,Desktop,Los Angeles
+3521,Night,Mobile,Chicago
+3522,Afternoon,Desktop,Houston
+3523,Evening,Mobile,Houston
+3524,Evening,Mobile,Houston
+3525,Afternoon,Mobile,Houston
+3526,Morning,Desktop,Los Angeles
+3527,Night,Mobile,San Francisco
+3528,Afternoon,Mobile,Chicago
+3529,Morning,Mobile,Chicago
+3530,Night,Desktop,Los Angeles
+3531,Night,Desktop,Houston
+3532,Afternoon,Desktop,Chicago
+3533,Night,Mobile,Chicago
+3534,Evening,Tablet,Los Angeles
+3535,Evening,Desktop,Los Angeles
+3536,Night,Mobile,Houston
+3537,Afternoon,Mobile,Los Angeles
+3538,Night,Mobile,Los Angeles
+3539,Afternoon,Mobile,Houston
+3540,Afternoon,Desktop,San Francisco
+3541,Evening,Desktop,Los Angeles
+3542,Evening,Desktop,San Francisco
+3543,Morning,Mobile,Chicago
+3544,Afternoon,Mobile,Houston
+3545,Night,Mobile,San Francisco
+3546,Afternoon,Mobile,San Francisco
+3547,Evening,Desktop,New York
+3548,Afternoon,Mobile,New York
+3549,Morning,Desktop,Chicago
+3550,Night,Desktop,Los Angeles
+3551,Afternoon,Desktop,Chicago
+3552,Night,Mobile,Houston
+3553,Night,Desktop,New York
+3554,Evening,Tablet,Houston
+3555,Afternoon,Desktop,Los Angeles
+3556,Night,Desktop,San Francisco
+3557,Evening,Desktop,Los Angeles
+3558,Morning,Mobile,Los Angeles
+3559,Morning,Desktop,Chicago
+3560,Afternoon,Desktop,San Francisco
+3561,Night,Desktop,New York
+3562,Afternoon,Desktop,Los Angeles
+3563,Night,Mobile,Los Angeles
+3564,Evening,Mobile,Los Angeles
+3565,Morning,Mobile,San Francisco
+3566,Morning,Mobile,Los Angeles
+3567,Morning,Mobile,Chicago
+3568,Morning,Mobile,New York
+3569,Afternoon,Mobile,Los Angeles
+3570,Night,Desktop,San Francisco
+3571,Afternoon,Mobile,Chicago
+3572,Evening,Mobile,New York
+3573,Morning,Mobile,San Francisco
+3574,Night,Mobile,San Francisco
+3575,Afternoon,Mobile,New York
+3576,Night,Mobile,Los Angeles
+3577,Afternoon,Tablet,Los Angeles
+3578,Night,Mobile,Houston
+3579,Night,Desktop,San Francisco
+3580,Morning,Desktop,Houston
+3581,Afternoon,Tablet,Houston
+3582,Evening,Mobile,Houston
+3583,Night,Mobile,Houston
+3584,Evening,Mobile,Houston
+3585,Morning,Mobile,Houston
+3586,Evening,Mobile,Los Angeles
+3587,Night,Desktop,Houston
+3588,Night,Mobile,New York
+3589,Night,Mobile,Los Angeles
+3590,Afternoon,Mobile,San Francisco
+3591,Evening,Tablet,New York
+3592,Afternoon,Desktop,San Francisco
+3593,Night,Mobile,San Francisco
+3594,Night,Mobile,Houston
+3595,Morning,Mobile,Los Angeles
+3596,Morning,Desktop,Los Angeles
+3597,Night,Desktop,San Francisco
+3598,Afternoon,Desktop,Los Angeles
+3599,Afternoon,Mobile,Chicago
+3600,Night,Desktop,Los Angeles
+3601,Evening,Desktop,San Francisco
+3602,Afternoon,Tablet,San Francisco
+3603,Night,Mobile,Los Angeles
+3604,Morning,Mobile,Los Angeles
+3605,Night,Mobile,Houston
+3606,Afternoon,Mobile,Houston
+3607,Night,Desktop,New York
+3608,Evening,Desktop,Chicago
+3609,Evening,Mobile,New York
+3610,Afternoon,Mobile,New York
+3611,Night,Mobile,New York
+3612,Evening,Tablet,New York
+3613,Evening,Mobile,San Francisco
+3614,Morning,Mobile,Houston
+3615,Afternoon,Mobile,San Francisco
+3616,Morning,Mobile,Houston
+3617,Morning,Desktop,Chicago
+3618,Evening,Desktop,Houston
+3619,Night,Mobile,New York
+3620,Morning,Desktop,Houston
+3621,Afternoon,Mobile,New York
+3622,Afternoon,Tablet,Los Angeles
+3623,Night,Mobile,Houston
+3624,Afternoon,Mobile,New York
+3625,Morning,Mobile,New York
+3626,Night,Mobile,Houston
+3627,Afternoon,Mobile,San Francisco
+3628,Afternoon,Desktop,Houston
+3629,Morning,Desktop,Houston
+3630,Morning,Mobile,Houston
+3631,Morning,Desktop,Chicago
+3632,Morning,Mobile,Houston
+3633,Night,Desktop,Houston
+3634,Night,Mobile,Los Angeles
+3635,Night,Desktop,San Francisco
+3636,Evening,Mobile,San Francisco
+3637,Morning,Mobile,San Francisco
+3638,Morning,Mobile,Houston
+3639,Night,Mobile,San Francisco
+3640,Afternoon,Desktop,Houston
+3641,Afternoon,Mobile,Chicago
+3642,Morning,Mobile,Houston
+3643,Morning,Mobile,Los Angeles
+3644,Night,Mobile,Chicago
+3645,Morning,Desktop,Chicago
+3646,Afternoon,Mobile,Chicago
+3647,Afternoon,Desktop,San Francisco
+3648,Morning,Mobile,Los Angeles
+3649,Night,Desktop,San Francisco
+3650,Night,Tablet,San Francisco
+3651,Afternoon,Desktop,Houston
+3652,Night,Desktop,Chicago
+3653,Afternoon,Mobile,Houston
+3654,Morning,Tablet,Los Angeles
+3655,Afternoon,Desktop,San Francisco
+3656,Morning,Tablet,Houston
+3657,Night,Desktop,Houston
+3658,Evening,Desktop,Chicago
+3659,Evening,Mobile,Houston
+3660,Evening,Mobile,New York
+3661,Afternoon,Mobile,Los Angeles
+3662,Evening,Desktop,New York
+3663,Afternoon,Mobile,Los Angeles
+3664,Night,Mobile,Los Angeles
+3665,Morning,Mobile,New York
+3666,Evening,Mobile,San Francisco
+3667,Afternoon,Desktop,Houston
+3668,Night,Desktop,New York
+3669,Night,Mobile,San Francisco
+3670,Evening,Mobile,Los Angeles
+3671,Night,Mobile,New York
+3672,Night,Mobile,Los Angeles
+3673,Night,Mobile,Houston
+3674,Afternoon,Mobile,Houston
+3675,Night,Mobile,Houston
+3676,Night,Mobile,Houston
+3677,Night,Desktop,New York
+3678,Night,Mobile,New York
+3679,Night,Mobile,Los Angeles
+3680,Afternoon,Mobile,San Francisco
+3681,Night,Tablet,Houston
+3682,Night,Mobile,Houston
+3683,Morning,Mobile,New York
+3684,Night,Mobile,Houston
+3685,Night,Desktop,Los Angeles
+3686,Afternoon,Desktop,Houston
+3687,Night,Desktop,New York
+3688,Afternoon,Mobile,Los Angeles
+3689,Evening,Desktop,Houston
+3690,Night,Desktop,San Francisco
+3691,Morning,Mobile,New York
+3692,Afternoon,Desktop,San Francisco
+3693,Evening,Mobile,New York
+3694,Morning,Mobile,San Francisco
+3695,Afternoon,Desktop,New York
+3696,Evening,Desktop,Los Angeles
+3697,Morning,Mobile,Houston
+3698,Night,Mobile,Chicago
+3699,Morning,Desktop,New York
+3700,Morning,Mobile,Los Angeles
+3701,Morning,Mobile,San Francisco
+3702,Afternoon,Mobile,Chicago
+3703,Night,Tablet,Los Angeles
+3704,Night,Tablet,Houston
+3705,Afternoon,Mobile,Chicago
+3706,Morning,Mobile,Houston
+3707,Night,Mobile,New York
+3708,Morning,Mobile,Houston
+3709,Night,Desktop,Los Angeles
+3710,Afternoon,Mobile,Chicago
+3711,Evening,Mobile,Houston
+3712,Morning,Desktop,Los Angeles
+3713,Night,Mobile,Houston
+3714,Night,Mobile,San Francisco
+3715,Night,Mobile,Houston
+3716,Afternoon,Desktop,Chicago
+3717,Afternoon,Mobile,Houston
+3718,Evening,Mobile,San Francisco
+3719,Afternoon,Mobile,San Francisco
+3720,Morning,Tablet,San Francisco
+3721,Afternoon,Mobile,Chicago
+3722,Night,Tablet,San Francisco
+3723,Morning,Desktop,Los Angeles
+3724,Afternoon,Desktop,San Francisco
+3725,Morning,Mobile,San Francisco
+3726,Morning,Mobile,Chicago
+3727,Afternoon,Mobile,Houston
+3728,Morning,Mobile,San Francisco
+3729,Night,Tablet,Houston
+3730,Night,Mobile,New York
+3731,Afternoon,Mobile,Houston
+3732,Afternoon,Mobile,Houston
+3733,Night,Desktop,Los Angeles
+3734,Afternoon,Mobile,Houston
+3735,Night,Mobile,San Francisco
+3736,Morning,Mobile,San Francisco
+3737,Afternoon,Desktop,Los Angeles
+3738,Evening,Mobile,Los Angeles
+3739,Night,Mobile,Chicago
+3740,Night,Mobile,Chicago
+3741,Morning,Tablet,Chicago
+3742,Evening,Mobile,Los Angeles
+3743,Evening,Desktop,Los Angeles
+3744,Evening,Desktop,New York
+3745,Night,Mobile,Los Angeles
+3746,Night,Mobile,Houston
+3747,Evening,Mobile,New York
+3748,Afternoon,Mobile,New York
+3749,Evening,Mobile,Chicago
+3750,Morning,Mobile,New York
+3751,Evening,Mobile,San Francisco
+3752,Evening,Mobile,New York
+3753,Evening,Desktop,Chicago
+3754,Afternoon,Desktop,San Francisco
+3755,Evening,Mobile,Chicago
+3756,Evening,Mobile,New York
+3757,Night,Desktop,Chicago
+3758,Evening,Desktop,San Francisco
+3759,Morning,Tablet,New York
+3760,Night,Mobile,New York
+3761,Afternoon,Mobile,Chicago
+3762,Night,Mobile,San Francisco
+3763,Afternoon,Desktop,San Francisco
+3764,Afternoon,Mobile,Chicago
+3765,Morning,Mobile,New York
+3766,Evening,Mobile,Los Angeles
+3767,Morning,Desktop,San Francisco
+3768,Night,Mobile,New York
+3769,Afternoon,Desktop,Chicago
+3770,Night,Desktop,Houston
+3771,Afternoon,Desktop,San Francisco
+3772,Night,Mobile,New York
+3773,Afternoon,Tablet,San Francisco
+3774,Morning,Mobile,Los Angeles
+3775,Afternoon,Mobile,Los Angeles
+3776,Evening,Tablet,San Francisco
+3777,Morning,Mobile,Los Angeles
+3778,Evening,Mobile,New York
+3779,Night,Mobile,San Francisco
+3780,Night,Mobile,Los Angeles
+3781,Afternoon,Mobile,New York
+3782,Afternoon,Mobile,Chicago
+3783,Night,Mobile,Los Angeles
+3784,Morning,Desktop,New York
+3785,Evening,Mobile,New York
+3786,Night,Mobile,Chicago
+3787,Morning,Mobile,Chicago
+3788,Evening,Desktop,New York
+3789,Afternoon,Desktop,Los Angeles
+3790,Morning,Desktop,Houston
+3791,Morning,Mobile,New York
+3792,Night,Mobile,New York
+3793,Evening,Mobile,Los Angeles
+3794,Night,Mobile,New York
+3795,Afternoon,Mobile,San Francisco
+3796,Afternoon,Tablet,Chicago
+3797,Evening,Mobile,Chicago
+3798,Evening,Tablet,New York
+3799,Evening,Mobile,Chicago
+3800,Night,Tablet,San Francisco
+3801,Evening,Mobile,San Francisco
+3802,Evening,Tablet,Los Angeles
+3803,Night,Mobile,San Francisco
+3804,Afternoon,Tablet,Chicago
+3805,Afternoon,Mobile,San Francisco
+3806,Morning,Mobile,San Francisco
+3807,Afternoon,Mobile,San Francisco
+3808,Evening,Mobile,Chicago
+3809,Afternoon,Desktop,Chicago
+3810,Night,Tablet,New York
+3811,Afternoon,Desktop,Houston
+3812,Afternoon,Desktop,Houston
+3813,Morning,Mobile,Los Angeles
+3814,Morning,Desktop,New York
+3815,Evening,Mobile,San Francisco
+3816,Night,Desktop,Los Angeles
+3817,Evening,Mobile,New York
+3818,Night,Desktop,Chicago
+3819,Night,Mobile,Houston
+3820,Morning,Mobile,Chicago
+3821,Afternoon,Mobile,Los Angeles
+3822,Afternoon,Mobile,San Francisco
+3823,Morning,Mobile,Los Angeles
+3824,Evening,Mobile,San Francisco
+3825,Afternoon,Desktop,San Francisco
+3826,Evening,Mobile,Houston
+3827,Afternoon,Desktop,Houston
+3828,Evening,Mobile,Los Angeles
+3829,Night,Mobile,New York
+3830,Night,Mobile,Los Angeles
+3831,Afternoon,Mobile,Chicago
+3832,Evening,Mobile,Houston
+3833,Evening,Mobile,Houston
+3834,Night,Mobile,New York
+3835,Evening,Desktop,Chicago
+3836,Morning,Mobile,Houston
+3837,Evening,Mobile,San Francisco
+3838,Night,Desktop,Chicago
+3839,Morning,Desktop,San Francisco
+3840,Morning,Mobile,Los Angeles
+3841,Evening,Desktop,New York
+3842,Night,Tablet,New York
+3843,Night,Mobile,San Francisco
+3844,Night,Mobile,Los Angeles
+3845,Morning,Tablet,San Francisco
+3846,Night,Mobile,New York
+3847,Morning,Mobile,New York
+3848,Morning,Mobile,Chicago
+3849,Afternoon,Desktop,Houston
+3850,Evening,Tablet,Chicago
+3851,Night,Desktop,Houston
+3852,Morning,Tablet,Chicago
+3853,Evening,Mobile,New York
+3854,Morning,Mobile,New York
+3855,Evening,Desktop,New York
+3856,Morning,Tablet,Houston
+3857,Night,Mobile,Houston
+3858,Afternoon,Mobile,San Francisco
+3859,Afternoon,Mobile,Chicago
+3860,Afternoon,Mobile,San Francisco
+3861,Morning,Mobile,Los Angeles
+3862,Evening,Mobile,Chicago
+3863,Night,Tablet,San Francisco
+3864,Night,Mobile,New York
+3865,Morning,Desktop,San Francisco
+3866,Afternoon,Mobile,Houston
+3867,Morning,Mobile,Chicago
+3868,Evening,Mobile,Los Angeles
+3869,Afternoon,Desktop,New York
+3870,Morning,Mobile,Chicago
+3871,Evening,Desktop,Los Angeles
+3872,Afternoon,Desktop,Houston
+3873,Night,Mobile,Chicago
+3874,Evening,Mobile,Chicago
+3875,Night,Desktop,Houston
+3876,Evening,Mobile,Los Angeles
+3877,Afternoon,Mobile,New York
+3878,Morning,Mobile,Los Angeles
+3879,Morning,Mobile,New York
+3880,Morning,Tablet,Chicago
+3881,Morning,Mobile,Los Angeles
+3882,Evening,Mobile,San Francisco
+3883,Morning,Mobile,Los Angeles
+3884,Morning,Desktop,San Francisco
+3885,Evening,Desktop,San Francisco
+3886,Evening,Tablet,Houston
+3887,Afternoon,Desktop,Los Angeles
+3888,Evening,Mobile,New York
+3889,Night,Mobile,San Francisco
+3890,Afternoon,Mobile,New York
+3891,Afternoon,Desktop,New York
+3892,Morning,Desktop,New York
+3893,Morning,Tablet,San Francisco
+3894,Night,Desktop,Chicago
+3895,Morning,Mobile,New York
+3896,Evening,Mobile,New York
+3897,Evening,Mobile,Houston
+3898,Morning,Mobile,Houston
+3899,Morning,Mobile,San Francisco
+3900,Evening,Mobile,San Francisco
+3901,Afternoon,Mobile,Houston
+3902,Night,Desktop,Houston
+3903,Night,Mobile,Chicago
+3904,Afternoon,Mobile,Los Angeles
+3905,Night,Mobile,Los Angeles
+3906,Morning,Mobile,Los Angeles
+3907,Morning,Tablet,Los Angeles
+3908,Morning,Mobile,New York
+3909,Night,Tablet,San Francisco
+3910,Afternoon,Mobile,Chicago
+3911,Morning,Mobile,Los Angeles
+3912,Afternoon,Mobile,New York
+3913,Evening,Mobile,San Francisco
+3914,Evening,Mobile,Los Angeles
+3915,Evening,Desktop,Houston
+3916,Night,Mobile,Houston
+3917,Night,Mobile,Chicago
+3918,Morning,Mobile,Los Angeles
+3919,Evening,Mobile,Los Angeles
+3920,Afternoon,Tablet,Houston
+3921,Night,Desktop,Houston
+3922,Afternoon,Mobile,Chicago
+3923,Afternoon,Mobile,New York
+3924,Morning,Mobile,New York
+3925,Morning,Tablet,San Francisco
+3926,Afternoon,Mobile,New York
+3927,Afternoon,Desktop,San Francisco
+3928,Afternoon,Mobile,Houston
+3929,Afternoon,Tablet,Los Angeles
+3930,Evening,Mobile,Los Angeles
+3931,Afternoon,Mobile,New York
+3932,Night,Desktop,New York
+3933,Morning,Tablet,San Francisco
+3934,Night,Tablet,Los Angeles
+3935,Morning,Desktop,New York
+3936,Morning,Desktop,Chicago
+3937,Morning,Mobile,New York
+3938,Night,Desktop,New York
+3939,Morning,Desktop,San Francisco
+3940,Afternoon,Mobile,San Francisco
+3941,Afternoon,Desktop,New York
+3942,Evening,Mobile,Houston
+3943,Evening,Mobile,Chicago
+3944,Evening,Desktop,San Francisco
+3945,Afternoon,Mobile,Chicago
+3946,Night,Mobile,Los Angeles
+3947,Evening,Mobile,Chicago
+3948,Afternoon,Mobile,Houston
+3949,Morning,Mobile,San Francisco
+3950,Night,Tablet,Los Angeles
+3951,Night,Desktop,Houston
+3952,Afternoon,Desktop,San Francisco
+3953,Afternoon,Mobile,San Francisco
+3954,Morning,Tablet,San Francisco
+3955,Morning,Desktop,Los Angeles
+3956,Morning,Mobile,New York
+3957,Night,Desktop,Houston
+3958,Night,Tablet,Los Angeles
+3959,Evening,Mobile,New York
+3960,Evening,Mobile,Houston
+3961,Evening,Tablet,New York
+3962,Night,Mobile,Houston
+3963,Morning,Desktop,New York
+3964,Evening,Mobile,New York
+3965,Morning,Mobile,San Francisco
+3966,Morning,Desktop,New York
+3967,Morning,Mobile,San Francisco
+3968,Evening,Desktop,Houston
+3969,Evening,Mobile,San Francisco
+3970,Morning,Mobile,Houston
+3971,Evening,Mobile,Houston
+3972,Afternoon,Mobile,San Francisco
+3973,Evening,Mobile,Houston
+3974,Morning,Desktop,Chicago
+3975,Morning,Tablet,San Francisco
+3976,Night,Desktop,New York
+3977,Night,Mobile,Chicago
+3978,Morning,Desktop,Chicago
+3979,Afternoon,Tablet,Chicago
+3980,Night,Mobile,New York
+3981,Morning,Mobile,Los Angeles
+3982,Night,Mobile,Houston
+3983,Night,Mobile,San Francisco
+3984,Morning,Tablet,Houston
+3985,Evening,Mobile,New York
+3986,Afternoon,Desktop,San Francisco
+3987,Evening,Mobile,San Francisco
+3988,Morning,Mobile,Chicago
+3989,Morning,Mobile,New York
+3990,Afternoon,Tablet,New York
+3991,Morning,Mobile,New York
+3992,Night,Desktop,New York
+3993,Afternoon,Mobile,Houston
+3994,Evening,Desktop,San Francisco
+3995,Afternoon,Desktop,Chicago
+3996,Evening,Desktop,Houston
+3997,Morning,Mobile,Los Angeles
+3998,Evening,Mobile,New York
+3999,Evening,Mobile,Houston
+4000,Evening,Tablet,New York
+4001,Afternoon,Mobile,Los Angeles
+4002,Night,Mobile,New York
+4003,Evening,Mobile,San Francisco
+4004,Afternoon,Mobile,San Francisco
+4005,Afternoon,Desktop,New York
+4006,Night,Tablet,Los Angeles
+4007,Afternoon,Mobile,Chicago
+4008,Morning,Tablet,San Francisco
+4009,Morning,Desktop,New York
+4010,Morning,Mobile,San Francisco
+4011,Night,Tablet,Houston
+4012,Afternoon,Desktop,Los Angeles
+4013,Morning,Mobile,San Francisco
+4014,Evening,Desktop,New York
+4015,Afternoon,Mobile,San Francisco
+4016,Morning,Mobile,Los Angeles
+4017,Afternoon,Desktop,Houston
+4018,Morning,Desktop,San Francisco
+4019,Evening,Desktop,Houston
+4020,Afternoon,Mobile,Chicago
+4021,Morning,Tablet,Chicago
+4022,Morning,Mobile,Los Angeles
+4023,Evening,Mobile,Los Angeles
+4024,Evening,Mobile,San Francisco
+4025,Morning,Mobile,San Francisco
+4026,Morning,Mobile,San Francisco
+4027,Night,Desktop,New York
+4028,Night,Desktop,San Francisco
+4029,Afternoon,Tablet,New York
+4030,Afternoon,Desktop,Los Angeles
+4031,Night,Mobile,Houston
+4032,Morning,Desktop,New York
+4033,Evening,Desktop,Chicago
+4034,Afternoon,Mobile,Los Angeles
+4035,Morning,Desktop,San Francisco
+4036,Evening,Mobile,San Francisco
+4037,Evening,Mobile,San Francisco
+4038,Morning,Mobile,Los Angeles
+4039,Morning,Desktop,Houston
+4040,Afternoon,Desktop,Los Angeles
+4041,Night,Mobile,Los Angeles
+4042,Morning,Mobile,San Francisco
+4043,Night,Tablet,Houston
+4044,Afternoon,Tablet,Los Angeles
+4045,Night,Mobile,San Francisco
+4046,Night,Mobile,Chicago
+4047,Evening,Desktop,Chicago
+4048,Afternoon,Mobile,Chicago
+4049,Morning,Mobile,Houston
+4050,Night,Mobile,New York
+4051,Afternoon,Desktop,Houston
+4052,Evening,Desktop,San Francisco
+4053,Evening,Mobile,Chicago
+4054,Night,Mobile,Houston
+4055,Night,Mobile,San Francisco
+4056,Morning,Mobile,San Francisco
+4057,Afternoon,Mobile,Los Angeles
+4058,Morning,Mobile,San Francisco
+4059,Morning,Mobile,San Francisco
+4060,Evening,Mobile,Houston
+4061,Afternoon,Desktop,Houston
+4062,Morning,Desktop,Houston
+4063,Evening,Mobile,Houston
+4064,Night,Mobile,Houston
+4065,Morning,Mobile,Los Angeles
+4066,Night,Desktop,Los Angeles
+4067,Afternoon,Mobile,Los Angeles
+4068,Morning,Mobile,Houston
+4069,Night,Desktop,New York
+4070,Night,Desktop,Houston
+4071,Afternoon,Mobile,Houston
+4072,Evening,Mobile,New York
+4073,Evening,Tablet,New York
+4074,Morning,Tablet,Houston
+4075,Night,Mobile,Houston
+4076,Evening,Desktop,New York
+4077,Morning,Mobile,Houston
+4078,Night,Tablet,New York
+4079,Morning,Mobile,Los Angeles
+4080,Afternoon,Desktop,Houston
+4081,Morning,Desktop,New York
+4082,Afternoon,Mobile,New York
+4083,Night,Desktop,Los Angeles
+4084,Night,Mobile,New York
+4085,Night,Mobile,San Francisco
+4086,Morning,Mobile,Chicago
+4087,Night,Tablet,Chicago
+4088,Night,Mobile,Los Angeles
+4089,Afternoon,Desktop,Houston
+4090,Night,Desktop,Chicago
+4091,Night,Mobile,Los Angeles
+4092,Night,Mobile,Chicago
+4093,Evening,Desktop,Los Angeles
+4094,Night,Tablet,Los Angeles
+4095,Morning,Mobile,New York
+4096,Afternoon,Mobile,New York
+4097,Night,Mobile,San Francisco
+4098,Morning,Mobile,Houston
+4099,Afternoon,Mobile,Houston
+4100,Afternoon,Mobile,San Francisco
+4101,Morning,Mobile,New York
+4102,Morning,Mobile,Los Angeles
+4103,Evening,Desktop,Los Angeles
+4104,Evening,Tablet,New York
+4105,Night,Mobile,New York
+4106,Evening,Desktop,Los Angeles
+4107,Morning,Mobile,Chicago
+4108,Evening,Tablet,Houston
+4109,Afternoon,Desktop,Los Angeles
+4110,Morning,Desktop,San Francisco
+4111,Night,Mobile,Chicago
+4112,Afternoon,Mobile,New York
+4113,Afternoon,Mobile,Chicago
+4114,Afternoon,Mobile,San Francisco
+4115,Morning,Mobile,New York
+4116,Morning,Mobile,Houston
+4117,Night,Desktop,San Francisco
+4118,Evening,Mobile,San Francisco
+4119,Evening,Mobile,Houston
+4120,Evening,Mobile,Los Angeles
+4121,Evening,Mobile,New York
+4122,Afternoon,Desktop,Los Angeles
+4123,Morning,Mobile,San Francisco
+4124,Evening,Mobile,San Francisco
+4125,Afternoon,Mobile,New York
+4126,Morning,Desktop,Los Angeles
+4127,Morning,Mobile,Chicago
+4128,Morning,Tablet,New York
+4129,Afternoon,Mobile,Los Angeles
+4130,Evening,Desktop,San Francisco
+4131,Morning,Mobile,San Francisco
+4132,Afternoon,Mobile,New York
+4133,Morning,Mobile,New York
+4134,Night,Mobile,Los Angeles
+4135,Night,Mobile,New York
+4136,Afternoon,Mobile,Houston
+4137,Evening,Mobile,San Francisco
+4138,Evening,Mobile,Los Angeles
+4139,Morning,Desktop,New York
+4140,Evening,Desktop,Houston
+4141,Evening,Mobile,Chicago
+4142,Night,Mobile,Los Angeles
+4143,Afternoon,Mobile,San Francisco
+4144,Night,Mobile,New York
+4145,Afternoon,Desktop,Houston
+4146,Morning,Desktop,New York
+4147,Night,Mobile,New York
+4148,Afternoon,Mobile,San Francisco
+4149,Evening,Desktop,Los Angeles
+4150,Afternoon,Mobile,Houston
+4151,Evening,Mobile,Los Angeles
+4152,Morning,Desktop,New York
+4153,Evening,Mobile,New York
+4154,Afternoon,Mobile,Chicago
+4155,Night,Desktop,Los Angeles
+4156,Afternoon,Mobile,Chicago
+4157,Night,Desktop,Houston
+4158,Afternoon,Mobile,Chicago
+4159,Afternoon,Desktop,New York
+4160,Morning,Desktop,Los Angeles
+4161,Evening,Mobile,Los Angeles
+4162,Afternoon,Desktop,Chicago
+4163,Night,Desktop,Los Angeles
+4164,Evening,Mobile,San Francisco
+4165,Morning,Desktop,Los Angeles
+4166,Evening,Tablet,Houston
+4167,Afternoon,Mobile,Houston
+4168,Night,Mobile,Houston
+4169,Night,Mobile,New York
+4170,Evening,Mobile,Houston
+4171,Night,Mobile,Los Angeles
+4172,Afternoon,Mobile,Chicago
+4173,Night,Mobile,San Francisco
+4174,Night,Mobile,Los Angeles
+4175,Night,Mobile,Chicago
+4176,Afternoon,Mobile,Houston
+4177,Morning,Mobile,San Francisco
+4178,Night,Desktop,New York
+4179,Morning,Mobile,New York
+4180,Evening,Mobile,Los Angeles
+4181,Evening,Mobile,San Francisco
+4182,Afternoon,Mobile,Los Angeles
+4183,Afternoon,Mobile,San Francisco
+4184,Afternoon,Desktop,Houston
+4185,Afternoon,Mobile,San Francisco
+4186,Morning,Tablet,Los Angeles
+4187,Afternoon,Mobile,San Francisco
+4188,Morning,Mobile,New York
+4189,Night,Desktop,Los Angeles
+4190,Night,Desktop,San Francisco
+4191,Evening,Desktop,New York
+4192,Evening,Tablet,San Francisco
+4193,Morning,Mobile,Chicago
+4194,Afternoon,Desktop,Los Angeles
+4195,Evening,Mobile,Los Angeles
+4196,Morning,Desktop,San Francisco
+4197,Evening,Mobile,Houston
+4198,Afternoon,Mobile,New York
+4199,Morning,Desktop,Chicago
+4200,Evening,Mobile,New York
+4201,Afternoon,Mobile,San Francisco
+4202,Morning,Mobile,Chicago
+4203,Morning,Desktop,Houston
+4204,Morning,Desktop,Los Angeles
+4205,Night,Desktop,New York
+4206,Morning,Desktop,Los Angeles
+4207,Evening,Mobile,New York
+4208,Morning,Mobile,New York
+4209,Morning,Mobile,Houston
+4210,Morning,Mobile,Chicago
+4211,Morning,Mobile,Houston
+4212,Morning,Mobile,Chicago
+4213,Night,Mobile,Chicago
+4214,Afternoon,Desktop,Los Angeles
+4215,Night,Mobile,Houston
+4216,Evening,Desktop,Los Angeles
+4217,Afternoon,Desktop,Chicago
+4218,Evening,Desktop,Houston
+4219,Morning,Tablet,San Francisco
+4220,Evening,Mobile,Los Angeles
+4221,Night,Desktop,New York
+4222,Night,Desktop,Chicago
+4223,Morning,Mobile,Houston
+4224,Morning,Desktop,Houston
+4225,Afternoon,Mobile,San Francisco
+4226,Night,Mobile,Houston
+4227,Night,Mobile,San Francisco
+4228,Afternoon,Tablet,New York
+4229,Night,Desktop,Houston
+4230,Afternoon,Desktop,Chicago
+4231,Night,Desktop,Houston
+4232,Evening,Mobile,New York
+4233,Evening,Mobile,New York
+4234,Afternoon,Desktop,Houston
+4235,Afternoon,Mobile,Chicago
+4236,Morning,Mobile,New York
+4237,Night,Mobile,Los Angeles
+4238,Evening,Mobile,San Francisco
+4239,Morning,Desktop,New York
+4240,Night,Mobile,Los Angeles
+4241,Evening,Desktop,San Francisco
+4242,Night,Desktop,Houston
+4243,Afternoon,Mobile,San Francisco
+4244,Evening,Mobile,Chicago
+4245,Evening,Mobile,San Francisco
+4246,Morning,Tablet,New York
+4247,Night,Mobile,Chicago
+4248,Afternoon,Mobile,San Francisco
+4249,Afternoon,Desktop,Houston
+4250,Night,Mobile,San Francisco
+4251,Night,Tablet,Los Angeles
+4252,Afternoon,Desktop,Los Angeles
+4253,Night,Mobile,Los Angeles
+4254,Morning,Desktop,Houston
+4255,Night,Mobile,Chicago
+4256,Morning,Desktop,New York
+4257,Morning,Desktop,San Francisco
+4258,Night,Mobile,Los Angeles
+4259,Evening,Mobile,San Francisco
+4260,Evening,Tablet,Los Angeles
+4261,Morning,Mobile,Houston
+4262,Night,Desktop,Houston
+4263,Morning,Mobile,Houston
+4264,Night,Mobile,Chicago
+4265,Night,Desktop,San Francisco
+4266,Afternoon,Mobile,New York
+4267,Evening,Desktop,Houston
+4268,Evening,Mobile,Los Angeles
+4269,Afternoon,Mobile,Chicago
+4270,Afternoon,Tablet,Los Angeles
+4271,Afternoon,Mobile,New York
+4272,Morning,Tablet,Los Angeles
+4273,Morning,Tablet,Chicago
+4274,Morning,Tablet,Chicago
+4275,Morning,Desktop,New York
+4276,Morning,Mobile,Los Angeles
+4277,Evening,Tablet,Houston
+4278,Evening,Mobile,San Francisco
+4279,Night,Mobile,San Francisco
+4280,Evening,Mobile,Chicago
+4281,Afternoon,Mobile,Chicago
+4282,Evening,Desktop,New York
+4283,Afternoon,Mobile,Chicago
+4284,Evening,Mobile,San Francisco
+4285,Morning,Mobile,New York
+4286,Evening,Mobile,Los Angeles
+4287,Night,Desktop,Houston
+4288,Morning,Mobile,San Francisco
+4289,Morning,Mobile,San Francisco
+4290,Night,Mobile,San Francisco
+4291,Evening,Mobile,San Francisco
+4292,Evening,Mobile,Los Angeles
+4293,Night,Mobile,Houston
+4294,Morning,Mobile,Los Angeles
+4295,Night,Mobile,Los Angeles
+4296,Afternoon,Mobile,San Francisco
+4297,Afternoon,Tablet,Chicago
+4298,Evening,Mobile,New York
+4299,Morning,Desktop,Los Angeles
+4300,Afternoon,Desktop,Chicago
+4301,Night,Mobile,Chicago
+4302,Evening,Tablet,Los Angeles
+4303,Evening,Desktop,San Francisco
+4304,Morning,Desktop,Chicago
+4305,Afternoon,Mobile,San Francisco
+4306,Evening,Mobile,New York
+4307,Night,Mobile,Houston
+4308,Afternoon,Mobile,San Francisco
+4309,Evening,Desktop,New York
+4310,Evening,Desktop,San Francisco
+4311,Afternoon,Mobile,Chicago
+4312,Afternoon,Desktop,New York
+4313,Morning,Desktop,San Francisco
+4314,Night,Mobile,Houston
+4315,Morning,Mobile,Houston
+4316,Morning,Mobile,Chicago
+4317,Night,Desktop,Houston
+4318,Night,Desktop,San Francisco
+4319,Morning,Mobile,New York
+4320,Afternoon,Mobile,Houston
+4321,Night,Desktop,San Francisco
+4322,Morning,Desktop,Chicago
+4323,Afternoon,Mobile,San Francisco
+4324,Evening,Mobile,Chicago
+4325,Afternoon,Desktop,Los Angeles
+4326,Morning,Mobile,Los Angeles
+4327,Night,Mobile,San Francisco
+4328,Afternoon,Desktop,Los Angeles
+4329,Afternoon,Mobile,San Francisco
+4330,Afternoon,Desktop,Los Angeles
+4331,Night,Mobile,Los Angeles
+4332,Night,Mobile,Houston
+4333,Afternoon,Mobile,San Francisco
+4334,Afternoon,Mobile,Houston
+4335,Morning,Mobile,Houston
+4336,Night,Desktop,San Francisco
+4337,Afternoon,Mobile,New York
+4338,Night,Tablet,New York
+4339,Night,Mobile,San Francisco
+4340,Night,Mobile,Houston
+4341,Morning,Mobile,Los Angeles
+4342,Evening,Desktop,Houston
+4343,Night,Mobile,Los Angeles
+4344,Night,Mobile,Los Angeles
+4345,Afternoon,Desktop,New York
+4346,Night,Mobile,Houston
+4347,Evening,Mobile,San Francisco
+4348,Night,Mobile,New York
+4349,Morning,Desktop,Houston
+4350,Afternoon,Mobile,Los Angeles
+4351,Evening,Desktop,Houston
+4352,Morning,Desktop,San Francisco
+4353,Evening,Desktop,New York
+4354,Afternoon,Mobile,San Francisco
+4355,Night,Tablet,Houston
+4356,Afternoon,Mobile,San Francisco
+4357,Afternoon,Mobile,New York
+4358,Night,Mobile,Houston
+4359,Morning,Desktop,Los Angeles
+4360,Evening,Mobile,New York
+4361,Morning,Mobile,Chicago
+4362,Night,Desktop,Chicago
+4363,Evening,Mobile,San Francisco
+4364,Night,Mobile,Los Angeles
+4365,Morning,Desktop,Houston
+4366,Afternoon,Desktop,Chicago
+4367,Evening,Mobile,San Francisco
+4368,Night,Mobile,Houston
+4369,Evening,Tablet,Chicago
+4370,Evening,Mobile,Chicago
+4371,Morning,Mobile,Los Angeles
+4372,Afternoon,Desktop,New York
+4373,Evening,Mobile,Los Angeles
+4374,Morning,Mobile,New York
+4375,Evening,Mobile,Chicago
+4376,Afternoon,Mobile,New York
+4377,Evening,Desktop,San Francisco
+4378,Afternoon,Mobile,New York
+4379,Morning,Mobile,Los Angeles
+4380,Morning,Desktop,Chicago
+4381,Afternoon,Mobile,Houston
+4382,Afternoon,Desktop,Houston
+4383,Morning,Mobile,Houston
+4384,Afternoon,Desktop,Los Angeles
+4385,Afternoon,Mobile,San Francisco
+4386,Night,Mobile,Chicago
+4387,Evening,Mobile,Houston
+4388,Morning,Desktop,Los Angeles
+4389,Morning,Desktop,Houston
+4390,Night,Desktop,Los Angeles
+4391,Afternoon,Mobile,Los Angeles
+4392,Afternoon,Mobile,Chicago
+4393,Afternoon,Desktop,San Francisco
+4394,Morning,Desktop,New York
+4395,Night,Desktop,San Francisco
+4396,Evening,Mobile,Chicago
+4397,Night,Mobile,San Francisco
+4398,Morning,Mobile,Houston
+4399,Evening,Mobile,Los Angeles
+4400,Afternoon,Tablet,Los Angeles
+4401,Night,Desktop,Los Angeles
+4402,Night,Mobile,San Francisco
+4403,Morning,Mobile,San Francisco
+4404,Night,Mobile,Houston
+4405,Evening,Desktop,Houston
+4406,Night,Desktop,Houston
+4407,Morning,Mobile,New York
+4408,Night,Desktop,San Francisco
+4409,Evening,Mobile,Houston
+4410,Evening,Mobile,San Francisco
+4411,Morning,Desktop,Chicago
+4412,Afternoon,Desktop,New York
+4413,Morning,Desktop,San Francisco
+4414,Afternoon,Mobile,Los Angeles
+4415,Evening,Mobile,Chicago
+4416,Night,Mobile,New York
+4417,Night,Mobile,Los Angeles
+4418,Evening,Mobile,Houston
+4419,Morning,Mobile,Houston
+4420,Night,Mobile,Los Angeles
+4421,Morning,Mobile,New York
+4422,Night,Desktop,Houston
+4423,Afternoon,Desktop,Houston
+4424,Night,Desktop,New York
+4425,Afternoon,Mobile,San Francisco
+4426,Night,Mobile,Los Angeles
+4427,Night,Mobile,San Francisco
+4428,Night,Mobile,Houston
+4429,Night,Mobile,San Francisco
+4430,Night,Mobile,San Francisco
+4431,Morning,Desktop,Los Angeles
+4432,Afternoon,Tablet,New York
+4433,Afternoon,Mobile,Los Angeles
+4434,Night,Desktop,Houston
+4435,Morning,Mobile,Chicago
+4436,Morning,Desktop,Houston
+4437,Evening,Desktop,Houston
+4438,Evening,Tablet,Houston
+4439,Morning,Mobile,New York
+4440,Evening,Mobile,New York
+4441,Afternoon,Mobile,San Francisco
+4442,Morning,Mobile,San Francisco
+4443,Evening,Tablet,Los Angeles
+4444,Morning,Desktop,Houston
+4445,Evening,Desktop,San Francisco
+4446,Morning,Mobile,New York
+4447,Night,Desktop,Houston
+4448,Afternoon,Mobile,San Francisco
+4449,Evening,Mobile,Houston
+4450,Night,Desktop,Los Angeles
+4451,Morning,Mobile,New York
+4452,Night,Mobile,Houston
+4453,Afternoon,Mobile,San Francisco
+4454,Evening,Desktop,San Francisco
+4455,Evening,Desktop,Chicago
+4456,Morning,Mobile,San Francisco
+4457,Afternoon,Desktop,New York
+4458,Night,Desktop,Chicago
+4459,Morning,Tablet,Los Angeles
+4460,Evening,Mobile,San Francisco
+4461,Night,Desktop,Chicago
+4462,Morning,Desktop,Houston
+4463,Night,Mobile,New York
+4464,Night,Mobile,New York
+4465,Morning,Mobile,San Francisco
+4466,Night,Mobile,Chicago
+4467,Night,Mobile,New York
+4468,Afternoon,Mobile,San Francisco
+4469,Afternoon,Mobile,Los Angeles
+4470,Evening,Mobile,Houston
+4471,Afternoon,Mobile,Los Angeles
+4472,Morning,Desktop,Los Angeles
+4473,Night,Desktop,Chicago
+4474,Evening,Mobile,Los Angeles
+4475,Afternoon,Mobile,Chicago
+4476,Night,Mobile,San Francisco
+4477,Morning,Mobile,New York
+4478,Night,Mobile,New York
+4479,Morning,Desktop,Houston
+4480,Night,Mobile,Los Angeles
+4481,Evening,Desktop,San Francisco
+4482,Evening,Desktop,San Francisco
+4483,Afternoon,Mobile,San Francisco
+4484,Afternoon,Mobile,Los Angeles
+4485,Night,Mobile,New York
+4486,Night,Mobile,San Francisco
+4487,Afternoon,Mobile,New York
+4488,Afternoon,Tablet,Chicago
+4489,Night,Desktop,Los Angeles
+4490,Night,Tablet,New York
+4491,Night,Mobile,Chicago
+4492,Evening,Mobile,Chicago
+4493,Morning,Mobile,Houston
+4494,Morning,Mobile,Houston
+4495,Afternoon,Mobile,New York
+4496,Evening,Desktop,San Francisco
+4497,Night,Mobile,San Francisco
+4498,Night,Tablet,Houston
+4499,Afternoon,Tablet,San Francisco
+4500,Afternoon,Mobile,Houston
+4501,Evening,Desktop,Houston
+4502,Morning,Mobile,Chicago
+4503,Morning,Mobile,Los Angeles
+4504,Night,Desktop,Chicago
+4505,Afternoon,Mobile,San Francisco
+4506,Evening,Desktop,San Francisco
+4507,Night,Desktop,Houston
+4508,Morning,Desktop,San Francisco
+4509,Morning,Tablet,Houston
+4510,Evening,Mobile,Houston
+4511,Night,Mobile,Chicago
+4512,Evening,Mobile,Houston
+4513,Night,Mobile,San Francisco
+4514,Morning,Mobile,Los Angeles
+4515,Afternoon,Desktop,Houston
+4516,Afternoon,Mobile,New York
+4517,Morning,Tablet,San Francisco
+4518,Afternoon,Desktop,Los Angeles
+4519,Afternoon,Mobile,Chicago
+4520,Night,Mobile,New York
+4521,Evening,Mobile,San Francisco
+4522,Night,Mobile,San Francisco
+4523,Evening,Mobile,Los Angeles
+4524,Evening,Mobile,New York
+4525,Afternoon,Desktop,Houston
+4526,Evening,Mobile,New York
+4527,Evening,Desktop,Los Angeles
+4528,Morning,Desktop,Los Angeles
+4529,Evening,Mobile,Los Angeles
+4530,Morning,Mobile,Los Angeles
+4531,Night,Desktop,Los Angeles
+4532,Afternoon,Tablet,Los Angeles
+4533,Evening,Mobile,New York
+4534,Morning,Mobile,New York
+4535,Night,Mobile,New York
+4536,Night,Mobile,New York
+4537,Night,Mobile,Houston
+4538,Morning,Mobile,Los Angeles
+4539,Morning,Desktop,New York
+4540,Afternoon,Mobile,New York
+4541,Evening,Mobile,Chicago
+4542,Night,Mobile,Chicago
+4543,Afternoon,Desktop,San Francisco
+4544,Morning,Mobile,San Francisco
+4545,Afternoon,Tablet,Chicago
+4546,Night,Mobile,Los Angeles
+4547,Night,Mobile,New York
+4548,Afternoon,Mobile,Chicago
+4549,Night,Desktop,New York
+4550,Morning,Mobile,Houston
+4551,Night,Desktop,San Francisco
+4552,Evening,Desktop,Los Angeles
+4553,Evening,Desktop,Chicago
+4554,Night,Mobile,Houston
+4555,Afternoon,Desktop,Houston
+4556,Night,Mobile,Houston
+4557,Evening,Mobile,Chicago
+4558,Morning,Mobile,Houston
+4559,Evening,Desktop,Chicago
+4560,Night,Mobile,Los Angeles
+4561,Night,Mobile,New York
+4562,Afternoon,Mobile,Houston
+4563,Night,Mobile,Chicago
+4564,Night,Mobile,Chicago
+4565,Morning,Mobile,Houston
+4566,Morning,Mobile,San Francisco
+4567,Morning,Mobile,Los Angeles
+4568,Afternoon,Desktop,Chicago
+4569,Afternoon,Mobile,New York
+4570,Evening,Mobile,Houston
+4571,Afternoon,Mobile,Chicago
+4572,Morning,Desktop,New York
+4573,Afternoon,Mobile,Chicago
+4574,Night,Mobile,Houston
+4575,Afternoon,Mobile,Los Angeles
+4576,Night,Tablet,Chicago
+4577,Evening,Mobile,Chicago
+4578,Night,Mobile,Chicago
+4579,Morning,Mobile,Los Angeles
+4580,Evening,Mobile,Los Angeles
+4581,Evening,Mobile,Houston
+4582,Evening,Desktop,Chicago
+4583,Morning,Mobile,San Francisco
+4584,Night,Desktop,Los Angeles
+4585,Evening,Mobile,Chicago
+4586,Morning,Mobile,Houston
+4587,Evening,Mobile,Chicago
+4588,Evening,Mobile,Houston
+4589,Morning,Desktop,New York
+4590,Afternoon,Mobile,New York
+4591,Evening,Desktop,New York
+4592,Afternoon,Desktop,Los Angeles
+4593,Evening,Mobile,San Francisco
+4594,Afternoon,Desktop,Houston
+4595,Night,Mobile,New York
+4596,Afternoon,Mobile,Chicago
+4597,Afternoon,Desktop,Houston
+4598,Afternoon,Mobile,New York
+4599,Afternoon,Mobile,Chicago
+4600,Night,Desktop,San Francisco
+4601,Morning,Tablet,Los Angeles
+4602,Afternoon,Mobile,San Francisco
+4603,Morning,Desktop,Chicago
+4604,Evening,Mobile,Houston
+4605,Morning,Tablet,Houston
+4606,Afternoon,Mobile,New York
+4607,Morning,Desktop,New York
+4608,Night,Mobile,New York
+4609,Night,Desktop,San Francisco
+4610,Afternoon,Desktop,San Francisco
+4611,Morning,Mobile,Houston
+4612,Evening,Mobile,New York
+4613,Night,Desktop,Houston
+4614,Afternoon,Desktop,San Francisco
+4615,Night,Mobile,New York
+4616,Afternoon,Mobile,Chicago
+4617,Morning,Desktop,New York
+4618,Morning,Mobile,Houston
+4619,Morning,Mobile,San Francisco
+4620,Morning,Tablet,Houston
+4621,Morning,Mobile,Houston
+4622,Afternoon,Mobile,Chicago
+4623,Night,Mobile,Los Angeles
+4624,Evening,Desktop,San Francisco
+4625,Night,Mobile,Los Angeles
+4626,Morning,Desktop,Los Angeles
+4627,Night,Desktop,Los Angeles
+4628,Night,Mobile,San Francisco
+4629,Afternoon,Desktop,New York
+4630,Evening,Mobile,San Francisco
+4631,Evening,Desktop,Houston
+4632,Morning,Mobile,Los Angeles
+4633,Afternoon,Desktop,New York
+4634,Afternoon,Mobile,Houston
+4635,Afternoon,Mobile,New York
+4636,Afternoon,Tablet,San Francisco
+4637,Afternoon,Mobile,New York
+4638,Evening,Desktop,San Francisco
+4639,Evening,Mobile,San Francisco
+4640,Night,Mobile,Houston
+4641,Evening,Desktop,Houston
+4642,Afternoon,Mobile,Chicago
+4643,Night,Desktop,Houston
+4644,Evening,Mobile,Los Angeles
+4645,Night,Mobile,Houston
+4646,Evening,Desktop,Houston
+4647,Morning,Mobile,Los Angeles
+4648,Evening,Mobile,Los Angeles
+4649,Night,Desktop,Los Angeles
+4650,Morning,Mobile,Chicago
+4651,Afternoon,Mobile,Chicago
+4652,Night,Desktop,Houston
+4653,Afternoon,Desktop,San Francisco
+4654,Afternoon,Mobile,Houston
+4655,Night,Mobile,San Francisco
+4656,Afternoon,Desktop,Chicago
+4657,Night,Mobile,Houston
+4658,Night,Mobile,San Francisco
+4659,Evening,Tablet,Houston
+4660,Morning,Mobile,Los Angeles
+4661,Afternoon,Mobile,Chicago
+4662,Afternoon,Desktop,San Francisco
+4663,Morning,Desktop,Chicago
+4664,Morning,Desktop,Los Angeles
+4665,Morning,Mobile,Houston
+4666,Morning,Mobile,Chicago
+4667,Morning,Desktop,New York
+4668,Evening,Mobile,San Francisco
+4669,Night,Desktop,San Francisco
+4670,Morning,Mobile,Houston
+4671,Evening,Desktop,Houston
+4672,Morning,Mobile,Chicago
+4673,Morning,Mobile,Houston
+4674,Afternoon,Mobile,Houston
+4675,Afternoon,Desktop,San Francisco
+4676,Afternoon,Mobile,Houston
+4677,Afternoon,Desktop,San Francisco
+4678,Night,Mobile,Houston
+4679,Night,Mobile,Chicago
+4680,Afternoon,Desktop,San Francisco
+4681,Afternoon,Mobile,San Francisco
+4682,Morning,Mobile,Houston
+4683,Morning,Mobile,Houston
+4684,Afternoon,Desktop,Houston
+4685,Afternoon,Tablet,New York
+4686,Afternoon,Mobile,Houston
+4687,Morning,Mobile,Chicago
+4688,Afternoon,Mobile,San Francisco
+4689,Afternoon,Desktop,Houston
+4690,Night,Mobile,Los Angeles
+4691,Night,Desktop,Houston
+4692,Morning,Mobile,Los Angeles
+4693,Night,Desktop,Los Angeles
+4694,Morning,Mobile,New York
+4695,Evening,Tablet,Los Angeles
+4696,Afternoon,Mobile,Los Angeles
+4697,Morning,Mobile,New York
+4698,Night,Desktop,San Francisco
+4699,Evening,Desktop,Chicago
+4700,Night,Mobile,Chicago
+4701,Morning,Tablet,Chicago
+4702,Evening,Mobile,New York
+4703,Night,Mobile,Los Angeles
+4704,Evening,Mobile,San Francisco
+4705,Afternoon,Mobile,Houston
+4706,Afternoon,Desktop,Chicago
+4707,Evening,Mobile,Chicago
+4708,Night,Mobile,New York
+4709,Night,Mobile,Houston
+4710,Night,Mobile,New York
+4711,Afternoon,Tablet,New York
+4712,Morning,Desktop,New York
+4713,Morning,Mobile,Los Angeles
+4714,Evening,Mobile,Houston
+4715,Night,Tablet,San Francisco
+4716,Evening,Mobile,New York
+4717,Morning,Mobile,San Francisco
+4718,Morning,Mobile,San Francisco
+4719,Night,Mobile,Los Angeles
+4720,Evening,Desktop,Houston
+4721,Night,Mobile,San Francisco
+4722,Morning,Tablet,New York
+4723,Morning,Mobile,New York
+4724,Night,Mobile,Los Angeles
+4725,Evening,Tablet,Los Angeles
+4726,Afternoon,Desktop,Los Angeles
+4727,Night,Desktop,San Francisco
+4728,Morning,Mobile,Los Angeles
+4729,Afternoon,Desktop,Chicago
+4730,Night,Mobile,San Francisco
+4731,Afternoon,Mobile,New York
+4732,Night,Desktop,Houston
+4733,Morning,Desktop,Houston
+4734,Night,Desktop,Los Angeles
+4735,Afternoon,Desktop,Chicago
+4736,Evening,Mobile,Houston
+4737,Morning,Mobile,Houston
+4738,Morning,Desktop,Chicago
+4739,Afternoon,Mobile,San Francisco
+4740,Night,Mobile,Chicago
+4741,Night,Mobile,New York
+4742,Night,Mobile,Houston
+4743,Morning,Tablet,San Francisco
+4744,Morning,Mobile,Houston
+4745,Afternoon,Mobile,Los Angeles
+4746,Night,Desktop,San Francisco
+4747,Night,Mobile,San Francisco
+4748,Afternoon,Tablet,Los Angeles
+4749,Morning,Mobile,New York
+4750,Morning,Desktop,New York
+4751,Evening,Mobile,Houston
+4752,Evening,Mobile,San Francisco
+4753,Night,Mobile,San Francisco
+4754,Morning,Mobile,Los Angeles
+4755,Night,Desktop,Los Angeles
+4756,Morning,Mobile,New York
+4757,Evening,Desktop,Chicago
+4758,Afternoon,Mobile,San Francisco
+4759,Morning,Desktop,Los Angeles
+4760,Evening,Desktop,Los Angeles
+4761,Evening,Mobile,Los Angeles
+4762,Morning,Mobile,Los Angeles
+4763,Night,Desktop,Los Angeles
+4764,Morning,Mobile,Los Angeles
+4765,Evening,Mobile,San Francisco
+4766,Morning,Desktop,Chicago
+4767,Afternoon,Tablet,Los Angeles
+4768,Night,Desktop,New York
+4769,Morning,Mobile,Houston
+4770,Evening,Mobile,Los Angeles
+4771,Evening,Tablet,Chicago
+4772,Night,Mobile,New York
+4773,Morning,Mobile,Los Angeles
+4774,Evening,Tablet,Houston
+4775,Night,Mobile,Los Angeles
+4776,Afternoon,Mobile,San Francisco
+4777,Night,Desktop,New York
+4778,Morning,Mobile,Houston
+4779,Morning,Mobile,New York
+4780,Evening,Mobile,San Francisco
+4781,Afternoon,Mobile,Chicago
+4782,Morning,Tablet,New York
+4783,Evening,Mobile,Houston
+4784,Night,Mobile,Houston
+4785,Night,Mobile,Houston
+4786,Morning,Desktop,New York
+4787,Afternoon,Desktop,San Francisco
+4788,Evening,Mobile,Los Angeles
+4789,Morning,Mobile,New York
+4790,Evening,Desktop,Chicago
+4791,Night,Mobile,Houston
+4792,Evening,Mobile,Houston
+4793,Night,Mobile,Los Angeles
+4794,Afternoon,Mobile,San Francisco
+4795,Afternoon,Tablet,San Francisco
+4796,Night,Desktop,Chicago
+4797,Morning,Desktop,New York
+4798,Night,Desktop,Los Angeles
+4799,Evening,Desktop,Houston
+4800,Evening,Tablet,San Francisco
+4801,Evening,Mobile,Houston
+4802,Morning,Mobile,San Francisco
+4803,Afternoon,Desktop,New York
+4804,Afternoon,Mobile,Los Angeles
+4805,Evening,Mobile,Los Angeles
+4806,Morning,Mobile,Chicago
+4807,Evening,Mobile,New York
+4808,Afternoon,Mobile,New York
+4809,Night,Mobile,New York
+4810,Evening,Mobile,San Francisco
+4811,Evening,Desktop,Chicago
+4812,Evening,Desktop,Houston
+4813,Afternoon,Desktop,Los Angeles
+4814,Morning,Desktop,New York
+4815,Night,Mobile,New York
+4816,Night,Mobile,San Francisco
+4817,Night,Mobile,New York
+4818,Evening,Tablet,Chicago
+4819,Afternoon,Mobile,Los Angeles
+4820,Night,Desktop,Los Angeles
+4821,Evening,Mobile,Los Angeles
+4822,Morning,Tablet,Houston
+4823,Evening,Mobile,Los Angeles
+4824,Night,Desktop,New York
+4825,Night,Mobile,Houston
+4826,Morning,Mobile,Houston
+4827,Afternoon,Mobile,Chicago
+4828,Morning,Tablet,Houston
+4829,Morning,Mobile,San Francisco
+4830,Night,Tablet,New York
+4831,Night,Desktop,Los Angeles
+4832,Afternoon,Desktop,Houston
+4833,Night,Mobile,Chicago
+4834,Morning,Mobile,San Francisco
+4835,Morning,Mobile,Houston
+4836,Afternoon,Tablet,Houston
+4837,Night,Tablet,New York
+4838,Night,Desktop,Chicago
+4839,Morning,Mobile,New York
+4840,Morning,Mobile,Los Angeles
+4841,Night,Tablet,Los Angeles
+4842,Evening,Mobile,Los Angeles
+4843,Morning,Desktop,Los Angeles
+4844,Morning,Mobile,Houston
+4845,Morning,Mobile,New York
+4846,Afternoon,Desktop,Houston
+4847,Night,Mobile,Chicago
+4848,Night,Mobile,San Francisco
+4849,Night,Tablet,San Francisco
+4850,Morning,Desktop,San Francisco
+4851,Night,Desktop,Los Angeles
+4852,Night,Desktop,New York
+4853,Night,Mobile,Chicago
+4854,Afternoon,Mobile,New York
+4855,Afternoon,Mobile,Los Angeles
+4856,Morning,Mobile,Chicago
+4857,Night,Mobile,Houston
+4858,Morning,Desktop,San Francisco
+4859,Morning,Mobile,New York
+4860,Morning,Desktop,Los Angeles
+4861,Morning,Mobile,Houston
+4862,Morning,Mobile,New York
+4863,Morning,Mobile,Houston
+4864,Afternoon,Desktop,Los Angeles
+4865,Evening,Mobile,San Francisco
+4866,Afternoon,Mobile,Houston
+4867,Morning,Desktop,San Francisco
+4868,Evening,Mobile,Houston
+4869,Evening,Mobile,Chicago
+4870,Night,Tablet,Los Angeles
+4871,Morning,Mobile,New York
+4872,Morning,Mobile,Houston
+4873,Afternoon,Desktop,Houston
+4874,Evening,Mobile,Chicago
+4875,Evening,Mobile,Los Angeles
+4876,Morning,Mobile,New York
+4877,Night,Mobile,San Francisco
+4878,Morning,Mobile,Los Angeles
+4879,Evening,Mobile,Chicago
+4880,Night,Mobile,New York
+4881,Night,Mobile,Chicago
+4882,Evening,Desktop,Los Angeles
+4883,Morning,Desktop,Houston
+4884,Morning,Desktop,San Francisco
+4885,Morning,Mobile,San Francisco
+4886,Afternoon,Mobile,Houston
+4887,Afternoon,Mobile,Houston
+4888,Night,Desktop,New York
+4889,Morning,Mobile,Houston
+4890,Afternoon,Mobile,Chicago
+4891,Night,Mobile,Houston
+4892,Evening,Mobile,Los Angeles
+4893,Evening,Mobile,Houston
+4894,Morning,Mobile,Los Angeles
+4895,Evening,Mobile,Houston
+4896,Evening,Desktop,Los Angeles
+4897,Evening,Mobile,Chicago
+4898,Night,Desktop,Chicago
+4899,Evening,Mobile,Los Angeles
+4900,Evening,Mobile,Chicago
+4901,Night,Mobile,San Francisco
+4902,Afternoon,Mobile,San Francisco
+4903,Night,Mobile,San Francisco
+4904,Afternoon,Mobile,San Francisco
+4905,Night,Mobile,New York
+4906,Morning,Mobile,Houston
+4907,Evening,Mobile,Chicago
+4908,Afternoon,Mobile,Houston
+4909,Night,Mobile,Houston
+4910,Afternoon,Mobile,San Francisco
+4911,Afternoon,Tablet,San Francisco
+4912,Evening,Mobile,New York
+4913,Afternoon,Mobile,Chicago
+4914,Night,Desktop,Los Angeles
+4915,Morning,Desktop,Los Angeles
+4916,Morning,Tablet,San Francisco
+4917,Evening,Desktop,Chicago
+4918,Night,Desktop,Houston
+4919,Night,Tablet,Houston
+4920,Morning,Mobile,Los Angeles
+4921,Night,Desktop,Houston
+4922,Afternoon,Desktop,Houston
+4923,Evening,Desktop,Chicago
+4924,Morning,Tablet,Chicago
+4925,Evening,Mobile,San Francisco
+4926,Afternoon,Mobile,Chicago
+4927,Morning,Tablet,Los Angeles
+4928,Night,Mobile,New York
+4929,Night,Desktop,Los Angeles
+4930,Afternoon,Mobile,Chicago
+4931,Morning,Desktop,Houston
+4932,Evening,Tablet,New York
+4933,Morning,Mobile,San Francisco
+4934,Night,Mobile,New York
+4935,Morning,Mobile,Houston
+4936,Morning,Desktop,San Francisco
+4937,Night,Desktop,Houston
+4938,Night,Mobile,Houston
+4939,Evening,Mobile,Los Angeles
+4940,Morning,Desktop,Houston
+4941,Night,Desktop,Houston
+4942,Afternoon,Mobile,San Francisco
+4943,Night,Mobile,Houston
+4944,Evening,Desktop,Houston
+4945,Evening,Mobile,San Francisco
+4946,Afternoon,Tablet,San Francisco
+4947,Evening,Mobile,San Francisco
+4948,Morning,Desktop,Los Angeles
+4949,Evening,Mobile,Chicago
+4950,Afternoon,Tablet,Houston
+4951,Evening,Mobile,San Francisco
+4952,Afternoon,Mobile,Houston
+4953,Evening,Mobile,Houston
+4954,Night,Desktop,Los Angeles
+4955,Afternoon,Mobile,Houston
+4956,Evening,Mobile,Houston
+4957,Morning,Mobile,Los Angeles
+4958,Afternoon,Mobile,New York
+4959,Afternoon,Mobile,Houston
+4960,Evening,Mobile,Los Angeles
+4961,Night,Desktop,San Francisco
+4962,Night,Desktop,Chicago
+4963,Evening,Desktop,New York
+4964,Evening,Tablet,Los Angeles
+4965,Morning,Mobile,Houston
+4966,Evening,Desktop,Chicago
+4967,Afternoon,Mobile,Chicago
+4968,Evening,Mobile,New York
+4969,Morning,Mobile,Los Angeles
+4970,Evening,Mobile,Houston
+4971,Evening,Mobile,San Francisco
+4972,Afternoon,Mobile,San Francisco
+4973,Night,Desktop,Houston
+4974,Evening,Mobile,Houston
+4975,Morning,Mobile,Chicago
+4976,Evening,Mobile,New York
+4977,Evening,Mobile,San Francisco
+4978,Afternoon,Mobile,Los Angeles
+4979,Night,Mobile,Chicago
+4980,Night,Mobile,Los Angeles
+4981,Night,Desktop,Chicago
+4982,Evening,Desktop,Chicago
+4983,Afternoon,Mobile,San Francisco
+4984,Afternoon,Mobile,Chicago
+4985,Evening,Desktop,Chicago
+4986,Afternoon,Mobile,San Francisco
+4987,Night,Mobile,San Francisco
+4988,Afternoon,Mobile,Houston
+4989,Evening,Desktop,Los Angeles
+4990,Evening,Mobile,New York
+4991,Morning,Desktop,Chicago
+4992,Morning,Mobile,Houston
+4993,Afternoon,Mobile,Houston
+4994,Afternoon,Mobile,San Francisco
+4995,Evening,Desktop,Chicago
+4996,Morning,Desktop,San Francisco
+4997,Morning,Mobile,Los Angeles
+4998,Night,Mobile,Chicago
+4999,Night,Mobile,Chicago
+5000,Evening,Mobile,Los Angeles

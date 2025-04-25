@@ -1,0 +1,113 @@
+import React, { createContext, useContext, useState, useEffect } from 'react';
+import axios from 'axios';
+
+interface User {
+  id: string;
+  email: string;
+  name: string;
+  interactions: {
+    product_id: string;
+    interaction_type: string;
+    timestamp: string;
+  }[];
+  userId: string;
+  preferences: any;
+}
+
+interface AuthContextType {
+  user: User | null;
+  token: string | null;
+  login: (email: string, password: string) => Promise<void>;
+  signup: (email: string, password: string, name: string) => Promise<void>;
+  logout: () => void;
+  isAuthenticated: boolean;
+}
+
+const AuthContext = createContext<AuthContextType | undefined>(undefined);
+
+const getInitialUser = () => {
+  try {
+    const storedUser = localStorage.getItem('user');
+    return storedUser ? JSON.parse(storedUser) : null;
+  } catch {
+    return null;
+  }
+};
+
+export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  // Initialize user state directly from localStorage
+  const [user, setUser] = useState<User | null>(getInitialUser());
+  const [token, setToken] = useState<string | null>(localStorage.getItem('token'));
+
+  // Keep localStorage in sync with state changes
+  useEffect(() => {
+    if (user) {
+      localStorage.setItem('user', JSON.stringify(user));
+    } else {
+      localStorage.removeItem('user');
+    }
+  }, [user]);
+
+  const login = async (email: string, password: string) => {
+    try {
+      const response = await axios.post('http://localhost:5000/api/login', { email, password });
+      // Backend returns: { message, user_id, preferences }
+      const { user_id, preferences } = response.data;
+      const user = { id: user_id, email, name: '', preferences, interactions: [], userId: user_id };
+      setUser(user);
+      setToken(null); // No JWT
+      localStorage.setItem('user', JSON.stringify(user));
+      localStorage.removeItem('token');
+      delete axios.defaults.headers.common['Authorization'];
+    } catch (error) {
+      console.error('Login failed:', error);
+      throw error;
+    }
+  };
+
+  const signup = async (email: string, password: string, name: string) => {
+    try {
+      const response = await axios.post('http://localhost:5000/api/signup', { email, password, name });
+      // Backend returns: { message, user_id }
+      const { user_id } = response.data;
+      const user = { id: user_id, email, name, preferences: {}, interactions: [], userId: user_id };
+      setUser(user);
+      setToken(null); // No JWT
+      localStorage.setItem('user', JSON.stringify(user));
+      localStorage.removeItem('token');
+      delete axios.defaults.headers.common['Authorization'];
+    } catch (error) {
+      console.error('Signup failed:', error);
+      throw error;
+    }
+  };
+
+  const logout = () => {
+    setToken(null);
+    setUser(null);
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    delete axios.defaults.headers.common['Authorization'];
+  };
+
+  return (
+    <AuthContext.Provider value={{
+      user,
+      token,
+      login,
+      signup,
+      logout,
+      isAuthenticated: !!user
+    }}>
+      {children}
+    </AuthContext.Provider>
+  );
+};
+
+export const useAuth = () => {
+  const context = useContext(AuthContext);
+  if (context === undefined) {
+    throw new Error('useAuth must be used within an AuthProvider');
+  }
+  return context;
+}; 

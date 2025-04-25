@@ -1,0 +1,501 @@
+product_id,category,price,brand
+1,Home & Kitchen,305.4,BrandB
+2,Clothing,80.03,BrandB
+3,Sports,20.31,BrandC
+4,Electronics,485.52,BrandB
+5,Beauty,387.9,BrandA
+6,Books,490.15,BrandA
+7,Home & Kitchen,241.55,BrandC
+8,Clothing,268.47,BrandB
+9,Electronics,88.33,BrandA
+10,Books,127.22,BrandA
+11,Toys,420.08,BrandD
+12,Clothing,181.31,BrandD
+13,Clothing,414.27,BrandA
+14,Books,355.96,BrandC
+15,Electronics,92.7,BrandE
+16,Toys,256.19,BrandE
+17,Sports,340.31,BrandA
+18,Electronics,121.34,BrandA
+19,Beauty,416.19,BrandA
+20,Home & Kitchen,274.69,BrandC
+21,Books,86.79,BrandD
+22,Sports,293.58,BrandA
+23,Toys,499.86,BrandA
+24,Books,79.51,BrandB
+25,Books,409.29,BrandC
+26,Electronics,107.62,BrandA
+27,Home & Kitchen,392.28,BrandB
+28,Beauty,368.62,BrandE
+29,Clothing,153.74,BrandA
+30,Clothing,166.28,BrandA
+31,Books,397.3,BrandB
+32,Home & Kitchen,233.42,BrandC
+33,Toys,366.75,BrandA
+34,Toys,78.25,BrandE
+35,Sports,427.02,BrandA
+36,Electronics,356.89,BrandE
+37,Home & Kitchen,453.94,BrandD
+38,Home & Kitchen,70.52,BrandD
+39,Electronics,298.54,BrandE
+40,Toys,301.56,BrandC
+41,Toys,179.96,BrandA
+42,Toys,231.94,BrandA
+43,Books,23.8,BrandD
+44,Home & Kitchen,374.2,BrandE
+45,Clothing,276.91,BrandA
+46,Electronics,33.58,BrandA
+47,Toys,341.97,BrandC
+48,Sports,236.06,BrandB
+49,Toys,22.06,BrandD
+50,Toys,484.96,BrandD
+51,Beauty,474.81,BrandB
+52,Books,258.89,BrandA
+53,Electronics,51.37,BrandC
+54,Beauty,378.54,BrandC
+55,Beauty,248.51,BrandD
+56,Sports,154.71,BrandC
+57,Home & Kitchen,248.25,BrandB
+58,Sports,263.61,BrandA
+59,Home & Kitchen,283.54,BrandB
+60,Home & Kitchen,223.41,BrandE
+61,Electronics,304.85,BrandD
+62,Toys,459.77,BrandC
+63,Electronics,184.32,BrandE
+64,Books,364.23,BrandC
+65,Home & Kitchen,447.75,BrandA
+66,Beauty,230.71,BrandA
+67,Toys,224.51,BrandA
+68,Clothing,303.05,BrandC
+69,Books,297.75,BrandE
+70,Electronics,404.26,BrandA
+71,Sports,240.86,BrandE
+72,Books,498.08,BrandC
+73,Books,34.44,BrandE
+74,Toys,6.57,BrandC
+75,Books,321.9,BrandC
+76,Books,152.73,BrandD
+77,Clothing,123.99,BrandC
+78,Sports,159.39,BrandC
+79,Sports,131.74,BrandB
+80,Sports,20.24,BrandA
+81,Home & Kitchen,485.91,BrandD
+82,Beauty,114.27,BrandD
+83,Sports,368.34,BrandD
+84,Books,382.49,BrandB
+85,Books,464.98,BrandC
+86,Sports,20.12,BrandA
+87,Toys,436.66,BrandE
+88,Sports,265.98,BrandC
+89,Books,318.11,BrandB
+90,Home & Kitchen,324.01,BrandC
+91,Electronics,410.8,BrandC
+92,Electronics,170.04,BrandB
+93,Sports,367.86,BrandD
+94,Clothing,266.65,BrandD
+95,Sports,397.73,BrandA
+96,Toys,495.32,BrandA
+97,Sports,104.32,BrandD
+98,Electronics,497.35,BrandE
+99,Books,49.46,BrandC
+100,Sports,6.15,BrandE
+101,Books,26.86,BrandC
+102,Books,174.18,BrandD
+103,Clothing,318.29,BrandA
+104,Books,39.17,BrandA
+105,Electronics,7.8,BrandE
+106,Home & Kitchen,468.86,BrandA
+107,Home & Kitchen,411.85,BrandD
+108,Beauty,405.55,BrandE
+109,Toys,442.79,BrandC
+110,Sports,351.52,BrandA
+111,Toys,56.68,BrandB
+112,Electronics,202.55,BrandA
+113,Books,362.96,BrandC
+114,Home & Kitchen,143.77,BrandE
+115,Toys,345.27,BrandC
+116,Electronics,17.13,BrandB
+117,Home & Kitchen,156.54,BrandD
+118,Books,276.82,BrandA
+119,Toys,317.88,BrandE
+120,Home & Kitchen,290.64,BrandD
+121,Sports,350.39,BrandC
+122,Sports,8.01,BrandE
+123,Beauty,54.97,BrandD
+124,Beauty,435.13,BrandE
+125,Home & Kitchen,342.47,BrandB
+126,Electronics,60.9,BrandB
+127,Sports,421.83,BrandA
+128,Electronics,124.9,BrandA
+129,Electronics,241.74,BrandB
+130,Home & Kitchen,76.87,BrandE
+131,Electronics,356.5,BrandB
+132,Sports,335.09,BrandA
+133,Books,109.5,BrandB
+134,Beauty,432.38,BrandB
+135,Books,203.65,BrandE
+136,Electronics,149.79,BrandD
+137,Books,80.4,BrandA
+138,Sports,136.75,BrandE
+139,Sports,15.9,BrandB
+140,Electronics,293.71,BrandB
+141,Home & Kitchen,421.9,BrandD
+142,Books,276.75,BrandA
+143,Home & Kitchen,113.54,BrandA
+144,Home & Kitchen,21.67,BrandC
+145,Clothing,111.24,BrandA
+146,Electronics,210.98,BrandD
+147,Beauty,381.01,BrandC
+148,Sports,97.98,BrandC
+149,Sports,361.3,BrandB
+150,Electronics,434.13,BrandB
+151,Toys,229.7,BrandA
+152,Toys,411.61,BrandC
+153,Toys,279.56,BrandB
+154,Beauty,320.36,BrandD
+155,Sports,265.51,BrandB
+156,Electronics,234.27,BrandB
+157,Sports,121.15,BrandC
+158,Home & Kitchen,155.08,BrandC
+159,Books,148.54,BrandE
+160,Books,283.83,BrandD
+161,Sports,64.38,BrandC
+162,Clothing,458.81,BrandA
+163,Beauty,361.72,BrandD
+164,Toys,203.72,BrandD
+165,Beauty,83.52,BrandC
+166,Beauty,441.59,BrandD
+167,Home & Kitchen,412.77,BrandC
+168,Beauty,362.25,BrandB
+169,Books,139.42,BrandE
+170,Home & Kitchen,204.21,BrandB
+171,Electronics,55.86,BrandC
+172,Beauty,98.57,BrandC
+173,Beauty,392.59,BrandB
+174,Electronics,358.94,BrandA
+175,Beauty,298.78,BrandA
+176,Electronics,448.38,BrandA
+177,Home & Kitchen,293.72,BrandC
+178,Books,236.15,BrandD
+179,Electronics,173.48,BrandC
+180,Clothing,470.52,BrandD
+181,Electronics,45.94,BrandB
+182,Beauty,465.79,BrandE
+183,Toys,414.22,BrandD
+184,Toys,69.32,BrandA
+185,Home & Kitchen,284.67,BrandC
+186,Sports,433.94,BrandB
+187,Home & Kitchen,288.05,BrandA
+188,Sports,454.06,BrandB
+189,Toys,471.78,BrandE
+190,Toys,214.08,BrandC
+191,Electronics,191.77,BrandC
+192,Books,468.48,BrandE
+193,Clothing,339.19,BrandC
+194,Home & Kitchen,62.43,BrandD
+195,Beauty,25.93,BrandB
+196,Sports,284.49,BrandA
+197,Beauty,465.43,BrandE
+198,Books,422.9,BrandD
+199,Sports,339.54,BrandA
+200,Home & Kitchen,73.86,BrandA
+201,Electronics,130.84,BrandE
+202,Beauty,438.38,BrandD
+203,Books,95.49,BrandA
+204,Home & Kitchen,142.83,BrandA
+205,Toys,69.15,BrandD
+206,Toys,339.67,BrandC
+207,Home & Kitchen,472.27,BrandA
+208,Home & Kitchen,138.14,BrandB
+209,Home & Kitchen,240.33,BrandD
+210,Sports,319.0,BrandA
+211,Home & Kitchen,499.74,BrandE
+212,Beauty,56.88,BrandB
+213,Books,251.79,BrandA
+214,Sports,195.63,BrandB
+215,Home & Kitchen,433.58,BrandB
+216,Clothing,240.6,BrandC
+217,Clothing,59.93,BrandB
+218,Books,319.04,BrandC
+219,Toys,386.54,BrandD
+220,Electronics,6.43,BrandC
+221,Electronics,430.18,BrandE
+222,Toys,97.08,BrandA
+223,Sports,278.27,BrandD
+224,Sports,210.82,BrandD
+225,Sports,361.23,BrandE
+226,Electronics,188.72,BrandC
+227,Clothing,435.53,BrandA
+228,Electronics,366.6,BrandC
+229,Beauty,325.62,BrandB
+230,Home & Kitchen,399.14,BrandC
+231,Sports,378.24,BrandD
+232,Clothing,22.79,BrandA
+233,Books,200.39,BrandC
+234,Books,465.75,BrandA
+235,Home & Kitchen,67.23,BrandA
+236,Clothing,369.86,BrandB
+237,Electronics,487.42,BrandB
+238,Electronics,30.84,BrandD
+239,Beauty,342.69,BrandE
+240,Beauty,236.74,BrandA
+241,Electronics,291.69,BrandE
+242,Books,47.24,BrandD
+243,Sports,26.29,BrandA
+244,Books,335.1,BrandA
+245,Beauty,412.54,BrandE
+246,Home & Kitchen,392.1,BrandC
+247,Electronics,274.18,BrandB
+248,Beauty,54.43,BrandC
+249,Beauty,345.58,BrandE
+250,Sports,124.73,BrandB
+251,Electronics,455.98,BrandC
+252,Sports,419.94,BrandB
+253,Electronics,356.14,BrandA
+254,Sports,474.68,BrandC
+255,Books,20.55,BrandB
+256,Home & Kitchen,369.42,BrandB
+257,Home & Kitchen,168.47,BrandB
+258,Electronics,453.5,BrandC
+259,Clothing,137.0,BrandD
+260,Toys,363.8,BrandC
+261,Beauty,439.44,BrandE
+262,Beauty,25.62,BrandC
+263,Electronics,201.84,BrandB
+264,Sports,382.34,BrandA
+265,Clothing,230.18,BrandC
+266,Books,137.29,BrandC
+267,Sports,113.8,BrandB
+268,Sports,70.1,BrandA
+269,Electronics,429.28,BrandA
+270,Electronics,289.8,BrandE
+271,Beauty,42.81,BrandC
+272,Electronics,194.38,BrandA
+273,Electronics,187.03,BrandA
+274,Electronics,94.96,BrandD
+275,Beauty,220.58,BrandD
+276,Books,169.39,BrandA
+277,Books,174.19,BrandE
+278,Toys,370.82,BrandA
+279,Toys,115.52,BrandB
+280,Electronics,322.72,BrandC
+281,Toys,287.47,BrandE
+282,Beauty,286.21,BrandB
+283,Books,333.19,BrandE
+284,Sports,276.45,BrandB
+285,Books,440.23,BrandC
+286,Books,339.41,BrandC
+287,Beauty,275.75,BrandD
+288,Toys,415.73,BrandB
+289,Sports,305.04,BrandD
+290,Beauty,149.12,BrandB
+291,Electronics,107.51,BrandD
+292,Home & Kitchen,80.4,BrandC
+293,Books,450.23,BrandE
+294,Home & Kitchen,356.52,BrandD
+295,Beauty,469.0,BrandB
+296,Beauty,303.63,BrandB
+297,Beauty,239.33,BrandC
+298,Home & Kitchen,34.56,BrandB
+299,Beauty,337.46,BrandA
+300,Electronics,293.19,BrandE
+301,Beauty,495.15,BrandD
+302,Clothing,123.38,BrandE
+303,Toys,267.71,BrandC
+304,Home & Kitchen,327.22,BrandD
+305,Clothing,324.07,BrandD
+306,Beauty,282.84,BrandA
+307,Electronics,389.58,BrandC
+308,Books,106.47,BrandB
+309,Sports,364.19,BrandA
+310,Toys,311.77,BrandA
+311,Sports,448.56,BrandE
+312,Beauty,424.36,BrandE
+313,Toys,161.0,BrandE
+314,Toys,141.74,BrandA
+315,Electronics,490.92,BrandB
+316,Toys,266.0,BrandD
+317,Home & Kitchen,453.68,BrandE
+318,Clothing,86.12,BrandB
+319,Clothing,323.2,BrandC
+320,Clothing,405.88,BrandE
+321,Home & Kitchen,473.96,BrandD
+322,Sports,171.98,BrandC
+323,Electronics,363.87,BrandC
+324,Toys,271.71,BrandD
+325,Home & Kitchen,35.01,BrandE
+326,Clothing,346.55,BrandA
+327,Beauty,346.6,BrandD
+328,Books,465.65,BrandD
+329,Toys,251.17,BrandD
+330,Home & Kitchen,118.97,BrandC
+331,Home & Kitchen,27.06,BrandB
+332,Electronics,210.74,BrandA
+333,Electronics,154.45,BrandE
+334,Home & Kitchen,381.74,BrandE
+335,Clothing,180.36,BrandB
+336,Books,474.79,BrandD
+337,Toys,481.34,BrandA
+338,Electronics,312.35,BrandE
+339,Toys,464.69,BrandE
+340,Clothing,381.62,BrandD
+341,Toys,275.7,BrandB
+342,Beauty,94.25,BrandA
+343,Electronics,232.01,BrandB
+344,Clothing,282.63,BrandB
+345,Clothing,432.66,BrandA
+346,Books,243.26,BrandA
+347,Books,449.35,BrandE
+348,Beauty,338.8,BrandE
+349,Clothing,72.81,BrandA
+350,Sports,497.52,BrandC
+351,Clothing,265.98,BrandE
+352,Books,198.97,BrandC
+353,Sports,331.26,BrandA
+354,Electronics,58.9,BrandE
+355,Electronics,320.09,BrandB
+356,Toys,251.63,BrandA
+357,Home & Kitchen,206.3,BrandD
+358,Books,476.74,BrandC
+359,Home & Kitchen,263.66,BrandA
+360,Sports,113.46,BrandA
+361,Books,232.19,BrandE
+362,Beauty,460.1,BrandE
+363,Clothing,92.17,BrandE
+364,Beauty,110.91,BrandD
+365,Sports,11.45,BrandE
+366,Books,12.02,BrandA
+367,Sports,415.55,BrandE
+368,Clothing,367.4,BrandB
+369,Electronics,180.75,BrandE
+370,Electronics,350.66,BrandD
+371,Sports,200.63,BrandB
+372,Home & Kitchen,476.68,BrandA
+373,Books,483.69,BrandA
+374,Books,199.43,BrandC
+375,Electronics,427.84,BrandB
+376,Toys,387.68,BrandC
+377,Beauty,158.45,BrandB
+378,Toys,119.86,BrandB
+379,Clothing,231.83,BrandD
+380,Beauty,391.77,BrandC
+381,Beauty,480.28,BrandD
+382,Sports,382.97,BrandB
+383,Electronics,428.33,BrandA
+384,Toys,303.52,BrandB
+385,Toys,418.53,BrandD
+386,Electronics,393.29,BrandC
+387,Toys,191.61,BrandC
+388,Electronics,278.24,BrandD
+389,Sports,403.35,BrandC
+390,Home & Kitchen,27.8,BrandE
+391,Beauty,405.0,BrandA
+392,Sports,93.05,BrandA
+393,Books,259.77,BrandA
+394,Clothing,405.1,BrandC
+395,Home & Kitchen,130.64,BrandC
+396,Books,126.67,BrandB
+397,Beauty,204.37,BrandB
+398,Toys,447.85,BrandA
+399,Electronics,5.22,BrandE
+400,Beauty,451.18,BrandB
+401,Sports,81.13,BrandB
+402,Clothing,495.09,BrandC
+403,Sports,477.65,BrandE
+404,Home & Kitchen,249.86,BrandA
+405,Home & Kitchen,258.8,BrandB
+406,Clothing,243.37,BrandE
+407,Books,319.54,BrandE
+408,Books,49.91,BrandA
+409,Home & Kitchen,21.15,BrandE
+410,Home & Kitchen,33.56,BrandE
+411,Toys,224.96,BrandE
+412,Electronics,141.4,BrandB
+413,Toys,312.91,BrandA
+414,Toys,496.26,BrandE
+415,Books,196.23,BrandE
+416,Clothing,289.05,BrandB
+417,Books,210.72,BrandA
+418,Electronics,424.4,BrandC
+419,Sports,451.61,BrandB
+420,Home & Kitchen,439.29,BrandA
+421,Home & Kitchen,487.31,BrandE
+422,Electronics,18.62,BrandA
+423,Toys,420.71,BrandA
+424,Clothing,377.13,BrandA
+425,Home & Kitchen,118.2,BrandC
+426,Beauty,478.38,BrandA
+427,Toys,78.35,BrandC
+428,Home & Kitchen,341.38,BrandE
+429,Beauty,116.32,BrandC
+430,Electronics,218.53,BrandE
+431,Electronics,360.98,BrandE
+432,Toys,283.85,BrandC
+433,Home & Kitchen,216.61,BrandB
+434,Books,166.54,BrandD
+435,Beauty,420.63,BrandA
+436,Clothing,76.19,BrandD
+437,Home & Kitchen,217.9,BrandA
+438,Clothing,452.36,BrandA
+439,Home & Kitchen,423.7,BrandE
+440,Books,203.47,BrandA
+441,Books,382.74,BrandA
+442,Toys,412.46,BrandC
+443,Toys,445.0,BrandD
+444,Books,274.53,BrandC
+445,Sports,106.21,BrandA
+446,Books,131.38,BrandE
+447,Electronics,151.37,BrandC
+448,Electronics,298.93,BrandC
+449,Sports,21.24,BrandB
+450,Beauty,319.84,BrandA
+451,Clothing,185.36,BrandE
+452,Home & Kitchen,151.14,BrandC
+453,Home & Kitchen,440.35,BrandC
+454,Sports,232.7,BrandE
+455,Electronics,52.05,BrandA
+456,Toys,414.24,BrandB
+457,Home & Kitchen,28.58,BrandC
+458,Electronics,364.74,BrandB
+459,Beauty,388.08,BrandD
+460,Clothing,179.54,BrandA
+461,Beauty,413.27,BrandD
+462,Sports,260.25,BrandD
+463,Books,234.33,BrandD
+464,Books,27.47,BrandA
+465,Books,148.56,BrandA
+466,Beauty,465.85,BrandE
+467,Home & Kitchen,198.95,BrandB
+468,Clothing,275.62,BrandB
+469,Books,268.35,BrandE
+470,Sports,297.26,BrandE
+471,Sports,35.36,BrandD
+472,Books,184.28,BrandE
+473,Books,362.95,BrandC
+474,Clothing,104.28,BrandB
+475,Books,105.77,BrandE
+476,Clothing,9.99,BrandC
+477,Sports,221.55,BrandC
+478,Books,441.95,BrandC
+479,Beauty,30.69,BrandC
+480,Toys,99.6,BrandD
+481,Beauty,158.49,BrandC
+482,Sports,367.2,BrandD
+483,Clothing,322.11,BrandD
+484,Beauty,210.89,BrandC
+485,Clothing,380.74,BrandB
+486,Beauty,306.77,BrandC
+487,Beauty,448.54,BrandC
+488,Clothing,409.92,BrandC
+489,Home & Kitchen,130.14,BrandB
+490,Beauty,139.36,BrandA
+491,Books,67.05,BrandA
+492,Toys,171.8,BrandD
+493,Sports,499.77,BrandD
+494,Home & Kitchen,205.85,BrandB
+495,Clothing,114.14,BrandE
+496,Home & Kitchen,382.43,BrandA
+497,Electronics,273.52,BrandD
+498,Electronics,79.05,BrandA
+499,Beauty,193.44,BrandB
+500,Beauty,210.16,BrandB
