@@ -6,15 +6,7 @@ import {
   Typography,
   Button,
   Box,
-  IconButton,
-  Badge,
 } from '@mui/material';
-import {
-  ShoppingCart,
-  Favorite,
-  Person,
-  ExitToApp,
-} from '@mui/icons-material';
 import { useAuth } from '../contexts/AuthContext';
 
 const Navbar: React.FC = () => {
@@ -41,47 +33,31 @@ const Navbar: React.FC = () => {
         >
           E-Commerce Recommender
         </Typography>
-
         {isAuthenticated ? (
           <Box sx={{ display: 'flex', gap: 2 }}>
-            <Button
-              color="inherit"
-              component={RouterLink}
-              to="/recommendations"
-            >
+            <Button color="inherit" component={RouterLink} to="/recommendations">
               Recommendations
             </Button>
-            <IconButton color="inherit">
-              <Badge badgeContent={0} color="error">
-                <ShoppingCart />
-              </Badge>
-            </IconButton>
-            <IconButton color="inherit">
-              <Badge badgeContent={0} color="error">
-                <Favorite />
-              </Badge>
-            </IconButton>
-            <IconButton color="inherit">
-              <Person />
-            </IconButton>
-            <IconButton color="inherit" onClick={handleLogout}>
-              <ExitToApp />
-            </IconButton>
+            
+            <Button color="inherit" component={RouterLink} to="/cart">
+              Cart
+            </Button>
+            <Button color="inherit" component={RouterLink} to="/orders">
+              Previous Orders
+            </Button>
+            <Button color="inherit" component={RouterLink} to="/profile">
+              Profile
+            </Button>
+            <Button color="inherit" onClick={handleLogout}>
+              Logout
+            </Button>
           </Box>
         ) : (
           <Box sx={{ display: 'flex', gap: 2 }}>
-            <Button
-              color="inherit"
-              component={RouterLink}
-              to="/login"
-            >
+            <Button color="inherit" component={RouterLink} to="/login">
               Login
             </Button>
-            <Button
-              color="inherit"
-              component={RouterLink}
-              to="/signup"
-            >
+            <Button color="inherit" component={RouterLink} to="/signup">
               Sign Up
             </Button>
           </Box>
@@ -91,4 +67,4 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;

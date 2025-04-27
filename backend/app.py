@@ -77,6 +77,35 @@ def login():
     })
 
 # Interaction routes
+
+@app.route('/api/cart_interactions/<user_id>', methods=['GET'])
+def get_cart_interactions(user_id):
+    """Fetch latest 'add_to_cart' interactions for a user, sorted by timestamp desc."""
+    try:
+        interactions = list(
+            mongo.db.interactions.find({
+                'user_id': ObjectId(user_id),
+                'interaction_type': 'add_to_cart'
+            }).sort('timestamp', -1)
+        )
+        return jsonify({'cart_interactions': interactions})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/previous_orders/<user_id>', methods=['GET'])
+def get_previous_orders(user_id):
+    """Fetch previous 'purchase' interactions for a user, sorted by timestamp desc."""
+    try:
+        orders = list(
+            mongo.db.interactions.find({
+                'user_id': ObjectId(user_id),
+                'interaction_type': 'purchase'
+            }).sort('timestamp', -1)
+        )
+        return jsonify({'previous_orders': orders})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 @app.route('/api/interactions', methods=['POST'])
 def add_interaction():
     data = request.json
@@ -105,9 +134,14 @@ def add_interaction():
 @app.route('/api/recommendations/<user_id>', methods=['GET'])
 def get_recommendations(user_id):
     try:
-        # Use user_id as a string (MongoDB ObjectId)
-        recommendations_df = recommend(user_id, k=10)
-        # Convert recommendations to list of dictionaries
+        print("Top recommendations BEFORE interaction:")
+        print(recommend(user_id, k=5)[['product_id', 'category', 'brand']])
+
+        recommendations_df = recommend(user_id, k=20)
+
+        print("Top recommendations AFTER interaction:")
+        print(recommendations_df[['product_id', 'category', 'brand']].head(5))
+
         recommendations = []
         for idx, row in recommendations_df.iterrows():
             recommendations.append({
@@ -120,6 +154,38 @@ def get_recommendations(user_id):
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+
+# Profile route
+@app.route('/api/profile/<user_id>', methods=['GET'])
+def get_profile(user_id):
+    try:
+        user = mongo.db.users.find_one({'_id': ObjectId(user_id)})
+        if not user:
+            return jsonify({'error': 'User not found'}), 404
+        user_data = {
+            'email': user.get('email'),
+            'preferences': user.get('preferences', {})
+        }
+        interactions = list(
+            mongo.db.interactions.find({'user_id': ObjectId(user_id)})
+            .sort('timestamp', -1)
+        )
+        summary = {}
+        for inter in interactions:
+            t = inter.get('interaction_type')
+            summary[t] = summary.get(t, 0) + 1
+        recent = [
+            {
+                'product_id': str(inter.get('product_id')),
+                'interaction_type': inter.get('interaction_type'),
+                'timestamp': inter.get('timestamp')
+            }
+            for inter in interactions[:10]
+        ]
+        return jsonify({'user': user_data, 'summary': summary, 'recent': recent})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 # Product routes
 @app.route('/api/products', methods=['GET'])
 def get_products():
@@ -128,10 +194,15 @@ def get_products():
 
 @app.route('/api/products/<product_id>', methods=['GET'])
 def get_product(product_id):
-    product = mongo.db.products.find_one({'_id': ObjectId(product_id)})
+    # Try to cast product_id to int, fallback to string if ValueError occurs
+    try:
+        lookup_id = int(product_id)
+    except ValueError:
+        lookup_id = product_id
+    product = mongo.db.products.find_one({'product_id': lookup_id})
     if not product:
         return jsonify({'error': 'Product not found'}), 404
     return jsonify(product)
 
 if __name__ == '__main__':
-    app.run(debug=True) 
+    app.run(debug=True)

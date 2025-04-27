@@ -2,14 +2,18 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import { AuthProvider } from './contexts/AuthContext';
+import { AuthProvider, useAuth } from './contexts/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
-import Login from './components/Login';
-import Signup from './components/Signup';
+import Navbar from './components/Navbar';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 import Home from './pages/Home';
-import ProductDetail from './components/ProductDetail';
+import ProductDetail from './pages/ProductDetail';
 import Recommendations from './pages/Recommendations';
-import Cart from './components/Cart';
+import Cart from './pages/Cart';
+import PreviousOrders from './pages/PreviousOrders';
+import Profile from './pages/Profile';
+import './App.css';
 
 const theme = createTheme({
   palette: {
@@ -28,53 +32,46 @@ const theme = createTheme({
   },
 });
 
+const AppRoutes: React.FC = () => {
+  const { isAuthenticated } = useAuth();
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        {!isAuthenticated ? (
+          <>
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="*" element={<Navigate to="/login" replace />} />
+          </>
+        ) : (
+          <>
+            <Route path="/" element={<Navigate to="/recommendations" replace />} />
+            <Route path="/recommendations" element={<Recommendations />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/product/:id" element={<ProductDetail />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/orders" element={<PreviousOrders />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="*" element={<Navigate to="/recommendations" replace />} />
+          </>
+        )}
+      </Routes>
+    </>
+  );
+};
+
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <AuthProvider>
         <Router>
-          <Routes>
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route
-              path="/"
-              element={
-                <ProtectedRoute>
-                  <Home />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/recommendations"
-              element={
-                <ProtectedRoute>
-                  <Recommendations />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/product/:id"
-              element={
-                <ProtectedRoute>
-                  <ProductDetail />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/cart"
-              element={
-                <ProtectedRoute>
-                  <Cart />
-                </ProtectedRoute>
-              }
-            />
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
+          <AppRoutes />
         </Router>
       </AuthProvider>
     </ThemeProvider>
   );
 };
 
-export default App; 
+export default App;
