@@ -38,7 +38,9 @@ const Cart: React.FC = () => {
               return {
                 ...item,
                 name: prodRes.data.name,
-                price: prodRes.data.price
+                price: prodRes.data.price,
+                category: prodRes.data.category,
+                brand: prodRes.data.brand
               };
             } catch (e) {
               return { ...item, name: 'Unknown Product', price: 0 };
@@ -88,7 +90,7 @@ const Cart: React.FC = () => {
                   }
                 >
                   <ListItemText
-                    primary={`${item.name} (x${item.quantity})`}
+                    primary={`${item.product_id} - ${item.brand}   - ${item.category} (x${item.quantity})`}
                     secondary={`$${item.price?.toFixed(2) || '0.00'} each`}
                   />
                 </ListItem>

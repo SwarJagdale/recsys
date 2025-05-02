@@ -134,8 +134,8 @@ def add_interaction():
 @app.route('/api/recommendations/<user_id>', methods=['GET'])
 def get_recommendations(user_id):
     try:
-        print("Top recommendations BEFORE interaction:")
-        print(recommend(user_id, k=5)[['product_id', 'category', 'brand']])
+        # print("Top recommendations BEFORE interaction:")
+        # print(recommend(user_id, k=5)[['product_id', 'category', 'brand']])
 
         recommendations_df = recommend(user_id, k=20)
 

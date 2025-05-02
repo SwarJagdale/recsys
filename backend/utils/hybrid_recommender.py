@@ -4,49 +4,11 @@ import pandas as pd
 import numpy as np
 from datetime import datetime
 from pymongo import MongoClient
-
+from .MatrixFactor import MatrixFactorization
 # --- Collaborative Filtering Model (Matrix Factorization) ---
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
-class MatrixFactorization:
-    def __init__(self, n_users, n_items, n_factors=20, lr=0.01, reg=0.1, epochs=20):
-        self.n_users = n_users
-        self.n_items = n_items
-        self.n_factors = n_factors
-        self.lr = lr
-        self.reg = reg
-        self.epochs = epochs
-        self.user_factors = np.random.normal(scale=0.1, size=(n_users, n_factors))
-        self.item_factors = np.random.normal(scale=0.1, size=(n_items, n_factors))
-
-    def _sgd_update(self, u, i):
-        pred = sigmoid(self.user_factors[u].dot(self.item_factors[i]))
-        err = 1 - pred
-        grad_u = err * self.item_factors[i] - self.reg * self.user_factors[u]
-        grad_i = err * self.user_factors[u] - self.reg * self.item_factors[i]
-        self.user_factors[u] += self.lr * grad_u
-        self.item_factors[i] += self.lr * grad_i
-
-    def train(self, interactions):
-        for epoch in range(self.epochs):
-            np.random.shuffle(interactions)
-            for u, i in interactions:
-                self._sgd_update(u, i)
-
-    def recommend(self, u, k=9, interacted=set()):
-        scores = sigmoid(self.item_factors.dot(self.user_factors[u]))
-        if interacted:
-            scores[list(interacted)] = -np.inf
-        top_k = np.argpartition(-scores, k)[:k]
-        return top_k[np.argsort(-scores[top_k])]
-
-    def update_one(self, u, i, interacted_update):
-        self._sgd_update(u, i)
-        if u in interacted_update:
-            interacted_update[u].add(i)
-        else:
-            interacted_update[u] = {i}
 
 # --- ID Mapping Utilities ---
 def map_ids(df, user_col, item_col):
@@ -109,16 +71,32 @@ def load_data_from_mongodb():
 
     # Build interaction tuples
     interactions = [
-        (user2idx[r.user_id], item2idx[r.product_id])
-        for r in inter_df.itertuples()
-        if r.user_id in user2idx and r.product_id in item2idx
-    ]
+    (user2idx[r.user_id], item2idx[r.product_id], r.timestamp)
+    for r in inter_df.itertuples()
+    if r.user_id in user2idx and r.product_id in item2idx
+]
+
     # Build user_interacted_idx
     user_interacted = inter_df.groupby('user_id')['product_id'].apply(set).to_dict()
     user_interacted_idx = {user2idx[u]: {item2idx[i] for i in items if i in item2idx} for u, items in user_interacted.items() if u in user2idx}
 
-    # Initialize and train model
-    mf = MatrixFactorization(n_users=len(user2idx), n_items=len(item2idx), n_factors=50, lr=0.01, reg=0.1, epochs=30)
+    # Build item_metadata: idx -> {'category':..., 'brand':...}
+    item_metadata = {}
+    for _, row in prod_df.iterrows():
+        idx = item2idx.get(str(row['product_id']))
+        if idx is not None:
+            item_metadata[idx] = {
+                'category': row.get('category', ''),
+                'brand': row.get('brand', '')
+            }
+
+    # Initialize and train model with item_metadata
+    mf = MatrixFactorization(
+        n_users=len(user2idx),
+        n_items=len(item2idx),
+        item_metadata=item_metadata,
+        n_factors=50, lr=0.01, reg=0.1, epochs=30
+    )
     mf.train(interactions)
     print("MatrixFactorization model trained.")
 
@@ -152,8 +130,8 @@ def add_interaction(user_id, product_id, interaction_type, timestamp=None):
         # Update model incrementally if user/item exist
         u_idx = user2idx[user_id]
         i_idx = item2idx[product_id]
-        mf.update_one(u_idx, i_idx, user_interacted_idx)
-        load_data_from_mongodb()
+        mf.update_one(u_idx, i_idx, user_interacted_idx, ts=timestamp, n_steps=10)
+
 
 def init_app(app):
     """Initialize the recommender with a Flask app"""
@@ -165,9 +143,11 @@ def recommend(user_id, k=10):
     """Return a DataFrame of recommended products for the user using collaborative filtering."""
     global mf, user2idx, item2idx, idx2item, user_interacted_idx, prod_df
     user_id = str(user_id)
-    if user2idx is None or item2idx is None or mf is None:
-        print("Model not initialized. Reloading data.")
-        load_data_from_mongodb()
+    load_data_from_mongodb()
+
+    # if user2idx is None or item2idx is None or mf is None:
+    #     print("Model not initialized. Reloading data.")
+    #     load_data_from_mongodb()
     if user_id not in user2idx:
         print(f"User {user_id} not found in model. Returning popular products.")
         # Fallback: recommend most popular products
