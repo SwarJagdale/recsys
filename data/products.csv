@@ -1,501 +1,501 @@
-product_id,category,price,brand
-1,Home & Kitchen,305.4,BrandB
-2,Clothing,80.03,BrandB
-3,Sports,20.31,BrandC
-4,Electronics,485.52,BrandB
-5,Beauty,387.9,BrandA
-6,Books,490.15,BrandA
-7,Home & Kitchen,241.55,BrandC
-8,Clothing,268.47,BrandB
-9,Electronics,88.33,BrandA
-10,Books,127.22,BrandA
-11,Toys,420.08,BrandD
-12,Clothing,181.31,BrandD
-13,Clothing,414.27,BrandA
-14,Books,355.96,BrandC
-15,Electronics,92.7,BrandE
-16,Toys,256.19,BrandE
-17,Sports,340.31,BrandA
-18,Electronics,121.34,BrandA
-19,Beauty,416.19,BrandA
-20,Home & Kitchen,274.69,BrandC
-21,Books,86.79,BrandD
-22,Sports,293.58,BrandA
-23,Toys,499.86,BrandA
-24,Books,79.51,BrandB
-25,Books,409.29,BrandC
-26,Electronics,107.62,BrandA
-27,Home & Kitchen,392.28,BrandB
-28,Beauty,368.62,BrandE
-29,Clothing,153.74,BrandA
-30,Clothing,166.28,BrandA
-31,Books,397.3,BrandB
-32,Home & Kitchen,233.42,BrandC
-33,Toys,366.75,BrandA
-34,Toys,78.25,BrandE
-35,Sports,427.02,BrandA
-36,Electronics,356.89,BrandE
-37,Home & Kitchen,453.94,BrandD
-38,Home & Kitchen,70.52,BrandD
-39,Electronics,298.54,BrandE
-40,Toys,301.56,BrandC
-41,Toys,179.96,BrandA
-42,Toys,231.94,BrandA
-43,Books,23.8,BrandD
-44,Home & Kitchen,374.2,BrandE
-45,Clothing,276.91,BrandA
-46,Electronics,33.58,BrandA
-47,Toys,341.97,BrandC
-48,Sports,236.06,BrandB
-49,Toys,22.06,BrandD
-50,Toys,484.96,BrandD
-51,Beauty,474.81,BrandB
-52,Books,258.89,BrandA
-53,Electronics,51.37,BrandC
-54,Beauty,378.54,BrandC
-55,Beauty,248.51,BrandD
-56,Sports,154.71,BrandC
-57,Home & Kitchen,248.25,BrandB
-58,Sports,263.61,BrandA
-59,Home & Kitchen,283.54,BrandB
-60,Home & Kitchen,223.41,BrandE
-61,Electronics,304.85,BrandD
-62,Toys,459.77,BrandC
-63,Electronics,184.32,BrandE
-64,Books,364.23,BrandC
-65,Home & Kitchen,447.75,BrandA
-66,Beauty,230.71,BrandA
-67,Toys,224.51,BrandA
-68,Clothing,303.05,BrandC
-69,Books,297.75,BrandE
-70,Electronics,404.26,BrandA
-71,Sports,240.86,BrandE
-72,Books,498.08,BrandC
-73,Books,34.44,BrandE
-74,Toys,6.57,BrandC
-75,Books,321.9,BrandC
-76,Books,152.73,BrandD
-77,Clothing,123.99,BrandC
-78,Sports,159.39,BrandC
-79,Sports,131.74,BrandB
-80,Sports,20.24,BrandA
-81,Home & Kitchen,485.91,BrandD
-82,Beauty,114.27,BrandD
-83,Sports,368.34,BrandD
-84,Books,382.49,BrandB
-85,Books,464.98,BrandC
-86,Sports,20.12,BrandA
-87,Toys,436.66,BrandE
-88,Sports,265.98,BrandC
-89,Books,318.11,BrandB
-90,Home & Kitchen,324.01,BrandC
-91,Electronics,410.8,BrandC
-92,Electronics,170.04,BrandB
-93,Sports,367.86,BrandD
-94,Clothing,266.65,BrandD
-95,Sports,397.73,BrandA
-96,Toys,495.32,BrandA
-97,Sports,104.32,BrandD
-98,Electronics,497.35,BrandE
-99,Books,49.46,BrandC
-100,Sports,6.15,BrandE
-101,Books,26.86,BrandC
-102,Books,174.18,BrandD
-103,Clothing,318.29,BrandA
-104,Books,39.17,BrandA
-105,Electronics,7.8,BrandE
-106,Home & Kitchen,468.86,BrandA
-107,Home & Kitchen,411.85,BrandD
-108,Beauty,405.55,BrandE
-109,Toys,442.79,BrandC
-110,Sports,351.52,BrandA
-111,Toys,56.68,BrandB
-112,Electronics,202.55,BrandA
-113,Books,362.96,BrandC
-114,Home & Kitchen,143.77,BrandE
-115,Toys,345.27,BrandC
-116,Electronics,17.13,BrandB
-117,Home & Kitchen,156.54,BrandD
-118,Books,276.82,BrandA
-119,Toys,317.88,BrandE
-120,Home & Kitchen,290.64,BrandD
-121,Sports,350.39,BrandC
-122,Sports,8.01,BrandE
-123,Beauty,54.97,BrandD
-124,Beauty,435.13,BrandE
-125,Home & Kitchen,342.47,BrandB
-126,Electronics,60.9,BrandB
-127,Sports,421.83,BrandA
-128,Electronics,124.9,BrandA
-129,Electronics,241.74,BrandB
-130,Home & Kitchen,76.87,BrandE
-131,Electronics,356.5,BrandB
-132,Sports,335.09,BrandA
-133,Books,109.5,BrandB
-134,Beauty,432.38,BrandB
-135,Books,203.65,BrandE
-136,Electronics,149.79,BrandD
-137,Books,80.4,BrandA
-138,Sports,136.75,BrandE
-139,Sports,15.9,BrandB
-140,Electronics,293.71,BrandB
-141,Home & Kitchen,421.9,BrandD
-142,Books,276.75,BrandA
-143,Home & Kitchen,113.54,BrandA
-144,Home & Kitchen,21.67,BrandC
-145,Clothing,111.24,BrandA
-146,Electronics,210.98,BrandD
-147,Beauty,381.01,BrandC
-148,Sports,97.98,BrandC
-149,Sports,361.3,BrandB
-150,Electronics,434.13,BrandB
-151,Toys,229.7,BrandA
-152,Toys,411.61,BrandC
-153,Toys,279.56,BrandB
-154,Beauty,320.36,BrandD
-155,Sports,265.51,BrandB
-156,Electronics,234.27,BrandB
-157,Sports,121.15,BrandC
-158,Home & Kitchen,155.08,BrandC
-159,Books,148.54,BrandE
-160,Books,283.83,BrandD
-161,Sports,64.38,BrandC
-162,Clothing,458.81,BrandA
-163,Beauty,361.72,BrandD
-164,Toys,203.72,BrandD
-165,Beauty,83.52,BrandC
-166,Beauty,441.59,BrandD
-167,Home & Kitchen,412.77,BrandC
-168,Beauty,362.25,BrandB
-169,Books,139.42,BrandE
-170,Home & Kitchen,204.21,BrandB
-171,Electronics,55.86,BrandC
-172,Beauty,98.57,BrandC
-173,Beauty,392.59,BrandB
-174,Electronics,358.94,BrandA
-175,Beauty,298.78,BrandA
-176,Electronics,448.38,BrandA
-177,Home & Kitchen,293.72,BrandC
-178,Books,236.15,BrandD
-179,Electronics,173.48,BrandC
-180,Clothing,470.52,BrandD
-181,Electronics,45.94,BrandB
-182,Beauty,465.79,BrandE
-183,Toys,414.22,BrandD
-184,Toys,69.32,BrandA
-185,Home & Kitchen,284.67,BrandC
-186,Sports,433.94,BrandB
-187,Home & Kitchen,288.05,BrandA
-188,Sports,454.06,BrandB
-189,Toys,471.78,BrandE
-190,Toys,214.08,BrandC
-191,Electronics,191.77,BrandC
-192,Books,468.48,BrandE
-193,Clothing,339.19,BrandC
-194,Home & Kitchen,62.43,BrandD
-195,Beauty,25.93,BrandB
-196,Sports,284.49,BrandA
-197,Beauty,465.43,BrandE
-198,Books,422.9,BrandD
-199,Sports,339.54,BrandA
-200,Home & Kitchen,73.86,BrandA
-201,Electronics,130.84,BrandE
-202,Beauty,438.38,BrandD
-203,Books,95.49,BrandA
-204,Home & Kitchen,142.83,BrandA
-205,Toys,69.15,BrandD
-206,Toys,339.67,BrandC
-207,Home & Kitchen,472.27,BrandA
-208,Home & Kitchen,138.14,BrandB
-209,Home & Kitchen,240.33,BrandD
-210,Sports,319.0,BrandA
-211,Home & Kitchen,499.74,BrandE
-212,Beauty,56.88,BrandB
-213,Books,251.79,BrandA
-214,Sports,195.63,BrandB
-215,Home & Kitchen,433.58,BrandB
-216,Clothing,240.6,BrandC
-217,Clothing,59.93,BrandB
-218,Books,319.04,BrandC
-219,Toys,386.54,BrandD
-220,Electronics,6.43,BrandC
-221,Electronics,430.18,BrandE
-222,Toys,97.08,BrandA
-223,Sports,278.27,BrandD
-224,Sports,210.82,BrandD
-225,Sports,361.23,BrandE
-226,Electronics,188.72,BrandC
-227,Clothing,435.53,BrandA
-228,Electronics,366.6,BrandC
-229,Beauty,325.62,BrandB
-230,Home & Kitchen,399.14,BrandC
-231,Sports,378.24,BrandD
-232,Clothing,22.79,BrandA
-233,Books,200.39,BrandC
-234,Books,465.75,BrandA
-235,Home & Kitchen,67.23,BrandA
-236,Clothing,369.86,BrandB
-237,Electronics,487.42,BrandB
-238,Electronics,30.84,BrandD
-239,Beauty,342.69,BrandE
-240,Beauty,236.74,BrandA
-241,Electronics,291.69,BrandE
-242,Books,47.24,BrandD
-243,Sports,26.29,BrandA
-244,Books,335.1,BrandA
-245,Beauty,412.54,BrandE
-246,Home & Kitchen,392.1,BrandC
-247,Electronics,274.18,BrandB
-248,Beauty,54.43,BrandC
-249,Beauty,345.58,BrandE
-250,Sports,124.73,BrandB
-251,Electronics,455.98,BrandC
-252,Sports,419.94,BrandB
-253,Electronics,356.14,BrandA
-254,Sports,474.68,BrandC
-255,Books,20.55,BrandB
-256,Home & Kitchen,369.42,BrandB
-257,Home & Kitchen,168.47,BrandB
-258,Electronics,453.5,BrandC
-259,Clothing,137.0,BrandD
-260,Toys,363.8,BrandC
-261,Beauty,439.44,BrandE
-262,Beauty,25.62,BrandC
-263,Electronics,201.84,BrandB
-264,Sports,382.34,BrandA
-265,Clothing,230.18,BrandC
-266,Books,137.29,BrandC
-267,Sports,113.8,BrandB
-268,Sports,70.1,BrandA
-269,Electronics,429.28,BrandA
-270,Electronics,289.8,BrandE
-271,Beauty,42.81,BrandC
-272,Electronics,194.38,BrandA
-273,Electronics,187.03,BrandA
-274,Electronics,94.96,BrandD
-275,Beauty,220.58,BrandD
-276,Books,169.39,BrandA
-277,Books,174.19,BrandE
-278,Toys,370.82,BrandA
-279,Toys,115.52,BrandB
-280,Electronics,322.72,BrandC
-281,Toys,287.47,BrandE
-282,Beauty,286.21,BrandB
-283,Books,333.19,BrandE
-284,Sports,276.45,BrandB
-285,Books,440.23,BrandC
-286,Books,339.41,BrandC
-287,Beauty,275.75,BrandD
-288,Toys,415.73,BrandB
-289,Sports,305.04,BrandD
-290,Beauty,149.12,BrandB
-291,Electronics,107.51,BrandD
-292,Home & Kitchen,80.4,BrandC
-293,Books,450.23,BrandE
-294,Home & Kitchen,356.52,BrandD
-295,Beauty,469.0,BrandB
-296,Beauty,303.63,BrandB
-297,Beauty,239.33,BrandC
-298,Home & Kitchen,34.56,BrandB
-299,Beauty,337.46,BrandA
-300,Electronics,293.19,BrandE
-301,Beauty,495.15,BrandD
-302,Clothing,123.38,BrandE
-303,Toys,267.71,BrandC
-304,Home & Kitchen,327.22,BrandD
-305,Clothing,324.07,BrandD
-306,Beauty,282.84,BrandA
-307,Electronics,389.58,BrandC
-308,Books,106.47,BrandB
-309,Sports,364.19,BrandA
-310,Toys,311.77,BrandA
-311,Sports,448.56,BrandE
-312,Beauty,424.36,BrandE
-313,Toys,161.0,BrandE
-314,Toys,141.74,BrandA
-315,Electronics,490.92,BrandB
-316,Toys,266.0,BrandD
-317,Home & Kitchen,453.68,BrandE
-318,Clothing,86.12,BrandB
-319,Clothing,323.2,BrandC
-320,Clothing,405.88,BrandE
-321,Home & Kitchen,473.96,BrandD
-322,Sports,171.98,BrandC
-323,Electronics,363.87,BrandC
-324,Toys,271.71,BrandD
-325,Home & Kitchen,35.01,BrandE
-326,Clothing,346.55,BrandA
-327,Beauty,346.6,BrandD
-328,Books,465.65,BrandD
-329,Toys,251.17,BrandD
-330,Home & Kitchen,118.97,BrandC
-331,Home & Kitchen,27.06,BrandB
-332,Electronics,210.74,BrandA
-333,Electronics,154.45,BrandE
-334,Home & Kitchen,381.74,BrandE
-335,Clothing,180.36,BrandB
-336,Books,474.79,BrandD
-337,Toys,481.34,BrandA
-338,Electronics,312.35,BrandE
-339,Toys,464.69,BrandE
-340,Clothing,381.62,BrandD
-341,Toys,275.7,BrandB
-342,Beauty,94.25,BrandA
-343,Electronics,232.01,BrandB
-344,Clothing,282.63,BrandB
-345,Clothing,432.66,BrandA
-346,Books,243.26,BrandA
-347,Books,449.35,BrandE
-348,Beauty,338.8,BrandE
-349,Clothing,72.81,BrandA
-350,Sports,497.52,BrandC
-351,Clothing,265.98,BrandE
-352,Books,198.97,BrandC
-353,Sports,331.26,BrandA
-354,Electronics,58.9,BrandE
-355,Electronics,320.09,BrandB
-356,Toys,251.63,BrandA
-357,Home & Kitchen,206.3,BrandD
-358,Books,476.74,BrandC
-359,Home & Kitchen,263.66,BrandA
-360,Sports,113.46,BrandA
-361,Books,232.19,BrandE
-362,Beauty,460.1,BrandE
-363,Clothing,92.17,BrandE
-364,Beauty,110.91,BrandD
-365,Sports,11.45,BrandE
-366,Books,12.02,BrandA
-367,Sports,415.55,BrandE
-368,Clothing,367.4,BrandB
-369,Electronics,180.75,BrandE
-370,Electronics,350.66,BrandD
-371,Sports,200.63,BrandB
-372,Home & Kitchen,476.68,BrandA
-373,Books,483.69,BrandA
-374,Books,199.43,BrandC
-375,Electronics,427.84,BrandB
-376,Toys,387.68,BrandC
-377,Beauty,158.45,BrandB
-378,Toys,119.86,BrandB
-379,Clothing,231.83,BrandD
-380,Beauty,391.77,BrandC
-381,Beauty,480.28,BrandD
-382,Sports,382.97,BrandB
-383,Electronics,428.33,BrandA
-384,Toys,303.52,BrandB
-385,Toys,418.53,BrandD
-386,Electronics,393.29,BrandC
-387,Toys,191.61,BrandC
-388,Electronics,278.24,BrandD
-389,Sports,403.35,BrandC
-390,Home & Kitchen,27.8,BrandE
-391,Beauty,405.0,BrandA
-392,Sports,93.05,BrandA
-393,Books,259.77,BrandA
-394,Clothing,405.1,BrandC
-395,Home & Kitchen,130.64,BrandC
-396,Books,126.67,BrandB
-397,Beauty,204.37,BrandB
-398,Toys,447.85,BrandA
-399,Electronics,5.22,BrandE
-400,Beauty,451.18,BrandB
-401,Sports,81.13,BrandB
-402,Clothing,495.09,BrandC
-403,Sports,477.65,BrandE
-404,Home & Kitchen,249.86,BrandA
-405,Home & Kitchen,258.8,BrandB
-406,Clothing,243.37,BrandE
-407,Books,319.54,BrandE
-408,Books,49.91,BrandA
-409,Home & Kitchen,21.15,BrandE
-410,Home & Kitchen,33.56,BrandE
-411,Toys,224.96,BrandE
-412,Electronics,141.4,BrandB
-413,Toys,312.91,BrandA
-414,Toys,496.26,BrandE
-415,Books,196.23,BrandE
-416,Clothing,289.05,BrandB
-417,Books,210.72,BrandA
-418,Electronics,424.4,BrandC
-419,Sports,451.61,BrandB
-420,Home & Kitchen,439.29,BrandA
-421,Home & Kitchen,487.31,BrandE
-422,Electronics,18.62,BrandA
-423,Toys,420.71,BrandA
-424,Clothing,377.13,BrandA
-425,Home & Kitchen,118.2,BrandC
-426,Beauty,478.38,BrandA
-427,Toys,78.35,BrandC
-428,Home & Kitchen,341.38,BrandE
-429,Beauty,116.32,BrandC
-430,Electronics,218.53,BrandE
-431,Electronics,360.98,BrandE
-432,Toys,283.85,BrandC
-433,Home & Kitchen,216.61,BrandB
-434,Books,166.54,BrandD
-435,Beauty,420.63,BrandA
-436,Clothing,76.19,BrandD
-437,Home & Kitchen,217.9,BrandA
-438,Clothing,452.36,BrandA
-439,Home & Kitchen,423.7,BrandE
-440,Books,203.47,BrandA
-441,Books,382.74,BrandA
-442,Toys,412.46,BrandC
-443,Toys,445.0,BrandD
-444,Books,274.53,BrandC
-445,Sports,106.21,BrandA
-446,Books,131.38,BrandE
-447,Electronics,151.37,BrandC
-448,Electronics,298.93,BrandC
-449,Sports,21.24,BrandB
-450,Beauty,319.84,BrandA
-451,Clothing,185.36,BrandE
-452,Home & Kitchen,151.14,BrandC
-453,Home & Kitchen,440.35,BrandC
-454,Sports,232.7,BrandE
-455,Electronics,52.05,BrandA
-456,Toys,414.24,BrandB
-457,Home & Kitchen,28.58,BrandC
-458,Electronics,364.74,BrandB
-459,Beauty,388.08,BrandD
-460,Clothing,179.54,BrandA
-461,Beauty,413.27,BrandD
-462,Sports,260.25,BrandD
-463,Books,234.33,BrandD
-464,Books,27.47,BrandA
-465,Books,148.56,BrandA
-466,Beauty,465.85,BrandE
-467,Home & Kitchen,198.95,BrandB
-468,Clothing,275.62,BrandB
-469,Books,268.35,BrandE
-470,Sports,297.26,BrandE
-471,Sports,35.36,BrandD
-472,Books,184.28,BrandE
-473,Books,362.95,BrandC
-474,Clothing,104.28,BrandB
-475,Books,105.77,BrandE
-476,Clothing,9.99,BrandC
-477,Sports,221.55,BrandC
-478,Books,441.95,BrandC
-479,Beauty,30.69,BrandC
-480,Toys,99.6,BrandD
-481,Beauty,158.49,BrandC
-482,Sports,367.2,BrandD
-483,Clothing,322.11,BrandD
-484,Beauty,210.89,BrandC
-485,Clothing,380.74,BrandB
-486,Beauty,306.77,BrandC
-487,Beauty,448.54,BrandC
-488,Clothing,409.92,BrandC
-489,Home & Kitchen,130.14,BrandB
-490,Beauty,139.36,BrandA
-491,Books,67.05,BrandA
-492,Toys,171.8,BrandD
-493,Sports,499.77,BrandD
-494,Home & Kitchen,205.85,BrandB
-495,Clothing,114.14,BrandE
-496,Home & Kitchen,382.43,BrandA
-497,Electronics,273.52,BrandD
-498,Electronics,79.05,BrandA
-499,Beauty,193.44,BrandB
-500,Beauty,210.16,BrandB
+product_id,product_name,category,price,brand,description
+1,Crompton Premium Storage Solution YR-0122,Home & Kitchen,305.4,Crompton,Discover Prestige's space-saving solution for your modern home — designed for durability and style.
+2,Pantaloons Linen Ensemble DH-1669,Clothing,80.03,Pantaloons,"Experience the elegance of Raymond's LightSalmon cotton kurta, crafted for comfort and sophistication."
+3,Nivia Competition Equipment XP-0184,Sports,20.31,Nivia,"Gear up with SG's professional equipment, crafted to boost your performance and endurance on the field."
+4,Tata Motors High Performance Solution aU-4627,Electronics,485.52,Tata Motors,"Reliance Digital presents its latest smart appliance, engineered for seamless performance and cutting-edge innovation."
+5,Himalaya Natural Serum OG-2814,Beauty,387.9,Himalaya,"Pamper your skin with Himalaya's ayurvedic mask, specially formulated for radiant and healthy skin."
+6,'Sharable bifurcated algorithm' by Penguin India XH-2528,Books,490.15,Penguin India,"User-centric needs-based array' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+7,Godrej Interio Space Saving Cooktop hx-9570,Home & Kitchen,241.55,Godrej Interio,Discover Havells's space-saving solution for your modern home — designed for durability and style.
+8,Pantaloons Khadi Kurta fU-0391,Clothing,268.47,Pantaloons,"Experience the elegance of Raymond's Black silk kurta, crafted for comfort and sophistication."
+9,Tata Motors High Performance Solution Jk-8227,Electronics,88.33,Tata Motors,"Tata Motors presents its latest smart device, engineered for seamless performance and cutting-edge innovation."
+10,'Fundamental client-driven encryption' by Penguin India WU-9638,Books,127.22,Penguin India,"Focused motivating portal' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+11,Funskool Safe Playset CH-3465,Toys,420.08,Funskool,"Let your child explore with Zephyr's educational learning tool, designed to spark creativity and fun."
+12,FabIndia Chanderi Saree bL-3315,Clothing,181.31,FabIndia,"Experience the elegance of Pantaloons's YellowGreen cotton shirt, crafted for comfort and sophistication."
+13,FabIndia Cotton Saree TO-9301,Clothing,414.27,FabIndia,"Experience the elegance of FabIndia's RosyBrown silk kurta, crafted for comfort and sophistication."
+14,'Cross-platform heuristic hardware' by Penguin India Gp-1051,Books,355.96,Penguin India,"Reverse-engineered even-keeled workforce' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+15,Tata Motors Digital System UK-7382,Electronics,92.7,Tata Motors,"Boat presents its latest smart device, engineered for seamless performance and cutting-edge innovation."
+16,Funskool Safe Toy gg-3763,Toys,256.19,Funskool,"Let your child explore with Chicco India's safe doll, designed to spark creativity and fun."
+17,Nivia Professional Equipment RP-6670,Sports,340.31,Nivia,"Gear up with Nivia's training gear, crafted to boost your performance and endurance on the field."
+18,Tata Motors Digital System mm-6513,Electronics,121.34,Tata Motors,"Tata Motors presents its latest smart device, engineered for seamless performance and cutting-edge innovation."
+19,Himalaya Radiant Skin Lotion Dp-2624,Beauty,416.19,Himalaya,"Pamper your skin with Himalaya's organic cream, specially formulated for radiant and healthy skin."
+20,Godrej Interio Energy Efficient Cooktop af-8108,Home & Kitchen,274.69,Godrej Interio,Discover Havells's modular solution for your modern home — designed for durability and style.
+21,'Operative directional knowledge user' by Penguin India zd-6773,Books,86.79,Penguin India,"Multi-tiered bandwidth-monitored help-desk' — a captivating read from Jaico Publishing, bringing you stories that inspire and engage."
+22,Nivia Performance Kit YY-6064,Sports,293.58,Nivia,"Gear up with Nivia's training accessories, crafted to boost your performance and endurance on the field."
+23,Funskool Interactive Playset ms-6872,Toys,499.86,Funskool,"Let your child explore with Funskool's interactive playset, designed to spark creativity and fun."
+24,'Inverse zero administration time-frame' by Penguin India dd-9805,Books,79.51,Penguin India,"Upgradable logistical monitoring' — a captivating read from Rupa Publications, bringing you stories that inspire and engage."
+25,'Optimized 5thgeneration algorithm' by Penguin India dG-7882,Books,409.29,Penguin India,"Decentralized homogeneous artificial intelligence' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+26,Tata Motors Compact Device Rp-2191,Electronics,107.62,Tata Motors,"Tata Motors presents its latest high-performance gadget, engineered for seamless performance and cutting-edge innovation."
+27,Crompton Modular Cookware Set cN-9399,Home & Kitchen,392.28,Crompton,Discover Prestige's space-saving solution for your modern home — designed for durability and style.
+28,Himalaya Moisturizing Serum qn-9985,Beauty,368.62,Himalaya,"Pamper your skin with Mamaearth's natural serum, specially formulated for radiant and healthy skin."
+29,FabIndia Cotton Kurta Du-4624,Clothing,153.74,FabIndia,"Experience the elegance of FabIndia's CornflowerBlue linen kurta, crafted for comfort and sophistication."
+30,FabIndia Silk Ensemble eI-7991,Clothing,166.28,FabIndia,"Experience the elegance of FabIndia's Khaki cotton shirt, crafted for comfort and sophistication."
+31,'Robust empowering workforce' by Penguin India px-4251,Books,397.3,Penguin India,"Visionary explicit artificial intelligence' — a captivating read from Rupa Publications, bringing you stories that inspire and engage."
+32,Godrej Interio Smart Kitchen Solution NZ-2784,Home & Kitchen,233.42,Godrej Interio,Discover Havells's modular solution for your modern home — designed for durability and style.
+33,Funskool Educational Creative Set qh-8412,Toys,366.75,Funskool,"Let your child explore with Funskool's educational doll, designed to spark creativity and fun."
+34,Funskool Creative Learning Kit nT-2449,Toys,78.25,Funskool,"Let your child explore with Chicco India's interactive doll, designed to spark creativity and fun."
+35,Nivia Performance Kit df-4874,Sports,427.02,Nivia,"Gear up with Nivia's competition gear, crafted to boost your performance and endurance on the field."
+36,Tata Motors Connected System Oq-0052,Electronics,356.89,Tata Motors,"Boat presents its latest smart gadget, engineered for seamless performance and cutting-edge innovation."
+37,Godrej Interio Energy Efficient Storage Solution he-8680,Home & Kitchen,453.94,Godrej Interio,Discover Butterfly's energy-efficient solution for your modern home — designed for durability and style.
+38,Godrej Interio Energy Efficient Kitchen Solution jB-0598,Home & Kitchen,70.52,Godrej Interio,Discover Butterfly's modular solution for your modern home — designed for durability and style.
+39,Tata Motors Connected Device nR-4505,Electronics,298.54,Tata Motors,"Boat presents its latest high-performance gadget, engineered for seamless performance and cutting-edge innovation."
+40,Funskool Interactive Learning Kit Vj-5869,Toys,301.56,Funskool,"Let your child explore with Mirada's safe learning tool, designed to spark creativity and fun."
+41,Funskool Safe Learning Kit Vv-2602,Toys,179.96,Funskool,"Let your child explore with Funskool's safe playset, designed to spark creativity and fun."
+42,Funskool Interactive Learning Kit cE-4216,Toys,231.94,Funskool,"Let your child explore with Funskool's safe learning tool, designed to spark creativity and fun."
+43,'Streamlined modular infrastructure' by Penguin India ob-7543,Books,23.8,Penguin India,"Down-sized national superstructure' — a captivating read from Jaico Publishing, bringing you stories that inspire and engage."
+44,Godrej Interio Space Saving Home System eX-3654,Home & Kitchen,374.2,Godrej Interio,Discover Crompton's modular solution for your modern home — designed for durability and style.
+45,FabIndia Linen Saree bh-8685,Clothing,276.91,FabIndia,"Experience the elegance of FabIndia's Olive cotton saree, crafted for comfort and sophistication."
+46,Tata Motors High Performance Gadget MB-9401,Electronics,33.58,Tata Motors,"Tata Motors presents its latest compact appliance, engineered for seamless performance and cutting-edge innovation."
+47,Funskool Interactive Toy yK-6981,Toys,341.97,Funskool,"Let your child explore with Mirada's safe learning tool, designed to spark creativity and fun."
+48,Nivia Training Kit ZI-0608,Sports,236.06,Nivia,"Gear up with Cosco's professional accessories, crafted to boost your performance and endurance on the field."
+49,Funskool Educational Toy uQ-6159,Toys,22.06,Funskool,"Let your child explore with Zephyr's interactive playset, designed to spark creativity and fun."
+50,Funskool Creative Creative Set zS-8465,Toys,484.96,Funskool,"Let your child explore with Zephyr's educational playset, designed to spark creativity and fun."
+51,Mamaearth Anti Aging Oil RV-2366,Beauty,474.81,Mamaearth,"Pamper your skin with Biotique's organic serum, specially formulated for radiant and healthy skin."
+52,'Robust empowering workforce' by Penguin India at-9468,Books,258.89,Penguin India,"Future-proofed asymmetric data-warehouse' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+53,Tata Motors Compact System Pu-3699,Electronics,51.37,Tata Motors,"Voltas presents its latest high-performance appliance, engineered for seamless performance and cutting-edge innovation."
+54,Himalaya Anti Aging Cream YY-7387,Beauty,378.54,Himalaya,"Pamper your skin with Forest Essentials's organic cream, specially formulated for radiant and healthy skin."
+55,Himalaya Anti Aging Mask fW-4895,Beauty,248.51,Himalaya,"Pamper your skin with Lotus Herbals's natural serum, specially formulated for radiant and healthy skin."
+56,Nivia Performance Series cp-3320,Sports,154.71,Nivia,"Gear up with SG's training accessories, crafted to boost your performance and endurance on the field."
+57,Crompton Premium Cookware Set mT-1769,Home & Kitchen,248.25,Crompton,Discover Prestige's energy-efficient solution for your modern home — designed for durability and style.
+58,Nivia Professional Accessories WX-6320,Sports,263.61,Nivia,"Gear up with Nivia's professional gear, crafted to boost your performance and endurance on the field."
+59,Crompton Energy Efficient Kitchen Solution dJ-3287,Home & Kitchen,283.54,Crompton,Discover Prestige's modular solution for your modern home — designed for durability and style.
+60,Godrej Interio Space Saving Cookware Set JM-7278,Home & Kitchen,223.41,Godrej Interio,Discover Crompton's modular solution for your modern home — designed for durability and style.
+61,Tata Motors Compact System Ck-9868,Electronics,304.85,Tata Motors,"Micromax presents its latest high-performance appliance, engineered for seamless performance and cutting-edge innovation."
+62,Funskool Interactive Toy FO-4348,Toys,459.77,Funskool,"Let your child explore with Mirada's safe doll, designed to spark creativity and fun."
+63,Tata Motors High Performance Solution rv-7143,Electronics,184.32,Tata Motors,"Boat presents its latest high-performance appliance, engineered for seamless performance and cutting-edge innovation."
+64,'Streamlined tangible moratorium' by Penguin India yS-1223,Books,364.23,Penguin India,"Optimized optimal initiative' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+65,Godrej Interio Premium Cookware Set vI-3166,Home & Kitchen,447.75,Godrej Interio,Discover Godrej Interio's energy-efficient solution for your modern home — designed for durability and style.
+66,Himalaya Radiant Skin Oil XL-0366,Beauty,230.71,Himalaya,"Pamper your skin with Himalaya's ayurvedic cream, specially formulated for radiant and healthy skin."
+67,Funskool Safe Game tW-6705,Toys,224.51,Funskool,"Let your child explore with Funskool's safe doll, designed to spark creativity and fun."
+68,FabIndia Linen Dress Fo-8893,Clothing,303.05,FabIndia,"Experience the elegance of Biba's DarkOliveGreen cotton kurta, crafted for comfort and sophistication."
+69,'Focused zero administration frame' by Penguin India QR-7065,Books,297.75,Penguin India,"Distributed responsive complexity' — a captivating read from Westland Books, bringing you stories that inspire and engage."
+70,Tata Motors Compact Solution Ib-2729,Electronics,404.26,Tata Motors,"Tata Motors presents its latest high-performance gadget, engineered for seamless performance and cutting-edge innovation."
+71,Nivia Training Equipment iD-9016,Sports,240.86,Nivia,"Gear up with TYKA's competition equipment, crafted to boost your performance and endurance on the field."
+72,'Configurable neutral frame' by Penguin India Du-4653,Books,498.08,Penguin India,"Networked homogeneous policy' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+73,'User-centric even-keeled encryption' by Penguin India fE-6464,Books,34.44,Penguin India,"Persistent multi-tasking extranet' — a captivating read from Westland Books, bringing you stories that inspire and engage."
+74,Funskool Educational Playset Pe-8053,Toys,6.57,Funskool,"Let your child explore with Mirada's safe playset, designed to spark creativity and fun."
+75,'Realigned dedicated structure' by Penguin India jp-3309,Books,321.9,Penguin India,"Synergized uniform budgetary management' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+76,'Customer-focused background implementation' by Penguin India DS-7193,Books,152.73,Penguin India,"Synergized national system engine' — a captivating read from Jaico Publishing, bringing you stories that inspire and engage."
+77,FabIndia Cotton Saree VT-5299,Clothing,123.99,FabIndia,"Experience the elegance of Biba's MediumSpringGreen silk shirt, crafted for comfort and sophistication."
+78,Nivia Performance Accessories tK-4190,Sports,159.39,Nivia,"Gear up with SG's professional gear, crafted to boost your performance and endurance on the field."
+79,Nivia Competition Series gS-3193,Sports,131.74,Nivia,"Gear up with Cosco's training equipment, crafted to boost your performance and endurance on the field."
+80,Nivia Competition Equipment IB-1905,Sports,20.24,Nivia,"Gear up with Nivia's training equipment, crafted to boost your performance and endurance on the field."
+81,Godrej Interio Premium Home System Fg-8506,Home & Kitchen,485.91,Godrej Interio,Discover Butterfly's space-saving solution for your modern home — designed for durability and style.
+82,Himalaya Moisturizing Oil UH-7262,Beauty,114.27,Himalaya,"Pamper your skin with Lotus Herbals's natural serum, specially formulated for radiant and healthy skin."
+83,Nivia Competition Kit UL-8776,Sports,368.34,Nivia,"Gear up with Shiv-Naresh's competition equipment, crafted to boost your performance and endurance on the field."
+84,'Multi-layered heuristic database' by Penguin India pW-3147,Books,382.49,Penguin India,"Profit-focused bi-directional product' — a captivating read from Rupa Publications, bringing you stories that inspire and engage."
+85,'Public-key bottom-line implementation' by Penguin India bF-9965,Books,464.98,Penguin India,"Innovative scalable middleware' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+86,Nivia Competition Kit Zq-2735,Sports,20.12,Nivia,"Gear up with Nivia's competition equipment, crafted to boost your performance and endurance on the field."
+87,Funskool Educational Learning Kit Hm-9480,Toys,436.66,Funskool,"Let your child explore with Chicco India's educational doll, designed to spark creativity and fun."
+88,Nivia Performance Accessories SE-6783,Sports,265.98,Nivia,"Gear up with SG's professional accessories, crafted to boost your performance and endurance on the field."
+89,'Extended well-modulated Graphical User Interface' by Penguin India zS-0143,Books,318.11,Penguin India,"Vision-oriented multi-tasking ability' — a captivating read from Rupa Publications, bringing you stories that inspire and engage."
+90,Godrej Interio Space Saving Cookware Set JH-4957,Home & Kitchen,324.01,Godrej Interio,Discover Havells's space-saving solution for your modern home — designed for durability and style.
+91,Tata Motors High Performance Appliance rt-8557,Electronics,410.8,Tata Motors,"Voltas presents its latest compact gadget, engineered for seamless performance and cutting-edge innovation."
+92,Tata Motors Connected Appliance VI-1351,Electronics,170.04,Tata Motors,"Reliance Digital presents its latest smart device, engineered for seamless performance and cutting-edge innovation."
+93,Nivia Premium Kit WH-3749,Sports,367.86,Nivia,"Gear up with Shiv-Naresh's training gear, crafted to boost your performance and endurance on the field."
+94,FabIndia Linen Kurta xl-1343,Clothing,266.65,FabIndia,"Experience the elegance of Pantaloons's LawnGreen cotton kurta, crafted for comfort and sophistication."
+95,Nivia Competition Gear dJ-8240,Sports,397.73,Nivia,"Gear up with Nivia's competition equipment, crafted to boost your performance and endurance on the field."
+96,Funskool Safe Game sE-7109,Toys,495.32,Funskool,"Let your child explore with Funskool's educational learning tool, designed to spark creativity and fun."
+97,Nivia Professional Accessories Eh-5204,Sports,104.32,Nivia,"Gear up with Shiv-Naresh's training equipment, crafted to boost your performance and endurance on the field."
+98,Tata Motors Digital Gadget jj-7190,Electronics,497.35,Tata Motors,"Boat presents its latest high-performance device, engineered for seamless performance and cutting-edge innovation."
+99,'Centralized discrete alliance' by Penguin India WA-1318,Books,49.46,Penguin India,"De-engineered stable leverage' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+100,Nivia Performance Kit yC-9938,Sports,6.15,Nivia,"Gear up with TYKA's competition equipment, crafted to boost your performance and endurance on the field."
+101,'Intuitive impactful flexibility' by Penguin India Nd-9649,Books,26.86,Penguin India,"Fundamental multi-tasking portal' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+102,'Operative directional knowledge user' by Penguin India Qf-1334,Books,174.18,Penguin India,"Optimized didactic moratorium' — a captivating read from Jaico Publishing, bringing you stories that inspire and engage."
+103,FabIndia Khadi Dress ka-3281,Clothing,318.29,FabIndia,"Experience the elegance of FabIndia's Green linen shirt, crafted for comfort and sophistication."
+104,'User-friendly next generation monitoring' by Penguin India os-9740,Books,39.17,Penguin India,"Universal fault-tolerant initiative' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+105,Tata Motors Digital Appliance qY-4713,Electronics,7.8,Tata Motors,"Boat presents its latest high-performance appliance, engineered for seamless performance and cutting-edge innovation."
+106,Godrej Interio Space Saving Cooktop Pj-6183,Home & Kitchen,468.86,Godrej Interio,Discover Godrej Interio's energy-efficient solution for your modern home — designed for durability and style.
+107,Godrej Interio Smart Home System MV-1024,Home & Kitchen,411.85,Godrej Interio,Discover Butterfly's energy-efficient solution for your modern home — designed for durability and style.
+108,Himalaya Moisturizing Oil Sz-7174,Beauty,405.55,Himalaya,"Pamper your skin with Mamaearth's natural serum, specially formulated for radiant and healthy skin."
+109,Funskool Safe Toy Mc-8771,Toys,442.79,Funskool,"Let your child explore with Mirada's educational playset, designed to spark creativity and fun."
+110,Nivia Premium Series oR-9401,Sports,351.52,Nivia,"Gear up with Nivia's professional equipment, crafted to boost your performance and endurance on the field."
+111,Funskool Interactive Game WW-0490,Toys,56.68,Funskool,"Let your child explore with Hamleys India's interactive playset, designed to spark creativity and fun."
+112,Tata Motors Compact Device LB-8742,Electronics,202.55,Tata Motors,"Tata Motors presents its latest high-performance appliance, engineered for seamless performance and cutting-edge innovation."
+113,'Cross-group didactic emulation' by Penguin India uQ-7565,Books,362.96,Penguin India,"Focused optimizing definition' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+114,Godrej Interio Premium Storage Solution sQ-2567,Home & Kitchen,143.77,Godrej Interio,Discover Crompton's modular solution for your modern home — designed for durability and style.
+115,Funskool Educational Game qu-0715,Toys,345.27,Funskool,"Let your child explore with Mirada's educational learning tool, designed to spark creativity and fun."
+116,Tata Motors Connected Solution Ad-8087,Electronics,17.13,Tata Motors,"Reliance Digital presents its latest high-performance device, engineered for seamless performance and cutting-edge innovation."
+117,Godrej Interio Energy Efficient Home System Wd-5977,Home & Kitchen,156.54,Godrej Interio,Discover Butterfly's modular solution for your modern home — designed for durability and style.
+118,'Profit-focused real-time algorithm' by Penguin India SF-8247,Books,276.82,Penguin India,"Cloned 5thgeneration groupware' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+119,Funskool Educational Creative Set tJ-0932,Toys,317.88,Funskool,"Let your child explore with Chicco India's educational learning tool, designed to spark creativity and fun."
+120,Godrej Interio Energy Efficient Cookware Set Dh-6131,Home & Kitchen,290.64,Godrej Interio,Discover Butterfly's modular solution for your modern home — designed for durability and style.
+121,Nivia Training Accessories EE-4846,Sports,350.39,Nivia,"Gear up with SG's training accessories, crafted to boost your performance and endurance on the field."
+122,Nivia Training Equipment MG-8263,Sports,8.01,Nivia,"Gear up with TYKA's training equipment, crafted to boost your performance and endurance on the field."
+123,Himalaya Moisturizing Mask ra-4658,Beauty,54.97,Himalaya,"Pamper your skin with Lotus Herbals's natural cream, specially formulated for radiant and healthy skin."
+124,Himalaya Revitalizing Mask CI-9972,Beauty,435.13,Himalaya,"Pamper your skin with Mamaearth's natural mask, specially formulated for radiant and healthy skin."
+125,Crompton Energy Efficient Cooktop Du-5886,Home & Kitchen,342.47,Crompton,Discover Prestige's space-saving solution for your modern home — designed for durability and style.
+126,Tata Motors Compact System cu-9636,Electronics,60.9,Tata Motors,"Reliance Digital presents its latest compact device, engineered for seamless performance and cutting-edge innovation."
+127,Nivia Premium Kit iG-6270,Sports,421.83,Nivia,"Gear up with Nivia's training gear, crafted to boost your performance and endurance on the field."
+128,Tata Motors Connected System Da-1718,Electronics,124.9,Tata Motors,"Tata Motors presents its latest smart device, engineered for seamless performance and cutting-edge innovation."
+129,Tata Motors Compact Device vN-2174,Electronics,241.74,Tata Motors,"Reliance Digital presents its latest smart appliance, engineered for seamless performance and cutting-edge innovation."
+130,Godrej Interio Premium Storage Solution OT-5865,Home & Kitchen,76.87,Godrej Interio,Discover Crompton's energy-efficient solution for your modern home — designed for durability and style.
+131,Tata Motors High Performance Appliance OR-0913,Electronics,356.5,Tata Motors,"Reliance Digital presents its latest compact gadget, engineered for seamless performance and cutting-edge innovation."
+132,Nivia Competition Equipment Ck-1611,Sports,335.09,Nivia,"Gear up with Nivia's training gear, crafted to boost your performance and endurance on the field."
+133,'Multi-tiered even-keeled knowledgebase' by Penguin India wx-0504,Books,109.5,Penguin India,"Upgradable actuating service-desk' — a captivating read from Rupa Publications, bringing you stories that inspire and engage."
+134,Mamaearth Anti Aging Serum KR-2386,Beauty,432.38,Mamaearth,"Pamper your skin with Biotique's natural mask, specially formulated for radiant and healthy skin."
+135,'Extended well-modulated Graphical User Interface' by Penguin India NR-2196,Books,203.65,Penguin India,"Cross-platform analyzing initiative' — a captivating read from Westland Books, bringing you stories that inspire and engage."
+136,Tata Motors High Performance System DO-7923,Electronics,149.79,Tata Motors,"Micromax presents its latest high-performance gadget, engineered for seamless performance and cutting-edge innovation."
+137,'Operative directional knowledge user' by Penguin India RI-4074,Books,80.4,Penguin India,"Customer-focused dynamic core' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+138,Nivia Performance Kit tO-1759,Sports,136.75,Nivia,"Gear up with TYKA's professional accessories, crafted to boost your performance and endurance on the field."
+139,Nivia Training Accessories Eg-7436,Sports,15.9,Nivia,"Gear up with Cosco's training equipment, crafted to boost your performance and endurance on the field."
+140,Tata Motors Smart System Ss-9594,Electronics,293.71,Tata Motors,"Reliance Digital presents its latest compact device, engineered for seamless performance and cutting-edge innovation."
+141,Godrej Interio Premium Home System MV-4090,Home & Kitchen,421.9,Godrej Interio,Discover Butterfly's energy-efficient solution for your modern home — designed for durability and style.
+142,'Intuitive impactful flexibility' by Penguin India Om-3953,Books,276.75,Penguin India,"Persistent dynamic archive' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+143,Godrej Interio Premium Kitchen Solution tY-4210,Home & Kitchen,113.54,Godrej Interio,Discover Godrej Interio's energy-efficient solution for your modern home — designed for durability and style.
+144,Godrej Interio Premium Cooktop su-9521,Home & Kitchen,21.67,Godrej Interio,Discover Havells's space-saving solution for your modern home — designed for durability and style.
+145,FabIndia Linen Saree HG-3285,Clothing,111.24,FabIndia,"Experience the elegance of FabIndia's Yellow cotton kurta, crafted for comfort and sophistication."
+146,Tata Motors Compact Device Zh-4745,Electronics,210.98,Tata Motors,"Micromax presents its latest smart device, engineered for seamless performance and cutting-edge innovation."
+147,Himalaya Revitalizing Cream xf-2368,Beauty,381.01,Himalaya,"Pamper your skin with Forest Essentials's ayurvedic cream, specially formulated for radiant and healthy skin."
+148,Nivia Competition Series xR-4817,Sports,97.98,Nivia,"Gear up with SG's training gear, crafted to boost your performance and endurance on the field."
+149,Nivia Premium Series Eb-6513,Sports,361.3,Nivia,"Gear up with Cosco's training equipment, crafted to boost your performance and endurance on the field."
+150,Tata Motors High Performance System OD-5931,Electronics,434.13,Tata Motors,"Reliance Digital presents its latest compact device, engineered for seamless performance and cutting-edge innovation."
+151,Funskool Educational Playset tF-1200,Toys,229.7,Funskool,"Let your child explore with Funskool's educational doll, designed to spark creativity and fun."
+152,Funskool Immersive Game Dx-3826,Toys,411.61,Funskool,"Let your child explore with Mirada's educational doll, designed to spark creativity and fun."
+153,Funskool Safe Toy FN-9261,Toys,279.56,Funskool,"Let your child explore with Hamleys India's interactive doll, designed to spark creativity and fun."
+154,Himalaya Moisturizing Cream Cp-0537,Beauty,320.36,Himalaya,"Pamper your skin with Lotus Herbals's organic serum, specially formulated for radiant and healthy skin."
+155,Nivia Training Equipment zr-5850,Sports,265.51,Nivia,"Gear up with Cosco's competition accessories, crafted to boost your performance and endurance on the field."
+156,Tata Motors High Performance Appliance bd-7139,Electronics,234.27,Tata Motors,"Reliance Digital presents its latest high-performance appliance, engineered for seamless performance and cutting-edge innovation."
+157,Nivia Training Series WJ-2931,Sports,121.15,Nivia,"Gear up with SG's competition gear, crafted to boost your performance and endurance on the field."
+158,Godrej Interio Modular Home System YM-3352,Home & Kitchen,155.08,Godrej Interio,Discover Havells's modular solution for your modern home — designed for durability and style.
+159,'Profit-focused real-time algorithm' by Penguin India Zl-2284,Books,148.54,Penguin India,"Ergonomic explicit data-warehouse' — a captivating read from Westland Books, bringing you stories that inspire and engage."
+160,'Extended well-modulated Graphical User Interface' by Penguin India YY-0205,Books,283.83,Penguin India,"Centralized optimal support' — a captivating read from Jaico Publishing, bringing you stories that inspire and engage."
+161,Nivia Training Accessories qd-9502,Sports,64.38,Nivia,"Gear up with SG's competition equipment, crafted to boost your performance and endurance on the field."
+162,FabIndia Linen Ensemble CX-8117,Clothing,458.81,FabIndia,"Experience the elegance of FabIndia's Chartreuse linen saree, crafted for comfort and sophistication."
+163,Himalaya Radiant Skin Oil oN-9178,Beauty,361.72,Himalaya,"Pamper your skin with Lotus Herbals's ayurvedic mask, specially formulated for radiant and healthy skin."
+164,Funskool Safe Playset Ez-4700,Toys,203.72,Funskool,"Let your child explore with Zephyr's interactive learning tool, designed to spark creativity and fun."
+165,Himalaya Anti Aging Cream uM-7711,Beauty,83.52,Himalaya,"Pamper your skin with Forest Essentials's natural cream, specially formulated for radiant and healthy skin."
+166,Himalaya Moisturizing Lotion JT-2499,Beauty,441.59,Himalaya,"Pamper your skin with Lotus Herbals's ayurvedic mask, specially formulated for radiant and healthy skin."
+167,Godrej Interio Premium Kitchen Solution GM-9847,Home & Kitchen,412.77,Godrej Interio,Discover Havells's modular solution for your modern home — designed for durability and style.
+168,Mamaearth Revitalizing Mask Co-1836,Beauty,362.25,Mamaearth,"Pamper your skin with Biotique's ayurvedic cream, specially formulated for radiant and healthy skin."
+169,'Public-key bottom-line implementation' by Penguin India uB-7661,Books,139.42,Penguin India,"Right-sized asymmetric service-desk' — a captivating read from Westland Books, bringing you stories that inspire and engage."
+170,Crompton Modular Kitchen Solution ef-4527,Home & Kitchen,204.21,Crompton,Discover Prestige's modular solution for your modern home — designed for durability and style.
+171,Tata Motors Digital Solution Jd-6152,Electronics,55.86,Tata Motors,"Voltas presents its latest compact device, engineered for seamless performance and cutting-edge innovation."
+172,Himalaya Revitalizing Cream wQ-8516,Beauty,98.57,Himalaya,"Pamper your skin with Forest Essentials's natural cream, specially formulated for radiant and healthy skin."
+173,Mamaearth Natural Serum gK-4945,Beauty,392.59,Mamaearth,"Pamper your skin with Biotique's natural mask, specially formulated for radiant and healthy skin."
+174,Tata Motors High Performance Device wJ-2731,Electronics,358.94,Tata Motors,"Tata Motors presents its latest smart appliance, engineered for seamless performance and cutting-edge innovation."
+175,Himalaya Natural Oil JX-4936,Beauty,298.78,Himalaya,"Pamper your skin with Himalaya's ayurvedic serum, specially formulated for radiant and healthy skin."
+176,Tata Motors High Performance Gadget bl-8094,Electronics,448.38,Tata Motors,"Tata Motors presents its latest high-performance appliance, engineered for seamless performance and cutting-edge innovation."
+177,Godrej Interio Premium Kitchen Solution jK-5502,Home & Kitchen,293.72,Godrej Interio,Discover Havells's space-saving solution for your modern home — designed for durability and style.
+178,'Configurable discrete attitude' by Penguin India ny-2018,Books,236.15,Penguin India,"Programmable foreground firmware' — a captivating read from Jaico Publishing, bringing you stories that inspire and engage."
+179,Tata Motors High Performance Solution tU-7525,Electronics,173.48,Tata Motors,"Voltas presents its latest smart appliance, engineered for seamless performance and cutting-edge innovation."
+180,FabIndia Chanderi Kurta kW-9102,Clothing,470.52,FabIndia,"Experience the elegance of Pantaloons's LawnGreen linen saree, crafted for comfort and sophistication."
+181,Tata Motors Compact System FM-1476,Electronics,45.94,Tata Motors,"Reliance Digital presents its latest compact gadget, engineered for seamless performance and cutting-edge innovation."
+182,Himalaya Radiant Skin Mask wB-4381,Beauty,465.79,Himalaya,"Pamper your skin with Mamaearth's ayurvedic mask, specially formulated for radiant and healthy skin."
+183,Funskool Safe Creative Set co-9784,Toys,414.22,Funskool,"Let your child explore with Zephyr's safe doll, designed to spark creativity and fun."
+184,Funskool Interactive Toy nX-0034,Toys,69.32,Funskool,"Let your child explore with Funskool's interactive doll, designed to spark creativity and fun."
+185,Godrej Interio Premium Cooktop FV-4510,Home & Kitchen,284.67,Godrej Interio,Discover Havells's modular solution for your modern home — designed for durability and style.
+186,Nivia Competition Equipment GJ-2683,Sports,433.94,Nivia,"Gear up with Cosco's professional gear, crafted to boost your performance and endurance on the field."
+187,Godrej Interio Space Saving Storage Solution De-6060,Home & Kitchen,288.05,Godrej Interio,Discover Godrej Interio's space-saving solution for your modern home — designed for durability and style.
+188,Nivia Performance Equipment sh-6966,Sports,454.06,Nivia,"Gear up with Cosco's competition equipment, crafted to boost your performance and endurance on the field."
+189,Funskool Educational Game Sx-5297,Toys,471.78,Funskool,"Let your child explore with Chicco India's educational learning tool, designed to spark creativity and fun."
+190,Funskool Educational Game zH-1369,Toys,214.08,Funskool,"Let your child explore with Mirada's educational learning tool, designed to spark creativity and fun."
+191,Tata Motors Smart Solution Xk-4535,Electronics,191.77,Tata Motors,"Voltas presents its latest compact device, engineered for seamless performance and cutting-edge innovation."
+192,'Self-enabling regional hierarchy' by Penguin India Xw-1883,Books,468.48,Penguin India,"Monitored asymmetric encryption' — a captivating read from Westland Books, bringing you stories that inspire and engage."
+193,FabIndia Silk Ensemble qm-2312,Clothing,339.19,FabIndia,"Experience the elegance of Biba's DimGray silk saree, crafted for comfort and sophistication."
+194,Godrej Interio Smart Storage Solution DW-2127,Home & Kitchen,62.43,Godrej Interio,Discover Butterfly's energy-efficient solution for your modern home — designed for durability and style.
+195,Mamaearth Anti Aging Lotion Ou-7995,Beauty,25.93,Mamaearth,"Pamper your skin with Biotique's natural mask, specially formulated for radiant and healthy skin."
+196,Nivia Premium Equipment Yr-1774,Sports,284.49,Nivia,"Gear up with Nivia's training accessories, crafted to boost your performance and endurance on the field."
+197,Himalaya Radiant Skin Cream DC-5814,Beauty,465.43,Himalaya,"Pamper your skin with Mamaearth's natural mask, specially formulated for radiant and healthy skin."
+198,'Robust scalable concept' by Penguin India NM-5411,Books,422.9,Penguin India,"Advanced static neural-net' — a captivating read from Jaico Publishing, bringing you stories that inspire and engage."
+199,Nivia Professional Accessories YV-6798,Sports,339.54,Nivia,"Gear up with Nivia's training accessories, crafted to boost your performance and endurance on the field."
+200,Godrej Interio Energy Efficient Kitchen Solution EG-9359,Home & Kitchen,73.86,Godrej Interio,Discover Godrej Interio's modular solution for your modern home — designed for durability and style.
+201,Tata Motors Connected Device GP-7151,Electronics,130.84,Tata Motors,"Boat presents its latest smart gadget, engineered for seamless performance and cutting-edge innovation."
+202,Himalaya Anti Aging Mask HN-3778,Beauty,438.38,Himalaya,"Pamper your skin with Lotus Herbals's ayurvedic cream, specially formulated for radiant and healthy skin."
+203,'Stand-alone logistical circuit' by Penguin India Xv-5466,Books,95.49,Penguin India,"User-friendly neutral collaboration' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+204,Godrej Interio Smart Cookware Set vg-9051,Home & Kitchen,142.83,Godrej Interio,Discover Godrej Interio's energy-efficient solution for your modern home — designed for durability and style.
+205,Funskool Immersive Learning Kit vf-4492,Toys,69.15,Funskool,"Let your child explore with Zephyr's interactive learning tool, designed to spark creativity and fun."
+206,Funskool Educational Toy MT-5462,Toys,339.67,Funskool,"Let your child explore with Mirada's educational learning tool, designed to spark creativity and fun."
+207,Godrej Interio Smart Kitchen Solution QS-8652,Home & Kitchen,472.27,Godrej Interio,Discover Godrej Interio's energy-efficient solution for your modern home — designed for durability and style.
+208,Crompton Energy Efficient Cooktop xt-6850,Home & Kitchen,138.14,Crompton,Discover Prestige's modular solution for your modern home — designed for durability and style.
+209,Godrej Interio Modular Home System ij-5733,Home & Kitchen,240.33,Godrej Interio,Discover Butterfly's space-saving solution for your modern home — designed for durability and style.
+210,Nivia Competition Series cQ-1888,Sports,319.0,Nivia,"Gear up with Nivia's competition gear, crafted to boost your performance and endurance on the field."
+211,Godrej Interio Smart Cooktop kl-2962,Home & Kitchen,499.74,Godrej Interio,Discover Crompton's space-saving solution for your modern home — designed for durability and style.
+212,Mamaearth Anti Aging Lotion RU-7065,Beauty,56.88,Mamaearth,"Pamper your skin with Biotique's organic serum, specially formulated for radiant and healthy skin."
+213,'Balanced upward-trending knowledgebase' by Penguin India Ip-9473,Books,251.79,Penguin India,"Business-focused background productivity' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+214,Nivia Competition Accessories CD-7359,Sports,195.63,Nivia,"Gear up with Cosco's training gear, crafted to boost your performance and endurance on the field."
+215,Crompton Smart Cooktop mZ-8862,Home & Kitchen,433.58,Crompton,Discover Prestige's modular solution for your modern home — designed for durability and style.
+216,FabIndia Chanderi Kurta Jg-4075,Clothing,240.6,FabIndia,"Experience the elegance of Biba's DarkSeaGreen cotton saree, crafted for comfort and sophistication."
+217,Pantaloons Silk Dress CG-4124,Clothing,59.93,Pantaloons,"Experience the elegance of Raymond's DodgerBlue linen saree, crafted for comfort and sophistication."
+218,'Customer-focused systematic support' by Penguin India bA-1375,Books,319.04,Penguin India,"User-centric leadingedge neural-net' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+219,Funskool Creative Learning Kit yf-6853,Toys,386.54,Funskool,"Let your child explore with Zephyr's safe doll, designed to spark creativity and fun."
+220,Tata Motors Connected Device Yj-0515,Electronics,6.43,Tata Motors,"Voltas presents its latest high-performance device, engineered for seamless performance and cutting-edge innovation."
+221,Tata Motors Smart Device CN-4727,Electronics,430.18,Tata Motors,"Boat presents its latest smart device, engineered for seamless performance and cutting-edge innovation."
+222,Funskool Immersive Creative Set JU-0432,Toys,97.08,Funskool,"Let your child explore with Funskool's safe playset, designed to spark creativity and fun."
+223,Nivia Professional Gear th-6143,Sports,278.27,Nivia,"Gear up with Shiv-Naresh's competition equipment, crafted to boost your performance and endurance on the field."
+224,Nivia Premium Series hF-6971,Sports,210.82,Nivia,"Gear up with Shiv-Naresh's training accessories, crafted to boost your performance and endurance on the field."
+225,Nivia Competition Accessories Tj-0893,Sports,361.23,Nivia,"Gear up with TYKA's competition equipment, crafted to boost your performance and endurance on the field."
+226,Tata Motors Connected Device KA-0953,Electronics,188.72,Tata Motors,"Voltas presents its latest compact device, engineered for seamless performance and cutting-edge innovation."
+227,FabIndia Chanderi Ensemble IG-8518,Clothing,435.53,FabIndia,"Experience the elegance of FabIndia's Moccasin cotton saree, crafted for comfort and sophistication."
+228,Tata Motors High Performance Gadget Oy-0670,Electronics,366.6,Tata Motors,"Voltas presents its latest smart gadget, engineered for seamless performance and cutting-edge innovation."
+229,Mamaearth Radiant Skin Oil pU-0515,Beauty,325.62,Mamaearth,"Pamper your skin with Biotique's ayurvedic mask, specially formulated for radiant and healthy skin."
+230,Godrej Interio Energy Efficient Cookware Set Iv-5205,Home & Kitchen,399.14,Godrej Interio,Discover Havells's modular solution for your modern home — designed for durability and style.
+231,Nivia Performance Equipment TX-7221,Sports,378.24,Nivia,"Gear up with Shiv-Naresh's competition equipment, crafted to boost your performance and endurance on the field."
+232,FabIndia Linen Ensemble cu-4303,Clothing,22.79,FabIndia,"Experience the elegance of FabIndia's PaleTurquoise silk shirt, crafted for comfort and sophistication."
+233,'Universal foreground data-warehouse' by Penguin India cW-6874,Books,200.39,Penguin India,"Secured value-added collaboration' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+234,'Cross-platform heuristic hardware' by Penguin India Pv-3450,Books,465.75,Penguin India,"Front-line cohesive website' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+235,Godrej Interio Premium Home System VC-1566,Home & Kitchen,67.23,Godrej Interio,Discover Godrej Interio's modular solution for your modern home — designed for durability and style.
+236,Pantaloons Linen Kurta ZH-2775,Clothing,369.86,Pantaloons,"Experience the elegance of Raymond's Fuchsia silk kurta, crafted for comfort and sophistication."
+237,Tata Motors High Performance Gadget lI-6169,Electronics,487.42,Tata Motors,"Reliance Digital presents its latest high-performance gadget, engineered for seamless performance and cutting-edge innovation."
+238,Tata Motors Digital System tC-1154,Electronics,30.84,Tata Motors,"Micromax presents its latest compact appliance, engineered for seamless performance and cutting-edge innovation."
+239,Himalaya Moisturizing Oil cU-2757,Beauty,342.69,Himalaya,"Pamper your skin with Mamaearth's natural cream, specially formulated for radiant and healthy skin."
+240,Himalaya Revitalizing Mask QO-6401,Beauty,236.74,Himalaya,"Pamper your skin with Himalaya's organic cream, specially formulated for radiant and healthy skin."
+241,Tata Motors Compact Device MR-8202,Electronics,291.69,Tata Motors,"Boat presents its latest high-performance device, engineered for seamless performance and cutting-edge innovation."
+242,'Realigned directional software' by Penguin India xy-2135,Books,47.24,Penguin India,"Multi-tiered 5thgeneration leverage' — a captivating read from Jaico Publishing, bringing you stories that inspire and engage."
+243,Nivia Performance Equipment xx-0927,Sports,26.29,Nivia,"Gear up with Nivia's professional equipment, crafted to boost your performance and endurance on the field."
+244,'Universal foreground data-warehouse' by Penguin India zu-9285,Books,335.1,Penguin India,"Persevering grid-enabled function' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+245,Himalaya Revitalizing Oil Vl-4310,Beauty,412.54,Himalaya,"Pamper your skin with Mamaearth's ayurvedic cream, specially formulated for radiant and healthy skin."
+246,Godrej Interio Premium Cooktop Xq-6814,Home & Kitchen,392.1,Godrej Interio,Discover Havells's modular solution for your modern home — designed for durability and style.
+247,Tata Motors Smart System hi-9473,Electronics,274.18,Tata Motors,"Reliance Digital presents its latest high-performance device, engineered for seamless performance and cutting-edge innovation."
+248,Himalaya Radiant Skin Oil Qw-2715,Beauty,54.43,Himalaya,"Pamper your skin with Forest Essentials's organic serum, specially formulated for radiant and healthy skin."
+249,Himalaya Anti Aging Mask TT-8442,Beauty,345.58,Himalaya,"Pamper your skin with Mamaearth's organic cream, specially formulated for radiant and healthy skin."
+250,Nivia Training Accessories Yi-8313,Sports,124.73,Nivia,"Gear up with Cosco's training gear, crafted to boost your performance and endurance on the field."
+251,Tata Motors Digital Appliance xD-0589,Electronics,455.98,Tata Motors,"Voltas presents its latest high-performance appliance, engineered for seamless performance and cutting-edge innovation."
+252,Nivia Performance Series zT-9114,Sports,419.94,Nivia,"Gear up with Cosco's training accessories, crafted to boost your performance and endurance on the field."
+253,Tata Motors Smart System iu-6691,Electronics,356.14,Tata Motors,"Tata Motors presents its latest high-performance gadget, engineered for seamless performance and cutting-edge innovation."
+254,Nivia Premium Gear XJ-7852,Sports,474.68,Nivia,"Gear up with SG's professional equipment, crafted to boost your performance and endurance on the field."
+255,'Streamlined tangible moratorium' by Penguin India hH-2680,Books,20.55,Penguin India,"Fundamental context-sensitive paradigm' — a captivating read from Rupa Publications, bringing you stories that inspire and engage."
+256,Crompton Space Saving Storage Solution To-4225,Home & Kitchen,369.42,Crompton,Discover Prestige's energy-efficient solution for your modern home — designed for durability and style.
+257,Crompton Space Saving Cooktop OJ-4143,Home & Kitchen,168.47,Crompton,Discover Prestige's modular solution for your modern home — designed for durability and style.
+258,Tata Motors Connected Solution GP-4981,Electronics,453.5,Tata Motors,"Voltas presents its latest smart appliance, engineered for seamless performance and cutting-edge innovation."
+259,FabIndia Linen Ensemble UM-9229,Clothing,137.0,FabIndia,"Experience the elegance of Pantaloons's Maroon silk saree, crafted for comfort and sophistication."
+260,Funskool Immersive Toy PX-0010,Toys,363.8,Funskool,"Let your child explore with Mirada's interactive learning tool, designed to spark creativity and fun."
+261,Himalaya Revitalizing Oil Ob-3969,Beauty,439.44,Himalaya,"Pamper your skin with Mamaearth's natural cream, specially formulated for radiant and healthy skin."
+262,Himalaya Revitalizing Mask ZZ-4473,Beauty,25.62,Himalaya,"Pamper your skin with Forest Essentials's organic mask, specially formulated for radiant and healthy skin."
+263,Tata Motors Compact System CA-7102,Electronics,201.84,Tata Motors,"Reliance Digital presents its latest smart gadget, engineered for seamless performance and cutting-edge innovation."
+264,Nivia Competition Kit uT-3592,Sports,382.34,Nivia,"Gear up with Nivia's professional accessories, crafted to boost your performance and endurance on the field."
+265,FabIndia Linen Saree Jg-6258,Clothing,230.18,FabIndia,"Experience the elegance of Biba's Turquoise silk kurta, crafted for comfort and sophistication."
+266,'Cross-group didactic emulation' by Penguin India pj-7147,Books,137.29,Penguin India,"Public-key systemic success' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+267,Nivia Training Kit Ap-0469,Sports,113.8,Nivia,"Gear up with Cosco's competition accessories, crafted to boost your performance and endurance on the field."
+268,Nivia Performance Accessories FG-9532,Sports,70.1,Nivia,"Gear up with Nivia's competition equipment, crafted to boost your performance and endurance on the field."
+269,Tata Motors Compact Appliance zG-4701,Electronics,429.28,Tata Motors,"Tata Motors presents its latest compact gadget, engineered for seamless performance and cutting-edge innovation."
+270,Tata Motors Compact Solution ds-3950,Electronics,289.8,Tata Motors,"Boat presents its latest smart appliance, engineered for seamless performance and cutting-edge innovation."
+271,Himalaya Anti Aging Mask gB-7480,Beauty,42.81,Himalaya,"Pamper your skin with Forest Essentials's organic mask, specially formulated for radiant and healthy skin."
+272,Tata Motors Digital Solution zd-5650,Electronics,194.38,Tata Motors,"Tata Motors presents its latest compact appliance, engineered for seamless performance and cutting-edge innovation."
+273,Tata Motors Digital System ey-3584,Electronics,187.03,Tata Motors,"Tata Motors presents its latest smart appliance, engineered for seamless performance and cutting-edge innovation."
+274,Tata Motors Smart System hi-8499,Electronics,94.96,Tata Motors,"Micromax presents its latest compact appliance, engineered for seamless performance and cutting-edge innovation."
+275,Himalaya Anti Aging Oil Wj-5585,Beauty,220.58,Himalaya,"Pamper your skin with Lotus Herbals's organic mask, specially formulated for radiant and healthy skin."
+276,'Realigned dedicated structure' by Penguin India cc-8680,Books,169.39,Penguin India,"Open-source fresh-thinking initiative' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+277,'Robust scalable concept' by Penguin India jM-5787,Books,174.19,Penguin India,"Total explicit neural-net' — a captivating read from Westland Books, bringing you stories that inspire and engage."
+278,Funskool Immersive Toy kz-2595,Toys,370.82,Funskool,"Let your child explore with Funskool's educational playset, designed to spark creativity and fun."
+279,Funskool Immersive Toy IF-9588,Toys,115.52,Funskool,"Let your child explore with Hamleys India's interactive learning tool, designed to spark creativity and fun."
+280,Tata Motors Compact Solution Rh-7055,Electronics,322.72,Tata Motors,"Voltas presents its latest compact appliance, engineered for seamless performance and cutting-edge innovation."
+281,Funskool Immersive Creative Set qP-4097,Toys,287.47,Funskool,"Let your child explore with Chicco India's safe playset, designed to spark creativity and fun."
+282,Mamaearth Natural Lotion kH-3097,Beauty,286.21,Mamaearth,"Pamper your skin with Biotique's natural mask, specially formulated for radiant and healthy skin."
+283,'Adaptive well-modulated workforce' by Penguin India Sh-2309,Books,333.19,Penguin India,"Innovative impactful neural-net' — a captivating read from Westland Books, bringing you stories that inspire and engage."
+284,Nivia Training Accessories jA-0756,Sports,276.45,Nivia,"Gear up with Cosco's professional gear, crafted to boost your performance and endurance on the field."
+285,'Public-key upward-trending encryption' by Penguin India Ti-8970,Books,440.23,Penguin India,"Horizontal demand-driven Internet solution' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+286,'Public-key bottom-line implementation' by Penguin India Hy-3857,Books,339.41,Penguin India,"Reduced real-time projection' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+287,Himalaya Moisturizing Oil Iw-2785,Beauty,275.75,Himalaya,"Pamper your skin with Lotus Herbals's organic serum, specially formulated for radiant and healthy skin."
+288,Funskool Interactive Toy Jt-7334,Toys,415.73,Funskool,"Let your child explore with Hamleys India's interactive doll, designed to spark creativity and fun."
+289,Nivia Premium Kit Ew-4375,Sports,305.04,Nivia,"Gear up with Shiv-Naresh's competition equipment, crafted to boost your performance and endurance on the field."
+290,Mamaearth Moisturizing Serum yz-4198,Beauty,149.12,Mamaearth,"Pamper your skin with Biotique's natural serum, specially formulated for radiant and healthy skin."
+291,Tata Motors High Performance System wC-4041,Electronics,107.51,Tata Motors,"Micromax presents its latest high-performance device, engineered for seamless performance and cutting-edge innovation."
+292,Godrej Interio Space Saving Cooktop JS-3384,Home & Kitchen,80.4,Godrej Interio,Discover Havells's space-saving solution for your modern home — designed for durability and style.
+293,'Streamlined modular infrastructure' by Penguin India pd-1993,Books,450.23,Penguin India,"Configurable executive migration' — a captivating read from Westland Books, bringing you stories that inspire and engage."
+294,Godrej Interio Space Saving Cookware Set gA-8330,Home & Kitchen,356.52,Godrej Interio,Discover Butterfly's space-saving solution for your modern home — designed for durability and style.
+295,Mamaearth Revitalizing Lotion kA-1208,Beauty,469.0,Mamaearth,"Pamper your skin with Biotique's natural mask, specially formulated for radiant and healthy skin."
+296,Mamaearth Radiant Skin Oil Pd-3454,Beauty,303.63,Mamaearth,"Pamper your skin with Biotique's organic cream, specially formulated for radiant and healthy skin."
+297,Himalaya Radiant Skin Lotion Al-3802,Beauty,239.33,Himalaya,"Pamper your skin with Forest Essentials's ayurvedic mask, specially formulated for radiant and healthy skin."
+298,Crompton Smart Storage Solution at-7240,Home & Kitchen,34.56,Crompton,Discover Prestige's energy-efficient solution for your modern home — designed for durability and style.
+299,Himalaya Natural Lotion PI-1547,Beauty,337.46,Himalaya,"Pamper your skin with Himalaya's ayurvedic cream, specially formulated for radiant and healthy skin."
+300,Tata Motors Smart Gadget mZ-2874,Electronics,293.19,Tata Motors,"Boat presents its latest smart device, engineered for seamless performance and cutting-edge innovation."
+301,Himalaya Moisturizing Mask aV-2742,Beauty,495.15,Himalaya,"Pamper your skin with Lotus Herbals's ayurvedic cream, specially formulated for radiant and healthy skin."
+302,FabIndia Khadi Ensemble Oz-9329,Clothing,123.38,FabIndia,"Experience the elegance of Manyavar's Cornsilk silk shirt, crafted for comfort and sophistication."
+303,Funskool Safe Toy li-5161,Toys,267.71,Funskool,"Let your child explore with Mirada's interactive doll, designed to spark creativity and fun."
+304,Godrej Interio Space Saving Home System pC-3046,Home & Kitchen,327.22,Godrej Interio,Discover Butterfly's space-saving solution for your modern home — designed for durability and style.
+305,FabIndia Linen Saree qP-4990,Clothing,324.07,FabIndia,"Experience the elegance of Pantaloons's OliveDrab linen kurta, crafted for comfort and sophistication."
+306,Himalaya Natural Mask kz-0174,Beauty,282.84,Himalaya,"Pamper your skin with Himalaya's organic serum, specially formulated for radiant and healthy skin."
+307,Tata Motors Connected System oo-1459,Electronics,389.58,Tata Motors,"Voltas presents its latest smart device, engineered for seamless performance and cutting-edge innovation."
+308,'Future-proofed scalable solution' by Penguin India AS-2795,Books,106.47,Penguin India,"Streamlined system-worthy ability' — a captivating read from Rupa Publications, bringing you stories that inspire and engage."
+309,Nivia Premium Equipment RW-7833,Sports,364.19,Nivia,"Gear up with Nivia's professional gear, crafted to boost your performance and endurance on the field."
+310,Funskool Educational Playset eK-8785,Toys,311.77,Funskool,"Let your child explore with Funskool's educational playset, designed to spark creativity and fun."
+311,Nivia Training Kit Ij-8839,Sports,448.56,Nivia,"Gear up with TYKA's competition accessories, crafted to boost your performance and endurance on the field."
+312,Himalaya Revitalizing Cream TL-8713,Beauty,424.36,Himalaya,"Pamper your skin with Mamaearth's organic cream, specially formulated for radiant and healthy skin."
+313,Funskool Safe Game iG-8707,Toys,161.0,Funskool,"Let your child explore with Chicco India's safe playset, designed to spark creativity and fun."
+314,Funskool Creative Playset RZ-9087,Toys,141.74,Funskool,"Let your child explore with Funskool's educational doll, designed to spark creativity and fun."
+315,Tata Motors Smart System Le-6403,Electronics,490.92,Tata Motors,"Reliance Digital presents its latest smart gadget, engineered for seamless performance and cutting-edge innovation."
+316,Funskool Educational Toy eE-5180,Toys,266.0,Funskool,"Let your child explore with Zephyr's safe learning tool, designed to spark creativity and fun."
+317,Godrej Interio Premium Cookware Set xy-6226,Home & Kitchen,453.68,Godrej Interio,Discover Crompton's space-saving solution for your modern home — designed for durability and style.
+318,Pantaloons Cotton Saree Pw-6182,Clothing,86.12,Pantaloons,"Experience the elegance of Raymond's Red linen saree, crafted for comfort and sophistication."
+319,FabIndia Cotton Kurta Uo-8682,Clothing,323.2,FabIndia,"Experience the elegance of Biba's Tan linen shirt, crafted for comfort and sophistication."
+320,FabIndia Silk Saree Iy-4786,Clothing,405.88,FabIndia,"Experience the elegance of Manyavar's RosyBrown silk shirt, crafted for comfort and sophistication."
+321,Godrej Interio Modular Kitchen Solution mU-7524,Home & Kitchen,473.96,Godrej Interio,Discover Butterfly's modular solution for your modern home — designed for durability and style.
+322,Nivia Professional Series ne-6903,Sports,171.98,Nivia,"Gear up with SG's competition gear, crafted to boost your performance and endurance on the field."
+323,Tata Motors Smart System pV-0790,Electronics,363.87,Tata Motors,"Voltas presents its latest compact gadget, engineered for seamless performance and cutting-edge innovation."
+324,Funskool Educational Learning Kit WX-7383,Toys,271.71,Funskool,"Let your child explore with Zephyr's educational learning tool, designed to spark creativity and fun."
+325,Godrej Interio Smart Home System uK-8439,Home & Kitchen,35.01,Godrej Interio,Discover Crompton's energy-efficient solution for your modern home — designed for durability and style.
+326,FabIndia Linen Shirt oA-3428,Clothing,346.55,FabIndia,"Experience the elegance of FabIndia's LawnGreen linen saree, crafted for comfort and sophistication."
+327,Himalaya Revitalizing Oil OR-0892,Beauty,346.6,Himalaya,"Pamper your skin with Lotus Herbals's organic serum, specially formulated for radiant and healthy skin."
+328,'Public-key bottom-line implementation' by Penguin India YH-7056,Books,465.65,Penguin India,"Compatible transitional forecast' — a captivating read from Jaico Publishing, bringing you stories that inspire and engage."
+329,Funskool Immersive Game yl-6624,Toys,251.17,Funskool,"Let your child explore with Zephyr's educational doll, designed to spark creativity and fun."
+330,Godrej Interio Modular Storage Solution ZD-3342,Home & Kitchen,118.97,Godrej Interio,Discover Havells's energy-efficient solution for your modern home — designed for durability and style.
+331,Crompton Energy Efficient Home System iy-6688,Home & Kitchen,27.06,Crompton,Discover Prestige's energy-efficient solution for your modern home — designed for durability and style.
+332,Tata Motors Digital Appliance xf-3517,Electronics,210.74,Tata Motors,"Tata Motors presents its latest high-performance device, engineered for seamless performance and cutting-edge innovation."
+333,Tata Motors Smart Appliance Mc-0469,Electronics,154.45,Tata Motors,"Boat presents its latest smart device, engineered for seamless performance and cutting-edge innovation."
+334,Godrej Interio Space Saving Kitchen Solution nv-9837,Home & Kitchen,381.74,Godrej Interio,Discover Crompton's modular solution for your modern home — designed for durability and style.
+335,Pantaloons Chanderi Saree pS-3317,Clothing,180.36,Pantaloons,"Experience the elegance of Raymond's DeepSkyBlue silk shirt, crafted for comfort and sophistication."
+336,'Cloned 6thgeneration protocol' by Penguin India Xs-6385,Books,474.79,Penguin India,"Triple-buffered didactic architecture' — a captivating read from Jaico Publishing, bringing you stories that inspire and engage."
+337,Funskool Immersive Game qx-7854,Toys,481.34,Funskool,"Let your child explore with Funskool's interactive doll, designed to spark creativity and fun."
+338,Tata Motors High Performance System nx-7175,Electronics,312.35,Tata Motors,"Boat presents its latest compact appliance, engineered for seamless performance and cutting-edge innovation."
+339,Funskool Immersive Creative Set bq-0932,Toys,464.69,Funskool,"Let your child explore with Chicco India's interactive doll, designed to spark creativity and fun."
+340,FabIndia Silk Dress mv-9642,Clothing,381.62,FabIndia,"Experience the elegance of Pantaloons's PeachPuff cotton kurta, crafted for comfort and sophistication."
+341,Funskool Creative Toy PR-9378,Toys,275.7,Funskool,"Let your child explore with Hamleys India's interactive learning tool, designed to spark creativity and fun."
+342,Himalaya Moisturizing Serum UY-7772,Beauty,94.25,Himalaya,"Pamper your skin with Himalaya's natural cream, specially formulated for radiant and healthy skin."
+343,Tata Motors Smart Solution IP-2872,Electronics,232.01,Tata Motors,"Reliance Digital presents its latest high-performance gadget, engineered for seamless performance and cutting-edge innovation."
+344,Pantaloons Silk Kurta Ai-0100,Clothing,282.63,Pantaloons,"Experience the elegance of Raymond's MidnightBlue silk kurta, crafted for comfort and sophistication."
+345,FabIndia Cotton Ensemble Dx-2038,Clothing,432.66,FabIndia,"Experience the elegance of FabIndia's PeachPuff silk saree, crafted for comfort and sophistication."
+346,'Future-proofed scalable solution' by Penguin India aI-9770,Books,243.26,Penguin India,"Public-key value-added support' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+347,'Diverse maximized implementation' by Penguin India Ur-6008,Books,449.35,Penguin India,"Quality-focused real-time definition' — a captivating read from Westland Books, bringing you stories that inspire and engage."
+348,Himalaya Radiant Skin Cream Zl-4086,Beauty,338.8,Himalaya,"Pamper your skin with Mamaearth's organic cream, specially formulated for radiant and healthy skin."
+349,FabIndia Linen Shirt NH-8233,Clothing,72.81,FabIndia,"Experience the elegance of FabIndia's SlateBlue silk saree, crafted for comfort and sophistication."
+350,Nivia Premium Gear zD-4615,Sports,497.52,Nivia,"Gear up with SG's professional gear, crafted to boost your performance and endurance on the field."
+351,FabIndia Khadi Dress fz-3410,Clothing,265.98,FabIndia,"Experience the elegance of Manyavar's PaleGreen silk shirt, crafted for comfort and sophistication."
+352,'Optimized 5thgeneration algorithm' by Penguin India Sk-8700,Books,198.97,Penguin India,"Up-sized composite Local Area Network' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+353,Nivia Professional Gear gH-7659,Sports,331.26,Nivia,"Gear up with Nivia's professional accessories, crafted to boost your performance and endurance on the field."
+354,Tata Motors High Performance Solution ce-3974,Electronics,58.9,Tata Motors,"Boat presents its latest high-performance device, engineered for seamless performance and cutting-edge innovation."
+355,Tata Motors Digital Appliance bn-9025,Electronics,320.09,Tata Motors,"Reliance Digital presents its latest compact appliance, engineered for seamless performance and cutting-edge innovation."
+356,Funskool Immersive Game Kp-6142,Toys,251.63,Funskool,"Let your child explore with Funskool's safe learning tool, designed to spark creativity and fun."
+357,Godrej Interio Modular Storage Solution YS-8562,Home & Kitchen,206.3,Godrej Interio,Discover Butterfly's modular solution for your modern home — designed for durability and style.
+358,'Configurable neutral frame' by Penguin India oe-5016,Books,476.74,Penguin India,"Configurable secondary interface' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+359,Godrej Interio Modular Home System Xu-9996,Home & Kitchen,263.66,Godrej Interio,Discover Godrej Interio's modular solution for your modern home — designed for durability and style.
+360,Nivia Performance Gear Jy-7735,Sports,113.46,Nivia,"Gear up with Nivia's training equipment, crafted to boost your performance and endurance on the field."
+361,'Extended well-modulated Graphical User Interface' by Penguin India sZ-9619,Books,232.19,Penguin India,"Business-focused empowering implementation' — a captivating read from Westland Books, bringing you stories that inspire and engage."
+362,Himalaya Anti Aging Lotion yT-1142,Beauty,460.1,Himalaya,"Pamper your skin with Mamaearth's organic cream, specially formulated for radiant and healthy skin."
+363,FabIndia Khadi Shirt at-5511,Clothing,92.17,FabIndia,"Experience the elegance of Manyavar's MediumSlateBlue silk saree, crafted for comfort and sophistication."
+364,Himalaya Revitalizing Oil lB-4121,Beauty,110.91,Himalaya,"Pamper your skin with Lotus Herbals's organic serum, specially formulated for radiant and healthy skin."
+365,Nivia Competition Series bf-8861,Sports,11.45,Nivia,"Gear up with TYKA's training gear, crafted to boost your performance and endurance on the field."
+366,'Robust empowering workforce' by Penguin India ya-1995,Books,12.02,Penguin India,"Configurable methodical adapter' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+367,Nivia Premium Gear pK-6618,Sports,415.55,Nivia,"Gear up with TYKA's competition accessories, crafted to boost your performance and endurance on the field."
+368,Pantaloons Khadi Saree tr-6224,Clothing,367.4,Pantaloons,"Experience the elegance of Raymond's Ivory cotton saree, crafted for comfort and sophistication."
+369,Tata Motors Compact Device At-1264,Electronics,180.75,Tata Motors,"Boat presents its latest high-performance device, engineered for seamless performance and cutting-edge innovation."
+370,Tata Motors Connected System MN-5437,Electronics,350.66,Tata Motors,"Micromax presents its latest high-performance device, engineered for seamless performance and cutting-edge innovation."
+371,Nivia Premium Accessories zv-1240,Sports,200.63,Nivia,"Gear up with Cosco's professional equipment, crafted to boost your performance and endurance on the field."
+372,Godrej Interio Energy Efficient Home System PM-5756,Home & Kitchen,476.68,Godrej Interio,Discover Godrej Interio's modular solution for your modern home — designed for durability and style.
+373,'Focused zero administration frame' by Penguin India ul-5937,Books,483.69,Penguin India,"Ameliorated regional collaboration' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+374,'Public-key bottom-line implementation' by Penguin India Yp-5479,Books,199.43,Penguin India,"Front-line clear-thinking leverage' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+375,Tata Motors Connected Solution hK-6465,Electronics,427.84,Tata Motors,"Reliance Digital presents its latest high-performance device, engineered for seamless performance and cutting-edge innovation."
+376,Funskool Interactive Game UD-8280,Toys,387.68,Funskool,"Let your child explore with Mirada's safe playset, designed to spark creativity and fun."
+377,Mamaearth Moisturizing Serum iO-4167,Beauty,158.45,Mamaearth,"Pamper your skin with Biotique's organic mask, specially formulated for radiant and healthy skin."
+378,Funskool Immersive Game eC-4266,Toys,119.86,Funskool,"Let your child explore with Hamleys India's interactive doll, designed to spark creativity and fun."
+379,FabIndia Chanderi Kurta SA-9688,Clothing,231.83,FabIndia,"Experience the elegance of Pantaloons's DarkOrange cotton shirt, crafted for comfort and sophistication."
+380,Himalaya Anti Aging Mask gX-5891,Beauty,391.77,Himalaya,"Pamper your skin with Forest Essentials's ayurvedic serum, specially formulated for radiant and healthy skin."
+381,Himalaya Revitalizing Mask PR-2909,Beauty,480.28,Himalaya,"Pamper your skin with Lotus Herbals's ayurvedic mask, specially formulated for radiant and healthy skin."
+382,Nivia Premium Series qo-6101,Sports,382.97,Nivia,"Gear up with Cosco's professional gear, crafted to boost your performance and endurance on the field."
+383,Tata Motors Compact System Cx-8993,Electronics,428.33,Tata Motors,"Tata Motors presents its latest high-performance appliance, engineered for seamless performance and cutting-edge innovation."
+384,Funskool Educational Toy bE-9825,Toys,303.52,Funskool,"Let your child explore with Hamleys India's interactive doll, designed to spark creativity and fun."
+385,Funskool Creative Game wt-6112,Toys,418.53,Funskool,"Let your child explore with Zephyr's safe playset, designed to spark creativity and fun."
+386,Tata Motors Compact System Eg-3875,Electronics,393.29,Tata Motors,"Voltas presents its latest smart appliance, engineered for seamless performance and cutting-edge innovation."
+387,Funskool Educational Playset ZT-5140,Toys,191.61,Funskool,"Let your child explore with Mirada's safe learning tool, designed to spark creativity and fun."
+388,Tata Motors Digital Appliance Hl-5123,Electronics,278.24,Tata Motors,"Micromax presents its latest smart device, engineered for seamless performance and cutting-edge innovation."
+389,Nivia Performance Gear oZ-5867,Sports,403.35,Nivia,"Gear up with SG's competition gear, crafted to boost your performance and endurance on the field."
+390,Godrej Interio Energy Efficient Cookware Set VN-2660,Home & Kitchen,27.8,Godrej Interio,Discover Crompton's space-saving solution for your modern home — designed for durability and style.
+391,Himalaya Anti Aging Mask Tn-9660,Beauty,405.0,Himalaya,"Pamper your skin with Himalaya's natural cream, specially formulated for radiant and healthy skin."
+392,Nivia Competition Gear lx-1918,Sports,93.05,Nivia,"Gear up with Nivia's competition equipment, crafted to boost your performance and endurance on the field."
+393,'Public-key bottom-line implementation' by Penguin India HO-7147,Books,259.77,Penguin India,"Monitored national interface' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+394,FabIndia Linen Shirt Lh-9696,Clothing,405.1,FabIndia,"Experience the elegance of Biba's CornflowerBlue linen saree, crafted for comfort and sophistication."
+395,Godrej Interio Modular Cooktop NL-7924,Home & Kitchen,130.64,Godrej Interio,Discover Havells's space-saving solution for your modern home — designed for durability and style.
+396,'Re-engineered content-based strategy' by Penguin India hl-5134,Books,126.67,Penguin India,"Stand-alone global access' — a captivating read from Rupa Publications, bringing you stories that inspire and engage."
+397,Mamaearth Natural Lotion Mi-2866,Beauty,204.37,Mamaearth,"Pamper your skin with Biotique's organic serum, specially formulated for radiant and healthy skin."
+398,Funskool Interactive Creative Set SP-6278,Toys,447.85,Funskool,"Let your child explore with Funskool's educational doll, designed to spark creativity and fun."
+399,Tata Motors Compact Solution lu-2742,Electronics,5.22,Tata Motors,"Boat presents its latest compact appliance, engineered for seamless performance and cutting-edge innovation."
+400,Mamaearth Revitalizing Oil im-0507,Beauty,451.18,Mamaearth,"Pamper your skin with Biotique's organic mask, specially formulated for radiant and healthy skin."
+401,Nivia Performance Accessories AT-8767,Sports,81.13,Nivia,"Gear up with Cosco's professional gear, crafted to boost your performance and endurance on the field."
+402,FabIndia Silk Shirt YW-2190,Clothing,495.09,FabIndia,"Experience the elegance of Biba's Turquoise cotton shirt, crafted for comfort and sophistication."
+403,Nivia Performance Series sk-0438,Sports,477.65,Nivia,"Gear up with TYKA's competition gear, crafted to boost your performance and endurance on the field."
+404,Godrej Interio Space Saving Storage Solution Kh-7881,Home & Kitchen,249.86,Godrej Interio,Discover Godrej Interio's space-saving solution for your modern home — designed for durability and style.
+405,Crompton Premium Kitchen Solution In-5807,Home & Kitchen,258.8,Crompton,Discover Prestige's space-saving solution for your modern home — designed for durability and style.
+406,FabIndia Cotton Dress qw-3407,Clothing,243.37,FabIndia,"Experience the elegance of Manyavar's PowderBlue silk saree, crafted for comfort and sophistication."
+407,'User-friendly next generation monitoring' by Penguin India Sw-1339,Books,319.54,Penguin India,"Upgradable optimizing flexibility' — a captivating read from Westland Books, bringing you stories that inspire and engage."
+408,'Diverse tangible interface' by Penguin India iY-9629,Books,49.91,Penguin India,"Inverse dynamic array' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+409,Godrej Interio Smart Storage Solution Ir-3095,Home & Kitchen,21.15,Godrej Interio,Discover Crompton's energy-efficient solution for your modern home — designed for durability and style.
+410,Godrej Interio Smart Kitchen Solution Kr-2544,Home & Kitchen,33.56,Godrej Interio,Discover Crompton's energy-efficient solution for your modern home — designed for durability and style.
+411,Funskool Interactive Learning Kit Pi-2604,Toys,224.96,Funskool,"Let your child explore with Chicco India's educational doll, designed to spark creativity and fun."
+412,Tata Motors Digital Gadget Fj-2536,Electronics,141.4,Tata Motors,"Reliance Digital presents its latest high-performance appliance, engineered for seamless performance and cutting-edge innovation."
+413,Funskool Educational Game OY-6671,Toys,312.91,Funskool,"Let your child explore with Funskool's safe doll, designed to spark creativity and fun."
+414,Funskool Immersive Playset Fu-8457,Toys,496.26,Funskool,"Let your child explore with Chicco India's interactive playset, designed to spark creativity and fun."
+415,'Focused zero administration frame' by Penguin India YI-1751,Books,196.23,Penguin India,"Proactive fresh-thinking contingency' — a captivating read from Westland Books, bringing you stories that inspire and engage."
+416,Pantaloons Linen Shirt ru-3637,Clothing,289.05,Pantaloons,"Experience the elegance of Raymond's MidnightBlue silk kurta, crafted for comfort and sophistication."
+417,'Configurable neutral frame' by Penguin India FY-8929,Books,210.72,Penguin India,"Fundamental global focus group' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+418,Tata Motors Connected System bh-0017,Electronics,424.4,Tata Motors,"Voltas presents its latest high-performance appliance, engineered for seamless performance and cutting-edge innovation."
+419,Nivia Competition Gear Si-7063,Sports,451.61,Nivia,"Gear up with Cosco's training accessories, crafted to boost your performance and endurance on the field."
+420,Godrej Interio Energy Efficient Kitchen Solution fx-4154,Home & Kitchen,439.29,Godrej Interio,Discover Godrej Interio's modular solution for your modern home — designed for durability and style.
+421,Godrej Interio Modular Kitchen Solution Pf-6436,Home & Kitchen,487.31,Godrej Interio,Discover Crompton's space-saving solution for your modern home — designed for durability and style.
+422,Tata Motors Digital System Lo-3712,Electronics,18.62,Tata Motors,"Tata Motors presents its latest smart device, engineered for seamless performance and cutting-edge innovation."
+423,Funskool Interactive Game BS-0051,Toys,420.71,Funskool,"Let your child explore with Funskool's educational learning tool, designed to spark creativity and fun."
+424,FabIndia Cotton Kurta UZ-1361,Clothing,377.13,FabIndia,"Experience the elegance of FabIndia's LawnGreen silk saree, crafted for comfort and sophistication."
+425,Godrej Interio Energy Efficient Cooktop yX-5542,Home & Kitchen,118.2,Godrej Interio,Discover Havells's space-saving solution for your modern home — designed for durability and style.
+426,Himalaya Anti Aging Lotion NP-1890,Beauty,478.38,Himalaya,"Pamper your skin with Himalaya's organic mask, specially formulated for radiant and healthy skin."
+427,Funskool Safe Learning Kit NR-5326,Toys,78.35,Funskool,"Let your child explore with Mirada's safe doll, designed to spark creativity and fun."
+428,Godrej Interio Premium Home System LU-1121,Home & Kitchen,341.38,Godrej Interio,Discover Crompton's energy-efficient solution for your modern home — designed for durability and style.
+429,Himalaya Radiant Skin Serum rP-6523,Beauty,116.32,Himalaya,"Pamper your skin with Forest Essentials's ayurvedic cream, specially formulated for radiant and healthy skin."
+430,Tata Motors Smart Gadget sX-8999,Electronics,218.53,Tata Motors,"Boat presents its latest compact device, engineered for seamless performance and cutting-edge innovation."
+431,Tata Motors Compact Gadget mV-3898,Electronics,360.98,Tata Motors,"Boat presents its latest compact appliance, engineered for seamless performance and cutting-edge innovation."
+432,Funskool Safe Creative Set hp-0376,Toys,283.85,Funskool,"Let your child explore with Mirada's educational doll, designed to spark creativity and fun."
+433,Crompton Premium Storage Solution ui-1805,Home & Kitchen,216.61,Crompton,Discover Prestige's space-saving solution for your modern home — designed for durability and style.
+434,'Profound modular array' by Penguin India WE-6582,Books,166.54,Penguin India,"Reduced holistic leverage' — a captivating read from Jaico Publishing, bringing you stories that inspire and engage."
+435,Himalaya Anti Aging Cream aq-1091,Beauty,420.63,Himalaya,"Pamper your skin with Himalaya's natural mask, specially formulated for radiant and healthy skin."
+436,FabIndia Chanderi Dress OT-0684,Clothing,76.19,FabIndia,"Experience the elegance of Pantaloons's MediumPurple silk saree, crafted for comfort and sophistication."
+437,Godrej Interio Energy Efficient Home System IN-6618,Home & Kitchen,217.9,Godrej Interio,Discover Godrej Interio's energy-efficient solution for your modern home — designed for durability and style.
+438,FabIndia Silk Ensemble nZ-1418,Clothing,452.36,FabIndia,"Experience the elegance of FabIndia's LightPink linen saree, crafted for comfort and sophistication."
+439,Godrej Interio Premium Cooktop tS-5691,Home & Kitchen,423.7,Godrej Interio,Discover Crompton's energy-efficient solution for your modern home — designed for durability and style.
+440,'Intuitive impactful flexibility' by Penguin India hD-0316,Books,203.47,Penguin India,"Function-based discrete capability' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+441,'User-friendly next generation monitoring' by Penguin India ha-9042,Books,382.74,Penguin India,"Up-sized content-based functionalities' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+442,Funskool Immersive Toy wH-2027,Toys,412.46,Funskool,"Let your child explore with Mirada's educational learning tool, designed to spark creativity and fun."
+443,Funskool Educational Toy Uh-2524,Toys,445.0,Funskool,"Let your child explore with Zephyr's safe learning tool, designed to spark creativity and fun."
+444,'Realigned directional software' by Penguin India qT-6481,Books,274.53,Penguin India,"Enterprise-wide content-based data-warehouse' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+445,Nivia Performance Series xd-1778,Sports,106.21,Nivia,"Gear up with Nivia's competition gear, crafted to boost your performance and endurance on the field."
+446,'Realigned directional software' by Penguin India Xg-2524,Books,131.38,Penguin India,"Grass-roots uniform parallelism' — a captivating read from Westland Books, bringing you stories that inspire and engage."
+447,Tata Motors Connected Device ca-1380,Electronics,151.37,Tata Motors,"Voltas presents its latest high-performance appliance, engineered for seamless performance and cutting-edge innovation."
+448,Tata Motors Digital System lc-7562,Electronics,298.93,Tata Motors,"Voltas presents its latest compact device, engineered for seamless performance and cutting-edge innovation."
+449,Nivia Competition Equipment Uu-3536,Sports,21.24,Nivia,"Gear up with Cosco's professional gear, crafted to boost your performance and endurance on the field."
+450,Himalaya Anti Aging Serum Rd-9518,Beauty,319.84,Himalaya,"Pamper your skin with Himalaya's ayurvedic serum, specially formulated for radiant and healthy skin."
+451,FabIndia Linen Shirt Ds-8061,Clothing,185.36,FabIndia,"Experience the elegance of Manyavar's Aquamarine cotton saree, crafted for comfort and sophistication."
+452,Godrej Interio Space Saving Storage Solution xm-1870,Home & Kitchen,151.14,Godrej Interio,Discover Havells's space-saving solution for your modern home — designed for durability and style.
+453,Godrej Interio Premium Cooktop xL-4937,Home & Kitchen,440.35,Godrej Interio,Discover Havells's space-saving solution for your modern home — designed for durability and style.
+454,Nivia Training Series Ab-8320,Sports,232.7,Nivia,"Gear up with TYKA's professional gear, crafted to boost your performance and endurance on the field."
+455,Tata Motors Compact Gadget WQ-5050,Electronics,52.05,Tata Motors,"Tata Motors presents its latest smart device, engineered for seamless performance and cutting-edge innovation."
+456,Funskool Educational Learning Kit AF-1383,Toys,414.24,Funskool,"Let your child explore with Hamleys India's safe doll, designed to spark creativity and fun."
+457,Godrej Interio Space Saving Cookware Set HA-4103,Home & Kitchen,28.58,Godrej Interio,Discover Havells's space-saving solution for your modern home — designed for durability and style.
+458,Tata Motors Compact Device iO-1918,Electronics,364.74,Tata Motors,"Reliance Digital presents its latest smart appliance, engineered for seamless performance and cutting-edge innovation."
+459,Himalaya Anti Aging Mask Qi-9906,Beauty,388.08,Himalaya,"Pamper your skin with Lotus Herbals's organic cream, specially formulated for radiant and healthy skin."
+460,FabIndia Linen Saree uC-4565,Clothing,179.54,FabIndia,"Experience the elegance of FabIndia's LightSkyBlue cotton shirt, crafted for comfort and sophistication."
+461,Himalaya Radiant Skin Serum gj-1329,Beauty,413.27,Himalaya,"Pamper your skin with Lotus Herbals's organic serum, specially formulated for radiant and healthy skin."
+462,Nivia Competition Gear hI-7756,Sports,260.25,Nivia,"Gear up with Shiv-Naresh's training gear, crafted to boost your performance and endurance on the field."
+463,'Operative directional knowledge user' by Penguin India hf-7474,Books,234.33,Penguin India,"Enterprise-wide actuating extranet' — a captivating read from Jaico Publishing, bringing you stories that inspire and engage."
+464,'Optimized 5thgeneration algorithm' by Penguin India uj-4903,Books,27.47,Penguin India,"Polarized bifurcated architecture' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+465,'Balanced upward-trending knowledgebase' by Penguin India dR-3568,Books,148.56,Penguin India,"Open-architected mobile archive' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+466,Himalaya Natural Serum CJ-4206,Beauty,465.85,Himalaya,"Pamper your skin with Mamaearth's natural mask, specially formulated for radiant and healthy skin."
+467,Crompton Modular Cooktop ha-1712,Home & Kitchen,198.95,Crompton,Discover Prestige's space-saving solution for your modern home — designed for durability and style.
+468,Pantaloons Cotton Ensemble RO-2365,Clothing,275.62,Pantaloons,"Experience the elegance of Raymond's DeepPink cotton kurta, crafted for comfort and sophistication."
+469,'Universal foreground data-warehouse' by Penguin India em-9410,Books,268.35,Penguin India,"Re-contextualized exuding artificial intelligence' — a captivating read from Westland Books, bringing you stories that inspire and engage."
+470,Nivia Performance Equipment hc-7215,Sports,297.26,Nivia,"Gear up with TYKA's professional equipment, crafted to boost your performance and endurance on the field."
+471,Nivia Performance Accessories Fb-2966,Sports,35.36,Nivia,"Gear up with Shiv-Naresh's competition gear, crafted to boost your performance and endurance on the field."
+472,'Sharable high-level complexity' by Penguin India rr-2532,Books,184.28,Penguin India,"Robust radical utilization' — a captivating read from Westland Books, bringing you stories that inspire and engage."
+473,'Universal foreground data-warehouse' by Penguin India Np-2099,Books,362.95,Penguin India,"Secured directional time-frame' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+474,Pantaloons Cotton Shirt Ed-4768,Clothing,104.28,Pantaloons,"Experience the elegance of Raymond's RoyalBlue linen saree, crafted for comfort and sophistication."
+475,'Public-key upward-trending encryption' by Penguin India PZ-6263,Books,105.77,Penguin India,"Organic exuding parallelism' — a captivating read from Westland Books, bringing you stories that inspire and engage."
+476,FabIndia Linen Dress YT-3806,Clothing,9.99,FabIndia,"Experience the elegance of Biba's Chocolate silk saree, crafted for comfort and sophistication."
+477,Nivia Performance Kit Gu-8759,Sports,221.55,Nivia,"Gear up with SG's competition accessories, crafted to boost your performance and endurance on the field."
+478,'Profound modular array' by Penguin India ob-2059,Books,441.95,Penguin India,"Cross-platform well-modulated database' — a captivating read from HarperCollins India, bringing you stories that inspire and engage."
+479,Himalaya Natural Serum wX-4078,Beauty,30.69,Himalaya,"Pamper your skin with Forest Essentials's natural cream, specially formulated for radiant and healthy skin."
+480,Funskool Educational Learning Kit rI-2133,Toys,99.6,Funskool,"Let your child explore with Zephyr's interactive learning tool, designed to spark creativity and fun."
+481,Himalaya Natural Mask lp-9652,Beauty,158.49,Himalaya,"Pamper your skin with Forest Essentials's ayurvedic cream, specially formulated for radiant and healthy skin."
+482,Nivia Training Series KK-5905,Sports,367.2,Nivia,"Gear up with Shiv-Naresh's professional equipment, crafted to boost your performance and endurance on the field."
+483,FabIndia Cotton Kurta lF-3784,Clothing,322.11,FabIndia,"Experience the elegance of Pantaloons's DimGray linen kurta, crafted for comfort and sophistication."
+484,Himalaya Revitalizing Cream bH-0393,Beauty,210.89,Himalaya,"Pamper your skin with Forest Essentials's ayurvedic serum, specially formulated for radiant and healthy skin."
+485,Pantaloons Silk Shirt vT-5932,Clothing,380.74,Pantaloons,"Experience the elegance of Raymond's SeaShell silk shirt, crafted for comfort and sophistication."
+486,Himalaya Radiant Skin Oil Tj-0029,Beauty,306.77,Himalaya,"Pamper your skin with Forest Essentials's organic cream, specially formulated for radiant and healthy skin."
+487,Himalaya Moisturizing Mask Lg-5156,Beauty,448.54,Himalaya,"Pamper your skin with Forest Essentials's ayurvedic serum, specially formulated for radiant and healthy skin."
+488,FabIndia Khadi Shirt YO-5226,Clothing,409.92,FabIndia,"Experience the elegance of Biba's SaddleBrown linen saree, crafted for comfort and sophistication."
+489,Crompton Smart Cooktop oQ-2895,Home & Kitchen,130.14,Crompton,Discover Prestige's modular solution for your modern home — designed for durability and style.
+490,Himalaya Radiant Skin Oil lU-6442,Beauty,139.36,Himalaya,"Pamper your skin with Himalaya's natural cream, specially formulated for radiant and healthy skin."
+491,'Intuitive impactful flexibility' by Penguin India Mu-6902,Books,67.05,Penguin India,"Fundamental zero tolerance utilization' — a captivating read from Penguin India, bringing you stories that inspire and engage."
+492,Funskool Educational Learning Kit jv-3917,Toys,171.8,Funskool,"Let your child explore with Zephyr's safe learning tool, designed to spark creativity and fun."
+493,Nivia Competition Accessories TQ-5521,Sports,499.77,Nivia,"Gear up with Shiv-Naresh's competition equipment, crafted to boost your performance and endurance on the field."
+494,Crompton Space Saving Home System Se-0433,Home & Kitchen,205.85,Crompton,Discover Prestige's energy-efficient solution for your modern home — designed for durability and style.
+495,FabIndia Khadi Saree CU-1006,Clothing,114.14,FabIndia,"Experience the elegance of Manyavar's Ivory cotton shirt, crafted for comfort and sophistication."
+496,Godrej Interio Modular Cookware Set Iy-6765,Home & Kitchen,382.43,Godrej Interio,Discover Godrej Interio's space-saving solution for your modern home — designed for durability and style.
+497,Tata Motors Smart Gadget eZ-9327,Electronics,273.52,Tata Motors,"Micromax presents its latest smart gadget, engineered for seamless performance and cutting-edge innovation."
+498,Tata Motors Connected System ev-0541,Electronics,79.05,Tata Motors,"Tata Motors presents its latest smart device, engineered for seamless performance and cutting-edge innovation."
+499,Mamaearth Natural Lotion vM-2181,Beauty,193.44,Mamaearth,"Pamper your skin with Biotique's ayurvedic cream, specially formulated for radiant and healthy skin."
+500,Mamaearth Radiant Skin Cream Bk-0629,Beauty,210.16,Mamaearth,"Pamper your skin with Biotique's organic mask, specially formulated for radiant and healthy skin."

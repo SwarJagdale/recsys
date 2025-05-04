@@ -9,8 +9,23 @@ import {
   Link,
   Paper,
   Alert,
+  MenuItem,
 } from '@mui/material';
 import { useAuth } from '../contexts/AuthContext';
+
+// Common locations in India for demo purposes
+const LOCATIONS = [
+  'Mumbai',
+  'Delhi',
+  'Bangalore',
+  'Hyderabad',
+  'Chennai',
+  'Kolkata',
+  'Pune',
+  'Ahmedabad',
+  'Jaipur',
+  'Surat'
+];
 
 const Signup: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -18,6 +33,7 @@ const Signup: React.FC = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
   const [name, setName] = useState('');
+  const [location, setLocation] = useState('');
   const { signup } = useAuth();
   const navigate = useNavigate();
 
@@ -27,8 +43,12 @@ const Signup: React.FC = () => {
       setError('Passwords do not match');
       return;
     }
+    if (!location) {
+      setError('Please select your location');
+      return;
+    }
     try {
-      await signup(email, password, name);
+      await signup(email, password, name, location);
       navigate('/');
     } catch (err) {
       setError('Signup failed. Please try again.');
@@ -91,6 +111,23 @@ const Signup: React.FC = () => {
               margin="normal"
               required
               fullWidth
+              select
+              id="location"
+              label="Location"
+              value={location}
+              onChange={(e) => setLocation(e.target.value)}
+              helperText="Please select your city for personalized recommendations"
+            >
+              {LOCATIONS.map((loc) => (
+                <MenuItem key={loc} value={loc}>
+                  {loc}
+                </MenuItem>
+              ))}
+            </TextField>
+            <TextField
+              margin="normal"
+              required
+              fullWidth
               name="password"
               label="Password"
               type="password"
@@ -131,4 +168,4 @@ const Signup: React.FC = () => {
   );
 };
 
-export default Signup; 
+export default Signup;

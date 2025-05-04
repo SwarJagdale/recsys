@@ -19,6 +19,7 @@ import {
 } from '@mui/icons-material';
 import axios from 'axios';
 import { useAuth } from '../contexts/AuthContext';
+import SearchBar from '../components/SearchBar';
 
 interface Product {
   _id: string;
@@ -26,6 +27,7 @@ interface Product {
   description: string;
   price: number;
   category: string;
+  brand: string;
   image?: string;
 }
 
@@ -36,19 +38,23 @@ const Home: React.FC = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await axios.get('http://localhost:5000/api/products');
-        setProducts(response.data.products);
-      } catch (error) {
-        console.error('Error fetching products:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
     fetchProducts();
   }, []);
+
+  const fetchProducts = async () => {
+    try {
+      const response = await axios.get('http://localhost:5000/api/products');
+      setProducts(response.data.products);
+    } catch (error) {
+      console.error('Error fetching products:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSearch = (searchResults: Product[]) => {
+    setProducts(searchResults);
+  };
 
   const handleInteraction = async (productId: string, interactionType: string) => {
     if (!user) return;
@@ -82,8 +88,11 @@ const Home: React.FC = () => {
   return (
     <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
       <Typography variant="h4" component="h1" gutterBottom>
-        Featured Products
+        Browse Products
       </Typography>
+      
+      <SearchBar onSearch={handleSearch} />
+
       <Grid container spacing={4}>
         {products.map((product) => (
           <Grid item key={product._id} xs={12} sm={6} md={4}>
@@ -108,12 +117,16 @@ const Home: React.FC = () => {
                 <Typography gutterBottom variant="h5" component="h2">
                   {product.name}
                 </Typography>
+                <Typography variant="body2" color="text.secondary" gutterBottom>
+                  {product.category} • {product.brand}
+                </Typography>
                 <Typography variant="body2" color="text.secondary">
                   {product.description}
                 </Typography>
                 <Typography variant="h6" color="primary" sx={{ mt: 2 }}>
                   ${product.price.toFixed(2)}
                 </Typography>
+
                 <Box sx={{ mt: 2, display: 'flex', justifyContent: 'space-between' }}>
                   <IconButton
                     color="primary"
@@ -143,4 +156,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home; 
+export default Home;

@@ -1,174 +1,347 @@
-# content_based_recommender.py (formerly hybrid_recommender.py)
-
 import pandas as pd
 import numpy as np
-from datetime import datetime
+from datetime import datetime, timedelta
+from sklearn.metrics.pairwise import cosine_similarity
 from pymongo import MongoClient
-from .MatrixFactor import MatrixFactorization
-# --- Collaborative Filtering Model (Matrix Factorization) ---
-def sigmoid(x):
-    return 1 / (1 + np.exp(-x))
+from bson import ObjectId
 
+class HybridRecommender:
+    def __init__(self):
+        self.user_item_matrix = None
+        self.product_df = None
+        self.mongo = None
+        self.recency_weight = 0.6  # 60% weight for recency
+        self.collab_weight = 0.4   # 40% weight for collaborative filtering
 
-# --- ID Mapping Utilities ---
-def map_ids(df, user_col, item_col):
-    unique_users = df[user_col].unique()
-    unique_items = df[item_col].unique()
-    user2idx = {u: idx for idx, u in enumerate(unique_users)}
-    item2idx = {i: idx for idx, i in enumerate(unique_items)}
-    return user2idx, item2idx
+    def init_app(self, app):
+        """Initialize with MongoDB connection"""
+        self.mongo = MongoClient(app.config["MONGO_URI"])
+        self.db = self.mongo.get_database()
+        self._update_matrices()
 
-# --- Globals for Model State ---
-prod_df = None
-user_df = None
-inter_df = None
-mf = None
-user2idx = None
-item2idx = None
-idx2user = None
-idx2item = None
-user_interacted_idx = None
-
-# MongoDB connection
-global_client = None
-global_mongo_db = None
-
-def initialize_mongodb(mongo_uri='mongodb://localhost:27017/ecommerce_db'):
-    """Initialize MongoDB connection and load data"""
-    global global_client, global_mongo_db
-    global_client = MongoClient(mongo_uri)
-    global_mongo_db = global_client.get_database()
-    load_data_from_mongodb()
-    return global_mongo_db
-
-def load_data_from_mongodb():
-    """Load data from MongoDB and build the collaborative filtering model"""
-    global prod_df, user_df, inter_df, mf, user2idx, item2idx, idx2user, idx2item, user_interacted_idx
-
-    if global_mongo_db is None:
-        print("MongoDB not initialized. Call initialize_mongodb() first.")
-        return
-
-    # Load collections
-    prod_df = pd.DataFrame(list(global_mongo_db.products.find()))
-    user_df = pd.DataFrame(list(global_mongo_db.users.find()))
-    inter_df = pd.DataFrame(list(global_mongo_db.interactions.find()))
-
-    print(f"Loaded from MongoDB: {len(inter_df)} interactions, {len(prod_df)} products, {len(user_df)} users")
-    if prod_df.empty or inter_df.empty:
-        print("Warning: No product or interaction data found in MongoDB")
-        return
-
-    # Use string IDs for mapping
-    inter_df['user_id'] = inter_df['user_id'].astype(str)
-    inter_df['product_id'] = inter_df['product_id'].astype(str)
-    prod_df['product_id'] = prod_df['product_id'].astype(str)
-
-    # Map user and item IDs to indices
-    user2idx, item2idx = map_ids(inter_df, 'user_id', 'product_id')
-    idx2user = {idx: u for u, idx in user2idx.items()}
-    idx2item = {idx: i for i, idx in item2idx.items()}
-
-    # Build interaction tuples
-    interactions = [
-    (user2idx[r.user_id], item2idx[r.product_id], r.timestamp)
-    for r in inter_df.itertuples()
-    if r.user_id in user2idx and r.product_id in item2idx
-]
-
-    # Build user_interacted_idx
-    user_interacted = inter_df.groupby('user_id')['product_id'].apply(set).to_dict()
-    user_interacted_idx = {user2idx[u]: {item2idx[i] for i in items if i in item2idx} for u, items in user_interacted.items() if u in user2idx}
-
-    # Build item_metadata: idx -> {'category':..., 'brand':...}
-    item_metadata = {}
-    for _, row in prod_df.iterrows():
-        idx = item2idx.get(str(row['product_id']))
-        if idx is not None:
-            item_metadata[idx] = {
-                'category': row.get('category', ''),
-                'brand': row.get('brand', '')
+    def _update_matrices(self):
+        """Update user-item interaction matrix and product dataframe"""
+        interactions = pd.DataFrame(list(self.db.interactions.find()))
+        products = pd.DataFrame(list(self.db.products.find()))
+        
+        if not interactions.empty:
+            # Convert product_id to integer type for consistency
+            
+            interactions['product_id'] = pd.to_numeric(interactions['product_id'])
+            
+            # Create user-item matrix with interaction weights
+            weights = {
+                'view': 1,
+                'add_to_cart': 3,
+                'purchase': 5
             }
+            interactions['weight'] = interactions['interaction_type'].map(weights)
+            
+            # Create pivot table for user-item matrix
+            self.user_item_matrix = interactions.pivot_table(
+                index='user_id',
+                columns='product_id',
+                values='weight',
+                aggfunc='sum',
+                fill_value=0
+            )
 
-    # Initialize and train model with item_metadata
-    mf = MatrixFactorization(
-        n_users=len(user2idx),
-        n_items=len(item2idx),
-        item_metadata=item_metadata,
-        n_factors=50, lr=0.01, reg=0.1, epochs=30
-    )
-    mf.train(interactions)
-    print("MatrixFactorization model trained.")
+        if not products.empty:
+            # Convert product_id to integer type for consistency
+            products['product_id'] = pd.to_numeric(products['product_id'])
+            self.product_df = products.set_index('product_id')
 
+    def _get_recency_scores(self, user_id, n_items=20):
+        """Calculate recency-based scores with smooth diversity and time decay"""
+        recent_cutoff = datetime.now() - timedelta(days=30)  # Extended to 30 days
+        
+        recent_interactions = pd.DataFrame(list(self.db.interactions.find({
+            'user_id': user_id,
+            'timestamp': {'$gte': recent_cutoff}
+        }).sort('timestamp', -1)))
 
-def add_interaction(user_id, product_id, interaction_type, timestamp=None):
-    """Add a new interaction to MongoDB and update the model incrementally or retrain if needed."""
-    global inter_df, mf, user2idx, item2idx, user_interacted_idx
-    user_id = str(user_id)
-    product_id = str(product_id)
-    interaction = {
-        'user_id': user_id,
-        'product_id': product_id,
-        'interaction_type': interaction_type,
-        'timestamp': timestamp or datetime.utcnow()
-    }
-    # Add to MongoDB
-    if global_mongo_db is not None:
+        if recent_interactions.empty:
+            return pd.Series(index=self.product_df.index)
+
+        recent_interactions['product_id'] = pd.to_numeric(recent_interactions['product_id'])
+        
         try:
-            global_mongo_db.interactions.insert_one(interaction)
-            print(f"Added interaction: User {user_id}, Product {product_id}, Type {interaction_type}")
-            # Update inter_df in memory
-            if inter_df is not None:
-                inter_df = pd.concat([inter_df, pd.DataFrame([interaction])], ignore_index=True)
-        except Exception as e:
-            print(f"Error adding interaction to MongoDB: {e}")
-    # If either user or product is new, reload all data/mappings/model
-    if (user2idx is None or user_id not in user2idx) or (item2idx is None or product_id not in item2idx):
-        print("New user or product detected. Reloading data and retraining model.")
-        load_data_from_mongodb()
-    else:
-        # Update model incrementally if user/item exist
-        u_idx = user2idx[user_id]
-        i_idx = item2idx[product_id]
-        mf.update_one(u_idx, i_idx, user_interacted_idx, ts=timestamp, n_steps=10)
+            # Convert timestamps to datetime if they aren't already
+            recent_interactions['timestamp'] = pd.to_datetime(recent_interactions['timestamp'])
+            
+            # Calculate time decay for each interaction (1.0 for most recent, decreasing exponentially)
+            now = datetime.now()
+            recent_interactions['time_decay'] = recent_interactions['timestamp'].apply(
+                lambda x: np.exp(-0.05 * (now - x).days)  # Slower decay rate
+            )
+            
+            # Weight interaction types
+            weights = {
+                'view': 1,
+                'add_to_cart': 3,
+                'purchase': 5
+            }
+            recent_interactions['weight'] = recent_interactions['interaction_type'].map(weights)
+            
+            # Combine time decay with interaction weight
+            recent_interactions['final_weight'] = recent_interactions['time_decay'] * recent_interactions['weight']
+            
+            # Calculate weighted counts for categories and brands
+            category_weights = recent_interactions.merge(
+                self.product_df, left_on='product_id', right_index=True
+            ).groupby('category')['final_weight'].sum()
+            
+            brand_weights = recent_interactions.merge(
+                self.product_df, left_on='product_id', right_index=True
+            ).groupby('brand')['final_weight'].sum()
+            
+            scores = pd.Series(0.0, index=self.product_df.index)
+            
+            # Apply category preferences with time-aware weights
+            for category, weight in category_weights.items():
+                category_mask = self.product_df['category'] == category
+                scores[category_mask] += np.log1p(weight) * 0.3  # Increased base weight
+                
+                # Add smaller scores for different categories (diversity)
+                other_categories = self.product_df[~category_mask]['category'].unique()
+                for other_cat in other_categories:
+                    other_cat_mask = self.product_df['category'] == other_cat
+                    scores[other_cat_mask] += np.random.uniform(0.05, 0.15, size=other_cat_mask.sum())
 
+            # Apply brand preferences with time-aware weights
+            for brand, weight in brand_weights.items():
+                brand_mask = self.product_df['brand'] == brand
+                scores[brand_mask] += np.log1p(weight) * 0.25
+                
+                # Add smaller scores for different brands (diversity)
+                other_brands_mask = self.product_df['brand'] != brand
+                scores[other_brands_mask] += np.random.uniform(0.03, 0.1, size=other_brands_mask.sum())
+
+            # Add small exploration factor (3-10% of score)
+            exploration_factor = np.random.uniform(0.03, 0.1, size=len(scores))
+            scores += exploration_factor
+
+            # Boost scores for products not recently interacted with
+            recent_product_ids = set(recent_interactions['product_id'])
+            diversity_boost = pd.Series(0.2, index=self.product_df.index)  # Increased diversity boost
+            diversity_boost[list(recent_product_ids)] = 0
+            scores += diversity_boost
+
+            # Normalize scores
+            if not scores.empty and scores.max() > 0:
+                scores = scores / scores.max()
+                
+            return scores
+
+        except KeyError:
+            return pd.Series(index=self.product_df.index)
+
+    def _get_collaborative_scores(self, user_id, n_items=20):
+        """Calculate collaborative filtering scores"""
+        if self.user_item_matrix is None or user_id not in self.user_item_matrix.index:
+            return pd.Series(index=self.product_df.index)
+
+        user_vector = self.user_item_matrix.loc[user_id].values.reshape(1, -1)
+        similarities = cosine_similarity(user_vector, self.user_item_matrix)
+        similar_users = pd.Series(similarities[0], index=self.user_item_matrix.index)
+        similar_users = similar_users.sort_values(ascending=False)[1:6]  # Top 5 similar users
+
+        # Get recommendations based on similar users' interactions
+        recommendations = pd.Series(0, index=self.user_item_matrix.columns)
+        for sim_user, sim_score in similar_users.items():
+            recommendations += self.user_item_matrix.loc[sim_user] * sim_score
+
+        # Ensure index alignment with product_df
+        aligned_recommendations = pd.Series(0, index=self.product_df.index)
+        try:
+            aligned_recommendations[recommendations.index] = recommendations.values
+        except KeyError:
+            pass  # If indices don't align, keep zeros
+        
+        return aligned_recommendations / aligned_recommendations.max() if not aligned_recommendations.empty else aligned_recommendations
+
+    def _get_context_recommendations(self, user_id, n_items=20):
+        """Get recommendations based on context when user has no history"""
+        context = self.db.context.find_one({'user_id': user_id})
+        if not context:
+            # Return popular items if no context available
+            interactions = pd.DataFrame(list(self.db.interactions.find()))
+            if interactions.empty:
+                return pd.Series(index=self.product_df.index)
+            
+            interactions['product_id'] = pd.to_numeric(interactions['product_id'])
+            popular_products = interactions['product_id'].value_counts()
+            
+            # Align with product_df index
+            aligned_scores = pd.Series(0, index=self.product_df.index)
+            try:
+                aligned_scores[popular_products.index] = popular_products.values
+            except KeyError:
+                pass  # If indices don't align, keep zeros
+            return aligned_scores / aligned_scores.max() if not aligned_scores.empty else aligned_scores
+
+        # Use context to filter recommendations
+        time_of_day = context.get('time_of_day')
+        device = context.get('device')
+        location = context.get('location')
+
+        # Get products that performed well in similar contexts
+        context_interactions = pd.DataFrame(list(self.db.interactions.find({
+            'context.time_of_day': time_of_day,
+            'context.device': device,
+            'context.location': location
+        })))
+
+        if context_interactions.empty:
+            return pd.Series(index=self.product_df.index)
+
+        context_interactions['product_id'] = pd.to_numeric(context_interactions['product_id'])
+        context_scores = context_interactions['product_id'].value_counts()
+        
+        # Align with product_df index
+        aligned_scores = pd.Series(0, index=self.product_df.index)
+        try:
+            aligned_scores[context_scores.index] = context_scores.values
+        except KeyError:
+            pass  # If indices don't align, keep zeros
+        return aligned_scores / aligned_scores.max() if not aligned_scores.empty else aligned_scores
+
+    def _get_demographic_recommendations(self, user_id, n_items=20):
+        """Get recommendations based on user's location demographics"""
+        try:
+            user = self.db.users.find_one({'_id': ObjectId(user_id)})
+            if not user or not user.get('location'):
+                return pd.Series(index=self.product_df.index)
+
+            user_location = user['location']
+            
+            # Get all interactions from users in the same location
+            location_users = list(self.db.users.find({'location': user_location}))
+            location_user_ids = [u['_id'] for u in location_users]
+            
+            # Get interactions from users in same location
+            location_interactions = pd.DataFrame(list(self.db.interactions.find({
+                'user_id': {'$in': location_user_ids}
+            })))
+            
+            if location_interactions.empty:
+                return pd.Series(index=self.product_df.index)
+            
+            # Convert product_id to numeric
+            location_interactions['product_id'] = pd.to_numeric(location_interactions['product_id'])
+            
+            # Weight different types of interactions
+            weights = {
+                'view': 1,
+                'add_to_cart': 3,
+                'purchase': 5
+            }
+            location_interactions['weight'] = location_interactions['interaction_type'].map(weights)
+            
+            # Calculate popularity scores within location
+            product_scores = location_interactions.groupby('product_id')['weight'].sum()
+            
+            # Normalize scores
+            aligned_scores = pd.Series(0, index=self.product_df.index)
+            try:
+                aligned_scores[product_scores.index] = product_scores.values
+            except KeyError:
+                pass
+                
+            return aligned_scores / aligned_scores.max() if not aligned_scores.empty else aligned_scores
+                
+        except Exception as e:
+            print(f"Error in demographic recommendations: {str(e)}")
+            return pd.Series(index=self.product_df.index)
+
+    def recommend(self, user_id, k=20):
+        """Generate hybrid recommendations for a user"""
+        # Check if user has any interactions
+        user_interactions = self.db.interactions.find_one({'user_id': user_id})
+        
+        if not user_interactions:
+            # New user - use demographic and context recommendations
+            demographic_scores = self._get_demographic_recommendations(user_id, k)
+            context_scores = self._get_context_recommendations(user_id, k)
+            
+            # Track which strategy gave higher score for each product
+            recommendation_sources = pd.Series('demographic', index=demographic_scores.index)
+            context_wins = context_scores > demographic_scores
+            recommendation_sources[context_wins] = 'context'
+            
+            # Combine scores with weights
+            scores = demographic_scores * 0.7 + context_scores * 0.3
+        else:
+            # Get scores from each strategy
+            collab_scores = self._get_collaborative_scores(user_id, k)
+            recency_scores = self._get_recency_scores(user_id, k)
+            
+            # Get top 10 from each strategy
+            ITEMS_PER_STRATEGY = 10
+            top_collab = collab_scores.nlargest(ITEMS_PER_STRATEGY)
+            
+            # Remove collaborative items from recency scores to avoid duplicates
+            recency_scores[top_collab.index] = 0
+            top_recency = recency_scores.nlargest(ITEMS_PER_STRATEGY)
+            
+            # Combine scores and mark sources
+            scores = pd.Series(0, index=self.product_df.index)
+            recommendation_sources = pd.Series('', index=self.product_df.index)
+            
+            # Add collaborative recommendations
+            scores[top_collab.index] = top_collab
+            recommendation_sources[top_collab.index] = 'collaborative'
+            
+            # Add recency recommendations
+            scores[top_recency.index] = top_recency
+            recommendation_sources[top_recency.index] = 'recency'
+
+        # Get top k recommendations
+        if scores.empty:
+            return pd.DataFrame()
+            
+        try:
+            top_products = scores.nlargest(k).index
+            recommendations = self.product_df.loc[top_products].copy()
+            recommendations['score'] = scores[top_products]
+            recommendations['recommendation_source'] = recommendation_sources[top_products]
+            return recommendations.sort_values('score', ascending=False)
+            
+        except KeyError:
+            return pd.DataFrame(columns=self.product_df.columns.tolist() + ['score', 'recommendation_source'])
+
+    def add_interaction(self, user_id, product_id, interaction_type):
+        """Update recommendations when new interaction occurs"""
+        # Convert product_id to integer if it isn't already
+        try:
+            product_id = int(product_id)
+        except (ValueError, TypeError):
+            # If conversion fails, try to handle it gracefully
+            return
+        
+        # Record the interaction
+        interaction = {
+            'user_id': user_id,
+            'product_id': product_id,
+            'interaction_type': interaction_type,
+            'timestamp': datetime.now()
+        }
+        self.db.interactions.insert_one(interaction)
+        
+        # Update matrices
+        self._update_matrices()
+
+# Global instance
+_recommender = HybridRecommender()
 
 def init_app(app):
-    """Initialize the recommender with a Flask app"""
-    with app.app_context():
-        mongo_uri = app.config.get('MONGO_URI', 'mongodb://localhost:27017/ecommerce_db')
-        initialize_mongodb(mongo_uri)
+    """Initialize the recommender with the Flask app"""
+    _recommender.init_app(app)
 
-def recommend(user_id, k=10):
-    """Return a DataFrame of recommended products for the user using collaborative filtering."""
-    global mf, user2idx, item2idx, idx2item, user_interacted_idx, prod_df
-    user_id = str(user_id)
-    load_data_from_mongodb()
+def recommend(user_id, k=20):
+    """Get recommendations for a user"""
+    return _recommender.recommend(user_id, k)
 
-    # if user2idx is None or item2idx is None or mf is None:
-    #     print("Model not initialized. Reloading data.")
-    #     load_data_from_mongodb()
-    if user_id not in user2idx:
-        print(f"User {user_id} not found in model. Returning popular products.")
-        # Fallback: recommend most popular products
-        popular = prod_df['product_id'].value_counts().index[:k]
-        return prod_df[prod_df['product_id'].isin(popular)]
-    u_idx = user2idx[user_id]
-    interacted = user_interacted_idx.get(u_idx, set())
-    rec_idxs = mf.recommend(u_idx, k=k, interacted=interacted)
-    recommendations = [idx2item[i] for i in rec_idxs if i in idx2item]
-    return prod_df[prod_df['product_id'].isin(recommendations)]
-
-# Example usage - only runs in standalone mode
-if __name__ == '__main__':
-    initialize_mongodb()
-    print("Collaborative filtering recommender initialized with MongoDB data")
-    if prod_df is not None and not prod_df.empty:
-        print(f"Recommender has data for {len(prod_df)} products")
-        # Test with a random user if we have user data
-        if not user_df.empty and not inter_df.empty:
-            test_user = inter_df['user_id'].iloc[0]
-            print(f"Sample recommendation for user {test_user}:")
-            print(recommend(test_user, k=5))
-    else:
-        print("No product data available for recommendations")
+def add_recommender_interaction(user_id, product_id, interaction_type):
+    """Add a new interaction and update recommendations"""
+    _recommender.add_interaction(user_id, product_id, interaction_type)

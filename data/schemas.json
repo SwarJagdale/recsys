@@ -12,7 +12,11 @@
         {"name": "product_id", "type": "INTEGER", "description": "Unique identifier for the product"},
         {"name": "category", "type": "STRING", "description": "Product category (e.g., Electronics, Clothing)"},
         {"name": "price", "type": "FLOAT", "description": "Price of the product"},
-        {"name": "brand", "type": "STRING", "description": "Brand name of the product"}
+        {"name": "brand", "type": "STRING", "description": "Brand name of the product"},
+        {"name": "product_name", "type": "STRING", "description": "Name of the product"},
+        {"name": "description", "type": "STRING", "description": "Description of the product"},
+        {"name": "image_url", "type": "STRING", "description": "URL of the product image"},
+        {"name": "stock", "type": "INTEGER", "description": "Number of items in stock"}
       ]
     },
     "context": {
@@ -31,7 +35,7 @@
         {"name": "timestamp", "type": "DATETIME", "description": "Date and time of the interaction (format: YYYY-MM-DD HH:MM:SS)"}
       ]
     },
-    "rating": {
+    "reviews": {
       "columns": [
         {"name": "user_id", "type": "INTEGER", "description": "Unique identifier for the user who wrote review"},
         {"name": "product_id", "type": "INTEGER", "description": "Unique identifier for the reviewed product"},

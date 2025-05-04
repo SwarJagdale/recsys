@@ -12,13 +12,14 @@ interface User {
   }[];
   userId: string;
   preferences: any;
+  location?: string;
 }
 
 interface AuthContextType {
   user: User | null;
   token: string | null;
   login: (email: string, password: string) => Promise<void>;
-  signup: (email: string, password: string, name: string) => Promise<void>;
+  signup: (email: string, password: string, name: string, location: string) => Promise<void>;
   logout: () => void;
   isAuthenticated: boolean;
 }
@@ -35,11 +36,9 @@ const getInitialUser = () => {
 };
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  // Initialize user state directly from localStorage
   const [user, setUser] = useState<User | null>(getInitialUser());
   const [token, setToken] = useState<string | null>(localStorage.getItem('token'));
 
-  // Keep localStorage in sync with state changes
   useEffect(() => {
     if (user) {
       localStorage.setItem('user', JSON.stringify(user));
@@ -51,11 +50,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const login = async (email: string, password: string) => {
     try {
       const response = await axios.post('http://localhost:5000/api/login', { email, password });
-      // Backend returns: { message, user_id, preferences }
       const { user_id, preferences } = response.data;
       const user = { id: user_id, email, name: '', preferences, interactions: [], userId: user_id };
       setUser(user);
-      setToken(null); // No JWT
+      setToken(null);
       localStorage.setItem('user', JSON.stringify(user));
       localStorage.removeItem('token');
       delete axios.defaults.headers.common['Authorization'];
@@ -65,14 +63,26 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
-  const signup = async (email: string, password: string, name: string) => {
+  const signup = async (email: string, password: string, name: string, location: string) => {
     try {
-      const response = await axios.post('http://localhost:5000/api/signup', { email, password, name });
-      // Backend returns: { message, user_id }
-      const { user_id } = response.data;
-      const user = { id: user_id, email, name, preferences: {}, interactions: [], userId: user_id };
+      const response = await axios.post('http://localhost:5000/api/signup', { 
+        email, 
+        password, 
+        name,
+        location 
+      });
+      const { user_id, location: userLocation } = response.data;
+      const user = { 
+        id: user_id, 
+        email, 
+        name, 
+        preferences: {}, 
+        interactions: [], 
+        userId: user_id,
+        location: userLocation 
+      };
       setUser(user);
-      setToken(null); // No JWT
+      setToken(null);
       localStorage.setItem('user', JSON.stringify(user));
       localStorage.removeItem('token');
       delete axios.defaults.headers.common['Authorization'];
@@ -110,4 +120,4 @@ export const useAuth = () => {
     throw new Error('useAuth must be used within an AuthProvider');
   }
   return context;
-}; 
+};

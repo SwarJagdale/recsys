@@ -1,20 +1,39 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-import { TextField, Button, Box, Typography, Alert } from '@mui/material';
+import { TextField, Button, Box, Typography, Alert, MenuItem } from '@mui/material';
+
+// Common locations in India for demo purposes
+const LOCATIONS = [
+  'Mumbai',
+  'Delhi',
+  'Bangalore',
+  'Hyderabad',
+  'Chennai',
+  'Kolkata',
+  'Pune',
+  'Ahmedabad',
+  'Jaipur',
+  'Surat'
+];
 
 const Signup: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
+  const [location, setLocation] = useState('');
   const [error, setError] = useState('');
   const { signup } = useAuth();
   const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!location) {
+      setError('Please select your location');
+      return;
+    }
     try {
-      await signup(email, password, name);
+      await signup(email, password, name, location);
       navigate('/');
     } catch (err) {
       setError('Failed to create an account. Please try again.');
@@ -69,6 +88,23 @@ const Signup: React.FC = () => {
           margin="normal"
           required
           fullWidth
+          select
+          id="location"
+          label="Location"
+          value={location}
+          onChange={(e) => setLocation(e.target.value)}
+          helperText="Please select your city for personalized recommendations"
+        >
+          {LOCATIONS.map((loc) => (
+            <MenuItem key={loc} value={loc}>
+              {loc}
+            </MenuItem>
+          ))}
+        </TextField>
+        <TextField
+          margin="normal"
+          required
+          fullWidth
           name="password"
           label="Password"
           type="password"
@@ -90,4 +126,4 @@ const Signup: React.FC = () => {
   );
 };
 
-export default Signup; 
+export default Signup;
