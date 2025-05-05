@@ -1,47 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useAuth } from '../contexts/AuthContext';
-import { 
-  Box,
-  Typography,
-  Table,
-  TableHead,
-  TableBody,
-  TableRow,
-  TableCell,
-  List,
-  ListItem,
-  ListItemText,
-  Divider,
-  CircularProgress,
-  Alert,
-  Paper,
-  Grid,
-  LinearProgress,
-  Tooltip
-} from '@mui/material';
 
 interface Interaction {
   product_id: string;
+  product_name: string;
   interaction_type: string;
   timestamp: string;
-  product_name?: string;
-  category?: string;
-  brand?: string;
+  category: string;
+  brand: string;
 }
 
 interface ProfileResponse {
   user: {
     email: string;
-    preferences: any;
+    name: string;
   };
-  summary: Record<string, number>;
-  recent: Interaction[];
   recommendation_profile: {
     category_preferences: Record<string, number>;
     brand_preferences: Record<string, number>;
-    interaction_patterns: Record<string, number>;
   };
+  recent: Interaction[];
+  summary: Record<string, number>;
 }
 
 const Profile: React.FC = () => {
@@ -69,134 +49,119 @@ const Profile: React.FC = () => {
 
   if (loading) {
     return (
-      <Box p={3} display="flex" justifyContent="center" alignItems="center" minHeight="80vh">
-        <CircularProgress />
-      </Box>
+      <div className="container loading-container">
+        <div className="spinner"></div>
+      </div>
     );
   }
 
   if (error) {
     return (
-      <Box p={3}>
-        <Alert severity="error">{error}</Alert>
-      </Box>
+      <div className="container">
+        <div className="alert alert-error">{error}</div>
+      </div>
     );
   }
 
   return (
-    <Box p={3}>
-      <Typography variant="h4" gutterBottom>
-        Your Profile
-      </Typography>
+    <div className="container">
+      <h1>Your Profile</h1>
       
-      <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <Paper sx={{ p: 2 }}>
-            <Typography variant="h6">Basic Information</Typography>
-            <Typography>Email: {profile?.user.email}</Typography>
-          </Paper>
-        </Grid>
+      <div className="grid">
+        <div className="card">
+          <div className="card-content">
+            <h2>Basic Information</h2>
+            <p>Email: {profile?.user.email}</p>
+          </div>
+        </div>
 
-        {/* Recommendation Profile */}
-        <Grid item xs={12} md={6}>
-          <Paper sx={{ p: 2 }}>
-            <Typography variant="h6" gutterBottom>Category Preferences</Typography>
+        <div className="card">
+          <div className="card-content">
+            <h2>Category Preferences</h2>
             {profile?.recommendation_profile.category_preferences && 
               Object.entries(profile.recommendation_profile.category_preferences)
                 .map(([category, score]) => (
-                  <Box key={category} sx={{ my: 1 }}>
-                    <Typography variant="body2" sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                  <div key={category} className="preference-item">
+                    <div className="preference-header">
                       <span>{category}</span>
                       <span>{(score * 100).toFixed(1)}%</span>
-                    </Typography>
-                    <Tooltip title={`${(score * 100).toFixed(1)}% preference`}>
-                      <LinearProgress 
-                        variant="determinate" 
-                        value={score * 100} 
-                        sx={{ height: 8, borderRadius: 4 }}
-                      />
-                    </Tooltip>
-                  </Box>
+                    </div>
+                    <div className="progress-bar">
+                      <div 
+                        className="progress-fill"
+                        style={{ width: `${score * 100}%` }}
+                        title={`${(score * 100).toFixed(1)}% preference`}
+                      ></div>
+                    </div>
+                  </div>
                 ))
             }
-          </Paper>
-        </Grid>
+          </div>
+        </div>
 
-        <Grid item xs={12} md={6}>
-          <Paper sx={{ p: 2 }}>
-            <Typography variant="h6" gutterBottom>Brand Preferences</Typography>
+        <div className="card">
+          <div className="card-content">
+            <h2>Brand Preferences</h2>
             {profile?.recommendation_profile.brand_preferences && 
               Object.entries(profile.recommendation_profile.brand_preferences)
                 .map(([brand, score]) => (
-                  <Box key={brand} sx={{ my: 1 }}>
-                    <Typography variant="body2" sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                  <div key={brand} className="preference-item">
+                    <div className="preference-header">
                       <span>{brand}</span>
                       <span>{(score * 100).toFixed(1)}%</span>
-                    </Typography>
-                    <Tooltip title={`${(score * 100).toFixed(1)}% preference`}>
-                      <LinearProgress 
-                        variant="determinate" 
-                        value={score * 100} 
-                        sx={{ height: 8, borderRadius: 4 }}
-                        color="secondary"
-                      />
-                    </Tooltip>
-                  </Box>
+                    </div>
+                    <div className="progress-bar">
+                      <div 
+                        className="progress-fill"
+                        style={{ width: `${score * 100}%` }}
+                        title={`${(score * 100).toFixed(1)}% preference`}
+                      ></div>
+                    </div>
+                  </div>
                 ))
             }
-          </Paper>
-        </Grid>
+          </div>
+        </div>
 
-        {/* Recent Activity */}
-        <Grid item xs={12}>
-          <Paper sx={{ p: 2 }}>
-            <Typography variant="h6" gutterBottom>Recent Activity</Typography>
-            <List>
+        <div className="card">
+          <div className="card-content">
+            <h2>Recent Activity</h2>
+            <div className="activity-list">
               {profile?.recent.map((inter, idx) => (
-                <React.Fragment key={idx}>
-                  <ListItem>
-                    <ListItemText
-                      primary={inter.product_name || `Product ${inter.product_id}`}
-                      secondary={
-                        <>
-                          {`${inter.interaction_type} at ${new Date(inter.timestamp).toLocaleString()}`}
-                          <br />
-                          {`${inter.category} - ${inter.brand}`}
-                        </>
-                      }
-                    />
-                  </ListItem>
-                  {idx < (profile.recent.length - 1) && <Divider component="li" />}
-                </React.Fragment>
+                <div key={idx} className="activity-item">
+                  <h3>{inter.product_name || `Product ${inter.product_id}`}</h3>
+                  <p>{`${inter.interaction_type} at ${new Date(inter.timestamp).toLocaleString()}`}</p>
+                  <p className="meta">{`${inter.category} - ${inter.brand}`}</p>
+                  {idx < (profile.recent.length - 1) && <hr />}
+                </div>
               ))}
-            </List>
-          </Paper>
-        </Grid>
+            </div>
+          </div>
+        </div>
 
-        {/* Interaction Summary */}
-        <Grid item xs={12} md={6}>
-          <Paper sx={{ p: 2 }}>
-            <Typography variant="h6" gutterBottom>Interaction Summary</Typography>
-            <Table>
-              <TableHead>
-                <TableRow>
-                  <TableCell>Type</TableCell>
-                  <TableCell>Count</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
+        <div className="card">
+          <div className="card-content">
+            <h2>Interaction Summary</h2>
+            <table className="summary-table">
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Count</th>
+                </tr>
+              </thead>
+              <tbody>
                 {profile && Object.entries(profile.summary).map(([type, count]) => (
-                  <TableRow key={type}>
-                    <TableCell>{type}</TableCell>
-                    <TableCell>{count}</TableCell>
-                  </TableRow>
+                  <tr key={type}>
+                    <td>{type}</td>
+                    <td>{count}</td>
+                  </tr>
                 ))}
-              </TableBody>
-            </Table>
-          </Paper>
-        </Grid>
-      </Grid>
-    </Box>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

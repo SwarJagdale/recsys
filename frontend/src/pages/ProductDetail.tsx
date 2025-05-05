@@ -1,27 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import {
-  Container,
-  Grid,
-  Paper,
-  Typography,
-  Button,
-  Box,
-  IconButton,
-  CircularProgress,
-  Alert,
-} from '@mui/material';
-import {
-  ShoppingCart,
-  Favorite,
-  ArrowBack,
-} from '@mui/icons-material';
 import axios from 'axios';
 import { useAuth } from '../contexts/AuthContext';
 
 interface Product {
-  _id: string;
-  name: string;
+  product_id: string;
+  product_name: string;
   description: string;
   price: number;
   category: string;
@@ -42,24 +26,32 @@ const ProductDetail: React.FC = () => {
       try {
         const response = await axios.get(`http://localhost:5000/api/products/${id}`);
         setProduct(response.data);
-      } catch (error) {
-        console.error('Error fetching product:', error);
-        setError('Failed to load product details. Please try again later.');
+        
+        // Send view interaction when product is loaded
+        if (user) {
+          await axios.post('http://localhost:5000/api/interactions', {
+            user_id: user.id,
+            product_id: response.data.product_id,
+            interaction_type: 'view',
+          });
+        }
+      } catch (err) {
+        setError('Failed to load product details');
       } finally {
         setLoading(false);
       }
     };
 
     fetchProduct();
-  }, [id]);
+  }, [id, user]);
 
   const handleInteraction = async (interactionType: string) => {
     if (!user || !product) return;
 
     try {
       await axios.post('http://localhost:5000/api/interactions', {
-        user_id: user.userId,
-        product_id: product._id,
+        user_id: user.id,
+        product_id: product.product_id,
         interaction_type: interactionType,
       });
     } catch (error) {
@@ -69,104 +61,71 @@ const ProductDetail: React.FC = () => {
 
   if (loading) {
     return (
-      <Box
-        sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          minHeight: '80vh',
-        }}
-      >
-        <CircularProgress />
-      </Box>
+      <div className="container loading-container">
+        <div className="spinner"></div>
+      </div>
     );
   }
 
   if (error) {
     return (
-      <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-        <Alert severity="error">{error}</Alert>
-      </Container>
+      <div className="container">
+        <div className="alert alert-error">{error}</div>
+      </div>
     );
   }
 
   if (!product) {
     return (
-      <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-        <Alert severity="error">Product not found</Alert>
-      </Container>
+      <div className="container">
+        <div className="alert alert-error">Product not found</div>
+      </div>
     );
   }
 
   return (
-    <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-      <Box sx={{ mb: 4 }}>
-        <IconButton onClick={() => navigate(-1)} sx={{ mb: 2 }}>
-          <ArrowBack />
-        </IconButton>
-      </Box>
+    <div className="container">
+      <div className="back-button">
+        <button className="btn-secondary" onClick={() => navigate(-1)}>
+          ← Back
+        </button>
+      </div>
 
-      <Grid container spacing={4}>
-        <Grid item xs={12} md={6}>
-          <Paper
-            elevation={3}
-            sx={{
-              height: '100%',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              p: 2,
-            }}
-          >
-            <img
-              src={product.image || `https://via.placeholder.com/600x400?text=${product.brand}`}
-              alt={product.name}
-              style={{ maxWidth: '100%', maxHeight: '400px' }}
-            />
-          </Paper>
-        </Grid>
+      <div className="product-detail-grid">
+        <div className="product-image-container">
+          <img
+            src={product.image || `https://via.placeholder.com/600x400?text=${product.brand}`}
+            alt={product.product_name}
+            className="product-detail-image"
+          />
+        </div>
 
-        <Grid item xs={12} md={6}>
-          <Paper elevation={3} sx={{ p: 4 }}>
-            <Typography variant="h4" component="h1" gutterBottom>
-              {product.name}
-            </Typography>
-            <Typography variant="h6" color="primary" gutterBottom>
-              ${product.price.toFixed(2)}
-            </Typography>
-            <Typography variant="body1" paragraph>
-              {product.description}
-            </Typography>
-            <Typography variant="body2" color="text.secondary" paragraph>
-              Category: {product.category}
-            </Typography>
-            <Typography variant="body2" color="text.secondary" paragraph>
-              Brand: {product.brand}
-            </Typography>
-
-            <Box sx={{ mt: 4, display: 'flex', gap: 2 }}>
-              <Button
-                variant="contained"
-                color="primary"
-                startIcon={<ShoppingCart />}
-                onClick={() => handleInteraction('add_to_cart')}
-              >
-                Add to Cart
-              </Button>
-              <Button
-                variant="outlined"
-                color="primary"
-                startIcon={<Favorite />}
-                onClick={() => handleInteraction('purchase')}
-              >
-                Purchase
-              </Button>
-            </Box>
-          </Paper>
-        </Grid>
-      </Grid>
-    </Container>
+        <div className="product-info">
+          <h1>{product.product_name}</h1>
+          <p className="price">${product.price.toFixed(2)}</p>
+          <p className="product-description">{product.description}</p>
+          <div className="product-meta">
+            <p>Category: {product.category}</p>
+            <p>Brand: {product.brand}</p>
+          </div>
+          <div className="product-actions">
+            <button 
+              className="btn-primary"
+              onClick={() => handleInteraction('add_to_cart')}
+            >
+              Add to Cart
+            </button>
+            <button
+              className="btn-secondary"
+              onClick={() => handleInteraction('purchase')}
+            >
+              Purchase
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default ProductDetail; 
+export default ProductDetail;

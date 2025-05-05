@@ -53,7 +53,7 @@ class HybridRecommender:
 
     def _get_recency_scores(self, user_id, n_items=20):
         """Calculate recency-based scores with smooth diversity and time decay"""
-        recent_cutoff = datetime.now() - timedelta(days=30)  # Extended to 30 days
+        recent_cutoff = datetime.now() - timedelta(minutes=3)  # Extended to 30 days
         
         recent_interactions = pd.DataFrame(list(self.db.interactions.find({
             'user_id': user_id,
@@ -71,9 +71,13 @@ class HybridRecommender:
             
             # Calculate time decay for each interaction (1.0 for most recent, decreasing exponentially)
             now = datetime.now()
-            recent_interactions['time_decay'] = recent_interactions['timestamp'].apply(
-                lambda x: np.exp(-0.05 * (now - x).days)  # Slower decay rate
-            )
+            now = datetime.now()
+            # Compute time difference in seconds and apply exponential decay
+            time_diff_secs = (now - recent_interactions['timestamp']).dt.total_seconds()
+            recent_interactions['time_decay'] = np.exp(-0.05 * time_diff_secs)
+            
+            
+            
             
             # Weight interaction types
             weights = {
@@ -85,7 +89,7 @@ class HybridRecommender:
             
             # Combine time decay with interaction weight
             recent_interactions['final_weight'] = recent_interactions['time_decay'] * recent_interactions['weight']
-            
+            print(recent_interactions[['product_id', 'final_weight']].sort_values(by='final_weight', ascending=False)).head()
             # Calculate weighted counts for categories and brands
             category_weights = recent_interactions.merge(
                 self.product_df, left_on='product_id', right_index=True
@@ -130,7 +134,7 @@ class HybridRecommender:
             # Normalize scores
             if not scores.empty and scores.max() > 0:
                 scores = scores / scores.max()
-                
+            print(scores.sort_values())                
             return scores
 
         except KeyError:
@@ -258,7 +262,7 @@ class HybridRecommender:
         """Generate hybrid recommendations for a user"""
         # Check if user has any interactions
         user_interactions = self.db.interactions.find_one({'user_id': user_id})
-        
+        print(user_interactions)
         if not user_interactions:
             # New user - use demographic and context recommendations
             demographic_scores = self._get_demographic_recommendations(user_id, k)
@@ -312,13 +316,23 @@ class HybridRecommender:
 
     def add_interaction(self, user_id, product_id, interaction_type):
         """Update recommendations when new interaction occurs"""
+        from bson import ObjectId  # Ensure ObjectId is imported
+
         # Convert product_id to integer if it isn't already
         try:
             product_id = int(product_id)
         except (ValueError, TypeError):
             # If conversion fails, try to handle it gracefully
             return
-        
+
+        # Convert user_id to ObjectId if it isn't already
+        try:
+            user_id = ObjectId(user_id)
+        except Exception:
+            # If conversion fails, log the error and return
+            print(f"Invalid user_id format: {user_id}")
+            return
+
         # Record the interaction
         interaction = {
             'user_id': user_id,
@@ -327,7 +341,7 @@ class HybridRecommender:
             'timestamp': datetime.now()
         }
         self.db.interactions.insert_one(interaction)
-        
+
         # Update matrices
         self._update_matrices()
 

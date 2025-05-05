@@ -1,12 +1,5 @@
 import React from 'react';
-import { Link as RouterLink, useNavigate } from 'react-router-dom';
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Button,
-  Box,
-} from '@mui/material';
+import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 
 const Navbar: React.FC = () => {
@@ -19,51 +12,43 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <AppBar position="static">
-      <Toolbar>
-        <Typography
-          variant="h6"
-          component={RouterLink}
-          to="/"
-          sx={{
-            flexGrow: 1,
-            textDecoration: 'none',
-            color: 'inherit',
-          }}
-        >
+    <nav className="navbar">
+      <div className="navbar-container">
+        <Link to="/" className="navbar-brand">
           E-Commerce Recommender
-        </Typography>
-        {isAuthenticated ? (
-          <Box sx={{ display: 'flex', gap: 2 }}>
-            <Button color="inherit" component={RouterLink} to="/recommendations">
-              Recommendations
-            </Button>
-            
-            <Button color="inherit" component={RouterLink} to="/cart">
-              Cart
-            </Button>
-            <Button color="inherit" component={RouterLink} to="/orders">
-              Previous Orders
-            </Button>
-            <Button color="inherit" component={RouterLink} to="/profile">
-              Profile
-            </Button>
-            <Button color="inherit" onClick={handleLogout}>
-              Logout
-            </Button>
-          </Box>
-        ) : (
-          <Box sx={{ display: 'flex', gap: 2 }}>
-            <Button color="inherit" component={RouterLink} to="/login">
-              Login
-            </Button>
-            <Button color="inherit" component={RouterLink} to="/signup">
-              Sign Up
-            </Button>
-          </Box>
-        )}
-      </Toolbar>
-    </AppBar>
+        </Link>
+        <div className="navbar-links">
+          {isAuthenticated ? (
+            <>
+              <Link to="/recommendations" className="nav-link">
+                Recommendations
+              </Link>
+              <Link to="/cart" className="nav-link">
+                Cart
+              </Link>
+              <Link to="/orders" className="nav-link">
+                Previous Orders
+              </Link>
+              <Link to="/profile" className="nav-link">
+                Profile
+              </Link>
+              <button onClick={handleLogout} className="nav-link">
+                Logout
+              </button>
+            </>
+          ) : (
+            <>
+              <Link to="/login" className="nav-link">
+                Login
+              </Link>
+              <Link to="/signup" className="nav-link">
+                Sign Up
+              </Link>
+            </>
+          )}
+        </div>
+      </div>
+    </nav>
   );
 };
 

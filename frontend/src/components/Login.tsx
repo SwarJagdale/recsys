@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-import { TextField, Button, Box, Typography, Alert } from '@mui/material';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -24,61 +23,43 @@ const Login: React.FC = () => {
   };
 
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        maxWidth: 400,
-        mx: 'auto',
-        mt: 8,
-        p: 3,
-      }}
-    >
-      <Typography component="h1" variant="h5">
-        Sign in
-      </Typography>
+    <div className="auth-paper">
+      <h1>Sign in</h1>
       {error && (
-        <Alert severity="error" sx={{ width: '100%', mt: 2 }}>
+        <div className="alert alert-error">
           {error}
-        </Alert>
+        </div>
       )}
-      <Box component="form" onSubmit={handleSubmit} sx={{ mt: 1, width: '100%' }}>
-        <TextField
-          margin="normal"
-          required
-          fullWidth
-          id="email"
-          label="Email Address"
-          name="email"
-          autoComplete="email"
-          autoFocus
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <TextField
-          margin="normal"
-          required
-          fullWidth
-          name="password"
-          label="Password"
-          type="password"
-          id="password"
-          autoComplete="current-password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <Button
-          type="submit"
-          fullWidth
-          variant="contained"
-          sx={{ mt: 3, mb: 2 }}
-        >
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            className="input-field"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            autoFocus
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            className="input-field"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </div>
+        <button type="submit" className="btn-primary" style={{ width: '100%', marginTop: '1rem' }}>
           Sign In
-        </Button>
-      </Box>
-    </Box>
+        </button>
+      </form>
+    </div>
   );
 };
 
-export default Login; 
+export default Login;

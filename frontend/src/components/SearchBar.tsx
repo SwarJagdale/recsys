@@ -1,20 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import {
-  Box,
-  TextField,
-  Autocomplete,
-  InputAdornment,
-  IconButton,
-} from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search';
 import axios from 'axios';
 
-interface Product {
+interface ApiProduct {
   _id: string;
   name: string;
   category: string;
   brand: string;
   price: number;
+  description: string;
+}
+
+interface Product {
+  product_id: string;
+  product_name: string;
+  category: string;
+  brand: string;
+  price: number;
+  score: number;
+  recommendation_category: string;
   description: string;
 }
 
@@ -24,29 +27,26 @@ interface SearchBarProps {
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   const [searchText, setSearchText] = useState('');
-  const [category, setCategory] = useState<string | null>(null);
-  const [brand, setBrand] = useState<string | null>(null);
+  const [category, setCategory] = useState<string>('');
+  const [brand, setBrand] = useState<string>('');
   const [categories, setCategories] = useState<string[]>([]);
   const [brands, setBrands] = useState<string[]>([]);
 
   useEffect(() => {
-    // Fetch unique categories and brands
     const fetchFilters = async () => {
       try {
-        const response = await axios.get<{ products: Product[] }>('http://localhost:5000/api/products');
+        const response = await axios.get<{ products: ApiProduct[] }>('http://localhost:5000/api/products');
         const products = response.data.products;
         
-        // Extract unique categories and brands with proper typing
-        const uniqueCategories = Array.from(new Set(products.map((p: Product) => p.category)));
-        const uniqueBrands = Array.from(new Set(products.map((p: Product) => p.brand)));
+        const uniqueCategories = [...new Set(products.map(p => p.category))];
+        const uniqueBrands = [...new Set(products.map(p => p.brand))];
         
-        setCategories(uniqueCategories);
-        setBrands(uniqueBrands);
+        setCategories(uniqueCategories.sort());
+        setBrands(uniqueBrands.sort());
       } catch (error) {
         console.error('Error fetching filters:', error);
       }
     };
-
     fetchFilters();
   }, []);
 
@@ -57,8 +57,21 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
       if (category) params.append('category', category);
       if (brand) params.append('brand', brand);
 
-      const response = await axios.get(`http://localhost:5000/api/products/search?${params.toString()}`);
-      onSearch(response.data.products);
+      const response = await axios.get<{ products: ApiProduct[] }>(`http://localhost:5000/api/products/search?${params.toString()}`);
+      
+      // Transform API products to match the Product interface used in Recommendations
+      const transformedProducts: Product[] = response.data.products.map(p => ({
+        product_id: p._id,
+        product_name: p.name,
+        category: p.category,
+        brand: p.brand,
+        price: p.price,
+        score: 1, // Default score for search results
+        recommendation_category: 'Search Result',
+        description: p.description
+      }));
+
+      onSearch(transformedProducts);
     } catch (error) {
       console.error('Error searching products:', error);
       onSearch([]);
@@ -66,42 +79,49 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   };
 
   return (
-    <Box sx={{ display: 'flex', gap: 2, mb: 4, flexWrap: 'wrap' }}>
-      <TextField
-        placeholder="Search products..."
-        value={searchText}
-        onChange={(e) => setSearchText(e.target.value)}
-        onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
-        sx={{ flexGrow: 1, minWidth: '200px' }}
-        InputProps={{
-          endAdornment: (
-            <InputAdornment position="end">
-              <IconButton onClick={handleSearch}>
-                <SearchIcon />
-              </IconButton>
-            </InputAdornment>
-          ),
-        }}
-      />
-      <Autocomplete
-        options={categories}
-        value={category}
-        onChange={(_, newValue) => setCategory(newValue)}
-        renderInput={(params) => (
-          <TextField {...params} label="Category" sx={{ minWidth: '200px' }} />
-        )}
-        sx={{ flexGrow: 1 }}
-      />
-      <Autocomplete
-        options={brands}
-        value={brand}
-        onChange={(_, newValue) => setBrand(newValue)}
-        renderInput={(params) => (
-          <TextField {...params} label="Brand" sx={{ minWidth: '200px' }} />
-        )}
-        sx={{ flexGrow: 1 }}
-      />
-    </Box>
+    <div className="search-bar">
+      <div className="search-container">
+        <div className="search-input-group">
+          <input
+            type="text"
+            className="input-field"
+            placeholder="Search products..."
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
+            onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
+          />
+          <button className="btn-primary search-button" onClick={handleSearch}>
+            Search
+          </button>
+        </div>
+        <div className="filter-container">
+          <select
+            className="input-field"
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+          >
+            <option value="">All Categories</option>
+            {categories.map((cat) => (
+              <option key={cat} value={cat}>
+                {cat}
+              </option>
+            ))}
+          </select>
+          <select
+            className="input-field"
+            value={brand}
+            onChange={(e) => setBrand(e.target.value)}
+          >
+            <option value="">All Brands</option>
+            {brands.map((b) => (
+              <option key={b} value={b}>
+                {b}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+    </div>
   );
 };
 

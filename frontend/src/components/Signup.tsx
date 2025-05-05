@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-import { TextField, Button, Box, Typography, Alert, MenuItem } from '@mui/material';
 
-// Common locations in India for demo purposes
 const LOCATIONS = [
   'Mumbai',
   'Delhi',
@@ -36,93 +34,74 @@ const Signup: React.FC = () => {
       await signup(email, password, name, location);
       navigate('/');
     } catch (err) {
-      setError('Failed to create an account. Please try again.');
+      setError('Failed to create an account');
     }
   };
 
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        maxWidth: 400,
-        mx: 'auto',
-        mt: 8,
-        p: 3,
-      }}
-    >
-      <Typography component="h1" variant="h5">
-        Sign up
-      </Typography>
+    <div className="auth-paper">
+      <h1>Sign up</h1>
       {error && (
-        <Alert severity="error" sx={{ width: '100%', mt: 2 }}>
+        <div className="alert alert-error">
           {error}
-        </Alert>
+        </div>
       )}
-      <Box component="form" onSubmit={handleSubmit} sx={{ mt: 1, width: '100%' }}>
-        <TextField
-          margin="normal"
-          required
-          fullWidth
-          id="name"
-          label="Full Name"
-          name="name"
-          autoComplete="name"
-          autoFocus
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <TextField
-          margin="normal"
-          required
-          fullWidth
-          id="email"
-          label="Email Address"
-          name="email"
-          autoComplete="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <TextField
-          margin="normal"
-          required
-          fullWidth
-          select
-          id="location"
-          label="Location"
-          value={location}
-          onChange={(e) => setLocation(e.target.value)}
-          helperText="Please select your city for personalized recommendations"
-        >
-          {LOCATIONS.map((loc) => (
-            <MenuItem key={loc} value={loc}>
-              {loc}
-            </MenuItem>
-          ))}
-        </TextField>
-        <TextField
-          margin="normal"
-          required
-          fullWidth
-          name="password"
-          label="Password"
-          type="password"
-          id="password"
-          autoComplete="new-password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <Button
-          type="submit"
-          fullWidth
-          variant="contained"
-          sx={{ mt: 3, mb: 2 }}
-        >
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            className="input-field"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            className="input-field"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="location">Location</label>
+          <select
+            id="location"
+            className="input-field"
+            value={location}
+            onChange={(e) => setLocation(e.target.value)}
+            required
+          >
+            <option value="">Select your location</option>
+            {LOCATIONS.map((loc) => (
+              <option key={loc} value={loc}>
+                {loc}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            className="input-field"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </div>
+        <button type="submit" className="btn-primary" style={{ width: '100%', marginTop: '1rem' }}>
           Sign Up
-        </Button>
-      </Box>
-    </Box>
+        </button>
+      </form>
+    </div>
   );
 };
 

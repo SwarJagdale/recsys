@@ -1,24 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Typography, List, ListItem, ListItemText, Divider, Paper, CircularProgress } from '@mui/material';
 import axios from 'axios';
 import { useAuth } from '../contexts/AuthContext';
 
 interface OrderItem {
-  name: string;
+  product_id: string;
+  product_name: string;
   price: number;
-  quantity: number;
-}
-
-interface Order {
-  order_id: string;
-  date: string;
-  items: OrderItem[];
-  total: number;
+  description: string;
+  category: string;
+  brand: string;
+  timestamp: string;
 }
 
 const PreviousOrders: React.FC = () => {
   const { user } = useAuth();
-  const [orders, setOrders] = useState<any[]>([]);
+  const [orders, setOrders] = useState<OrderItem[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -28,57 +24,64 @@ const PreviousOrders: React.FC = () => {
       try {
         const res = await axios.get(`http://localhost:5000/api/previous_orders/${user.userId}`);
         let orders = res.data.previous_orders || [];
-        // Normalize timestamp from MongoDB extended JSON
-        orders = orders.map((order: any) => {
-          let ts = order.timestamp;
-          if (ts && ts.$date) {
-            ts = ts.$date;
-          }
-          return { ...order, timestamp: ts };
-        });
-        // Sort by timestamp descending (newest first)
-        orders.sort((a: any, b: any) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime());
+        
+        // Sort orders by timestamp in descending order
+        orders.sort((a: OrderItem, b: OrderItem) => 
+          new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
+        );
+        
         setOrders(orders);
-      } catch (err) {
-        setOrders([]);
+      } catch (error) {
+        console.error('Error fetching orders:', error);
       } finally {
         setLoading(false);
       }
     };
+
     fetchOrders();
   }, [user]);
 
   if (loading) {
     return (
-      <Box p={3} display="flex" justifyContent="center"><CircularProgress /></Box>
+      <div className="container loading-container">
+        <div className="spinner"></div>
+      </div>
     );
   }
 
   return (
-    <Box p={3}>
-      <Typography variant="h4" gutterBottom>
-        Previous Orders
-      </Typography>
+    <div className="container">
+      <h1>Previous Orders</h1>
       {orders.length === 0 ? (
-        <Typography variant="body1">You have no previous orders.</Typography>
+        <div className="empty-orders">
+          <p>No previous orders found</p>
+        </div>
       ) : (
-        <List>
-          {orders.map((order, idx) => {
+        <div className="orders-list">
+          {orders.map((order) => {
             const dateObj = new Date(order.timestamp);
             return (
-              <Paper key={order._id?.$oid || order._id || idx} elevation={2} sx={{ mb: 2, p: 2 }}>
-                <Typography variant="h6">Order for Product ID: {order.product_id}</Typography>
-                <Typography variant="subtitle2">
-                  Date: {dateObj.toLocaleDateString()}<br />
-                  Time: {dateObj.toLocaleTimeString()}
-                </Typography>
-                <Divider />
-              </Paper>
+              <div key={`${order.product_id}-${order.timestamp}`} className="order-item">
+                <div className="order-header">
+                  <h3>{order.product_name}</h3>
+                  <span className="price">${order.price?.toFixed(2) || '0.00'}</span>
+                </div>
+                <div className="order-details">
+                  <p className="description">{order.description}</p>
+                  <div className="meta-info">
+                    <span className="category">Category: {order.category}</span>
+                    <span className="brand">Brand: {order.brand}</span>
+                  </div>
+                  <div className="order-meta">
+                    <span className="order-date">Ordered on: {dateObj.toLocaleDateString()} at {dateObj.toLocaleTimeString()}</span>
+                  </div>
+                </div>
+              </div>
             );
           })}
-        </List>
+        </div>
       )}
-    </Box>
+    </div>
   );
 };
 

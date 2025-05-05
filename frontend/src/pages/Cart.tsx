@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Typography, List, ListItem, ListItemText, IconButton, Divider, Button, CircularProgress } from '@mui/material';
-import DeleteIcon from '@mui/icons-material/Delete';
 import axios from 'axios';
 import { useAuth } from '../contexts/AuthContext';
 
 interface CartItem {
   product_id: string;
-  name: string;
+  product_name: string;
   price: number;
   quantity: number;
 }
 
 const Cart: React.FC = () => {
   const { user } = useAuth();
-  const [cart, setCart] = useState<any[]>([]);
+  const [cart, setCart] = useState<CartItem[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -25,88 +23,77 @@ const Cart: React.FC = () => {
         // Group by product_id and count quantity
         const grouped = res.data.cart_interactions.reduce((acc: any, curr: any) => {
           const pid = curr.product_id;
-          if (!acc[pid]) acc[pid] = { product_id: pid, quantity: 0 };
-          acc[pid].quantity += 1;
+          if (!acc[pid]) {
+            acc[pid] = {
+              product_id: pid,
+              product_name: curr.product_name,
+              price: curr.price,
+              quantity: 0
+            };
+          }
+          acc[pid].quantity++;
           return acc;
         }, {});
-        const cartItems = Object.values(grouped);
-        // Fetch product details for each product_id
-        const detailedCart = await Promise.all(
-          cartItems.map(async (item: any) => {
-            try {
-              const prodRes = await axios.get(`http://localhost:5000/api/products/${item.product_id}`);
-              return {
-                ...item,
-                name: prodRes.data.name,
-                price: prodRes.data.price,
-                category: prodRes.data.category,
-                brand: prodRes.data.brand
-              };
-            } catch (e) {
-              return { ...item, name: 'Unknown Product', price: 0 };
-            }
-          })
-        );
-        setCart(detailedCart);
-      } catch (err) {
-        setCart([]);
+        
+        setCart(Object.values(grouped));
+      } catch (error) {
+        console.error('Error fetching cart:', error);
       } finally {
         setLoading(false);
       }
     };
+
     fetchCart();
   }, [user]);
 
-  const handleRemove = (product_id: string) => {
-    setCart(cart.filter(item => item.product_id !== product_id));
-    // Optionally: call backend to remove item from cart
-  };
-
-  const total = cart.reduce((sum, item) => sum + (item.price || 0) * (item.quantity || 1), 0);
+  const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
   if (loading) {
     return (
-      <Box p={3} display="flex" justifyContent="center"><CircularProgress /></Box>
+      <div className="container loading-container">
+        <div className="spinner"></div>
+      </div>
     );
   }
 
   return (
-    <Box p={3}>
-      <Typography variant="h4" gutterBottom>
-        Your Cart
-      </Typography>
+    <div className="container">
+      <h1>Shopping Cart</h1>
       {cart.length === 0 ? (
-        <Typography variant="body1">Your cart is currently empty.</Typography>
+        <div className="empty-cart">
+          <p>Your cart is empty</p>
+        </div>
       ) : (
-        <>
-          <List>
-            {cart.map(item => (
-              <React.Fragment key={item.product_id}>
-                <ListItem
-                  secondaryAction={
-                    <IconButton edge="end" aria-label="delete" onClick={() => handleRemove(item.product_id)}>
-                      <DeleteIcon />
-                    </IconButton>
-                  }
-                >
-                  <ListItemText
-                    primary={`${item.product_id} - ${item.brand}   - ${item.category} (x${item.quantity})`}
-                    secondary={`$${item.price?.toFixed(2) || '0.00'} each`}
-                  />
-                </ListItem>
-                <Divider />
-              </React.Fragment>
+        <div className="cart-container">
+          <div className="cart-items">
+            {cart.map((item) => (
+              <div key={item.product_id} className="cart-item">
+                <div className="item-details">
+                  <h3>{item.product_name}</h3>
+                  <p className="price">${item.price?.toFixed(2) || '0.00'} each</p>
+                  <p className="quantity">Quantity: {item.quantity}</p>
+                </div>
+                <div className="item-total">
+                  ${(item.price * item.quantity).toFixed(2)}
+                </div>
+              </div>
             ))}
-          </List>
-          <Box mt={2} display="flex" justifyContent="space-between">
-            <Typography variant="h6">Total: ${total.toFixed(2)}</Typography>
-            <Button variant="contained" color="primary" disabled={cart.length === 0}>
+          </div>
+          <div className="cart-summary">
+            <div className="cart-total">
+              <span>Total:</span>
+              <span className="price">${total.toFixed(2)}</span>
+            </div>
+            <button 
+              className="btn-primary checkout-button"
+              disabled={cart.length === 0}
+            >
               Checkout
-            </Button>
-          </Box>
-        </>
+            </button>
+          </div>
+        </div>
       )}
-    </Box>
+    </div>
   );
 };
 

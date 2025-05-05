@@ -6,7 +6,7 @@ import json
 from datetime import datetime
 import pandas as pd
 import numpy as np
-from utils.hybrid_recommender import recommend,  add_recommender_interaction, init_app
+from utils.hybrid_recommender import recommend, add_recommender_interaction, init_app
 
 app = Flask(__name__)
 CORS(app)
@@ -53,7 +53,7 @@ def signup():
     if not data or not data.get('email') or not data.get('password') or not data.get('location'):
         return jsonify({'error': 'Missing required fields'}), 400
     
-    if mongo.db.users.find_one({'email': data['email']}):
+    if mongo.db.users.find_one({'email': data['email']}, {'_id': 0}):
         return jsonify({'error': 'User already exists'}), 409
     
     user = {
@@ -81,7 +81,7 @@ def login():
     user = mongo.db.users.find_one({
         'email': data['email'],
         'password': data['password']  # In production, verify hashed password
-    })
+    }, {'_id': 1, 'preferences': 1})
     
     if not user:
         return jsonify({'error': 'Invalid credentials'}), 401
@@ -92,32 +92,88 @@ def login():
         'preferences': user.get('preferences', {})
     })
 
-# Interaction routes
-
 @app.route('/api/cart_interactions/<user_id>', methods=['GET'])
 def get_cart_interactions(user_id):
-    """Fetch latest 'add_to_cart' interactions for a user, sorted by timestamp desc."""
     try:
-        interactions = list(
-            mongo.db.interactions.find({
-                'user_id': ObjectId(user_id),
-                'interaction_type': 'add_to_cart'
-            }).sort('timestamp', -1)
-        )
+        pipeline = [
+            {
+                '$match': {
+                    'user_id': ObjectId(user_id),
+                    'interaction_type': 'add_to_cart'
+                }
+            },
+            {
+                '$lookup': {
+                    'from': 'products',
+                    'localField': 'product_id',
+                    'foreignField': 'product_id',
+                    'as': 'product'
+                }
+            },
+            {
+                '$unwind': '$product'
+            },
+            {
+                '$project': {
+                    '_id': 0,
+                    'product_id': 1,
+                    'timestamp': 1,
+                    'product_name': '$product.product_name',
+                    'price': '$product.price',
+                    'description': '$product.description',
+                    'category': '$product.category',
+                    'brand': '$product.brand'
+                }
+            },
+            {
+                '$sort': {'timestamp': -1}
+            }
+        ]
+        
+        interactions = list(mongo.db.interactions.aggregate(pipeline))
         return jsonify({'cart_interactions': interactions})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
 @app.route('/api/previous_orders/<user_id>', methods=['GET'])
 def get_previous_orders(user_id):
-    """Fetch previous 'purchase' interactions for a user, sorted by timestamp desc."""
     try:
-        orders = list(
-            mongo.db.interactions.find({
-                'user_id': ObjectId(user_id),
-                'interaction_type': 'purchase'
-            }).sort('timestamp', -1)
-        )
+        pipeline = [
+            {
+                '$match': {
+                    'user_id': ObjectId(user_id),
+                    'interaction_type': 'purchase'
+                }
+            },
+            {
+                '$lookup': {
+                    'from': 'products',
+                    'localField': 'product_id',
+                    'foreignField': 'product_id',
+                    'as': 'product'
+                }
+            },
+            {
+                '$unwind': '$product'
+            },
+            {
+                '$project': {
+                    '_id': 0,
+                    'product_id': 1,
+                    'timestamp': 1,
+                    'product_name': '$product.product_name',
+                    'price': '$product.price',
+                    'description': '$product.description',
+                    'category': '$product.category',
+                    'brand': '$product.brand'
+                }
+            },
+            {
+                '$sort': {'timestamp': -1}
+            }
+        ]
+        
+        orders = list(mongo.db.interactions.aggregate(pipeline))
         return jsonify({'previous_orders': orders})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
@@ -128,25 +184,23 @@ def add_interaction():
     if not data or not data.get('user_id') or not data.get('product_id') or not data.get('interaction_type'):
         return jsonify({'error': 'Missing required fields'}), 400
 
-    interaction_type = data['interaction_type']
-    user_id = data['user_id']
-    product_id = data['product_id']
-
-    # Store interaction in MongoDB using ObjectId
     interaction = {
-        'user_id': ObjectId(user_id),
-        'product_id': int(product_id),
-        'interaction_type': interaction_type,
+        'user_id': ObjectId(data['user_id']),
+        'product_id': int(data['product_id']),
+        'interaction_type': data['interaction_type'],
         'timestamp': datetime.utcnow()
     }
-    mongo.db.interactions.insert_one(interaction)
-
-    # Pass IDs to recommender system
-    add_recommender_interaction(user_id, product_id, interaction_type)
     
-    return jsonify({'message': 'Interaction recorded successfully'}), 201
+    result = mongo.db.interactions.insert_one(interaction)
+    
+    # Pass IDs to recommender system
+    add_recommender_interaction(data['user_id'], data['product_id'], data['interaction_type'])
+    
+    return jsonify({
+        'message': 'Interaction recorded successfully',
+        'interaction_id': str(result.inserted_id)
+    }), 201
 
-# Recommendation routes
 @app.route('/api/recommendations/<user_id>', methods=['GET'])
 def get_recommendations(user_id):
     try:
@@ -161,28 +215,26 @@ def get_recommendations(user_id):
                 'product_name': row['product_name'],
                 'description': row['description'],
                 'score': float(row['score']),
-                'recommendation_category': row['recommendation_source']  # Use the source from the recommender
+                'recommendation_category': row['recommendation_source']
             })
         return jsonify({'recommendations': recommendations})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
-
-# Profile route
 @app.route('/api/profile/<user_id>', methods=['GET'])
 def get_profile(user_id):
     try:
-        user = mongo.db.users.find_one({'_id': ObjectId(user_id)})
+        user = mongo.db.users.find_one({'_id': ObjectId(user_id)}, {'_id': 0, 'email': 1, 'preferences': 1})
         if not user:
             return jsonify({'error': 'User not found'}), 404
-        user_data = {
-            'email': user.get('email'),
-            'preferences': user.get('preferences', {})
-        }
+
         interactions = list(
-            mongo.db.interactions.find({'user_id': ObjectId(user_id)})
-            .sort('timestamp', -1)
+            mongo.db.interactions.find(
+                {'user_id': ObjectId(user_id)},
+                {'_id': 0, 'interaction_type': 1, 'timestamp': 1, 'product_id': 1}
+            ).sort('timestamp', -1)
         )
+        
         summary = {}
         for inter in interactions:
             t = inter.get('interaction_type')
@@ -191,7 +243,10 @@ def get_profile(user_id):
         # Get recent interactions with product details
         recent_interactions = []
         for inter in interactions[:10]:
-            product = mongo.db.products.find_one({'_id': inter.get('product_id')})
+            product = mongo.db.products.find_one(
+                {'_id': inter.get('product_id')},
+                {'_id': 0, 'product_name': 1, 'category': 1, 'brand': 1}
+            )
             if product:
                 recent_interactions.append({
                     'product_id': str(inter.get('product_id')),
@@ -207,7 +262,10 @@ def get_profile(user_id):
             # Get product details for interactions
             product_interactions = []
             for inter in interactions:
-                product = mongo.db.products.find_one({'_id': inter.get('product_id')})
+                product = mongo.db.products.find_one(
+                    {'_id': inter.get('product_id')},
+                    {'_id': 0, 'category': 1, 'brand': 1}
+                )
                 if product:
                     product_interactions.append({
                         'category': product.get('category'),
@@ -253,7 +311,7 @@ def get_profile(user_id):
             }
 
         return jsonify({
-            'user': user_data,
+            'user': user,
             'summary': summary,
             'recent': recent_interactions,
             'recommendation_profile': recommendation_profile
@@ -261,20 +319,19 @@ def get_profile(user_id):
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
-# Product routes
 @app.route('/api/products', methods=['GET'])
 def get_products():
-    products = list(mongo.db.products.find())
+    products = list(mongo.db.products.find({}, {'_id': 0}))
     return jsonify({'products': products})
 
 @app.route('/api/products/<product_id>', methods=['GET'])
 def get_product(product_id):
-    # Try to cast product_id to int, fallback to string if ValueError occurs
     try:
         lookup_id = int(product_id)
     except ValueError:
         lookup_id = product_id
-    product = mongo.db.products.find_one({'product_id': lookup_id})
+        
+    product = mongo.db.products.find_one({'product_id': lookup_id}, {'_id': 0})
     if not product:
         return jsonify({'error': 'Product not found'}), 404
     return jsonify(product)
@@ -285,7 +342,6 @@ def search_products():
     category = request.args.get('category')
     brand = request.args.get('brand')
     
-    # Build the search filter
     search_filter = {}
     
     if query:
@@ -297,17 +353,14 @@ def search_products():
     if brand:
         search_filter['brand'] = brand
     
-    # Execute search with filters
     try:
         if query:
-            # If there's a text query, use text search with sorting by score
             products = list(mongo.db.products.find(
                 search_filter,
-                {'score': {'$meta': 'textScore'}}
+                {'_id': 0, 'score': {'$meta': 'textScore'}}
             ).sort([('score', {'$meta': 'textScore'})]))
         else:
-            # If no text query, just filter by category/brand
-            products = list(mongo.db.products.find(search_filter))
+            products = list(mongo.db.products.find(search_filter, {'_id': 0}))
             
         return jsonify({'products': products})
     except Exception as e:

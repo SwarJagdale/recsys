@@ -1,38 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import {
-  Container,
-  Grid,
-  Card,
-  CardContent,
-  CardMedia,
-  Typography,
-  Button,
-  Box,
-  IconButton,
-  CircularProgress,
-} from '@mui/material';
-import {
-  ShoppingCart,
-  Favorite,
-  Visibility,
-} from '@mui/icons-material';
 import axios from 'axios';
 import { useAuth } from '../contexts/AuthContext';
 import SearchBar from '../components/SearchBar';
 
-interface Product {
+interface ApiProduct {
   _id: string;
   name: string;
-  description: string;
-  price: number;
   category: string;
   brand: string;
+  price: number;
+  description: string;
   image?: string;
 }
 
+interface SearchProduct {
+  product_id: string;
+  product_name: string;
+  category: string;
+  brand: string;
+  price: number;
+  score: number;
+  recommendation_category: string;
+  description: string;
+}
+
 const Home: React.FC = () => {
-  const [products, setProducts] = useState<Product[]>([]);
+  const [products, setProducts] = useState<ApiProduct[]>([]);
   const [loading, setLoading] = useState(true);
   const { user } = useAuth();
   const navigate = useNavigate();
@@ -43,7 +37,7 @@ const Home: React.FC = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/products');
+      const response = await axios.get<{ products: ApiProduct[] }>('http://localhost:5000/api/products');
       setProducts(response.data.products);
     } catch (error) {
       console.error('Error fetching products:', error);
@@ -52,13 +46,21 @@ const Home: React.FC = () => {
     }
   };
 
-  const handleSearch = (searchResults: Product[]) => {
-    setProducts(searchResults);
+  const handleSearch = (searchResults: SearchProduct[]) => {
+    // Transform search results back to ApiProduct format
+    const transformedProducts: ApiProduct[] = searchResults.map(p => ({
+      _id: p.product_id,
+      name: p.product_name,
+      category: p.category,
+      brand: p.brand,
+      price: p.price,
+      description: p.description
+    }));
+    setProducts(transformedProducts);
   };
 
   const handleInteraction = async (productId: string, interactionType: string) => {
     if (!user) return;
-
     try {
       await axios.post('http://localhost:5000/api/interactions', {
         user_id: user.id,
@@ -72,87 +74,48 @@ const Home: React.FC = () => {
 
   if (loading) {
     return (
-      <Box
-        sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          minHeight: '80vh',
-        }}
-      >
-        <CircularProgress />
-      </Box>
+      <div className="container loading-container">
+        <div className="spinner"></div>
+      </div>
     );
   }
 
   return (
-    <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-      <Typography variant="h4" component="h1" gutterBottom>
-        Browse Products
-      </Typography>
-      
+    <div className="container">
+      <h1>Browse Products</h1>
       <SearchBar onSearch={handleSearch} />
-
-      <Grid container spacing={4}>
+      <div className="grid">
         {products.map((product) => (
-          <Grid item key={product._id} xs={12} sm={6} md={4}>
-            <Card
-              sx={{
-                height: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-                '&:hover': {
-                  transform: 'scale(1.02)',
-                  transition: 'transform 0.2s ease-in-out',
-                },
-              }}
-            >
-              <CardMedia
-                component="img"
-                height="200"
-                image={product.image || 'https://via.placeholder.com/300x200'}
-                alt={product.name}
-              />
-              <CardContent sx={{ flexGrow: 1 }}>
-                <Typography gutterBottom variant="h5" component="h2">
-                  {product.name}
-                </Typography>
-                <Typography variant="body2" color="text.secondary" gutterBottom>
-                  {product.category} • {product.brand}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {product.description}
-                </Typography>
-                <Typography variant="h6" color="primary" sx={{ mt: 2 }}>
-                  ${product.price.toFixed(2)}
-                </Typography>
-
-                <Box sx={{ mt: 2, display: 'flex', justifyContent: 'space-between' }}>
-                  <IconButton
-                    color="primary"
-                    onClick={() => handleInteraction(product._id, 'view')}
-                  >
-                    <Visibility />
-                  </IconButton>
-                  <IconButton
-                    color="primary"
-                    onClick={() => handleInteraction(product._id, 'add_to_cart')}
-                  >
-                    <ShoppingCart />
-                  </IconButton>
-                  <IconButton
-                    color="primary"
-                    onClick={() => handleInteraction(product._id, 'purchase')}
-                  >
-                    <Favorite />
-                  </IconButton>
-                </Box>
-              </CardContent>
-            </Card>
-          </Grid>
+          <div key={product._id} className="card product-card">
+            <img
+              className="card-media"
+              src={product.image || 'https://via.placeholder.com/300x200'}
+              alt={product.name}
+            />
+            <div className="card-content">
+              <h2 className="product-title">{product.name}</h2>
+              <p className="product-category">{product.category} • {product.brand}</p>
+              <p className="product-description">{product.description}</p>
+              <p className="price">${product.price.toFixed(2)}</p>
+              <div className="product-actions">
+                <button 
+                  className="btn-secondary"
+                  onClick={() => handleInteraction(product._id, 'view')}
+                >
+                  View Details
+                </button>
+                <button
+                  className="btn-primary"
+                  onClick={() => handleInteraction(product._id, 'add_to_cart')}
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
         ))}
-      </Grid>
-    </Container>
+      </div>
+    </div>
   );
 };
 
