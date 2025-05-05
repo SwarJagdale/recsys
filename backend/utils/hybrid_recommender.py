@@ -55,6 +55,13 @@ class HybridRecommender:
         """Calculate recency-based scores with smooth diversity and time decay"""
         recent_cutoff = datetime.now() - timedelta(minutes=3)  # Extended to 30 days
         
+        # Convert user_id to integer if it's a string
+        try:
+            user_id = int(user_id)
+        except (ValueError, TypeError):
+            print(f"Invalid user_id format: {user_id}")
+            return pd.Series(index=self.product_df.index)
+
         recent_interactions = pd.DataFrame(list(self.db.interactions.find({
             'user_id': user_id,
             'timestamp': {'$gte': recent_cutoff}
@@ -142,6 +149,13 @@ class HybridRecommender:
 
     def _get_collaborative_scores(self, user_id, n_items=20):
         """Calculate collaborative filtering scores"""
+        # Convert user_id to integer if it's a string
+        try:
+            user_id = int(user_id)
+        except (ValueError, TypeError):
+            print(f"Invalid user_id format: {user_id}")
+            return pd.Series(index=self.product_df.index)
+
         if self.user_item_matrix is None or user_id not in self.user_item_matrix.index:
             return pd.Series(index=self.product_df.index)
 
@@ -166,6 +180,13 @@ class HybridRecommender:
 
     def _get_context_recommendations(self, user_id, n_items=20):
         """Get recommendations based on context when user has no history"""
+        # Convert user_id to integer if it's a string
+        try:
+            user_id = int(user_id)
+        except (ValueError, TypeError):
+            print(f"Invalid user_id format: {user_id}")
+            return pd.Series(index=self.product_df.index)
+
         context = self.db.context.find_one({'user_id': user_id})
         if not context:
             # Return popular items if no context available
@@ -213,7 +234,14 @@ class HybridRecommender:
     def _get_demographic_recommendations(self, user_id, n_items=20):
         """Get recommendations based on user's location demographics"""
         try:
-            user = self.db.users.find_one({'_id': ObjectId(user_id)})
+            # Convert user_id to integer if it's a string
+            try:
+                user_id = int(user_id)
+            except (ValueError, TypeError):
+                print(f"Invalid user_id format: {user_id}")
+                return pd.Series(index=self.product_df.index)
+
+            user = self.db.users.find_one({'user_id': user_id})
             if not user or not user.get('location'):
                 return pd.Series(index=self.product_df.index)
 
@@ -221,7 +249,7 @@ class HybridRecommender:
             
             # Get all interactions from users in the same location
             location_users = list(self.db.users.find({'location': user_location}))
-            location_user_ids = [u['_id'] for u in location_users]
+            location_user_ids = [u['user_id'] for u in location_users]
             
             # Get interactions from users in same location
             location_interactions = pd.DataFrame(list(self.db.interactions.find({
@@ -260,6 +288,13 @@ class HybridRecommender:
 
     def recommend(self, user_id, k=20):
         """Generate hybrid recommendations for a user"""
+        # Convert user_id to integer if it's a string
+        try:
+            user_id = int(user_id)
+        except (ValueError, TypeError):
+            print(f"Invalid user_id format: {user_id}")
+            return pd.DataFrame()
+
         # Check if user has any interactions
         user_interactions = self.db.interactions.find_one({'user_id': user_id})
         print(user_interactions)
@@ -316,21 +351,18 @@ class HybridRecommender:
 
     def add_interaction(self, user_id, product_id, interaction_type):
         """Update recommendations when new interaction occurs"""
-        from bson import ObjectId  # Ensure ObjectId is imported
+        # Convert user_id to integer if it's a string
+        try:
+            user_id = int(user_id)
+        except (ValueError, TypeError):
+            print(f"Invalid user_id format: {user_id}")
+            return
 
-        # Convert product_id to integer if it isn't already
+        # Convert product_id to integer if it's a string
         try:
             product_id = int(product_id)
         except (ValueError, TypeError):
-            # If conversion fails, try to handle it gracefully
-            return
-
-        # Convert user_id to ObjectId if it isn't already
-        try:
-            user_id = ObjectId(user_id)
-        except Exception:
-            # If conversion fails, log the error and return
-            print(f"Invalid user_id format: {user_id}")
+            print(f"Invalid product_id format: {product_id}")
             return
 
         # Record the interaction

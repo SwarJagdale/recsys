@@ -16,8 +16,6 @@ interface Product {
   category: string;
   brand: string;
   price: number;
-  score: number;
-  recommendation_category: string;
   description: string;
 }
 
@@ -50,31 +48,20 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
     fetchFilters();
   }, []);
 
-  const handleSearch = async () => {
+  const handleSearch = async (query: string) => {
     try {
-      const params = new URLSearchParams();
-      if (searchText) params.append('query', searchText);
-      if (category) params.append('category', category);
-      if (brand) params.append('brand', brand);
-
-      const response = await axios.get<{ products: ApiProduct[] }>(`http://localhost:5000/api/products/search?${params.toString()}`);
-      
-      // Transform API products to match the Product interface used in Recommendations
-      const transformedProducts: Product[] = response.data.products.map(p => ({
-        product_id: p._id,
-        product_name: p.name,
+      const response = await axios.get(`http://localhost:5000/api/products/search?query=${query}`);
+      const products = response.data.products.map((p: Product) => ({
+        product_id: p.product_id,
+        product_name: p.product_name,
         category: p.category,
         brand: p.brand,
         price: p.price,
-        score: 1, // Default score for search results
-        recommendation_category: 'Search Result',
         description: p.description
       }));
-
-      onSearch(transformedProducts);
+      onSearch(products);
     } catch (error) {
       console.error('Error searching products:', error);
-      onSearch([]);
     }
   };
 
@@ -88,9 +75,9 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
             placeholder="Search products..."
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
-            onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
+            onKeyPress={(e) => e.key === 'Enter' && handleSearch(searchText)}
           />
-          <button className="btn-primary search-button" onClick={handleSearch}>
+          <button className="btn-primary search-button" onClick={() => handleSearch(searchText)}>
             Search
           </button>
         </div>

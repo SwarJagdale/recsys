@@ -20,17 +20,9 @@ const PreviousOrders: React.FC = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       if (!user) return;
-      setLoading(true);
       try {
-        const res = await axios.get(`http://localhost:5000/api/previous_orders/${user.userId}`);
-        let orders = res.data.previous_orders || [];
-        
-        // Sort orders by timestamp in descending order
-        orders.sort((a: OrderItem, b: OrderItem) => 
-          new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
-        );
-        
-        setOrders(orders);
+        const response = await axios.get(`http://localhost:5000/api/previous_orders/${user.user_id}`);
+        setOrders(response.data.previous_orders);
       } catch (error) {
         console.error('Error fetching orders:', error);
       } finally {

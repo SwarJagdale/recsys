@@ -3,6 +3,7 @@ import { useAuth } from '../contexts/AuthContext';
 import axios from 'axios';
 
 interface Recommendation {
+  id:string;
   product_id: string;
   product_name: string;
   category: string;
@@ -27,7 +28,7 @@ const Recommendations: React.FC = () => {
       setLoading(true);
       setError('');
       try {
-        const response = await axios.get(`http://localhost:5000/api/recommendations/${user.id}`);
+        const response = await axios.get(`http://localhost:5000/api/recommendations/${user.user_id}`);
         setRecommendations(response.data.recommendations || []);
       } catch (err) {
         setError('Failed to fetch recommendations');
@@ -42,7 +43,7 @@ const Recommendations: React.FC = () => {
   const handleInteraction = async (productId: string, interactionType: string) => {
     try {
       await axios.post('http://localhost:5000/api/interactions', {
-        user_id: user?.id,
+        user_id: user?.user_id,
         product_id: productId,
         interaction_type: interactionType,
       });

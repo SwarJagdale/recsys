@@ -56,7 +56,12 @@ def signup():
     if mongo.db.users.find_one({'email': data['email']}, {'_id': 0}):
         return jsonify({'error': 'User already exists'}), 409
     
+    # Generate a new integer user_id
+    last_user = mongo.db.users.find_one(sort=[('user_id', -1)])
+    new_user_id = 1 if not last_user else last_user['user_id'] + 1
+    
     user = {
+        'user_id': new_user_id,
         'email': data['email'],
         'password': data['password'],  # In production, hash the password
         'created_at': datetime.utcnow(),
@@ -68,8 +73,12 @@ def signup():
     result = mongo.db.users.insert_one(user)
     return jsonify({
         'message': 'User created successfully', 
-        'user_id': str(result.inserted_id),
-        'location': data['location']
+        'user_id': new_user_id,
+        'location': data['location'],
+        'email': data['email'],
+        'name': data.get('name', ''),
+        'preferences': data.get('preferences', {}),
+        'interactions': []
     }), 201
 
 @app.route('/api/login', methods=['POST'])
@@ -81,14 +90,14 @@ def login():
     user = mongo.db.users.find_one({
         'email': data['email'],
         'password': data['password']  # In production, verify hashed password
-    }, {'_id': 1, 'preferences': 1})
+    }, {'user_id': 1, 'preferences': 1})
     
     if not user:
         return jsonify({'error': 'Invalid credentials'}), 401
     
     return jsonify({
         'message': 'Login successful',
-        'user_id': str(user['_id']),
+        'user_id': user['user_id'],
         'preferences': user.get('preferences', {})
     })
 
@@ -98,7 +107,7 @@ def get_cart_interactions(user_id):
         pipeline = [
             {
                 '$match': {
-                    'user_id': ObjectId(user_id),
+                    'user_id': int(user_id),
                     'interaction_type': 'add_to_cart'
                 }
             },
@@ -141,7 +150,7 @@ def get_previous_orders(user_id):
         pipeline = [
             {
                 '$match': {
-                    'user_id': ObjectId(user_id),
+                    'user_id': int(user_id),
                     'interaction_type': 'purchase'
                 }
             },
@@ -185,7 +194,7 @@ def add_interaction():
         return jsonify({'error': 'Missing required fields'}), 400
 
     interaction = {
-        'user_id': ObjectId(data['user_id']),
+        'user_id': int(data['user_id']),
         'product_id': int(data['product_id']),
         'interaction_type': data['interaction_type'],
         'timestamp': datetime.utcnow()
@@ -214,7 +223,7 @@ def get_recommendations(user_id):
                 'price': float(row['price']),
                 'product_name': row['product_name'],
                 'description': row['description'],
-                'score': float(row['score']),
+                # 'score': float(row['score']),
                 'recommendation_category': row['recommendation_source']
             })
         return jsonify({'recommendations': recommendations})
@@ -224,13 +233,13 @@ def get_recommendations(user_id):
 @app.route('/api/profile/<user_id>', methods=['GET'])
 def get_profile(user_id):
     try:
-        user = mongo.db.users.find_one({'_id': ObjectId(user_id)}, {'_id': 0, 'email': 1, 'preferences': 1})
+        user = mongo.db.users.find_one({'user_id': int(user_id)}, {'_id': 0, 'email': 1, 'preferences': 1})
         if not user:
             return jsonify({'error': 'User not found'}), 404
 
         interactions = list(
             mongo.db.interactions.find(
-                {'user_id': ObjectId(user_id)},
+                {'user_id': int(user_id)},
                 {'_id': 0, 'interaction_type': 1, 'timestamp': 1, 'product_id': 1}
             ).sort('timestamp', -1)
         )
@@ -244,7 +253,7 @@ def get_profile(user_id):
         recent_interactions = []
         for inter in interactions[:10]:
             product = mongo.db.products.find_one(
-                {'_id': inter.get('product_id')},
+                {'product_id': inter.get('product_id')},
                 {'_id': 0, 'product_name': 1, 'category': 1, 'brand': 1}
             )
             if product:

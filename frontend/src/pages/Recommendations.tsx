@@ -13,7 +13,7 @@ interface Product {
   category: string;
   brand: string;
   price: number;
-  score: number;
+  // score: number;
   recommendation_category: string;
   description: string;
 }
@@ -33,7 +33,7 @@ const Recommendations: React.FC = () => {
   const fetchRecommendations = async () => {
     if (!user) return;
     try {
-      const response = await axios.get(`http://localhost:5000/api/recommendations/${user.userId}`);
+      const response = await axios.get(`http://localhost:5000/api/recommendations/${user.user_id}`);
       setRecommendations(response.data.recommendations || []);
     } catch (err) {
       setError('Failed to load recommendations');
@@ -50,11 +50,13 @@ const Recommendations: React.FC = () => {
     if (!user) return;
     try {
       await axios.post('http://localhost:5000/api/interactions', {
-        user_id: user.userId,
+        user_id: user.user_id,
         product_id: productId,
-        interaction_type: interactionType,
+        interaction_type: interactionType
       });
-      setSelectedProduct(null);
+      // Refresh recommendations
+      const response = await axios.get(`http://localhost:5000/api/recommendations/${user.user_id}`);
+      setRecommendations(response.data.recommendations);
     } catch (error) {
       console.error('Error recording interaction:', error);
     }
@@ -67,7 +69,7 @@ const Recommendations: React.FC = () => {
     if (user) {
       try {
         await axios.post('http://localhost:5000/api/interactions', {
-          user_id: user.userId,
+          user_id: user.user_id,
           product_id: product.product_id,
           interaction_type: 'view'
         });
@@ -129,7 +131,7 @@ const Recommendations: React.FC = () => {
             <div className="card-content">
               <h2>{rec.product_name}</h2>
               <p className="product-meta">
-                {rec.category} • Score: {(rec.score * 100).toFixed(1)}%
+                {rec.category} •
               </p>
               <p className="recommendation-source">
                 Recommended by: {rec.recommendation_category}
@@ -160,7 +162,7 @@ const Recommendations: React.FC = () => {
                   <p className="product-meta">
                     Category: {selectedProduct.category}<br />
                     Brand: {selectedProduct.brand}<br />
-                    Score: {(selectedProduct.score * 100).toFixed(1)}%
+                    {/* Score: {(selectedProduct.score * 100).toFixed(1)}% */}
                   </p>
                   <p className="recommendation-source">
                     Recommended by: {selectedProduct.recommendation_category}
