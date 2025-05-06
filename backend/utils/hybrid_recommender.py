@@ -134,7 +134,7 @@ class HybridRecommender:
             # Normalize scores
             if not scores.empty and scores.max() > 0:
                 scores = scores / scores.max()
-            print(scores.sort_values())                
+            print("recency",scores.sort_values())                
             return scores
 
         except KeyError:
@@ -261,8 +261,12 @@ class HybridRecommender:
     def recommend(self, user_id, k=20):
         """Generate hybrid recommendations for a user"""
         # Check if user has any interactions
+        
+        user_id=int(user_id)
         user_interactions = self.db.interactions.find_one({'user_id': user_id})
-        print(user_interactions)
+        
+        
+        print(len(user_interactions)>0,"has interactions")
         if not user_interactions:
             # New user - use demographic and context recommendations
             demographic_scores = self._get_demographic_recommendations(user_id, k)
@@ -272,6 +276,7 @@ class HybridRecommender:
             recommendation_sources = pd.Series('demographic', index=demographic_scores.index)
             context_wins = context_scores > demographic_scores
             recommendation_sources[context_wins] = 'context'
+            recommendation_sources[~context_wins] = 'demographic'
             
             # Combine scores with weights
             scores = demographic_scores * 0.7 + context_scores * 0.3
@@ -359,3 +364,13 @@ def recommend(user_id, k=20):
 def add_recommender_interaction(user_id, product_id, interaction_type):
     """Add a new interaction and update recommendations"""
     _recommender.add_interaction(user_id, product_id, interaction_type)
+    
+    
+    
+    
+if __name__ == "__main__":
+    # Example usage
+    #recommend based on demographics
+    recommender = HybridRecommender()
+    print(recommender._get_demographic_recommendations("1003", 20))
+    print(recommender._get_demographic_recommendations("1003", 20))

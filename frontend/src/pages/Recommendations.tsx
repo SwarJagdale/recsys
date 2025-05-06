@@ -13,8 +13,8 @@ interface Product {
   category: string;
   brand: string;
   price: number;
-  score: number;
-  recommendation_category: string;
+  // score: number;
+  recommendation_category	: string;
   description: string;
 }
 
@@ -28,6 +28,7 @@ const Recommendations: React.FC = () => {
 
   useEffect(() => {
     fetchRecommendations();
+    console.log('hihihi');
   }, []);
 
   const fetchRecommendations = async () => {
@@ -129,7 +130,7 @@ const Recommendations: React.FC = () => {
             <div className="card-content">
               <h2>{rec.product_name}</h2>
               <p className="product-meta">
-                {rec.category} • Score: {(rec.score * 100).toFixed(1)}%
+                {rec.category} 
               </p>
               <p className="recommendation-source">
                 Recommended by: {rec.recommendation_category}
@@ -160,7 +161,7 @@ const Recommendations: React.FC = () => {
                   <p className="product-meta">
                     Category: {selectedProduct.category}<br />
                     Brand: {selectedProduct.brand}<br />
-                    Score: {(selectedProduct.score * 100).toFixed(1)}%
+                    {/* Score: {(selectedProduct.score * 100).toFixed(1)}% */}
                   </p>
                   <p className="recommendation-source">
                     Recommended by: {selectedProduct.recommendation_category}

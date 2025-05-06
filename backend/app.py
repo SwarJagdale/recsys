@@ -53,6 +53,9 @@ def signup():
     if not data or not data.get('email') or not data.get('password') or not data.get('location'):
         return jsonify({'error': 'Missing required fields'}), 400
     
+    last_user = mongo.db.users.find_one({}, sort=[('user_id', -1)])
+    print(last_user, 'last_user')
+    
     if mongo.db.users.find_one({'email': data['email']}, {'_id': 0}):
         return jsonify({'error': 'User already exists'}), 409
     
@@ -62,13 +65,14 @@ def signup():
         'created_at': datetime.utcnow(),
         'location': data['location'],
         'preferences': data.get('preferences', {}),
-        'interactions': []
+        'interactions': [],
+        'user_id': int(last_user['user_id']) + 1 if last_user else 1,
     }
     
     result = mongo.db.users.insert_one(user)
     return jsonify({
         'message': 'User created successfully', 
-        'user_id': str(result.inserted_id),
+        'user_id': str(int(last_user['user_id'])+1) if last_user else 1,
         'location': data['location']
     }), 201
 
@@ -81,14 +85,14 @@ def login():
     user = mongo.db.users.find_one({
         'email': data['email'],
         'password': data['password']  # In production, verify hashed password
-    }, {'_id': 1, 'preferences': 1})
+    }, {'_id': 0, 'preferences': 1, 'user_id': 1})
     
     if not user:
         return jsonify({'error': 'Invalid credentials'}), 401
     
     return jsonify({
         'message': 'Login successful',
-        'user_id': str(user['_id']),
+        'user_id': str(user['user_id']),
         'preferences': user.get('preferences', {})
     })
 
@@ -98,7 +102,7 @@ def get_cart_interactions(user_id):
         pipeline = [
             {
                 '$match': {
-                    'user_id': ObjectId(user_id),
+                    'user_id': str(user_id),
                     'interaction_type': 'add_to_cart'
                 }
             },
@@ -141,7 +145,7 @@ def get_previous_orders(user_id):
         pipeline = [
             {
                 '$match': {
-                    'user_id': ObjectId(user_id),
+                    'user_id': str(user_id),
                     'interaction_type': 'purchase'
                 }
             },
@@ -185,7 +189,7 @@ def add_interaction():
         return jsonify({'error': 'Missing required fields'}), 400
 
     interaction = {
-        'user_id': ObjectId(data['user_id']),
+        'user_id': (data['user_id']),
         'product_id': int(data['product_id']),
         'interaction_type': data['interaction_type'],
         'timestamp': datetime.utcnow()
@@ -214,7 +218,7 @@ def get_recommendations(user_id):
                 'price': float(row['price']),
                 'product_name': row['product_name'],
                 'description': row['description'],
-                'score': float(row['score']),
+                # 'score': float(row['score']),
                 'recommendation_category': row['recommendation_source']
             })
         return jsonify({'recommendations': recommendations})
@@ -224,13 +228,13 @@ def get_recommendations(user_id):
 @app.route('/api/profile/<user_id>', methods=['GET'])
 def get_profile(user_id):
     try:
-        user = mongo.db.users.find_one({'_id': ObjectId(user_id)}, {'_id': 0, 'email': 1, 'preferences': 1})
+        user = mongo.db.users.find_one({'user_id': str(user_id)}, {'_id': 0, 'email': 1, 'preferences': 1})
         if not user:
             return jsonify({'error': 'User not found'}), 404
 
         interactions = list(
             mongo.db.interactions.find(
-                {'user_id': ObjectId(user_id)},
+                {'user_id': str(user_id)},
                 {'_id': 0, 'interaction_type': 1, 'timestamp': 1, 'product_id': 1}
             ).sort('timestamp', -1)
         )
