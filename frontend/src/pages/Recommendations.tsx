@@ -118,7 +118,12 @@ const Recommendations: React.FC = () => {
     <div className="container">
       <h1>Personalized Recommendations</h1>
       
-      {/* <SearchBar onSearch={handleSearch} /> */}
+      {/* Add location label when recommendations come from demographic source */}
+      {recommendations.some(rec => rec.recommendation_category === 'demographic') && (
+        <div className="recommendation-source-banner">
+          <p>Some recommendations are based on popular products in <strong>{user?.location || 'your area'}</strong></p>
+        </div>
+      )}
       
       <div className="grid">
         {recommendations.map((rec) => (
@@ -134,7 +139,9 @@ const Recommendations: React.FC = () => {
                 {rec.category} •
               </p>
               <p className="recommendation-source">
-                Recommended by: {rec.recommendation_category}
+                {rec.recommendation_category === 'demographic' ? 
+                  `Popular in ${user?.location || 'your area'}` : 
+                  `Recommended by: ${rec.recommendation_category}`}
               </p>
               <p className="price">${rec.price.toFixed(2)}</p>
             </div>

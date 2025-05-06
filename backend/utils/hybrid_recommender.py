@@ -196,22 +196,32 @@ class HybridRecommender:
             try:
                 user_id = int(user_id)
             except (ValueError, TypeError):
-                print(f"Invalid user_id format: {user_id}")
+                print(f"DEMO DEBUG: Invalid user_id format: {user_id}")
                 return pd.Series(index=self.product_df.index)
 
             user = self.db.users.find_one({'user_id': user_id})
             if not user or not user.get('location'):
+                print(f"DEMO DEBUG: No location found for user {user_id}")
                 return pd.Series(index=self.product_df.index)
 
             user_location = user['location']
+            print(f"DEMO DEBUG: Found location {user_location} for user {user_id}")
+            
+            # Get all users from the same location
             location_users = list(self.db.users.find({'location': user_location}))
             location_user_ids = [u['user_id'] for u in location_users]
+            print(f"DEMO DEBUG: Found {len(location_user_ids)} users in {user_location}")
             
+            # Ensure all IDs are of the same type (integer)
+            location_user_ids = [int(uid) for uid in location_user_ids]
+            
+            # Get interactions from users in the same location
             location_interactions = pd.DataFrame(list(self.db.interactions.find({
                 'user_id': {'$in': location_user_ids}
             })))
             
             if location_interactions.empty:
+                print(f"No interactions found for users in location: {user_location}")
                 return pd.Series(index=self.product_df.index)
             
             location_interactions['product_id'] = pd.to_numeric(location_interactions['product_id'])
@@ -223,15 +233,44 @@ class HybridRecommender:
             }
             location_interactions['weight'] = location_interactions['interaction_type'].map(weights)
             
+            # Group by product_id and sum weights
             product_scores = location_interactions.groupby('product_id')['weight'].sum()
+            
+            # Add exploration factor for diversity
+            exploration_factor = 0.1
+            popular_products = product_scores.nlargest(n_items)
             
             aligned_scores = pd.Series(0, index=self.product_df.index)
             try:
                 aligned_scores[product_scores.index] = product_scores.values
+                
+                # Add small boost to other products from same categories as popular ones
+                if not popular_products.empty:
+                    popular_categories = self.product_df.loc[popular_products.index]['category'].unique()
+                    for category in popular_categories:
+                        category_mask = self.product_df['category'] == category
+                        # Boost all products in popular categories with a small factor
+                        aligned_scores[category_mask] += exploration_factor * aligned_scores.max() if aligned_scores.max() > 0 else 0.1
+                
+                # Add small boost to products from popular brands
+                if not popular_products.empty:
+                    popular_brands = self.product_df.loc[popular_products.index]['brand'].unique()
+                    for brand in popular_brands:
+                        brand_mask = self.product_df['brand'] == brand
+                        # Boost all products from popular brands with a small factor
+                        aligned_scores[brand_mask] += exploration_factor * aligned_scores.max() if aligned_scores.max() > 0 else 0.1
             except KeyError:
                 pass
                 
-            return aligned_scores / aligned_scores.max() if not aligned_scores.empty else aligned_scores
+            # At the end, before returning:
+            top_products_for_location = product_scores.nlargest(5)
+            product_names = {idx: self.product_df.loc[idx, 'product_name'] if idx in self.product_df.index else 'Unknown' 
+                             for idx in top_products_for_location.index}
+            print(f"DEMO DEBUG: Top 5 products for {user_location}:")
+            for idx, score in top_products_for_location.items():
+                print(f"  - {product_names.get(idx, 'Unknown')} (Score: {score:.2f})")
+                
+            return aligned_scores / aligned_scores.max() if not aligned_scores.empty and aligned_scores.max() > 0 else aligned_scores
                 
         except Exception as e:
             print(f"Error in demographic recommendations: {str(e)}")

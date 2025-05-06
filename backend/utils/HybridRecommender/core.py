@@ -41,8 +41,11 @@ class HybridRecommender(RecommenderInterface):
         try:
             user_id = int(user_id)
         except (ValueError, TypeError):
-            print(f"Invalid user_id format: {user_id}")
             return pd.DataFrame()
+
+        # Get the user's location for demographic labeling
+        user = self.db.users.find_one({'user_id': user_id})
+        user_location = user.get('location') if user else None
 
         # Check if user has any interactions
         user_interactions = self.db.interactions.find_one({'user_id': user_id})
@@ -52,13 +55,19 @@ class HybridRecommender(RecommenderInterface):
             demographic_scores = self._get_demographic_recommendations(user_id, k)
             context_scores = self._get_context_recommendations(user_id, k)
             
-            # Track which strategy gave higher score for each product
-            recommendation_sources = pd.Series('demographic', index=demographic_scores.index)
-            context_wins = context_scores > demographic_scores
-            recommendation_sources[context_wins] = 'context'
+            # Always use demographic source when location is available
+            recommendation_sources = pd.Series('demographic', index=demographic_scores.index) if user_location else pd.Series('context', index=context_scores.index)
             
-            # Combine scores with weights
-            scores = demographic_scores * 0.7 + context_scores * 0.3
+            # Increase demographic weight to 85% to prioritize location-based recommendations
+            scores = demographic_scores * 0.85 + context_scores * 0.15
+            
+            # Force at least 8 demographic recommendations if possible (up from 5)
+            if not demographic_scores.empty:
+                top_demographic = demographic_scores.nlargest(8)
+                for idx in top_demographic.index:
+                    recommendation_sources[idx] = 'demographic'
+                    # Boost scores to ensure they appear at the top
+                    scores[idx] = max(scores[idx], demographic_scores.max() * 0.9)
         else:
             # Get scores from each strategy
             collab_scores = self._get_collaborative_scores(user_id, k)
