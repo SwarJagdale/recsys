@@ -118,7 +118,7 @@ const Recommendations: React.FC = () => {
     <div className="container">
       <h1>Personalized Recommendations</h1>
       
-      <SearchBar onSearch={handleSearch} />
+      {/* <SearchBar onSearch={handleSearch} /> */}
       
       <div className="grid">
         {recommendations.map((rec) => (

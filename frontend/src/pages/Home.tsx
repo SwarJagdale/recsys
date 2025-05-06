@@ -86,7 +86,7 @@ const Home: React.FC = () => {
   return (
     <div className="container">
       <h1>Browse Products</h1>
-      <SearchBar onSearch={handleSearch} />
+      {/* <SearchBar onSearch={handleSearch} /> */}
       <div className="grid">
         {products.map((product) => (
           <div key={product.product_id} className="card product-card">

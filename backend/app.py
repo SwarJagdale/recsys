@@ -6,7 +6,7 @@ import json
 from datetime import datetime
 import pandas as pd
 import numpy as np
-from utils.hybrid_recommender import recommend, add_recommender_interaction, init_app
+from utils.HybridRecommender import recommend, add_recommender_interaction, init_app
 
 app = Flask(__name__)
 CORS(app)
