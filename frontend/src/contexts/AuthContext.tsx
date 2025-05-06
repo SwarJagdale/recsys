@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 
 interface User {
-  id: string;
+  user_id: string;
   email: string;
   name: string;
   interactions: {
@@ -10,7 +10,6 @@ interface User {
     interaction_type: string;
     timestamp: string;
   }[];
-  userId: string;
   preferences: any;
   location?: string;
 }
@@ -51,7 +50,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     try {
       const response = await axios.post('http://localhost:5000/api/login', { email, password });
       const { user_id, preferences } = response.data;
-      const user = { id: user_id, email, name: '', preferences, interactions: [], userId: user_id };
+      const user = { user_id, email, name: '', preferences, interactions: [], location: '' };
       setUser(user);
       setToken(null);
       localStorage.setItem('user', JSON.stringify(user));
@@ -71,14 +70,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         name,
         location 
       });
-      const { user_id, location: userLocation } = response.data;
+      const { user_id, email: userEmail, name: userName, preferences, interactions, location: userLocation } = response.data;
       const user = { 
-        id: user_id, 
-        email, 
-        name, 
-        preferences: {}, 
-        interactions: [], 
-        userId: user_id,
+        user_id, 
+        email: userEmail, 
+        name: userName, 
+        preferences, 
+        interactions, 
         location: userLocation 
       };
       setUser(user);

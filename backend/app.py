@@ -59,7 +59,12 @@ def signup():
     if mongo.db.users.find_one({'email': data['email']}, {'_id': 0}):
         return jsonify({'error': 'User already exists'}), 409
     
+    # Generate a new integer user_id
+    last_user = mongo.db.users.find_one(sort=[('user_id', -1)])
+    new_user_id = 1 if not last_user else last_user['user_id'] + 1
+    
     user = {
+        'user_id': new_user_id,
         'email': data['email'],
         'password': data['password'],  # In production, hash the password
         'created_at': datetime.utcnow(),
@@ -248,7 +253,7 @@ def get_profile(user_id):
         recent_interactions = []
         for inter in interactions[:10]:
             product = mongo.db.products.find_one(
-                {'_id': inter.get('product_id')},
+                {'product_id': inter.get('product_id')},
                 {'_id': 0, 'product_name': 1, 'category': 1, 'brand': 1}
             )
             if product:

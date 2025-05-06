@@ -30,7 +30,7 @@ const ProductDetail: React.FC = () => {
         // Send view interaction when product is loaded
         if (user) {
           await axios.post('http://localhost:5000/api/interactions', {
-            user_id: user.id,
+            user_id: user.user_id,
             product_id: response.data.product_id,
             interaction_type: 'view',
           });
@@ -45,15 +45,17 @@ const ProductDetail: React.FC = () => {
     fetchProduct();
   }, [id, user]);
 
-  const handleInteraction = async (interactionType: string) => {
-    if (!user || !product) return;
-
+  const handleInteraction = async (productId: string, interactionType: string) => {
+    if (!user) return;
     try {
       await axios.post('http://localhost:5000/api/interactions', {
-        user_id: user.id,
-        product_id: product.product_id,
-        interaction_type: interactionType,
+        user_id: user.user_id,
+        product_id: productId,
+        interaction_type: interactionType
       });
+      // Refresh product data
+      const response = await axios.get(`http://localhost:5000/api/products/${productId}`);
+      setProduct(response.data);
     } catch (error) {
       console.error('Error recording interaction:', error);
     }
@@ -111,13 +113,13 @@ const ProductDetail: React.FC = () => {
           <div className="product-actions">
             <button 
               className="btn-primary"
-              onClick={() => handleInteraction('add_to_cart')}
+              onClick={() => handleInteraction(product.product_id, 'add_to_cart')}
             >
               Add to Cart
             </button>
             <button
               className="btn-secondary"
-              onClick={() => handleInteraction('purchase')}
+              onClick={() => handleInteraction(product.product_id, 'purchase')}
             >
               Purchase
             </button>

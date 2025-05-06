@@ -34,7 +34,7 @@ const Recommendations: React.FC = () => {
   const fetchRecommendations = async () => {
     if (!user) return;
     try {
-      const response = await axios.get(`http://localhost:5000/api/recommendations/${user.userId}`);
+      const response = await axios.get(`http://localhost:5000/api/recommendations/${user.user_id}`);
       setRecommendations(response.data.recommendations || []);
     } catch (err) {
       setError('Failed to load recommendations');
@@ -51,11 +51,13 @@ const Recommendations: React.FC = () => {
     if (!user) return;
     try {
       await axios.post('http://localhost:5000/api/interactions', {
-        user_id: user.userId,
+        user_id: user.user_id,
         product_id: productId,
-        interaction_type: interactionType,
+        interaction_type: interactionType
       });
-      setSelectedProduct(null);
+      // Refresh recommendations
+      const response = await axios.get(`http://localhost:5000/api/recommendations/${user.user_id}`);
+      setRecommendations(response.data.recommendations);
     } catch (error) {
       console.error('Error recording interaction:', error);
     }
@@ -68,7 +70,7 @@ const Recommendations: React.FC = () => {
     if (user) {
       try {
         await axios.post('http://localhost:5000/api/interactions', {
-          user_id: user.userId,
+          user_id: user.user_id,
           product_id: product.product_id,
           interaction_type: 'view'
         });

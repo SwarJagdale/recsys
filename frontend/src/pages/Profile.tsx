@@ -34,16 +34,15 @@ const Profile: React.FC = () => {
     const fetchProfile = async () => {
       if (!user) return;
       try {
-        const res = await axios.get<ProfileResponse>(
-          `http://localhost:5000/api/profile/${user.userId}`
-        );
-        setProfile(res.data);
-      } catch (err: any) {
-        setError(err.message || 'Error loading profile.');
+        const response = await axios.get(`http://localhost:5000/api/profile/${user.user_id}`);
+        setProfile(response.data);
+      } catch (error) {
+        console.error('Error fetching profile:', error);
       } finally {
         setLoading(false);
       }
     };
+
     fetchProfile();
   }, [user]);
 
