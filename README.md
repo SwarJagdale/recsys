@@ -138,6 +138,7 @@ recsys/
 ```json
 {
   "_id": ObjectId,
+  "user_id":str,
   "email": String,
   "password": String,
   "created_at": DateTime,
@@ -150,8 +151,8 @@ recsys/
 ```json
 {
   "_id": ObjectId,
-  "user_id": ObjectId,
-  "product_id": ObjectId,
+  "user_id": str,
+  "product_id": str,
   "interaction_type": String,
   "timestamp": DateTime
 }
@@ -161,6 +162,7 @@ recsys/
 ```json
 {
   "_id": ObjectId,
+    "product_id":int,
   "name": String,
   "description": String,
   "price": Number,
