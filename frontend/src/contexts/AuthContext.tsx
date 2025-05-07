@@ -48,7 +48,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const login = async (email: string, password: string) => {
     try {
-      const response = await axios.post('http://localhost:5000/api/login', { email, password });
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/login`, { email, password });
       const { user_id, preferences } = response.data;
       const user = { user_id, email, name: '', preferences, interactions: [], location: '' };
       setUser(user);
@@ -64,7 +64,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const signup = async (email: string, password: string, name: string, location: string) => {
     try {
-      const response = await axios.post('http://localhost:5000/api/signup', { 
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/signup`, { 
         email, 
         password, 
         name,

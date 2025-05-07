@@ -61,7 +61,7 @@ class HybridRecommender(RecommenderInterface):
             # Get scores from each strategy
             collab_scores = self._get_collaborative_scores(user_id, k)
 
-
+            
             recent_cutoff = datetime.now() - timedelta(days=30)
             try:
                 user_id = int(user_id)
@@ -82,12 +82,12 @@ class HybridRecommender(RecommenderInterface):
             recent_interactions['timestamp'] = pd.to_datetime(recent_interactions['timestamp'])
             now = datetime.now()
             time_diff_secs = (now - recent_interactions['timestamp']).dt.total_seconds()
-            recent_interactions['time_decay'] = np.exp(-0.05 * time_diff_secs)
+            recent_interactions['time_decay'] = 1.0 - np.exp(-0.05 * time_diff_secs)
 
             weights = {'view': 1, 'add_to_cart': 3, 'purchase': 5}
             recent_interactions['weight'] = recent_interactions['interaction_type'].map(weights)
             recent_interactions['final_weight'] = recent_interactions['time_decay'] * recent_interactions['weight']
-
+            print(recent_interactions)
             # Category and brand aggregation
             category_weights = recent_interactions.merge(
                 self.product_df, left_on='product_id', right_index=True
@@ -96,8 +96,8 @@ class HybridRecommender(RecommenderInterface):
             brand_weights = recent_interactions.merge(
                 self.product_df, left_on='product_id', right_index=True
             ).groupby('brand')['final_weight'].sum()
-
-            recency_scores = self._get_recency_scores(category_weights=category_weights, brand_weights=brand_weights, k=k)
+            
+            recency_scores = self._get_recency_scores(category_weights=category_weights, brand_weights=brand_weights, n_items=k)
             
             # Get top 10 from each strategy
             ITEMS_PER_STRATEGY = 10

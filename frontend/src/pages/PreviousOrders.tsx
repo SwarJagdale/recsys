@@ -21,7 +21,7 @@ const PreviousOrders: React.FC = () => {
     const fetchOrders = async () => {
       if (!user) return;
       try {
-        const response = await axios.get(`http://localhost:5000/api/previous_orders/${user.user_id}`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/previous_orders/${user.user_id}`);
         setOrders(response.data.previous_orders);
       } catch (error) {
         console.error('Error fetching orders:', error);

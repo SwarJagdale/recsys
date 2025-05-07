@@ -397,6 +397,7 @@ def get_recommendations(user_id):
     try:
         recommendations_df = recommend(user_id, k=20)
         print(recommendations_df)
+        # return recommendations_df
         recommendations = []
         for idx, row in recommendations_df.iterrows():
             recommendations.append({
@@ -426,8 +427,13 @@ def get_demographics():
     recommendations = get_demographic_recommendations(location=location, n_items=20)
     return jsonify({'recommendations': recommendations})
 
-
-
+# @app.route('/api/dev/recency', methods=['GET'])
+# def get_recency():
+#     location = request.args.get('location')
+#     if not location:
+#         return jsonify({'error': 'Missing location parameter'}), 400
+#     recommendations = get_recency_recommendations(location=location, n_items=20)
+#     return jsonify({'recommendations': recommendations})
 
 if __name__ == '__main__':
     app.run(debug=True)

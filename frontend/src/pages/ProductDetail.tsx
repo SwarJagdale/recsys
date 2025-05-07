@@ -24,12 +24,12 @@ const ProductDetail: React.FC = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/products/${id}`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/products/${id}`);
         setProduct(response.data);
         
         // Send view interaction when product is loaded
         if (user) {
-          await axios.post('http://localhost:5000/api/interactions', {
+          await axios.post(`${process.env.REACT_APP_API_URL}/api/interactions`, {
             user_id: user.user_id,
             product_id: response.data.product_id,
             interaction_type: 'view',
@@ -48,13 +48,13 @@ const ProductDetail: React.FC = () => {
   const handleInteraction = async (productId: string, interactionType: string) => {
     if (!user) return;
     try {
-      await axios.post('http://localhost:5000/api/interactions', {
+      await axios.post(`${process.env.REACT_APP_API_URL}/api/interactions`, {
         user_id: user.user_id,
         product_id: productId,
         interaction_type: interactionType
       });
       // Refresh product data
-      const response = await axios.get(`http://localhost:5000/api/products/${productId}`);
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/products/${productId}`);
       setProduct(response.data);
     } catch (error) {
       console.error('Error recording interaction:', error);

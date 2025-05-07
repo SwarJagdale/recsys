@@ -37,7 +37,7 @@ const Home: React.FC = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get<{ products: Product[] }>('http://localhost:5000/api/products');
+      const response = await axios.get<{ products: Product[] }>(`${process.env.REACT_APP_API_URL}/api/products`);
       setProducts(response.data.products);
     } catch (error) {
       console.error('Error fetching products:', error);
@@ -62,13 +62,13 @@ const Home: React.FC = () => {
   const handleInteraction = async (productId: string, interactionType: string) => {
     if (!user) return;
     try {
-      await axios.post('http://localhost:5000/api/interactions', {
+      await axios.post(`${process.env.REACT_APP_API_URL}/api/interactions`, {
         user_id: user.user_id,
         product_id: productId,
         interaction_type: interactionType
       });
       // Refresh products
-      const response = await axios.get('http://localhost:5000/api/products');
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/products`);
       setProducts(response.data.products);
     } catch (error) {
       console.error('Error recording interaction:', error);

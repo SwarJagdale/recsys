@@ -34,7 +34,7 @@ const Recommendations: React.FC = () => {
   const fetchRecommendations = async () => {
     if (!user) return;
     try {
-      const response = await axios.get(`http://localhost:5000/api/recommendations/${user.user_id}`);
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/recommendations/${user.user_id}`);
       setRecommendations(response.data.recommendations || []);
     } catch (err) {
       setError('Failed to load recommendations');
@@ -50,13 +50,13 @@ const Recommendations: React.FC = () => {
   const handleInteraction = async (productId: string, interactionType: string) => {
     if (!user) return;
     try {
-      await axios.post('http://localhost:5000/api/interactions', {
+      await axios.post(`${process.env.REACT_APP_API_URL}/api/interactions`, {
         user_id: user.user_id,
         product_id: productId,
         interaction_type: interactionType
       });
       // Refresh recommendations
-      const response = await axios.get(`http://localhost:5000/api/recommendations/${user.user_id}`);
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/recommendations/${user.user_id}`);
       setRecommendations(response.data.recommendations);
     } catch (error) {
       console.error('Error recording interaction:', error);
@@ -69,7 +69,7 @@ const Recommendations: React.FC = () => {
     // Record view interaction when product modal is opened
     if (user) {
       try {
-        await axios.post('http://localhost:5000/api/interactions', {
+        await axios.post(`${process.env.REACT_APP_API_URL}/api/interactions`, {
           user_id: user.user_id,
           product_id: product.product_id,
           interaction_type: 'view'

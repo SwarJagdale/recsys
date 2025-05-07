@@ -33,7 +33,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   useEffect(() => {
     const fetchFilters = async () => {
       try {
-        const response = await axios.get<{ products: ApiProduct[] }>('http://localhost:5000/api/products');
+        const response = await axios.get<{ products: ApiProduct[] }>(`${process.env.REACT_APP_API_URL}/api/products`);
         const products = response.data.products;
         
         const uniqueCategories = [...new Set(products.map(p => p.category))];
@@ -50,7 +50,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
 
   const handleSearch = async (query: string) => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/products/search?query=${query}`);
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/products/search?query=${query}`);
       const products = response.data.products.map((p: Product) => ({
         product_id: p.product_id,
         product_name: p.product_name,

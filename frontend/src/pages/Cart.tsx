@@ -19,7 +19,7 @@ const Cart: React.FC = () => {
       if (!user) return;
       setLoading(true);
       try {
-        const res = await axios.get(`http://localhost:5000/api/cart_interactions/${user.user_id}`);
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/cart_interactions/${user.user_id}`);
         // Group by product_id and count quantity
         const grouped = res.data.cart_interactions.reduce((acc: any, curr: any) => {
           const pid = curr.product_id;
@@ -51,13 +51,13 @@ const Cart: React.FC = () => {
   const handleInteraction = async (productId: string, interactionType: string) => {
     if (!user) return;
     try {
-      await axios.post('http://localhost:5000/api/interactions', {
+      await axios.post(`${process.env.REACT_APP_API_URL}/api/interactions`, {
         user_id: user.user_id,
         product_id: productId,
         interaction_type: interactionType
       });
       // Refresh cart items
-      const response = await axios.get(`http://localhost:5000/api/cart_interactions/${user.user_id}`);
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/cart_interactions/${user.user_id}`);
       setCart(response.data.cart_interactions);
     } catch (error) {
       console.error('Error recording interaction:', error);

@@ -28,7 +28,7 @@ const Recommendations: React.FC = () => {
       setLoading(true);
       setError('');
       try {
-        const response = await axios.get(`http://localhost:5000/api/recommendations/${user.user_id}`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/recommendations/${user.user_id}`);
         setRecommendations(response.data.recommendations || []);
       } catch (err) {
         setError('Failed to fetch recommendations');
@@ -42,7 +42,7 @@ const Recommendations: React.FC = () => {
 
   const handleInteraction = async (productId: string, interactionType: string) => {
     try {
-      await axios.post('http://localhost:5000/api/interactions', {
+      await axios.post(`${process.env.REACT_APP_API_URL}/api/interactions`, {
         user_id: user?.user_id,
         product_id: productId,
         interaction_type: interactionType,
