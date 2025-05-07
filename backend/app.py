@@ -108,7 +108,7 @@ def get_cart_interactions(user_id):
         pipeline = [
             {
                 '$match': {
-                    'user_id': str(user_id),
+                    'user_id': int(user_id),
                     'interaction_type': 'add_to_cart'
                 }
             },
@@ -151,7 +151,7 @@ def get_previous_orders(user_id):
         pipeline = [
             {
                 '$match': {
-                    'user_id': str(user_id),
+                    'user_id': int(user_id),
                     'interaction_type': 'purchase'
                 }
             },
@@ -223,9 +223,6 @@ def add_interaction():
     
     result = mongo.db.interactions.insert_one(interaction)
     
-    # Pass IDs to recommender system
-    add_recommender_interaction(user_id, product_id, data['interaction_type'])
-    
     return jsonify({
         'message': 'Interaction recorded successfully',
         'interaction_id': str(result.inserted_id)
@@ -254,13 +251,13 @@ def get_recommendations(user_id):
 @app.route('/api/profile/<user_id>', methods=['GET'])
 def get_profile(user_id):
     try:
-        user = mongo.db.users.find_one({'user_id': str(user_id)}, {'_id': 0, 'email': 1, 'preferences': 1})
+        user = mongo.db.users.find_one({'user_id': int(user_id)}, {'_id': 0, 'email': 1, 'preferences': 1})
         if not user:
             return jsonify({'error': 'User not found'}), 404
 
         interactions = list(
             mongo.db.interactions.find(
-                {'user_id': str(user_id)},
+                {'user_id': int(user_id)},
                 {'_id': 0, 'interaction_type': 1, 'timestamp': 1, 'product_id': 1}
             ).sort('timestamp', -1)
         )
@@ -293,7 +290,7 @@ def get_profile(user_id):
             product_interactions = []
             for inter in interactions:
                 product = mongo.db.products.find_one(
-                    {'_id': inter.get('product_id')},
+                    {'product_id': inter.get('product_id')},
                     {'_id': 0, 'category': 1, 'brand': 1}
                 )
                 if product:
@@ -314,11 +311,13 @@ def get_profile(user_id):
                 
                 # Category preferences
                 cat = inter['category']
-                category_counts[cat] = category_counts.get(cat, 0) + weight
+                if cat:  # Only add if category exists
+                    category_counts[cat] = category_counts.get(cat, 0) + weight
                 
                 # Brand preferences
                 brand = inter['brand']
-                brand_counts[brand] = brand_counts.get(brand, 0) + weight
+                if brand:  # Only add if brand exists
+                    brand_counts[brand] = brand_counts.get(brand, 0) + weight
             
             # Sort and normalize preferences
             total_category_weight = sum(category_counts.values()) or 1
