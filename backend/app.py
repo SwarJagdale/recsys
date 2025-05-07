@@ -6,13 +6,16 @@ import json
 from datetime import datetime
 import pandas as pd
 import numpy as np
+import dotenv 
+import os
+dotenv.load_dotenv()
 from utils.HybridRecommender import recommend, add_recommender_interaction, init_app, get_demographic_recommendations, get_recency_scores, get_collaborative_scores, get_context_recommendations
 # from utils.HybridRecommender.demographic import get_demographic_recommendations
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # MongoDB configuration
-app.config["MONGO_URI"] = "mongodb://localhost:27017/ecommerce_db"
+app.config["MONGO_URI"] = os.getenv("MONGO_URI", "mongodb://localhost:27017/ecommerce_db")
 mongo = PyMongo(app)
 
 # Initialize the recommender system with MongoDB

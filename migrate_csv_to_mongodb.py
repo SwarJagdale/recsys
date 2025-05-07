@@ -4,10 +4,13 @@ from pymongo import MongoClient
 from bson import ObjectId
 from datetime import datetime
 import os
+import dotenv
+dotenv.load_dotenv()    
+mongo_uri = os.getenv("MONGO_URI", "mongodb://localhost:27017/ecommerce_db")
 
 def migrate_csv_to_mongodb(
     csv_dir="data",
-    mongo_uri="mongodb://localhost:27017/",
+    mongo_uri=mongo_uri,
     db_name="ecommerce_db"
 ):
     """
