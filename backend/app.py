@@ -6,8 +6,8 @@ import json
 from datetime import datetime
 import pandas as pd
 import numpy as np
-from utils.HybridRecommender import recommend, add_recommender_interaction, init_app
-
+from utils.HybridRecommender import recommend, add_recommender_interaction, init_app, get_demographic_recommendations, get_recency_scores, get_collaborative_scores, get_context_recommendations
+# from utils.HybridRecommender.demographic import get_demographic_recommendations
 app = Flask(__name__)
 CORS(app)
 
@@ -46,7 +46,9 @@ class JSONEncoder(json.JSONEncoder):
 
 app.json_encoder = JSONEncoder
 
-# User routes
+# ==========================================================================
+# =============================== Login Routes===============================
+# ==========================================================================
 @app.route('/api/signup', methods=['POST'])
 def signup():
     data = request.json
@@ -101,6 +103,10 @@ def login():
         'user_id': str(user['user_id']),
         'preferences': user.get('preferences', {})
     })
+
+# ==========================================================================
+# =============================== User Routes ===============================
+# ==========================================================================
 
 @app.route('/api/cart_interactions/<user_id>', methods=['GET'])
 def get_cart_interactions(user_id):
@@ -185,66 +191,6 @@ def get_previous_orders(user_id):
         
         orders = list(mongo.db.interactions.aggregate(pipeline))
         return jsonify({'previous_orders': orders})
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
-
-@app.route('/api/interactions', methods=['POST'])
-def add_interaction():
-    data = request.json
-    if not data or not data.get('user_id') or not data.get('product_id') or not data.get('interaction_type'):
-        return jsonify({'error': 'Missing required fields'}), 400
-
-    # Validate interaction type
-    valid_interaction_types = ['view', 'add_to_cart', 'purchase']
-    if data['interaction_type'] not in valid_interaction_types:
-        return jsonify({'error': f'Invalid interaction type. Must be one of: {", ".join(valid_interaction_types)}'}), 400
-
-    try:
-        # Convert IDs to integers
-        user_id = int(data['user_id'])
-        product_id = int(data['product_id'])
-    except (ValueError, TypeError):
-        return jsonify({'error': 'user_id and product_id must be valid integers'}), 400
-
-    # Verify user exists
-    if not mongo.db.users.find_one({'user_id': user_id}):
-        return jsonify({'error': 'User not found'}), 404
-
-    # Verify product exists
-    if not mongo.db.products.find_one({'product_id': product_id}):
-        return jsonify({'error': 'Product not found'}), 404
-
-    interaction = {
-        'user_id': user_id,
-        'product_id': product_id,
-        'interaction_type': data['interaction_type'],
-        'timestamp': datetime.utcnow()
-    }
-    
-    result = mongo.db.interactions.insert_one(interaction)
-    
-    return jsonify({
-        'message': 'Interaction recorded successfully',
-        'interaction_id': str(result.inserted_id)
-    }), 201
-
-@app.route('/api/recommendations/<user_id>', methods=['GET'])
-def get_recommendations(user_id):
-    try:
-        recommendations_df = recommend(user_id, k=20)
-        recommendations = []
-        for idx, row in recommendations_df.iterrows():
-            recommendations.append({
-                'product_id': str(idx),
-                'category': row['category'],
-                'brand': row['brand'],
-                'price': float(row['price']),
-                'product_name': row['product_name'],
-                'description': row['description'],
-                # 'score': float(row['score']),
-                'recommendation_category': row['recommendation_source']
-            })
-        return jsonify({'recommendations': recommendations})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
@@ -348,6 +294,52 @@ def get_profile(user_id):
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+
+@app.route('/api/interactions', methods=['POST'])
+def add_interaction():
+    data = request.json
+    if not data or not data.get('user_id') or not data.get('product_id') or not data.get('interaction_type'):
+        return jsonify({'error': 'Missing required fields'}), 400
+
+    # Validate interaction type
+    valid_interaction_types = ['view', 'add_to_cart', 'purchase']
+    if data['interaction_type'] not in valid_interaction_types:
+        return jsonify({'error': f'Invalid interaction type. Must be one of: {", ".join(valid_interaction_types)}'}), 400
+
+    try:
+        # Convert IDs to integers
+        user_id = int(data['user_id'])
+        product_id = int(data['product_id'])
+    except (ValueError, TypeError):
+        return jsonify({'error': 'user_id and product_id must be valid integers'}), 400
+
+    # Verify user exists
+    if not mongo.db.users.find_one({'user_id': user_id}):
+        return jsonify({'error': 'User not found'}), 404
+
+    # Verify product exists
+    if not mongo.db.products.find_one({'product_id': product_id}):
+        return jsonify({'error': 'Product not found'}), 404
+
+    interaction = {
+        'user_id': user_id,
+        'product_id': product_id,
+        'interaction_type': data['interaction_type'],
+        'timestamp': datetime.utcnow()
+    }
+    
+    result = mongo.db.interactions.insert_one(interaction)
+    
+    return jsonify({
+        'message': 'Interaction recorded successfully',
+        'interaction_id': str(result.inserted_id)
+    }), 201
+
+
+# ==========================================================================
+# =============================== Product Routes ===========================
+# ==========================================================================
+
 @app.route('/api/products', methods=['GET'])
 def get_products():
     products = list(mongo.db.products.find({}, {'_id': 0}))
@@ -377,10 +369,10 @@ def search_products():
         search_filter['$text'] = {'$search': query}
     
     if category:
-        search_filter['category'] = category
+        search_filter['category'] = {'$regex': f'^{category}$', '$options': 'i'}
         
     if brand:
-        search_filter['brand'] = brand
+        search_filter['brand'] = {'$regex': f'^{brand}$', '$options': 'i'}
     
     try:
         if query:
@@ -394,6 +386,48 @@ def search_products():
         return jsonify({'products': products})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+
+
+# ==========================================================================
+# =============================== Recommendation Routes ===================
+# ==========================================================================
+
+@app.route('/api/recommendations/<user_id>', methods=['GET'])
+def get_recommendations(user_id):
+    try:
+        recommendations_df = recommend(user_id, k=20)
+        print(recommendations_df)
+        recommendations = []
+        for idx, row in recommendations_df.iterrows():
+            recommendations.append({
+                'product_id': str(idx),
+                'category': row['category'],
+                'brand': row['brand'],
+                'price': float(row['price']),
+                'product_name': row['product_name'],
+                'description': row['description'],
+                # 'score': float(row['score']),
+                'recommendation_category': row['recommendation_source']
+            })
+        return jsonify({'recommendations': recommendations})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+# ==========================================================================
+# =============================== Dev Routes =============================
+# ==========================================================================
+
+@app.route('/api/dev/demographics', methods=['GET'])
+def get_demographics():
+    location = request.args.get('location')
+    if not location:
+        return jsonify({'error': 'Missing location parameter'}), 400
+    recommendations = get_demographic_recommendations(location=location, n_items=20)
+    return jsonify({'recommendations': recommendations})
+
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)

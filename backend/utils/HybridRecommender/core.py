@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 from pymongo import MongoClient
 from .base import RecommenderInterface
+from datetime import datetime, timedelta
 
 class HybridRecommender(RecommenderInterface):
     def __init__(self):
@@ -42,7 +43,7 @@ class HybridRecommender(RecommenderInterface):
             user_id = int(user_id)
         except (ValueError, TypeError):
             return pd.DataFrame()
-
+        
         # Get the user's location for demographic labeling
         user = self.db.users.find_one({'user_id': user_id})
         user_location = user.get('location') if user else None
@@ -52,26 +53,51 @@ class HybridRecommender(RecommenderInterface):
         
         if not user_interactions:
             # New user - use demographic and context recommendations
-            demographic_scores = self._get_demographic_recommendations(user_id, k)
-            context_scores = self._get_context_recommendations(user_id, k)
+            demographic_scores = self._get_demographic_recommendations(user_location, k)
+            demographic_scores['recommendation_source'] = 'demographic'
+            return demographic_scores
             
-            # Always use demographic source when location is available
-            recommendation_sources = pd.Series('demographic', index=demographic_scores.index) if user_location else pd.Series('context', index=context_scores.index)
-            
-            # Increase demographic weight to 85% to prioritize location-based recommendations
-            scores = demographic_scores * 0.85 + context_scores * 0.15
-            
-            # Force at least 8 demographic recommendations if possible (up from 5)
-            if not demographic_scores.empty:
-                top_demographic = demographic_scores.nlargest(8)
-                for idx in top_demographic.index:
-                    recommendation_sources[idx] = 'demographic'
-                    # Boost scores to ensure they appear at the top
-                    scores[idx] = max(scores[idx], demographic_scores.max() * 0.9)
         else:
             # Get scores from each strategy
             collab_scores = self._get_collaborative_scores(user_id, k)
-            recency_scores = self._get_recency_scores(user_id, k)
+
+
+            recent_cutoff = datetime.now() - timedelta(days=30)
+            try:
+                user_id = int(user_id)
+            except (ValueError, TypeError):
+                return pd.Series(0.0, index=self.product_df.index)
+
+            recent_interactions = pd.DataFrame(list(
+                self.db.interactions.find({
+                    'user_id': user_id,
+                    'timestamp': {'$gte': recent_cutoff}
+                }).sort('timestamp', -1)
+            ))
+
+            if recent_interactions.empty:
+                return pd.Series(0.0, index=self.product_df.index)
+
+            recent_interactions['product_id'] = pd.to_numeric(recent_interactions['product_id'])
+            recent_interactions['timestamp'] = pd.to_datetime(recent_interactions['timestamp'])
+            now = datetime.now()
+            time_diff_secs = (now - recent_interactions['timestamp']).dt.total_seconds()
+            recent_interactions['time_decay'] = np.exp(-0.05 * time_diff_secs)
+
+            weights = {'view': 1, 'add_to_cart': 3, 'purchase': 5}
+            recent_interactions['weight'] = recent_interactions['interaction_type'].map(weights)
+            recent_interactions['final_weight'] = recent_interactions['time_decay'] * recent_interactions['weight']
+
+            # Category and brand aggregation
+            category_weights = recent_interactions.merge(
+                self.product_df, left_on='product_id', right_index=True
+            ).groupby('category')['final_weight'].sum()
+
+            brand_weights = recent_interactions.merge(
+                self.product_df, left_on='product_id', right_index=True
+            ).groupby('brand')['final_weight'].sum()
+
+            recency_scores = self._get_recency_scores(category_weights=category_weights, brand_weights=brand_weights, k=k)
             
             # Get top 10 from each strategy
             ITEMS_PER_STRATEGY = 10
@@ -108,3 +134,11 @@ class HybridRecommender(RecommenderInterface):
             print("Error accessing product information")
             return pd.DataFrame(columns=self.product_df.columns.tolist() + ['score', 'recommendation_source'])
 
+    def get_demographic_recommendations(self, location, k):
+        return self._get_demographic_recommendations(location, k)
+
+    def get_recency_scores(self, category_weights, brand_weights, k):
+        return self._get_recency_scores(category_weights, brand_weights, k)
+
+    def get_collaborative_scores(self, user_id, k):
+        return self._get_collaborative_scores(user_id, k)

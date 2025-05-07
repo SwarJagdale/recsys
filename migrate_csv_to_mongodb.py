@@ -85,11 +85,9 @@ def migrate_csv_to_mongodb(
                 
                 # If we have a mapping, use it; otherwise, generate new ObjectIds
                 if user_id_mapping:
-                    interactions_df['user_id'] = interactions_df['user_id'].astype(str).map(
-                        lambda x: user_id_mapping.get(x, str(ObjectId())))
+                    interactions_df['user_id'] = interactions_df['user_id']
                 else:
-                    interactions_df['user_id'] = interactions_df['user_id'].apply(
-                        lambda x: str(ObjectId()))
+                    interactions_df['user_id'] = interactions_df['user_id']
         
         # Convert product_id to int if possible
         if 'product_id' in interactions_df.columns:

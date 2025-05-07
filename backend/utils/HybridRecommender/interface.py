@@ -26,3 +26,19 @@ def recommend(user_id, k=20):
 def add_recommender_interaction(user_id, product_id, interaction_type):
     """Add a new interaction and update recommendations"""
     _recommender.add_interaction(user_id, product_id, interaction_type)
+
+def get_recency_scores(category_weights, brand_weights, n_items=20):
+    """Get recency scores for a user"""
+    return _recommender.get_recency_scores(category_weights, brand_weights, n_items)
+
+def get_collaborative_scores(user_id, n_items=20):
+    """Get collaborative scores for a user"""
+    return _recommender.get_collaborative_scores(user_id, n_items)
+
+def get_context_recommendations(user_id, n_items=20):
+    """Get context recommendations for a user"""
+    return _recommender.get_context_recommendations(user_id, n_items)
+
+def get_demographic_recommendations(location, n_items=20):
+    """Get demographic recommendations for a user"""
+    return _recommender.get_demographic_recommendations(location, n_items)
