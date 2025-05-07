@@ -6,7 +6,7 @@ import json
 from datetime import datetime
 import pandas as pd
 import numpy as np
-from utils.hybrid_recommender import recommend, add_recommender_interaction, init_app
+from utils.HybridRecommender import recommend, add_recommender_interaction, init_app
 
 app = Flask(__name__)
 CORS(app)
@@ -61,7 +61,8 @@ def signup():
     
     # Generate a new integer user_id
     last_user = mongo.db.users.find_one(sort=[('user_id', -1)])
-    new_user_id = 1 if not last_user else last_user['user_id'] + 1
+
+    new_user_id = 1 if not last_user else int(last_user['user_id']) + 1
     
     user = {
         'user_id': new_user_id,
@@ -193,9 +194,29 @@ def add_interaction():
     if not data or not data.get('user_id') or not data.get('product_id') or not data.get('interaction_type'):
         return jsonify({'error': 'Missing required fields'}), 400
 
+    # Validate interaction type
+    valid_interaction_types = ['view', 'add_to_cart', 'purchase']
+    if data['interaction_type'] not in valid_interaction_types:
+        return jsonify({'error': f'Invalid interaction type. Must be one of: {", ".join(valid_interaction_types)}'}), 400
+
+    try:
+        # Convert IDs to integers
+        user_id = int(data['user_id'])
+        product_id = int(data['product_id'])
+    except (ValueError, TypeError):
+        return jsonify({'error': 'user_id and product_id must be valid integers'}), 400
+
+    # Verify user exists
+    if not mongo.db.users.find_one({'user_id': user_id}):
+        return jsonify({'error': 'User not found'}), 404
+
+    # Verify product exists
+    if not mongo.db.products.find_one({'product_id': product_id}):
+        return jsonify({'error': 'Product not found'}), 404
+
     interaction = {
-        'user_id': (data['user_id']),
-        'product_id': int(data['product_id']),
+        'user_id': user_id,
+        'product_id': product_id,
         'interaction_type': data['interaction_type'],
         'timestamp': datetime.utcnow()
     }
@@ -203,7 +224,7 @@ def add_interaction():
     result = mongo.db.interactions.insert_one(interaction)
     
     # Pass IDs to recommender system
-    add_recommender_interaction(data['user_id'], data['product_id'], data['interaction_type'])
+    add_recommender_interaction(user_id, product_id, data['interaction_type'])
     
     return jsonify({
         'message': 'Interaction recorded successfully',

@@ -973,6 +973,19 @@ button:hover {
   font-style: italic;
 }
 
+.recommendation-source-banner {
+  background-color: #f0f8ff;
+  border-left: 4px solid #007bff;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: var(--border-radius);
+  color: var(--text-secondary);
+}
+
+.recommendation-source-banner p {
+  margin: 0;
+}
+
 /* Cart Container */
 .cart-container {
   background-color: white;
