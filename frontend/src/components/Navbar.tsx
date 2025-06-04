@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-brand">
-          E-Commerce Recommender
+          Rexis
         </Link>
         <div className="navbar-links">
           {isAuthenticated ? (
