@@ -1,6 +1,6 @@
-# E-Commerce Recommender Frontend
+# Rexis
 
-A beautiful and modern React TypeScript frontend for the E-Commerce Recommender System.
+Hybrid recommendation engine for e-commerce with personalized product suggestions using collaborative, recency, context, and demographic strategies. Built with Flask, React, and MongoDB.
 
 ## Features
 
